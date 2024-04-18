@@ -1,0 +1,48 @@
+{
+    "noteBook": [
+        {
+            "id": 1,
+            "name": "",
+            "type": "",
+            "price": "",
+            "stock": "",
+            "desc": "",
+            "descDetail": "",
+            "param": {
+                "size": "",
+                "pages": "",
+                "material": "",
+                "weight": ""
+            },
+            "image": {
+                "mainImage":"",
+                "image1":"",
+                "image2":"",
+                "image3":""
+            }
+        }
+    ],
+    "calendar": [
+        {
+            "id": 1,
+            "name": "",
+            "type": "",
+            "price": "",
+            "stock": "",
+            "desc": "",
+            "descDetail": "",
+            "param": {
+                "size": "",
+                "pages": "",
+                "material": "",
+                "weight": ""
+            },
+            "image": {
+                "mainImage":"",
+                "image1":"",
+                "image2":"",
+                "image3":""
+            }
+        }
+    ]
+}
