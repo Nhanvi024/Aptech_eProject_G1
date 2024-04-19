@@ -5,10 +5,12 @@
 :root {
   /* colors */
   --primary-background-clr: white;
-  --secondary-background-clr: #f15a26;
+  --secondary-background-clr: #DA5339;
+
   --primary-text-color: hsl(0, 0%, 0%);
+  --secondary-text-color: hsl(0, 0%, 100%);
   --hover-text-color: hsl(0, 3%, 41%);
-  --active-text-color: #F15A26;
+  --active-text-color: #DA5339;
 
   
   /* font-sizes */
@@ -19,7 +21,7 @@
   --fs-500: 2rem;
   --fs-400: 1.75rem;
   --fs-300: 1.5rem;
-  --fs-200: 1.25rem;
+  --fs-200: 1.15rem;
   --fs-100: 1rem;
 
   

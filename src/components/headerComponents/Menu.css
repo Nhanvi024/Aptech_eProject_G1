@@ -1,12 +1,12 @@
-.menuContainer{
+.menuContainer {
     width: 25%;
     height: 45px;
-   
+
     border-radius: 7px;
 
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 
     position: relative;
 
@@ -15,21 +15,23 @@
     border: 1px solid red;
 
 }
-.menuButton{
+
+.menuButton {
     width: 100%;
     height: 100%;
     padding-left: 5%;
 
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 10px;
 }
 
-.menuIcon{
-    width: 10%;    
+.menuIcon {
+    width: 10%;
     object-fit: contain;
 }
-.menuText{
+
+.menuText {
     font-family: var(--ff-laila-serif);
     font-size: var(--fs-400);
     font-weight: 700;
@@ -40,39 +42,96 @@
 
 /* Hover menu button to show menu detail */
 
-.menuDetail{
+.menuDetail {
     visibility: hidden;
     width: 100%;
     height: fit-content;
+    padding-bottom: 20px;
+
     position: absolute;
     top: 44px;
     background-color: rgb(255, 255, 255);
 
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
-.menuButton:hover+.menuDetail,.menuDetail:hover{
+.menuButton:hover+.menuDetail,
+.menuDetail:hover {
     visibility: visible;
 }
 
-.arrowIcon{
-    width: 3%;
-}
-.menuTab{
-    text-decoration: none;
+.menuTab {
     width: 100%;
     height: 40px;
-    align-content: center;
+    padding-left: 20px;
+
 
     font-family: var(--ff-laila-serif);
     font-size: var(--fs-300);
-    
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.menuTab:hover{
+
+.iconRedArrow::before{
+    content: "\f105";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    align-content: center;
+
+    color: #da5339;
+}
+.iconBlackArrow::before{
+    content: "\f105";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    align-content: center;
+
+    color: #000000;
+
+    align-self: end;
+}
+
+.tabLink,
+.tabLink:hover{
     text-decoration: none;
+ 
+    width: 80%;
+    height: 100%;
+    align-content: center;
 
+    font-family: var(--ff-laila-serif);
+    font-size: var(--fs-200);
+    color: var(--primary-text-color);
+    font-weight: bold;
+
+    transition: color 0.3s;
 }
 
+
+.menuTab:hover,
+.menuTab:hover>.tabLink,
+.menuTab:hover>.iconRedArrow::before,
+.menuTab:hover>.iconBlackArrow::before{
+    background-color: #da5339;
+    color: white;
+}
+
+.productsDetail{
+    visibility: hidden;
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+
+    position: absolute;
+    left: 290px;
+    top: 80px
+}
+
+#menuTab_2:hover>.productsDetail,
+.productsDetail:hover{
+    visibility: visible;
+}
 

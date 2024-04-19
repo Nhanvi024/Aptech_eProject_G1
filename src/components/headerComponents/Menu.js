@@ -3,7 +3,7 @@ import arrowIcon from '../../assets/image/header/icon/arrow.svg'
 
 import React, { useState } from 'react';
 import MenuIcon from '../../assets/image/header/icon/menuIcon.svg'
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Menu(props) {
 
@@ -26,14 +26,22 @@ function Menu(props) {
             <div className='menuDetail'>
                 {menuDetail.map((item, index) => {
                     return (
-                        <>
-                            <img className='arrowIcon' src={arrowIcon} alt='arrowIcon' />
-                            <NavLink className='menuTab' to={item.href}>{item.name}</NavLink>
-                        </>
+                        <div key={index} className='menuTab' id={`menuTab_${index}`}  onClick={(e) => console.log(e.target.id)}>
+                            <div className='iconRedArrow' />
+                            <Link className='tabLink' to={item.href}>{item.name}</Link>
+
+                            {item.name === 'PRODUCTS' &&
+                                <>
+                                    <div className='iconBlackArrow' />
+                                    <div className='productsDetail'></div>
+                                </>
+
+                            }
+                        </div>
                     )
                 })}
-
             </div>
+
         </div>
     );
 }
