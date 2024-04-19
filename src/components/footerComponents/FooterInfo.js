@@ -27,20 +27,20 @@ function FooterInfo(props) {
                 
                 <div className='infoFooter_aboutUs'>
                     <p className='infoFooter_aboutUs-title'>About Us: </p>
-                    <ul className='infoFooter_aboutUs-list'>
-                        <li className='infoFooter_aboutUs-contact'>Contact Us</li>
-                        <li className='infoFooter_aboutUs-company'>Company</li>
-                        <li className='infoFooter_aboutUs-ourTeam'>Our Team</li>
-                    </ul>
+                    <div className='infoFooter_aboutUs-list'>
+                        <p className='infoFooter_aboutUs-item'>Contact Us</p>
+                        <p className='infoFooter_aboutUs-item'>Company</p>
+                        <p className='infoFooter_aboutUs-item'>Our Team</p>
+                    </div>
                 </div>
 
                 <div className='infoFooter_products'>
                 <p className='infoFooter_products-title'>Products: </p>
-                    <ul className='infoFooter_products-list'>
-                        <li className='infoFooter_products-allProducts'>All Products</li>
-                        <li className='infoFooter_products-calendars'>Calendars</li>
-                        <li className='infoFooter_products-notebooks'>Notebooks</li>
-                    </ul>
+                    <div className='infoFooter_products-list'>
+                        <p className='infoFooter_products-item'>All Products</p>
+                        <p className='infoFooter_products-item'>Calendars</p>
+                        <p className='infoFooter_products-item'>Notebooks</p>
+                    </div>
                 </div>
 
             </div>

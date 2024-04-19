@@ -21,7 +21,7 @@
 
 .footerContainer_row1 {
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-color: var( --secondary-background-clr);
 
     position: relative;
@@ -29,7 +29,7 @@
 
 .footerContainer_row2 {
     width: 100%;
-    height: 360px;
+    height: 350px;
     background-color: var( --primary-background-clr);
 
     position: relative;
@@ -37,7 +37,7 @@
 
 .footerContainer_row3 {
     width: 100%;
-    height: 64px;
+    height: 50px;
     background-color: rgb(147, 147, 147);
     margin: 0;
 

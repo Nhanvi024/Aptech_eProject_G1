@@ -12,8 +12,6 @@
 
     background-color: var(--secondary-background-clr);
 
-    border: 1px solid red;
-
 }
 
 .menuButton {
@@ -32,7 +30,6 @@
 }
 
 .menuText {
-    font-family: var(--ff-laila-serif);
     font-size: var(--fs-400);
     font-weight: 700;
     color: white;
@@ -54,6 +51,9 @@
 
     display: flex;
     flex-direction: column;
+
+    box-shadow: 2px 2px 8px rgb(209, 209, 209);
+
 }
 
 .menuButton:hover+.menuDetail,
@@ -66,10 +66,6 @@
     height: 40px;
     padding-left: 20px;
 
-
-    font-family: var(--ff-laila-serif);
-    font-size: var(--fs-300);
-
     display: flex;
     align-items: center;
     gap: 10px;
@@ -81,7 +77,7 @@
     font-weight: 900;
     align-content: center;
 
-    color: #da5339;
+    color: var(--secondary-background-clr);
 }
 .iconBlackArrow::before{
     content: "\f105";
@@ -102,8 +98,6 @@
     height: 100%;
     align-content: center;
 
-    font-family: var(--ff-laila-serif);
-    font-size: var(--fs-200);
     color: var(--primary-text-color);
     font-weight: bold;
 
@@ -115,7 +109,7 @@
 .menuTab:hover>.tabLink,
 .menuTab:hover>.iconRedArrow::before,
 .menuTab:hover>.iconBlackArrow::before{
-    background-color: #da5339;
+    background-color: var(--secondary-background-clr);
     color: white;
 }
 

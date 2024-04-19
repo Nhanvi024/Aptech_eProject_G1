@@ -13,7 +13,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 
 }
 
@@ -30,14 +30,17 @@
 }
 .logoFooter_fanPage-icon{
     width: 30px;
+    height: 30px;
+    object-fit: contain;
 }
 
 .logoFooter_groupName,
 .logoFooter_class,
 .logoFooter_address{
     width: 400px;
-    font-size: var(--fs-300);
+    font-size: var(--fs-400);
     padding-left: 20px;
+
 }
 
 /* ** Information footer container *******************/
@@ -53,12 +56,45 @@
 .infoFooter_products{
     width: 50%;
     height: 100%;
-    padding: 30px;
+    padding: 50px;
 
     font-size: var(--fs-500);
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+}
 
+.infoFooter_aboutUs-title,
+.infoFooter_products-title{
+
+    color: var(--active-text-color);
+
+}
+
+.infoFooter_aboutUs-list,
+.infoFooter_products-list{
+    list-style-type:none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+}
+
+.infoFooter_products-item,
+.infoFooter_aboutUs-item{
+    font-size: var(--fs-400);
+
+    cursor: pointer;
+   
+
+    transition: 0.1s;
+}
+
+.infoFooter_products-item:hover,
+.infoFooter_aboutUs-item:hover{
+    border-left: 4px solid var(--secondary-background-clr);
+    padding-left: 10px;
 }

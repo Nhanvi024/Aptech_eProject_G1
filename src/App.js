@@ -4,7 +4,6 @@ import React, { useContext } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { DataContext } from './context/DataContext';
 
-
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/main_pages/HomePage';
