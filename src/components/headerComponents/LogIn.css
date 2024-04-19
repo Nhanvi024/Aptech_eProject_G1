@@ -1,0 +1,28 @@
+.loginContainer{
+    width: 15%;
+    padding: 10px 0 0 0;
+
+    display: flex;
+    justify-content: center;
+
+    /* border: 1px solid red; */
+}
+
+.loginBtn, .singinBtn { 
+    height: fit-content;
+
+    /* font-family: var(--ff-laila-serif); */
+    font-size: var(--fs-300);
+    font-weight: 500;
+    width:40%;
+
+    position: relative;
+    top: 10%;
+
+    background: none;
+    border: none;
+}
+
+.loginBtn{
+    border-right: 2px solid rgb(255, 0, 0);
+}
