@@ -1,0 +1,78 @@
+.menuContainer{
+    width: 25%;
+    height: 45px;
+   
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    position: relative;
+
+    background-color: var(--secondary-background-clr);
+
+    border: 1px solid red;
+
+}
+.menuButton{
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+
+.menuIcon{
+    width: 10%;    
+    object-fit: contain;
+}
+.menuText{
+    font-family: var(--ff-laila-serif);
+    font-size: var(--fs-400);
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+
+/* Hover menu button to show menu detail */
+
+.menuDetail{
+    visibility: hidden;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 44px;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.menuButton:hover+.menuDetail,.menuDetail:hover{
+    visibility: visible;
+}
+
+.arrowIcon{
+    width: 3%;
+}
+.menuTab{
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    align-content: center;
+
+    font-family: var(--ff-laila-serif);
+    font-size: var(--fs-300);
+    
+}
+.menuTab:hover{
+    text-decoration: none;
+
+}
+
+

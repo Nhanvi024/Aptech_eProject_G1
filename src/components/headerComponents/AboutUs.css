@@ -1,0 +1,42 @@
+.aboutUsContainer{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    /* border: 1px solid red; */
+
+}
+
+.aboutUsIcon{
+    width: 18%;
+}
+
+.aboutUsBtn{
+
+    text-decoration: none;
+    cursor: pointer;
+
+
+    width: 50%; 
+    font-family: var(--ff-laila-serif);
+    font-size: var(--fs-300);
+    color: var(--primary-text-color);
+
+    font-weight: 500;
+
+    background: none;
+    border: none;
+    /* border: 1px solid red; */
+    align-self: center;
+}
+.aboutUsBtn:hover{
+    text-decoration: none;
+    color: var(--primary-text-color);
+
+}
+.aboutUsBtn:active{
+    text-decoration: none;
+
+    color: black;
+}

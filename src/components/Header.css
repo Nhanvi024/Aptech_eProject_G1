@@ -1,0 +1,39 @@
+.headerContainer {
+    width: 1200px;
+    height: 180px;
+    padding: 15px 15px 20px 15px;
+    
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     gap: 10px;
+
+    position: absolute;
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0) ;
+
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px rgb(177, 177, 177);
+}
+
+
+.container_row1 {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+  
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container_row2 {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+  
+    display: flex;
+    justify-content: space-between;
+}
+
