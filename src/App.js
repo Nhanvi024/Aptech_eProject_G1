@@ -1,24 +1,35 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import './App.css'
 
-import { DataContext } from './context/DataContext'
+import React, { useContext } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { DataContext } from './context/DataContext';
+
+
 import Header from './components/Header';
-import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import HomePage from './pages/main_pages/HomePage';
+import Calendar from './pages/main_pages/Calendar';
+import NoteBook from './pages/main_pages/NoteBook';
+import ContactPage from './pages/main_pages/ContactPage';
+import NewsPage from './pages/main_pages/NewsPage';
 
 function App(props) {
+  const {searchProduct} = useContext(DataContext)
+
   return (
-    <DataContext>
+   <div className='calendarWebStore'>
       <Header />
-      <NavBar />
       <Routes>
-        {/* <Route path='/' element={ } />
-        <Route path='/' element={ } />
-        <Route path='/' element={ } />
-        <Route path='/' element={ } /> */}
+        <Route path='/' element={<HomePage/> } />
+        <Route path='/calendar' element={<Calendar/>} />
+        <Route path='/notebook' element={<NoteBook/>} />
+        <Route path='/contact' element={<ContactPage/>} />
+        <Route path='/news' element={<NewsPage/>} />
+
       </Routes>
       <Footer />
-    </DataContext>
+   </div>
+
   );
 }
 

@@ -1,0 +1,33 @@
+.cardListContainer{
+    width: 5%;
+    height: fit-content;
+   
+
+    padding-top: 10px;
+
+    position: relative;
+    top: 10%;
+
+}
+
+.cardIcon{
+    width: 80%;
+    z-index: -1;
+}
+.itemQty{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    place-items: center;
+    top: 0px;
+    right: 10px;
+
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: var(--fs-100);
+    font-weight: 700;
+}
