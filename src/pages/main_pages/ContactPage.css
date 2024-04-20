@@ -1,7 +1,33 @@
-.contactPageContainer{
-    width: 100%;
-   
+.contactPageContainer {
+    width: 1200px;
+
     position: relative;
-    /* top: 180px; */
+}
+
+.contactPageContainer_row1 {
+    display: flex;
+}
+
+.contact_info {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_info-address,
+.contact_info-phone,
+.contact_info-email {
+    display: flex;
 
 }
+
+.contact_info-icon {
+    width: 20px;
+}
+
+.contact_info-content {}
+
+.contact_info-content-title {}
+
+.contact_info-content-content {}

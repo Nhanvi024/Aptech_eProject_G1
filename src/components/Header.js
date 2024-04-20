@@ -15,13 +15,13 @@ function Header(props) {
     return (
         <div className='headerContainer'>
 
-            <div className='container_row1 row'>
+            <div className='headerContainer_row1 row'>
                 <Logo />
                 <SearchBox />
                 <LogIn />
                 <CartList />
             </div>
-            <div className='container_row2 row'>
+            <div className='headerContainer_row2 row'>
                 <Menu />
                 <NavBar />
                 <AboutUs/>

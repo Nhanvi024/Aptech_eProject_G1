@@ -4,7 +4,6 @@ import React, { useContext } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { DataContext } from './context/DataContext';
 
-
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/main_pages/HomePage';
@@ -12,6 +11,12 @@ import Calendar from './pages/main_pages/Calendar';
 import NoteBook from './pages/main_pages/NoteBook';
 import ContactPage from './pages/main_pages/ContactPage';
 import NewsPage from './pages/main_pages/NewsPage';
+
+import SearchPage from './pages/extra_pages/SearchPage';
+import AllProductPage from './pages/extra_pages/AllProductsPage';
+import DownloadPage from './pages/extra_pages/DownloadPage';
+import AboutPage from './pages/main_pages/AboutPage';
+
 
 function App(props) {
   const {searchProduct} = useContext(DataContext)
@@ -25,6 +30,12 @@ function App(props) {
         <Route path='/notebook' element={<NoteBook/>} />
         <Route path='/contact' element={<ContactPage/>} />
         <Route path='/news' element={<NewsPage/>} />
+        <Route path='/about' element={<AboutPage/>} />
+
+
+        <Route path='/search' element={<SearchPage />} />
+        <Route path='/allproducts' element={<AllProductPage/>} />
+        <Route path='/download' element={<DownloadPage/>} />
 
       </Routes>
       <Footer />
