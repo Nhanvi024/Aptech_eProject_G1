@@ -2,23 +2,212 @@
     "noteBook": [
         {
             "id": 1,
-            "name": "",
-            "type": "",
-            "price": "",
-            "stock": "",
-            "desc": "",
-            "descDetail": "",
+            "name": "Vở kẻ ngang 120 trang",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 10,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
             "param": {
-                "size": "",
-                "pages": "",
-                "material": "",
-                "weight": ""
+                "size": "183 x 260mm",
+                "pages": "120 trang",
+                "material": "paper",
+                "weight": "150gr"
             },
             "image": {
-                "mainImage":"",
-                "image1":"",
-                "image2":"",
-                "image3":""
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/10-204ab9ef-236e-4c54-ae88-87ada0df2cc7.jpg?v=1711004355767",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/11-375213df-d486-4bb2-bbff-732be50aaf91.jpg?v=1711004355767",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/12-5dbd0612-4ecd-4666-838a-5fde04d74865.jpg?v=1711004355767",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/15-7a10efb0-7a85-4af2-bed5-f6f391d43932.jpg?v=1711004355767"
+            }
+        },
+        {
+            "id": 2,
+            "name": "test1",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 20,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "145mm x 200mm",
+                "pages": "30 trang",
+                "material": "paper",
+                "weight": "100gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/28-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/29-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/30-f8c03d13-a5bf-4482-a69e-63a72ab47111.jpg?v=1711004834933",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/32-4a01a6dd-5e82-46a9-bb37-3a4745b055ad.jpg?v=1711004834933"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Vở kẻ ngang 120 trang",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 10,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "183 x 260mm",
+                "pages": "120 trang",
+                "material": "paper",
+                "weight": "150gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/10-204ab9ef-236e-4c54-ae88-87ada0df2cc7.jpg?v=1711004355767",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/11-375213df-d486-4bb2-bbff-732be50aaf91.jpg?v=1711004355767",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/12-5dbd0612-4ecd-4666-838a-5fde04d74865.jpg?v=1711004355767",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/15-7a10efb0-7a85-4af2-bed5-f6f391d43932.jpg?v=1711004355767"
+            }
+        },
+        {
+            "id": 4,
+            "name": "test1",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 20,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "145mm x 200mm",
+                "pages": "30 trang",
+                "material": "paper",
+                "weight": "100gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/28-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/29-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/30-f8c03d13-a5bf-4482-a69e-63a72ab47111.jpg?v=1711004834933",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/32-4a01a6dd-5e82-46a9-bb37-3a4745b055ad.jpg?v=1711004834933"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Vở kẻ ngang 120 trang",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 10,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "183 x 260mm",
+                "pages": "120 trang",
+                "material": "paper",
+                "weight": "150gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/10-204ab9ef-236e-4c54-ae88-87ada0df2cc7.jpg?v=1711004355767",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/11-375213df-d486-4bb2-bbff-732be50aaf91.jpg?v=1711004355767",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/12-5dbd0612-4ecd-4666-838a-5fde04d74865.jpg?v=1711004355767",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/15-7a10efb0-7a85-4af2-bed5-f6f391d43932.jpg?v=1711004355767"
+            }
+        },
+        {
+            "id": 4,
+            "name": "test1",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 20,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "145mm x 200mm",
+                "pages": "30 trang",
+                "material": "paper",
+                "weight": "100gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/28-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/29-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/30-f8c03d13-a5bf-4482-a69e-63a72ab47111.jpg?v=1711004834933",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/32-4a01a6dd-5e82-46a9-bb37-3a4745b055ad.jpg?v=1711004834933"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Vở kẻ ngang 120 trang",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 10,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "183 x 260mm",
+                "pages": "120 trang",
+                "material": "paper",
+                "weight": "150gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/10-204ab9ef-236e-4c54-ae88-87ada0df2cc7.jpg?v=1711004355767",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/11-375213df-d486-4bb2-bbff-732be50aaf91.jpg?v=1711004355767",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/12-5dbd0612-4ecd-4666-838a-5fde04d74865.jpg?v=1711004355767",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/15-7a10efb0-7a85-4af2-bed5-f6f391d43932.jpg?v=1711004355767"
+            }
+        },
+        {
+            "id": 4,
+            "name": "test1",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 20,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "145mm x 200mm",
+                "pages": "30 trang",
+                "material": "paper",
+                "weight": "100gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/28-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/29-2ecb8739-55d6-4019-9f6f-cf1ab5c306f8.jpg?v=1711004834933",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/30-f8c03d13-a5bf-4482-a69e-63a72ab47111.jpg?v=1711004834933",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/32-4a01a6dd-5e82-46a9-bb37-3a4745b055ad.jpg?v=1711004834933"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Vở kẻ ngang 120 trang",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 10,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "183 x 260mm",
+                "pages": "120 trang",
+                "material": "paper",
+                "weight": "150gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/10-204ab9ef-236e-4c54-ae88-87ada0df2cc7.jpg?v=1711004355767",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/11-375213df-d486-4bb2-bbff-732be50aaf91.jpg?v=1711004355767",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/12-5dbd0612-4ecd-4666-838a-5fde04d74865.jpg?v=1711004355767",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/15-7a10efb0-7a85-4af2-bed5-f6f391d43932.jpg?v=1711004355767"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Vở kẻ ngang 120 trang",
+            "type": "notebook1",
+            "price": 100,
+            "stock": 10,
+            "desc": "description 1",
+            "descDetail": "description 1 description 1 description 1 description 1",
+            "param": {
+                "size": "183 x 260mm",
+                "pages": "120 trang",
+                "material": "paper",
+                "weight": "150gr"
+            },
+            "image": {
+                "mainImage": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/10-204ab9ef-236e-4c54-ae88-87ada0df2cc7.jpg?v=1711004355767",
+                "image1": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/11-375213df-d486-4bb2-bbff-732be50aaf91.jpg?v=1711004355767",
+                "image2": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/12-5dbd0612-4ecd-4666-838a-5fde04d74865.jpg?v=1711004355767",
+                "image3": "https://bizweb.dktcdn.net/thumb/1024x1024/100/220/344/products/15-7a10efb0-7a85-4af2-bed5-f6f391d43932.jpg?v=1711004355767"
             }
         }
     ],
@@ -38,10 +227,10 @@
                 "weight": ""
             },
             "image": {
-                "mainImage":"",
-                "image1":"",
-                "image2":"",
-                "image3":""
+                "mainImage": "",
+                "image1": "",
+                "image2": "",
+                "image3": ""
             }
         }
     ]
