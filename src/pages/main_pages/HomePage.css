@@ -1,3 +1,15 @@
-.homepageCarousel{
+.section-homepage-carousel{
     position: relative;
+    z-index: 0;
+}
+.homepage-notebookCarousel-container{
+    border: 2px solid red;
+
+}.homepage-nextPrevButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 10px;
+    height: 10px;
 }
