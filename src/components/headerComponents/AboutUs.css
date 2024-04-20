@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    /* border: 1px solid red; */
 
 }
 
@@ -17,17 +16,14 @@
     text-decoration: none;
     cursor: pointer;
 
-
-    width: 50%; 
-    font-family: var(--ff-laila-serif);
-    font-size: var(--fs-300);
     color: var(--primary-text-color);
+    font-size: var(--fs-400);
 
-    font-weight: 500;
+    font-weight: bold;
 
     background: none;
     border: none;
-    /* border: 1px solid red; */
+  
     align-self: center;
 }
 .aboutUsBtn:hover{
@@ -35,8 +31,8 @@
     color: var(--primary-text-color);
 
 }
-.aboutUsBtn:active{
+.aboutUsBtn[active = "true"]{
     text-decoration: none;
-
-    color: black;
+    color: var(--active-text-color);
+    border-bottom: 3px solid var(--secondary-background-clr);
 }

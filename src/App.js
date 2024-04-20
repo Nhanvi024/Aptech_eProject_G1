@@ -15,6 +15,7 @@ import NewsPage from './pages/main_pages/NewsPage';
 import SearchPage from './pages/extra_pages/SearchPage';
 import AllProductPage from './pages/extra_pages/AllProductsPage';
 import DownloadPage from './pages/extra_pages/DownloadPage';
+import AboutPage from './pages/main_pages/AboutPage';
 
 
 function App(props) {
@@ -29,6 +30,8 @@ function App(props) {
         <Route path='/notebook' element={<NoteBook/>} />
         <Route path='/contact' element={<ContactPage/>} />
         <Route path='/news' element={<NewsPage/>} />
+        <Route path='/about' element={<AboutPage/>} />
+
 
         <Route path='/search' element={<SearchPage />} />
         <Route path='/allproducts' element={<AllProductPage/>} />

@@ -54,11 +54,14 @@
 
     box-shadow: 2px 2px 8px rgb(209, 209, 209);
 
+    opacity: 0%;
+    transition: 0.5s;
 }
 
 .menuButton:hover+.menuDetail,
 .menuDetail:hover {
     visibility: visible;
+    opacity: 100%;
 }
 
 .menuTab {
