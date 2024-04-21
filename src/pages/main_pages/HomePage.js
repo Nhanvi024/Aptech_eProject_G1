@@ -223,7 +223,9 @@ function HomePage(props) {
                     <div className='col-sm-8 bg-warning'>333</div>
                     <div className='col-sm-4 bg-success'>444</div>
                 </div>
+
             </section>
+
         </div>
     );
 }
