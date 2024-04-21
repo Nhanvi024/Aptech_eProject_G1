@@ -1,0 +1,31 @@
+.homepage-productCard-price {
+    color: rgb(255, 48, 48);
+    font-size: 16px;
+}
+
+.homepage-productCard-name {
+    font-size: 16px;
+}
+
+.homepage-productCard {
+    /* background: blue; */
+    max-width: 200px;
+    min-width: 175px;
+    /* margin: 5px; */
+}
+
+.homepage-productCard-imgContainer {
+    overflow: hidden;
+}
+
+.homepage-productCard:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+    translate: -3px -3px;
+    box-shadow: 10px 10px 8px #dddddd;
+
+    /* img {
+        transition: all 0.3s;
+        transform: scale(1.1);
+    } */
+}
