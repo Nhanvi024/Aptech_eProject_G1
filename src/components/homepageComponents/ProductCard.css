@@ -1,12 +1,18 @@
 .homepage-productCard-price {
     color: rgb(255, 48, 48);
     font-size: 16px;
+    font-weight: 600;
 }
 
 .homepage-productCard-name {
     font-size: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
-
 .homepage-productCard {
     /* background: blue; */
     max-width: 200px;
@@ -28,4 +34,9 @@
         transition: all 0.3s;
         transform: scale(1.1);
     } */
+}
+.homepage-productCard-img{
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
 }
