@@ -24,6 +24,7 @@ function DataProvider({ children }) {
             .then(data => setProducts(data))
     }, [])
 
+
     let valueProvider = {
         products,
         setProducts,
