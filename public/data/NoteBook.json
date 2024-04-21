@@ -1,0 +1,319 @@
+{
+    "noteBook": [
+        {
+            "id": "NBJ1",
+            "name": "Dusky Meadow Journal",
+            "type": "Journal",
+            "price": "8.99",
+            "stock": "10",
+            "desc": "This pretty Dusky Meadow Journal is accented with silver foil highlights and raised embossing for a dimensional effect.",
+            "descDetail": "This gorgeous Journal features a floral pattern that stands out against a matte neutral background. Silver foil tracery illuminates the design. Raised embossing adds texture and dimension. The silvery elastic band attached to the back cover will help you keep your place, or you can use it to keep your Journal closed.",
+            "param": {
+                "size": "6.89 x 0.67 x 4.65 inches",
+                "pages": "160 pages",
+                "material": "Acid-free and archival-quality paper",
+                "weight": "250g"
+            },
+            "image": {
+                "mainImage": "https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg",
+                "image1": "https://m.media-amazon.com/images/I/91VWzXZPTBL._SY425_.jpg",
+                "image2": "https://m.media-amazon.com/images/S/aplus-media/vc/f504546c-a83b-4706-b15d-2b8bbb59388c._SL300__.jpg",
+                "image3": "https://m.media-amazon.com/images/S/aplus-media/vc/e9f356be-d0d5-4b30-9a31-8698872679cb._SL300__.jpg"
+            }
+        },
+        {
+            "id": "NBJ2",
+            "name": "Twilight Garden Journal",
+            "type": "Journal",
+            "price": "8.99",
+            "stock": "5",
+            "desc": "Our popular Twilight Garden floral design enhances this lovely, smaller format journal.",
+            "descDetail": "Gloss highlights add polish, gold foil adds shine, and raised embossing adds dimension. 160 lightly-lined writing pages provide plenty of space for personal reflection, creative writing, or jotting down quotations or poems.",
+            "param": {
+                "size": "6.89 x 0.67 x 4.65 inches",
+                "pages": "160 pages",
+                "material": "Acid-free and archival-quality paper",
+                "weight": "250g"
+            },
+            "image": {
+                "mainImage": "https://m.media-amazon.com/images/I/91JHQUAHJCL._SY425_.jpg",
+                "image1": "https://m.media-amazon.com/images/S/aplus-media/sota/3e87f7e2-a1c1-4773-a15d-312ca73f90a3.__CR0,0,300,300_PT0_SX300_V1___.jpeg",
+                "image2": "https://m.media-amazon.com/images/S/aplus-media/sota/020507cd-f304-4c90-a18e-20ba33845174.__CR0,0,220,220_PT0_SX220_V1___.jpeg",
+                "image3": "https://m.media-amazon.com/images/S/aplus-media/sota/84d78ff1-3833-4833-88f5-9c75b5d459c6.__CR0,0,220,220_PT0_SX220_V1___.jpeg"
+            }
+        },
+        {
+            "id": "NBJ3",
+            "name": "Wildflower Meadow Journal",
+            "type": "Journal",
+            "price": "8.99",
+            "stock": "6",
+            "desc": "Lovely journal provides plenty of space for personal reflection, sketching, or jotting down favorite quotations or poems.",
+            "descDetail": "Beautiful cover design depicts a meadow of flowers in shades of red, pink, blue, and purple. Image is embellished with touches of gold foil. Embossing lends dimensional detailing you can feel. Matching elastic closure secures your writing.",
+            "param": {
+                "size": "6.89 x 0.67 x 4.65 inches",
+                "pages": "160 pages",
+                "material": "Acid-free and archival-quality paper",
+                "weight": "250g"
+            },
+            "image": {
+                "mainImage": "https://m.media-amazon.com/images/I/915p4HsJtzL._SY342_.jpg",
+                "image1": "https://m.media-amazon.com/images/I/91vKIcjZtJL._SY342_.jpg",
+                "image2": "https://m.media-amazon.com/images/I/81TVN9PcqpL._SX445_.jpg",
+                "image3": "https://m.media-amazon.com/images/I/815BoFLjShL._SX445_.jpg"
+            }
+        },
+        {
+            "id": "NBJ4",
+            "name": "Page-A-Day Artisan Travel Journal",
+            "type": "Journal",
+            "price": "10.99",
+            "stock": "7",
+            "desc": "Life is a journey, and the best journeys are worth recording and remembering!",
+            "descDetail": "A page per day is just enough space to take note of memorable places you've visited and explored, but brief enough for you to have more time to experience those places, rather than spending time writing about them.",
+            "param": {
+                "size": "5 x 0.5 x 7.25 inches",
+                "pages": "176 pages",
+                "material": "Acid-free and archival-quality paper",
+                "weight": "270g"
+            },
+            "image": {
+                "mainImage": "https://m.media-amazon.com/images/I/A1l9ZLRx48L._SY425_.jpg",
+                "image1": "https://m.media-amazon.com/images/I/A12gjqSpTKL._SY425_.jpg",
+                "image2": "https://m.media-amazon.com/images/S/aplus-media/vc/02d3e1e3-3d88-4c07-84ef-89337dc984c1.__CR0,0,2160,2160_PT0_SX300_V1___.jpg",
+                "image3": "https://m.media-amazon.com/images/S/aplus-media/vc/3481f7ec-9eec-4cfd-bc31-fdf1a7c6654d.__CR0,0,2520,2520_PT0_SX300_V1___.jpg"
+            }
+        },
+        {
+            "id": "NBJ5",
+            "name": "Wherever You Go, Go with All Your Heart Journal",
+            "type": "Journal",
+            "price": "10.66",
+            "stock": "11",
+            "desc": "Follow Confucius's advice -- go with all your heart -- then write about it, losing yourself within the pages of this beautiful journal!",
+            "descDetail": "Cover design features a dramatic nighttime landscape of mountains and fir trees. The hand-lettered words 'Wherever You Go, Go with All Your Heart,' 'Confucius,' and the heart are embossed with gloss accents. Flecks of silver foil illuminate the image. Journal spine is trimmed in black. Black elastic closure.",
+            "param": {
+                "size": "6.4 x 0.7 x 8.5 inches",
+                "pages": "160 pages",
+                "material": "Acid-free and archival-quality paper",
+                "weight": "363g"
+            },
+            "image": {
+                "mainImage": "https://m.media-amazon.com/images/I/91c82W1gIgL._SY425_.jpg",
+                "image1": "https://m.media-amazon.com/images/I/916OravsnaL._SY425_.jpg",
+                "image2": "https://m.media-amazon.com/images/S/aplus-media/vc/3d93a3a8-94f2-4640-ac41-e7957b4b176c._CR0,0,2472,2472_PT0_SX300__.jpg",
+                "image3": "https://m.media-amazon.com/images/S/aplus-media/vc/60812f70-b742-495e-b3f2-72c55dc76b99._CR0,0,2544,2544_PT0_SX300__.jpg"
+            }
+        },
+        {
+            "id": "NBD1",
+            "name": "Five Star Spiral Notebook",
+            "type": "Dividers",
+            "price": "16.39",
+            "stock": "10",
+            "desc": "LASTS ALL YEAR. GUARANTEED!* Take your notes to the next level of organization and durability with Five Star Advance.",
+            "descDetail": "Compatible with the Five Star study app, you can easily scan, study and organize notes on your phone! Create instant digital flashcards and sync notes to Google Drive and access them anywhere from any device. Rearrange the movable plastic dividers anywhere in your notebook to organize notes. Dividers with expanding pockets hold 8-1/2 x 11 handouts. Visible tabs from front cover make it easy to flip to any section. 5 subject notebook has 200 double-sided, college ruled sheets that are perforated so edges stay clean. Sheets measure 8-1/2 x 11 when torn out. Spiral Guard covers the wire to help prevent coil snags on clothes and backpacks. Label your notebook on the writable spine, and keep your favorite pen or pencil handy in the pen loop. Available in Black. *Guarantee is valid for one year from purchase date. Does not cover misuse.",
+            "param": {
+                "size": "11 x 1.38 x 10.19 inches",
+                "pages": "200 pages",
+                "material": "High quality paper",
+                "weight": "998g"
+            },
+            "image": {
+                "mainImage": "https://m.media-amazon.com/images/I/81-NVPsQNIL._AC_SX425_.jpg",
+                "image1": "https://m.media-amazon.com/images/I/71Z9CFraQcL._AC_SX425_.jpg",
+                "image2": "https://m.media-amazon.com/images/I/71JEaeg-3bL._AC_SX425_.jpg",
+                "image3": "https://m.media-amazon.com/images/I/812yoejDcrL._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBD2",
+            "name": "Fringe Studio Large Tab Notebook",
+            "type": "Dividers",
+            "price": "8.69",
+            "stock": "9",
+            "desc": "Head into your day with purpose with Fringe Studio’s flexible-yet-firm, paper-cover tabbed notebook journal.",
+            "descDetail": " The handy color-coded tabbed section divider pages are constructed of flexible-yet-firm stiff paper designed in marble gray tones with coordinating color liners. Their fill-in title areas make it easy to find your place as you take notes during your busy day. This 7.25 x 10 tabbed notebook journal will help keep you organized for school, work, or home its up to you to decide how to use it! The twin-ring silvery wire spiral binding allows this notebook journal to fold back on itself or stay completely flat on a desk. The interior tabbed lined pages feature generously sized fill-in tab areas to label each page as you’d like. Perfect to organize by subject, class, business meeting, or conference, plan your day and get ahead of the pack with this tabbed notebook journal!",
+            "param": {
+                "size": "7.56 x 0.83 x 10 inches",
+                "pages": "180 pages",
+                "material": "Paper",
+                "weight": "517g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/71H0Tuvq-kL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/61kixtKpalL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/71kaBM7Q7OL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/61xGjpkRQRL._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBD3",
+            "name": "iScholar 5 Subject Poly Cover Double Wire Notebook",
+            "type": "Dividers",
+            "price": "9.47",
+            "stock": "6",
+            "desc": "iScholar is a leading manufacturer of school, home and office paper supplies.",
+            "descDetail": "iScholar's iQ 5-Subject Poly Cover Double Wire Notebook is from our finest quality product line of notebooks that are perfect for home, office and school. It has heavyweight poly front and back covers with smooth round corners making it extremely durable and fashion forward. Each 8.35 x 6.5 inch notebook has 160 micro perforated sheets for ease of removal when needed. iScholar products offer everything you need to stay organized and make the grade. Cover color will vary.",
+            "param": {
+                "size": "6 x 0.5 x 8.35 inches",
+                "pages": "160 pages",
+                "material": "Paper",
+                "weight": "363g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/71vSQaRTWOL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/61m1le280CL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/61Rf3bUVwiL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/71kREctuK8L._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBD4",
+            "name": "Pukka Pad 5 Subject Spiral Notebook",
+            "type": "Dividers",
+            "price": "15.23",
+            "stock": "4",
+            "desc": "More than just a notebook.",
+            "descDetail": "The Pukka Pad Group is a leading global manufacturer and supplier of high quality branded and own label paper pads and notebooks, filing and divider items, post and packaging and art and activity products.",
+            "param": {
+                "size": "7 x 10 inches",
+                "pages": "200 pages",
+                "material": "80 gsm paper",
+                "weight": "150g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/81EjJjk4RqL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/71w2KhciqaL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/71oKMXdavrL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/S/aplus-media-library-service-media/5c070b5b-d8a5-4b70-922d-b183ae2e7492.__CR0,0,300,300_PT0_SX300_V1___.jpg"
+            }
+        },
+        {
+            "id": "NBD5",
+            "name": "Grupo Erik Pusheen A5 Project Notebook",
+            "type": "Dividers",
+            "price": "14.53",
+            "stock": "7",
+            "desc": "Trendy Design - Stunning Pusheen Cat project book designed with incredible details that will make you stand out!",
+            "descDetail": "The are perfect for anyone who has a million projects on the go at once and needs help organising them. You'll love these adorable dividers! Plenty Of Space - A versatile notebook A5 that includes 80 ruled pages ideal as a notepad, exercise book, scketch book, address book, or memo pad.",
+            "param": {
+                "size": "6.1 x 0.55 x 9.06 inches",
+                "pages": "100 pages",
+                "material": "Paper",
+                "weight": "280g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/513OUvP1OmL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/517IfzjZpsL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/71lXmazrQLL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/61rSCmO7paL._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBS1",
+            "name": "Graph Paper Quad Ruled",
+            "type": "Squared",
+            "price": "5.49",
+            "stock": "8",
+            "desc": "Graph Paper Composition Notebook, Journal, Diary",
+            "descDetail": "This LARGE simple durable notebook is 8.5 x 11 in / 21.59 x 27.94 cm with a soft matte cover and has 100 quad ruled pages. Perfect for elementary grade school children (grades 1 through 6)",
+            "param": {
+                "size": "8.5 x 0.23 x 11 inches",
+                "pages": "102 pages",
+                "material": "Paper",
+                "weight": "306g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/61ZP9SjBcVL._SY425_.jpg",
+                "image1":"https://m.media-amazon.com/images/S/aplus-media/kdp/52e2a60b-0210-4424-a12e-0396d93d3a28.__CR240,0,1440,1440_PT0_SX220_V1___.jpg",
+                "image2":"https://m.media-amazon.com/images/S/aplus-media/kdp/3c3d8499-9aa5-4fb0-a828-dcc078914c43.__CR240,0,1440,1440_PT0_SX220_V1___.jpg",
+                "image3":"https://m.media-amazon.com/images/S/aplus-media/kdp/5033f106-fcbf-49c3-8528-f002fa7f85a4.__CR240,0,1440,1440_PT0_SX220_V1___.jpg"
+            }
+        },
+        {
+            "id": "NBS2",
+            "name": "Mead Spiral Notebook",
+            "type": "Squared",
+            "price": "5.00",
+            "stock": "13",
+            "desc": "Stay on top of your homework, in-class assignments, projects and more with this Mead 1 Subject Spiral Notebook",
+            "descDetail": "Perfect to use for 1 subject, this spiral notebook comes in handy for your favorite class or any project. Notebook has 100 graph ruled, double-sided sheets with 5 squares per inch for plenty of notetaking space. Graph ruling is ideal for plotting graphs, drawing curves and more.",
+            "param": {
+                "size": "8.95 x 0.45 x 10.55 inches",
+                "pages": "100 pages",
+                "material": "Paper",
+                "weight": "330g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/71cN+aurCqL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/71sohla6PiL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/61ty0V4gKIL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/71YfceLBAjL._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBS3",
+            "name": "Maruman Spiral Note Basic",
+            "type": "Squared",
+            "price": "9.50",
+            "stock": "23",
+            "desc": "Spiral Note Basic is a notebook that you can write as you like.",
+            "descDetail": "The original quality-focused writing paper does not interfere with your writing. A simple and tough craft paper cover. Spiral ring binding is easy to turn pages. Micro perforation lets you cut pages beautifully. The ultimate basic notebook in pursuit of easy use.",
+            "param": {
+                "size": "8.98 x 0.35 x 11.69 inches",
+                "pages": "160 pages",
+                "material": "Paper 70g / ㎡",
+                "weight": "422g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/51zyWP5ZkXL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/S/aplus-media-library-service-media/353fd8f1-3259-406f-937b-70ea7db2d62c.__CR0,0,300,300_PT0_SX300_V1___.jpg",
+                "image2":"https://m.media-amazon.com/images/I/71foUWU8LiL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/S/aplus-media-library-service-media/4b826b0f-ee10-44d1-88f9-73c90203e33f.__CR0,0,300,300_PT0_SX300_V1___.jpg"
+            }
+        },
+        {
+            "id": "NBS4",
+            "name": "Essentials Grid-lined Notebook",
+            "type": "Squared",
+            "price": "12.99",
+            "stock": "4",
+            "desc": "Always create. Never compromise.",
+            "descDetail": " Our iconic, high-performing Essentials notebooks inspire expression and fuel creativity. You'll find this sleek design -- in understated black with grid-lined pages -- indispensable, whether you use it for note-taking, jotting down ideas, or writing the next great novel.",
+            "param": {
+                "size": "5.6 x 0.8 x 8.3 inches",
+                "pages": "192 pages",
+                "material": "100-gsm acid-free/archival paper",
+                "weight": "385g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/81eYCnNGNLL._SY425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/716m5UI4ybL._SX606_.jpg",
+                "image2":"https://m.media-amazon.com/images/S/aplus-media/vc/ae82ca8b-d2bd-480b-a781-09b7ab0e3fe4._SL220__.jpg",
+                "image3":"https://m.media-amazon.com/images/S/aplus-media/vc/d5632d1e-dea0-42a5-ac8c-378146a7da58._SL300__.jpg"
+            }
+        },
+        {
+            "id": "NBS5",
+            "name": "Graph Paper Composition Notebook",
+            "type": "Squared",
+            "price": "4.87",
+            "stock": "15",
+            "desc": "Makes a wonderful daily graph/grid notebook to draw, write, journal, take notes, make lists, and much more creativity!",
+            "descDetail": "Unlock your full creative potential with our Graph Paper Composition Notebook – perfect for note-taking, drawing, architectural plans, and so much more! Designed for anyone and everyone with a desire to create, this versatile notebook serves as an all-purpose platform to let your imagination run wild.",
+            "param": {
+                "size": "8.5 x 0.23 x 11 inches",
+                "pages": "100 pages",
+                "material": "Paper",
+                "weight": "318g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/61mGnCMUbmL._SY425_.jpg",
+                "image1":"https://m.media-amazon.com/images/S/aplus-media/kdp/2efacb8a-25fe-42a9-9d4b-e2fd6cc2cf0a.__CR0,0,300,300_PT0_SX300_V1___.png",
+                "image2":"https://m.media-amazon.com/images/S/aplus-media/kdp/4812e951-a7bc-4244-9ee1-c56e8a3ea932.__CR0,0,300,300_PT0_SX300_V1___.png",
+                "image3":"https://m.media-amazon.com/images/S/aplus-media/kdp/e2bdc006-e7ff-451f-8dfa-7926a7a04ba0.__CR0,0,300,300_PT0_SX300_V1___.png"
+            }
+        }
+    ]
+}

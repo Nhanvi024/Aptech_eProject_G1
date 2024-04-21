@@ -4,22 +4,28 @@
 
 :root {
   /* colors */
+  --main-color:  #DA5339;
+  /* --main-color:  #2f8872; */
+
+
   --primary-background-clr: white;
-  --secondary-background-clr: #f15a26;
+  --secondary-background-clr: var(--main-color);
+
   --primary-text-color: hsl(0, 0%, 0%);
-  --hover-text-color: hsl(0, 3%, 41%);
-  --active-text-color: #F15A26;
+  --secondary-text-color: hsl(0, 0%, 100%);
+  --hover-text-color: hsl(0, 0%, 36%);
+  --active-text-color: var(--main-color);
 
   
   /* font-sizes */
   --fs-900: 3.5rem;
   --fs-800: 3rem;
   --fs-700: 2.5rem;
-  --fs-600: 2.25rem;
-  --fs-500: 2rem;
-  --fs-400: 1.75rem;
-  --fs-300: 1.5rem;
-  --fs-200: 1.25rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.5rem;
+  --fs-300: 1.25rem;
+  --fs-200: 1.15rem;
   --fs-100: 1rem;
 
   
@@ -28,9 +34,6 @@
   --ff-sans-cond: "Barlow Condensed", sans-serif;
   --ff-sans-normal: "Barlow", sans-serif;
 
-  --flow-space: 4rem;
-
-  --hidden-menu: 0%
 }
 *{
   margin:0;
