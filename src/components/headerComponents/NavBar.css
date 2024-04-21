@@ -18,7 +18,7 @@
 
 .navItem {
     font-family: var(--ff-laila-serif);
-    font-size: var(--fs-300);
+    font-size: var(--fs-400);
     list-style: none;
 
     display: flex;
@@ -55,11 +55,11 @@
     text-decoration: none;
     color: var(--hover-text-color);
 
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid var(--secondary-background-clr);
 }
 
 .navLink[active="true"] {
     text-decoration: none;
     color: var(--active-text-color);
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid var(--secondary-background-clr);
 }
