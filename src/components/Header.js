@@ -1,6 +1,5 @@
 import './Header.css'
 
-import React from 'react';
 
 import SearchBox from './headerComponents/SearchBox';
 import NavBar from './headerComponents/NavBar';
@@ -12,6 +11,7 @@ import AboutUs from './headerComponents/AboutUs';
 
 
 function Header(props) {
+
     return (
         <div className='headerContainer'>
 
@@ -26,7 +26,7 @@ function Header(props) {
                 <NavBar />
                 <AboutUs/>
             </div>
-
+      
         </div>
     );
 }
