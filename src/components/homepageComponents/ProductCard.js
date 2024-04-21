@@ -6,7 +6,7 @@ function ProductCard(props) {
         <div className='text-center mx-auto col homepage-productCard'>
             <div>
                 <div className='homepage-productCard-imgContainer'>
-                    <img className='homepage-productCard-img w-100' src={item.image.mainImage}></img>
+                    <img className='homepage-productCard-img' src={item.image.mainImage}></img>
                 </div>
                 <div>
                     <div className='homepage-productCard-name'>{item.name}</div>
