@@ -33,7 +33,7 @@ function Menu(props) {
                             <div className='iconRedArrow' />
                             <Link className='tabLink' onClick={()=>setBtnActive(item.name)} to={item.href}>{item.name}</Link>
 
-                            {item.name === 'PRODUCTS' &&
+                            {item.name === 'ALL PRODUCTS' &&
                                 <>
                                     <div className='iconBlackArrow' />
                                     <div className='productsDetail'></div>
