@@ -6,4 +6,8 @@
     flex-direction: column;
 
     align-items: center;
+
+    font-family: var(--ff-laila-serif);
+    font-size:  var(--fs-300);
+    font-weight: 700;
 }

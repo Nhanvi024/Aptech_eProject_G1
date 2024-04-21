@@ -11,15 +11,16 @@
     position: absolute;
     z-index: 1;
 
-    /* background-color: rgba(255, 255, 255, 1) ; */
-    background-color: rgba(255, 255, 255, 0.25) ;
+
+    background-color: rgba(255, 255, 255, 0.8) ;
+
 
     border-radius: 8px;
     box-shadow: 2px 2px 20px rgb(177, 177, 177);
 }
 
 
-.container_row1 {
+.headerContainer_row1 {
     width: 100%;
     height: fit-content;
     margin: 0;
@@ -29,7 +30,7 @@
 
 }
 
-.container_row2 {
+.headerContainer_row2 {
     width: 100%;
     height: fit-content;
     margin: 0;
