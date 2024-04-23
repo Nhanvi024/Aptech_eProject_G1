@@ -18,15 +18,18 @@ function Header(props) {
             <div className='headerContainer_row1 row'>
                 <Logo />
                 <SearchBox />
-                <LogIn />
-                <CartList />
+                <div className='header-group1'>
+                    <LogIn />
+                    <CartList />
+                </div>
+
             </div>
             <div className='headerContainer_row2 row'>
                 <Menu />
                 <NavBar />
-                <AboutUs/>
+                <AboutUs />
             </div>
-      
+
         </div>
     );
 }

@@ -1,11 +1,9 @@
 .loginContainer{
-    width: 15%;
-    padding: 10px 0 0 0;
-
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 .loginBtn, .singinBtn { 

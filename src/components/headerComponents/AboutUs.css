@@ -1,4 +1,4 @@
-.aboutUsContainer{
+.aboutUsContainer {
     width: 20%;
 
     display: flex;
@@ -7,11 +7,11 @@
 
 }
 
-.aboutUsIcon{
+.aboutUsIcon {
     width: 18%;
 }
 
-.aboutUsBtn{
+.aboutUsBtn {
     text-decoration: none;
     cursor: pointer;
 
@@ -25,14 +25,90 @@
     background: none;
     border: none;
 }
-.aboutUsBtn:hover{
+
+.aboutUsBtn:hover {
     text-decoration: none;
     border-bottom: 3px solid var(--secondary-background-clr);
     color: var(--primary-text-color);
 
 }
-.aboutUsBtn[active = "true"]{
+
+.aboutUsBtn[active="true"] {
     text-decoration: none;
     color: var(--active-text-color);
     border-bottom: 3px solid var(--secondary-background-clr);
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .headerContainer {
+        width: 970px;
+    }
+
+    .navItem,
+    .aboutUsBtn {
+        font-size: var(--fs-300);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .headerContainer {
+        width: 750px;
+        height: 116px;
+        padding: 0;
+    }
+
+    .headerContainer_row1 {
+        height: 100%;
+        display: block;
+        position: relative;
+
+        border: 1px solid red;
+
+    }
+
+    .logoContainer {
+        position: relative;
+        margin: auto;
+    }
+
+    .loginContainer {
+        position: absolute;
+        right: 0.5%;
+        bottom: 40%;
+    }
+
+    .cardListContainer {
+        width: 50px;
+        height: fit-content;
+        padding: 0;
+        position: absolute;
+        top:auto;
+        right: 0.5%;
+        bottom: 40%;
+    }
+
+
+    .navbarContainer,
+    .aboutUsContainer,
+    .searchContainer,
+    .menuContainer {
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .headerContainer {
+        width: 100%;
+        height: 120px;
+    }
+
+    .headerContainer_row1 {
+        flex-direction: column;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
