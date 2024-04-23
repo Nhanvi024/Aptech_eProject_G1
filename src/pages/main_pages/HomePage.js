@@ -13,7 +13,7 @@ function HomePage(props) {
 
     // check window side to set number of items to display
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    // console.log("test width:",windowWidth);
+    console.log("test width:",windowWidth);
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
@@ -25,7 +25,7 @@ function HomePage(props) {
     }, []);
     // ==================================================
 
-    let itemPerPage = windowWidth >= 1200 ? 8 : windowWidth >= 992 ? 6 : windowWidth >= 768 ? 4 : windowWidth >= 576 ? 4 : 4;
+    let itemPerPage = windowWidth >= 1200 ? 8 : windowWidth >= 992 ? 6 : windowWidth >= 768 ? 4 : windowWidth >= 576 ? 8 : 4;
 
     let section1MaxPage = Math.floor(+Object.keys(products.noteBook || {}).length / itemPerPage);
     // console.log("item per page1: ", itemPerPage);
@@ -138,7 +138,7 @@ function HomePage(props) {
             </section>
             <section className='section-calendar container-md p-0 mt-3'>
                 <div className='row w-100 g-0 flex-row-reverse align-items-center'>
-                    <div className='col-sm-8 px-3'>g
+                    <div className='col-md-8 px-3'>
                         <div className='row '>
                             <div className='row m-auto mb-2'>
                                 <div className='col-8'>
@@ -153,10 +153,10 @@ function HomePage(props) {
                                     </ul>
                                 </div>
                                 <div className='col-4 text-end'>
-                                    <button className="btn btn-primary btn-lg me-1" onClick={handleSection1PagePrev}>
+                                    <button className="btn btn-primary pt-3 pb-0 me-1" onClick={handleSection1PagePrev}>
                                         <p className='homepage-nextPrevButton'>&#8249;</p>
                                     </button>
-                                    <button className="btn btn-primary btn-lg ms-1" onClick={handleSection1PageNext}>
+                                    <button className="btn btn-primary pt-3 pb-0 ms-1" onClick={handleSection1PageNext}>
                                         <p className='homepage-nextPrevButton'>&#8250;</p>
                                     </button>
                                 </div>
@@ -178,7 +178,7 @@ function HomePage(props) {
                             </div>
                         </div>
                     </div>
-                    <div className='col-sm-4 homepage-notebookCarousel-container p-3 d-flex' style={{ height: "480px" }}>
+                    <div className='col-md-4 homepage-notebookCarousel-container p-3 d-flex' style={{ height: "480px" }}>
                         <div id="homepage-notebookCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
 
                             {/* <!-- Wrapper for slides --> */}
