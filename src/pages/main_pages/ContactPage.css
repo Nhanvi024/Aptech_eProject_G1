@@ -1,33 +1,108 @@
 .contactPageContainer {
     width: 1200px;
-
+    padding-bottom: 50px;
     position: relative;
 }
 
 .contactPageContainer_row1 {
     display: flex;
 }
+.contactPageContainer_row2 {
+   width: 100%;
+   height: 450px;
+}
 
-.contact_info {
+.contact_info,
+.contact_comment {
     width: 50%;
+    padding: 50px 30px;
 
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.contact_info-title,
+.contact_comment-title{
+    color: var(--active-text-color);
+    font-size: var(--fs-900);
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.contact_info-produce,
+.contact_comment-produce{
+    text-align: center;
+    font-size: var(--fs-500);
+
 }
 
 .contact_info-address,
 .contact_info-phone,
 .contact_info-email {
     display: flex;
+    gap: 25px;
+    padding: 15px 20px;
+
+   
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgb(164, 164, 164);
 
 }
 
 .contact_info-icon {
-    width: 20px;
+    width: 30px;
 }
 
 .contact_info-content {}
 
-.contact_info-content-title {}
+.contact_info-content-title {
+    font-size: var(--fs-500);
+    color: var(--active-text-color);
 
-.contact_info-content-content {}
+}
+
+.contact_info-content-content {
+    font-size: var(--fs-500);
+}
+
+.contact_comment{
+}
+
+.contact_comment-form{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact_comment-input,
+.contact_comment-textarea{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.contact_comment-input1{
+    width: 48%;
+}
+
+.contact_comment-textarea{
+    width: 100%;
+    min-height: 150px;
+}
+
+.contact_comment-send{
+    width: 100%;
+    height: 40px;
+    align-self: center;
+    border-radius: 50px;
+    border: none;
+    font-size: var(--fs-400);
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-clr);
+}

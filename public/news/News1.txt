@@ -1,0 +1,88 @@
+<div class="contentnewTitle">
+                            <a href="News01.html"><h4>Good or Bad Journaling?</h4></a>
+                            <div class="meta1">
+                                <span>
+                                    <h6>Posted on
+                                        <a href="../../about/about.html">February 12,2022</a>
+                                        by
+                                        <a href="../../about/about.html">admin</a>
+                                    </h6>
+                                </span>
+                            </div>
+                            <h6 class="Title1">
+                                In the old days, it was normal to keep a journal, but now you can keep a journal is considered a phenomenon. Everything is posted on Facebook, Zalo, Blog... already. There's no longer the concept of the first diary in my life.                            
+                            </h6>
+                            <br>
+                            <img src="../img/news9/92.jpg" alt="">
+                            <br><br>
+                            
+                        </div>
+                        <div class="contentnewTitle1">
+                            <b>My Diary Story</b>
+                            <br><br>
+                            <p>
+                                I don't remember when I started keeping a diary, I just remember that the reason I wrote the diary was because I imitated my best friend. I want to know what journaling is like. Seeing my friend he had a few or three notebooks to keep in his diary. And every book, which also presents the "beautiful clean word", so I just followed. Then, I started to make a habit of keeping a daily diary and writing about whatever I wanted to write, writing down all my feelings. 
+                                <br><br>
+                                When I first started writing, I didn't know what to write, all the writing was boring. For example, the day... month... five days it's sunny/rainy, today having lunch with fish, or something like whining about the test, writing some poems, lyrics I like to go in there. However, back then, it was true to write, now I want to read it too much but unfortunately the forgetfulness does not know where to throw away.
+                                <br><br>
+                                And I remember that the first notebook I used to write a diary was a small and slightly thin notebook, hard paper cover, it looked a bit weird, not as beautiful as the leather notebooks now.
+                            </p>
+                            <br>
+                            <img src="../img/news9/91.jpg" alt="">
+                            <i>Keep a daily diary in English.</i><br>
+                            <p>At one point, I only wrote a diary in a foreign language because I didn't want others to see and read. But not long after that, I gave up. The real big reason is because my language level is too low. I write a lot when I don't even know what I'm writing. ^^
+                                <br><br>
+                                When I was in school, every night before I went to bed, I sat down for 20 minutes to write a few lines of mood. Now it's getting bigger and bigger, but lazy. I haven't been in the habit of journaling for a long time. What about you?
+                            </p>
+
+                            <b>Good or Bad Journaling?</b>
+                            <br><br>
+                            <p>
+                                What if you ask me, is journaling good or bad? I'll tell you, this is a very good thing to do. If you have time to groove, you can keep a daily diary and it will probably give you a whole collection of memories that you can go back years to remember the past.                            
+                            </p>
+                            <br>
+
+                            <b>The advantages of journaling.</b>
+                            <br><br>
+                            <b>1. Your writing skills have improved. </b>
+                            <p>
+                                Have you ever looked back at the text over time? I do that a lot. And after a while of journaling, I realized that my words were beautiful and my mind was a little wiser. At the same time, taking notes regularly will help you become a better writer.
+                            </p>
+
+                            <b>2. Journaling helps you boost your memory.</b>
+                            <p>
+                                Let's say, even if you lose almost all of your memory, there's something that can remind you of your precious moments and goals.                            
+                            </p>
+                            <br>
+                            <img src="../img/news9/93.jpg" alt="">
+                            <i>Journaling can help boost memory and cognition</i><br>
+
+                            <b>3. You become more comfortable with yourself.</b>
+                            <p>
+                                There are many times when you feel your head is about to explode and you feel broken or desperate. Emotions like anger, hate, happiness, etc. will be controlled in the process of writing them down and that will make you calmer.                            
+                            </p>
+
+                            <b>4. You become more observable.</b>
+                            <p>
+                                You start to reflect more and pay attention to things you may not have noticed before. You tend to find metaphors in your daily life when you sit down and reflect to fill out your diary of the day.                            
+                            </p>
+
+                            <b>5. Help you improve your mistakes.</b>
+                            <p>
+                                You can write in your journal your mistakes and then resolve to change yourself. The best part is, later you can skim through these items and see what changes happen in you and it can become an inspiring and enjoyable reading.                            
+                            </p>
+                            <br>
+
+                            <b>Disadvantages of journaling</b>
+                            <br><br>
+                            <p>
+                                The biggest downside of journaling is assuming you've shared some personal moments of your life in a diary. But it was seen by an unknown person then it created problems. Or you want to write down some memories of your past (before marriage) that can't be shared with your husband and unfortunately it's seen by your husband by mistake, it can ruin your whole life. So be aware of all the unsimfit things while keeping a journal.
+                                <br><br>
+                                And now choose a notebook as a brand new attractive diary for yourself.
+                            </p>
+                            <br>
+                            <img src="../img/news9/94.jpg" alt="">
+                            <br><br>
+                            <p>I really recommend keeping a journal because it's the best thing we can remember about the past. Every day taking some time to keep a journal, whether in the morning or in the evening, is an act of self-discipline. Like muscle, the stronger you train it.</p>
+
+                        </div>

@@ -12,22 +12,22 @@
 }
 
 .aboutUsBtn{
-
     text-decoration: none;
     cursor: pointer;
 
+    padding: 10px 10px;
+    align-self: center;
+
     color: var(--primary-text-color);
     font-size: var(--fs-400);
-
     font-weight: bold;
 
     background: none;
     border: none;
-  
-    align-self: center;
 }
 .aboutUsBtn:hover{
     text-decoration: none;
+    border-bottom: 3px solid var(--secondary-background-clr);
     color: var(--primary-text-color);
 
 }

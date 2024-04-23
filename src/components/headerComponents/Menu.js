@@ -38,7 +38,6 @@ function Menu(props) {
                                     <div className='iconBlackArrow' />
                                     <div className='productsDetail'></div>
                                 </>
-
                             }
                         </div>
                     )

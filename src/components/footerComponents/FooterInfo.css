@@ -79,17 +79,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-   
-
 }
 
 .infoFooter_products-item,
 .infoFooter_aboutUs-item{
     font-size: var(--fs-400);
-
     cursor: pointer;
-   
-
     transition: 0.1s;
 }
 
