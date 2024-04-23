@@ -85,6 +85,7 @@
 }
 
 .listType-item:hover{
+    text-decoration: none;
     color: var(--active-text-color);
 }
 
