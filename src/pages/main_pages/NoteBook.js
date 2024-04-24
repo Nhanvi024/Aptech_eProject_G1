@@ -1,18 +1,18 @@
 import { DataContext } from '../../context/DataContext';
 import './NoteBook.css'
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import PriceFilter from '../../components/filterComponents/PriceFilter'
 import SortSelect from '../../components/filterComponents/SortSelect'
 import TypeFilter from '../../components/filterComponents/TypeFilter'
-
+import ProductCard from '../../components/homepageComponents/ProductCard';
 
 
 function NoteBook(props) {
-    const [noteBooks, setNoteBooks] = useState([]);
+    const {products, setProducts} = useContext(DataContext);
     useEffect(() => {
-        fetch('data/NoteBook.json')
+        fetch('data/data.json')
             .then(res => res.json())
-            .then(data => setNoteBooks(data))
+            .then(data => setProducts(data))
     }, [])
     return (
         <div className='noteBookPageContainer container-fluid p-0'>
@@ -21,7 +21,7 @@ function NoteBook(props) {
             <div className='noteBookPageContainer container p-0'>
                 {/* Sidebar area */}
                 <div className='row w-100 g-0 mt-3'>
-                    <div className='col-sm-3 bg-info'>
+                    <div className='col-sm-3'>
                         <SortSelect />
                         <TypeFilter />
                         <PriceFilter />
@@ -30,13 +30,13 @@ function NoteBook(props) {
                     <div className='col-sm-9 px-3'>
                         <div className='row m-auto mb-2'>
                             <div className='col-sm-6'>NOTEBOOK</div>
-                            <div className='col-sm-6 text-end'>SORT</div>
+                            {/* <div className='col-sm-6 text-end'>SORT</div> */}
                         </div>
                         <div className='row Notebook_products'>
-                            {noteBooks.map((item, index) => {
+                            {products.noteBook.map((item, index) => {
                                 return (
                                     <div className='col-sm-3 Notebook_item' key={index}>
-                                        <div className='card text-center col Notebook_itembox'>
+                                        {/* <div className='card text-center col Notebook_itembox'>
                                             <div className='row Notebook_imgContainer'>
                                                 <img src={item.image.mainImage} className='Notebook_img card-img-top ' alt='...'></img>
                                                 <div className='Notebook_imgbtn'>
@@ -49,12 +49,13 @@ function NoteBook(props) {
                                                     <p className="card-text Notebook_price">$ {item.price}</p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
+                                        <ProductCard key={index} item={item} />
                                     </div>
                                 )
                             })}
 
-                            {noteBooks.map((item, index) => {
+                            {products.noteBook.map((item, index) => {
                                 return (
                                     <div className="modal Notebook_modal" id="myModal">
                                         <div className="modal-dialog modal-lg">
