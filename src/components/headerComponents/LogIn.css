@@ -1,9 +1,10 @@
 .loginContainer{
-    width: 15%;
-    padding: 10px 0 0 0;
+    width: 80%;
+height: 50px;
+padding-top: 10px;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
 
     /* border: 1px solid red; */
 }

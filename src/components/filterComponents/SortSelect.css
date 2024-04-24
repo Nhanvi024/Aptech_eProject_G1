@@ -1,0 +1,59 @@
+.sortSelect-container {
+    width: 180px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+
+    position: relative;
+    font-family: var(--ff-secondary-font);
+
+}
+
+
+.sortSelect-label {
+    margin: 0;
+}
+
+.sortSelect-select {
+    width: 120px;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.sortSelect-icon::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    align-content: center;
+
+    color: #b9b9b9;
+
+    align-self: end;
+
+    position: absolute;
+    right: 0;
+}
+
+
+.sortSelect-list {
+    visibility: hidden;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.sortSelect-select:hover+.sortSelect-list,
+.sortSelect-list:hover {
+    visibility: visible;
+    border-radius: 5px;
+}
+
+.sortSelect-option:hover {
+    cursor: pointer;
+    color: var(--active-text-color);
+}
