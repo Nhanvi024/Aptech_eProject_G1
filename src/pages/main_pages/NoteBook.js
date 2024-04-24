@@ -1,9 +1,5 @@
 
 import { DataContext } from '../../context/DataContext';
-import PriceFilter from '../../components/filterComponents/PriceFilter';
-import SortSelect from '../../components/filterComponents/SortSelect';
-import TypeFilter from '../../components/filterComponents/TypeFilter';
-
 import './NoteBook.css'
 import React, { useEffect, useState } from 'react';
 import PriceFilter from '../../components/filterComponents/PriceFilter'
