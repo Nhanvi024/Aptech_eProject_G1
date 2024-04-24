@@ -30,6 +30,15 @@
 .homepage-productCard-imgContainer {
     max-height: 180px;
     overflow: hidden;
+    position: relative;
+    background: red;
+    .productCard-button-container{
+        position: absolute;
+        background: lightblue;
+        bottom: 10px;
+        /* transform: translate(50%, -50%); */
+        align-self: center
+    };
 }
 
 .homepage-productCard:hover {
