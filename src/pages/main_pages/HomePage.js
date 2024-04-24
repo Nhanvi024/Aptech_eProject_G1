@@ -317,7 +317,6 @@ function HomePage(props) {
                 </div>
 
             </section>
-
         </div>
     );
 }
