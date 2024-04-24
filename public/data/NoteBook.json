@@ -1,5 +1,4 @@
-{
-    "noteBook": [
+[
         {
             "id": "NBJ1",
             "name": "Dusky Meadow Journal",
@@ -314,6 +313,215 @@
                 "image2":"https://m.media-amazon.com/images/S/aplus-media/kdp/4812e951-a7bc-4244-9ee1-c56e8a3ea932.__CR0,0,300,300_PT0_SX300_V1___.png",
                 "image3":"https://m.media-amazon.com/images/S/aplus-media/kdp/e2bdc006-e7ff-451f-8dfa-7926a7a04ba0.__CR0,0,300,300_PT0_SX300_V1___.png"
             }
+        },
+        {
+            "id": "NBP1",
+            "name": "Moleskine Classic Notebook",
+            "type": "Plain",
+            "price": "14.39",
+            "stock": "11",
+            "desc": "CLASSIC MOLESKINE NOTEBOOK: Moleskine classic notebooks are perfect notebooks for writing journals, a daily diary, or note taking in college classes or meetings.",
+            "descDetail": "DURABLE COVER & ELASTIC CLOSURE: Hold writing projects & notes in your Moleskine notebook with an elastic closure band & inner storage folders. Leather-like classic Moleskine cover & thick, ivory paper pages are perfect for writing with fountain pens.",
+            "param": {
+                "size": "5 x 0.63 x 8.25 inches",
+                "pages": "240 pages",
+                "material": "70 G/m² paper",
+                "weight": "326g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/81BiGWHeIPL._AC_SY741_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/81W+X9UPesL._AC_SY679_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/61psmC8GarL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/51z0JW2ZOKL._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBP2",
+            "name": "Black Spiral Hardcover Mixed Media Sketchbook for Drawing",
+            "type": "Plain",
+            "price": "12.99",
+            "stock": "8",
+            "desc": "Calling all artists!",
+            "descDetail": "Union Square & Co. sketchbooks, popular for their attractive design, quality paper, and perforated pages, are the sketchbooks of choice for amateur and professional artists alike. Whatever your favorite medium—from charcoal and pencil to light washes—one of our sketch books for drawing will work perfectly for you.",
+            "param": {
+                "size": "8.5 x 1 x 10.75 inches",
+                "pages": "128 pages",
+                "material": "Acid-free and archival-quality paper",
+                "weight": "517g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/91HYkwYwv1L._SY425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/91JVLYREOTL._SY425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/61Lsrh-0FML._SY425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/91OwkwDShYL._SY425_.jpg"
+            }
+        },
+        {
+            "id": "NBP3",
+            "name": "Go-to Notebook with Mohawk Paper",
+            "type": "Plain",
+            "price": "15.46",
+            "stock": "15",
+            "desc": "The only notebook you'll ever need.",
+            "descDetail": "When Chronicle Books and Mohawk teamed up to create their ideal notebook, the Go-To was born, made with the highest quality of materials and designed with productivity in mind.",
+            "param": {
+                "size": "6.2 x 0.85 x 9.05 inches",
+                "pages": "172 pages",
+                "material": "Paper",
+                "weight": "476g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/A1l4T7rMZvL._AC_SY679_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/916bkDuJJqL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/811UJ6o619L._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/812LuA7VT+L._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBP4",
+            "name": "Strathmore 400 Series Sketch Pad",
+            "type": "Plain",
+            "price": "19.61",
+            "stock": "9",
+            "desc": "Artist-Recommended Sketch Paper",
+            "descDetail": "Loved by artists for decades, Strathmore 400 Series Sketch paper has been the trusted friend of fashion designers, illustrators, architects & painters from the classroom through to professional careers.",
+            "param": {
+                "size": "9x12 inches",
+                "pages": "100 pages",
+                "material": "Paper",
+                "weight": "767g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/71+QK5pJQmL._AC_SX679_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/71nep5CsyNS._AC_SX679_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/71DFf3Qs2US._AC_SX679_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/61YQujRpDsS._AC_SX679_.jpg"
+            }
+        },
+        {
+            "id": "NBP5",
+            "name": "Premium Sketch Book Set",
+            "type": "Plain",
+            "price": "11.50",
+            "stock": "20",
+            "desc": "Free Drawing Paper, Ideal for Kids, Teens & Adults.",
+            "descDetail": "Premium Paper Quality - Feel the difference, enjoy spiral bound sketch pads for drawing that offers 200 bright white sketch paper with perfect texture for drawing, sketching and illustrating. All at the affordable price.",
+            "param": {
+                "size": "9 x 12 inches",
+                "pages": "200 pages",
+                "material": "100 G/m² paper",
+                "weight": "454g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/91QdwcK8NgL._AC_SX679_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/613Pa7no86L._AC_SX679_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/81vX+rdCHwL._AC_SX679_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/81b1PYER+DL._AC_SX679_.jpg"
+            }
+        },
+        {
+            "id": "NBDT1",
+            "name": "Maruman MNEMOSYNE Notebook",
+            "type": "Dotted",
+            "price": "8.08",
+            "stock": "11",
+            "desc": "Highly Functional Notebook with a Chic Simple Design",
+            "descDetail": "Named after the Greek goddess of memory, Maruman's Mnemosyne products have aesthetic style with high-quality paper specially made to create the perfect notebooks and notepads for anybody to bring out the best of their creativity.",
+            "param": {
+                "size": "7.56 x 0.39 x 9.92 inches",
+                "pages": "80 pages",
+                "material": "80G/M2 acid free",
+                "weight": "20g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/71zNpZTB6pL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/61qxyYzcBwL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/S/aplus-media/vc/806b17da-7f6f-489c-932a-523b05173265.__CR0,0,300,300_PT0_SX300_V1___.jpg",
+                "image3":"https://m.media-amazon.com/images/S/aplus-media/vc/1f7b2ca4-5663-44a6-b139-c880c3d5c859.__CR0,122,960,960_PT0_SX300_V1___.jpg"
+            }
+        },
+        {
+            "id": "NBDT2",
+            "name": "Moleskine Chapters Journal",
+            "type": "Dotted",
+            "price": "6.95",
+            "stock": "13",
+            "desc": "CHAPTER JOURNAL",
+            "descDetail": "Chapter Journals introduce a different format to the Moleskine collection. Divided into chapters, they provide valuable structure to the sporadic mind of the modern multi-tasker.",
+            "param": {
+                "size": "3.75 x 0.25 x 7 inches",
+                "pages": "112 pages",
+                "material": "Paper",
+                "weight": "1g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/51DZylxVCbL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/51Ku1h+a9CL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/61il4DzEGPL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/51L2m+j9-gL._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBDT3",
+            "name": "Celestial Essentials Dot Matrix Notebook",
+            "type": "Dotted",
+            "price": "12.90",
+            "stock": "22",
+            "desc": "A cover design with history!",
+            "descDetail": "Beautiful dot matrix notebook is perfect for creative visual planning, bullet journaling, sketching, design work, writing, and much more!",
+            "param": {
+                "size": "5.5 x 0.5 x 8.5 inches",
+                "pages": "192 pages",
+                "material": "Thick, smooth-finish paper.",
+                "weight": "448g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/A1obvvjNxtL._SY425_.jpg",
+                "image1":"https://m.media-amazon.com/images/S/aplus-media/vc/c452b484-d4c8-4823-9561-4e47ab6bfbaf._CR0,0,2560,2560_PT0_SX220__.jpg",
+                "image2":"https://m.media-amazon.com/images/S/aplus-media/vc/6539512f-8ba4-4394-b75c-5d0b3dc00bd7._CR0,0,2200,2200_PT0_SX220__.jpg",
+                "image3":"https://m.media-amazon.com/images/S/aplus-media/vc/756c1586-412a-42e2-9dbe-c42508b79d25._CR0,0,2560,2560_PT0_SX220__.jpg"
+            }
+        },
+        {
+            "id": "NBDT4",
+            "name": "LEUCHTTURM1917 - Notebook Hardcover Medium A5",
+            "type": "Dotted",
+            "price": "19.89",
+            "stock": "15",
+            "desc": "The A5 MEDIUM notebooks are the perfect size with a wide range of colors making them ideal companions for all walks of life.",
+            "descDetail": "This notebook series is perfect for midnight ramblings, daily entries, thoughtful reflection, careful chronicling and illuminating life stories.",
+            "param": {
+                "size": "8.27 x 5.71 x 0.79 inches",
+                "pages": "251 pages",
+                "material": "80g/m² acid-free paper.",
+                "weight": "350g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/51HBq8+9-bL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/61XCVjnqmiL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/619C2r3A91L._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/51N82leNLqL._AC_SX425_.jpg"
+            }
+        },
+        {
+            "id": "NBDT5",
+            "name": "Sky Blue Great Barrier Reef",
+            "type": "Dotted",
+            "price": "33.77",
+            "stock": "5",
+            "desc": "Dingbats notebooks ooze quality!",
+            "descDetail": "this hardcover bound leather notebook is crafted with PU vegan leather Cream 100gsm pages, 16 pages of perforated paper, an elastic closure and pen holder. It's complete with a silhouette of the Great Barrier Reef, an infographic spread about the endangered region in the endsheets and an inner pocket for a little added detail - the perfect gifts for loved ones.",
+            "param": {
+                "size": "6.14 x 0.87 x 8.43 inches",
+                "pages": "192 pages",
+                "material": "100gsm paper",
+                "weight": "448g"
+            },
+            "image": {
+                "mainImage":"https://m.media-amazon.com/images/I/51PHsOTz3CL._AC_SX425_.jpg",
+                "image1":"https://m.media-amazon.com/images/I/61wqQm5PVRL._AC_SX425_.jpg",
+                "image2":"https://m.media-amazon.com/images/I/612P+skPAQL._AC_SX425_.jpg",
+                "image3":"https://m.media-amazon.com/images/I/61a+Mqahn5L._AC_SX425_.jpg"
+            }
         }
     ]
-}

@@ -2,38 +2,62 @@ import { useNavigate } from 'react-router-dom';
 import './HomePage.css'
 import '../../components/homepageComponents/ProductCard.css'
 
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useMemo, useState, useTransition } from 'react';
 import ProductCard from '../../components/homepageComponents/ProductCard';
 import { DataContext } from '../../context/DataContext';
 
 function HomePage(props) {
+
     const Navigate = useNavigate();
-    const { products, searchProduct, setSearchProduct } = useContext(DataContext)
+    const {
+        products, searchProduct, setSearchProduct, isDataLoaded, setIsDataLoaded
+    } = useContext(DataContext)
     // console.log(products.noteBook);
 
-    // check window side to set number of items to display
+    const [isPending, startTransition] = useTransition();
+    const [notebookList, setNotebookList] = useState([]);
+    const [notebookTypeFilter, setNotebookTypeFilter] = useState("all")
+
+    // check window side and set number of items to display
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    // console.log("test width:",windowWidth);
-    useEffect(() => {
-        const handleResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-        window.addEventListener("resize", handleResize);
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+    function resizeWindow() {
+        setWindowWidth(window.innerWidth)
+    }
+    window.onresize = resizeWindow;
+    let itemPerPage;
+    function handleChangeScreenSize(e) {
+        switch (true) {
+            case e < 490:
+                itemPerPage = 4;
+                break;
+            case e < 590:
+                itemPerPage = 6;
+                break;
+            case e < 768:
+                itemPerPage = 8;
+                break;
+            case e < 992:
+                itemPerPage = 6;
+                break;
+            case e < 1200:
+                itemPerPage = 8;
+                break;
+            default:
+                itemPerPage = 10;
+                break;
+        }
+
+    }
+    handleChangeScreenSize(windowWidth)
     // ==================================================
 
-    let itemPerPage = windowWidth >= 1200 ? 8 : windowWidth >= 992 ? 6 : windowWidth >= 768 ? 4 : windowWidth >= 576 ? 4 : 4;
-
-    let section1MaxPage = Math.floor(+Object.keys(products.noteBook || {}).length / itemPerPage);
+    // maxpage and switch page
+    let section1MaxPage = Math.ceil((+Object.keys(notebookList || {}).length - itemPerPage) / 2);
     // console.log("item per page1: ", itemPerPage);
     // console.log("max page 1:", section1MaxPage);
     // console.log("product notebook length: ", Object.keys(products.noteBook || {}).length);
-
     // console.log("test item per page: ",itemPerPage);
-    let [section1Page, setSection1Page] = useState(0)
+    const [section1Page, setSection1Page] = useState(0)
     // console.log("section1Page: ", section1Page);
     function handleSection1PageNext(params) {
         if (section1Page < section1MaxPage) {
@@ -49,8 +73,9 @@ function HomePage(props) {
             setSection1Page(section1MaxPage)
         }
     }
+    // ==================================================
 
-    // 
+    // Category list
     let category1List = ['all'];
     {
         products.length !== 0 && products.noteBook.map((item, index) => {
@@ -60,26 +85,39 @@ function HomePage(props) {
         })
     };
     // console.log("test category1List:", category1List);
-    //
+    // ==================================================
 
     //
-    const [notebookList, setNotebookList] = useState([]);
-    const [notebookTypeFilter, setNotebookTypeFilter] = useState('all')
-    console.log(notebookTypeFilter);
+    // console.log(notebookTypeFilter);
+    // console.log("test notebooklist:", notebookList);
+    // function notebookListFilter() {
+    //     if (isDataLoaded) {
+    //         if (notebookTypeFilter == 'all') {
+    //             setNotebookList(products.noteBook)
+    //         } else {
+    //             setNotebookList(products.noteBook.filter(item => item.type == notebookTypeFilter))
+    //         }
+    //     }
+    // }
     useEffect(() => {
-        // let result
-        if (notebookTypeFilter == 'all') {
-            setNotebookList(products.noteBook)
-        } else {
-           let result = products.noteBook.filter(item => item.type == notebookTypeFilter)
-            // console.log("test item list:",notebookList);
-            setNotebookList(result)
+        if (isDataLoaded === true) {
+            // console.log("--------da load data");
+            if (notebookTypeFilter === "all") {
+                setNotebookList(products.noteBook)
+                // console.log("test all");
+            } else {
+                setNotebookList(products.noteBook.filter(item => item.type === notebookTypeFilter))
+            }
         }
-    },[notebookTypeFilter])
-    console.log("test notebooklist:", notebookList);
+        else { console.log("chua load data"); }
+    }, [notebookTypeFilter, products])
+
+    // console.log("test load:", isDataLoaded);
+    // console.log("test product list:", products.noteBook);
+
     return (
         <div className='homePageContainer container-fluid p-0'>
-            <section className="section-homepage-carousel">
+            <section className="homepage-section-carousel">
                 <div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
 
                     {/* <!-- Indicators --> */}
@@ -136,49 +174,103 @@ function HomePage(props) {
                     </button>
                 </div>
             </section>
-            <section className='section-calendar container-md p-0 mt-3'>
-                <div className='row w-100 g-0 flex-row-reverse align-items-center'>
-                    <div className='col-sm-8 px-3'>g
-                        <div className='row '>
-                            <div className='row m-auto mb-2'>
-                                <div className='col-8'>
+            <section className='homepage-section-notebook-container container-md p-0 my-3 align-items-center'>
+                <div className='homepage-section-notebook row w-100 h-100 g-0 flex-row-reverse align-items-center'>
+                    <div className='homepage-section-notebook-right col-md-8'>
+                        {/* <div className='row g-0'>
+                            <div className='homepage-section-notebook-right-row1 row m-auto mb-2'>
+                                <div className='col-8 g-0'>
                                     <ul className="nav nav-tabs">
                                         {products.length !== 0 && category1List.map((item, index) => {
+                                            let navClass = item == notebookTypeFilter ? "nav-item active" : "nav-item";
                                             return (
-                                                <li className="nav-item" key={index}>
-                                                    <a className="nav-link" onClick={() => setNotebookTypeFilter(item)} >{item}</a>
+                                                <li className={navClass} key={index}>
+                                                    <a className="nav-link" onClick={() => { setNotebookTypeFilter(item); setSection1Page(0) }} >{item}</a>
                                                 </li>
                                             )
                                         })}
                                     </ul>
                                 </div>
                                 <div className='col-4 text-end'>
-                                    <button className="btn btn-primary btn-lg me-1" onClick={handleSection1PagePrev}>
-                                        <p className='homepage-nextPrevButton'>&#8249;</p>
-                                    </button>
-                                    <button className="btn btn-primary btn-lg ms-1" onClick={handleSection1PageNext}>
-                                        <p className='homepage-nextPrevButton'>&#8250;</p>
-                                    </button>
+                                    <span>
+                                        <button className="btn btn-primary pt-3 pb-0 me-1" onClick={handleSection1PagePrev}>
+                                            <p className='homepage-nextPrevButton'>&#8249;</p>
+                                        </button>
+                                        <span> {section1Page + 1}/{section1MaxPage + 1} </span>
+                                        <button className="btn btn-primary pt-3 pb-0 ms-1" onClick={handleSection1PageNext}>
+                                            <p className='homepage-nextPrevButton'>&#8250;</p>
+                                        </button>
+                                    </span>
+
                                 </div>
                             </div>
-                            <div className='row m-auto align-items-center' style={{ height: "480px" }}>
+                            <div className='homepage-section-notebook-right-row2 row justify-content-center m-auto align-items-center'>
                                 {products.length === 0 &&
                                     <div className="d-flex justify-content-center">
                                         <div className="spinner-border text-danger" style={{ width: "5rem", height: "5rem" }} role="status">
                                             <span className="visually-hidden">Loading...</span>
                                         </div>
                                     </div>}
-                                {products.length !== 0 && products.noteBook.map((item, index) => {
-                                    if (index >= (section1Page * itemPerPage) && index < (section1Page + 1) * itemPerPage) {
-                                        return (
-                                            <ProductCard key={index} item={item} />
-                                        )
-                                    }
-                                })}
+                                <div className='homepage-section-notebook-right-row2row row'>
+                                    {products.length !== 0 && notebookList.map((item, index) => {
+                                        if (index >= (section1Page * itemPerPage) && index < (section1Page + 1) * itemPerPage && index % 2 === 0) {
+                                            return (
+                                                <ProductCard key={index} item={item} />
+                                            )
+                                        }
+                                    })}
+                                </div>
+                                <div className='homepage-section-notebook-right-row2row row'>
+                                    {products.length !== 0 && notebookList.map((item, index) => {
+                                        if (index >= (section1Page * itemPerPage) && index < (section1Page + 1) * itemPerPage && index % 2 !== 0) {
+                                            return (
+                                                <ProductCard key={index} item={item} />
+                                            )
+                                        }
+                                    })}
+                                </div>
+                            </div>
+                        </div> */}
+                        <div className='row g-0'>
+                            <div className='homepage-section-notebook-right-row1 row m-auto mb-2'>
+                                <div className='col-8 g-0'>
+                                    <ul className="nav nav-tabs">
+                                        {products.length !== 0 && category1List.map((item, index) => {
+                                            let navClass = item === notebookTypeFilter ? "nav-item active" : "nav-item";
+                                            return (
+                                                <li className={navClass} key={index}>
+                                                    <a className="nav-link" onClick={() => { setNotebookTypeFilter(item); setSection1Page(0) }} >{item}</a>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                                <div className='col-4 text-end'>
+                                    <span>
+                                        <button className="btn btn-primary pt-3 pb-0 me-1" onClick={handleSection1PagePrev}>
+                                            <p className='homepage-nextPrevButton'>&#8249;</p>
+                                        </button>
+                                        {/* <span> {section1Page + 1}/{section1MaxPage + 1} </span> */}
+                                        <button className="btn btn-primary pt-3 pb-0 ms-1" onClick={handleSection1PageNext}>
+                                            <p className='homepage-nextPrevButton'>&#8250;</p>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='homepage-section-notebook-right-row2 row justify-content-center m-auto align-items-center'>
+                                <div className='homepage-section-notebook-right-row2row'>
+                                    {products.length !== 0 && notebookList.map((item, index) => {
+                                        if (index >= (section1Page * 2) && index < (section1Page * 2) + itemPerPage) {
+                                            return (
+                                                <ProductCard key={index} item={item} />
+                                            )
+                                        }
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className='col-sm-4 homepage-notebookCarousel-container p-3 d-flex' style={{ height: "480px" }}>
+                    <div className='homepage-section-notebook-left col-md-4 p-3 d-flex'>
                         <div id="homepage-notebookCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
 
                             {/* <!-- Wrapper for slides --> */}
@@ -225,7 +317,6 @@ function HomePage(props) {
                 </div>
 
             </section>
-
         </div>
     );
 }
