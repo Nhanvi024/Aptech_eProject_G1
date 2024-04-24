@@ -1,3 +1,4 @@
+
 .calendarWebStore{
     width: 100%;
     min-height: 100vh;
@@ -7,7 +8,7 @@
 
     align-items: center;
 
-    font-family: var(--ff-laila-serif);
+    font-family: var(--ff-primary-font);
     font-size:  var(--fs-300);
     font-weight: 700;
 }
