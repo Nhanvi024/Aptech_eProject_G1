@@ -1,17 +1,21 @@
 .cardListContainer {
     width: 25%;
-    height: fit-content;
-
-    padding-top: 10px;
+    height: 100%;
 
     position: relative;
-    top: 10%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+
+}
+
+.cartList-iconCart{
+height: 50px;
+border: 1px solid red;
 
 }
 
 .cardIcon {
-    width: 80%;
+    width: 35px;
+    margin-top: 10px;
     z-index: -1;
 }
 
@@ -27,7 +31,7 @@
     background-color: rgb(255, 0, 0);
     position: absolute;
     top: 0px;
-    right: 10px;
+    right: 5px;
 
     text-align: center;
     align-content: center;

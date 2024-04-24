@@ -54,14 +54,17 @@ function CartList(props) {
 
     return (
         <div className='cardListContainer'>
+            <div className='cartList-iconCart'>
+                <img className='cardIcon' src={CartIcon} alt='cartImage' />
+                {product.length ?
+                    <div className='itemQty'>
+                        {product.length}
+                    </div> :
+                    <></>
+                }
 
-            <img className='cardIcon' src={CartIcon} alt='cartImage' />
-            {product.length ?
-                <div className='itemQty'>
-                    {product.length}
-                </div> :
-                <></>
-            }
+            </div>
+
 
             < div className='cartList'>
                 {product.length ?
