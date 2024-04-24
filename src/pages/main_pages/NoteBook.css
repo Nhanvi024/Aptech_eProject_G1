@@ -30,7 +30,7 @@
     position: relative;
 }
 .Notebook_imgbtn {
-    position: absolute; 
+    /* position: absolute;  */
     display: flex;
     flex-direction: column-reverse;
     height: 50%;
@@ -40,7 +40,7 @@
     top: 50%;
     text-align: center;
     opacity: 0;
-   
+   justify-content: center;
 }
 .Notebook_imgbtn:hover{
     opacity: 1;
