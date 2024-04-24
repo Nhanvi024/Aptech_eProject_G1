@@ -28,32 +28,32 @@ function Calendar(props) {
                         <div className='row calendars_product'>
                             {products.calendar.map((item, index) => {
                                 return (
-                                    // <div className='col-sm-3 calendars_item' key={index}>
-                                    //     <div className="card calendars_box  bg-primary" >
-                                    //         <div className='row calendars_imgBox'>
-                                    //             <img src={item.image.mainImage} className="card-img-top calendars_img" alt="..." ></img>
-                                    //             <div className='row calendars_rowBtn'>
-                                    //                 <button type="button" className="calendars_btn" data-bs-toggle="modal" data-bs-target="#myModal" onClick={() => { setIdModal(item.id) }}>
-                                    //                     <i className="fas fa-eye fa-lg calendars_icon" style={{ color: "#1f1f1e" }} />
-                                    //                 </button>
-                                    //                 <button type="button" className="calendars_btn" data-bs-toggle="modal" data-bs-target="#myModal" onClick={() => { setIdModal(item.id) }}>
-                                    //                     <i className="fas fa-eye fa-lg calendars_icon" style={{ color: "#1f1f1e" }} />
-                                    //                 </button>
-                                    //                 <button type="button" className="calendars_btn" data-bs-toggle="modal" data-bs-target="#myModal" onClick={() => { setIdModal(item.id) }}>
-                                    //                     <i className="fas fa-eye fa-lg calendars_icon" style={{ color: "#1f1f1e" }} />
-                                    //                 </button>
-                                    //             </div>
-                                    //         </div>
+                                    <div className='col-sm-3 calendars_item' >
+                                        {/* <div className="card calendars_box  bg-primary" >
+                                            <div className='row calendars_imgBox'>
+                                                <img src={item.image.mainImage} className="card-img-top calendars_img" alt="..." ></img>
+                                                <div className='row calendars_rowBtn'>
+                                                    <button type="button" className="calendars_btn" data-bs-toggle="modal" data-bs-target="#myModal" onClick={() => { setIdModal(item.id) }}>
+                                                        <i className="fas fa-eye fa-lg calendars_icon" style={{ color: "#1f1f1e" }} />
+                                                    </button>
+                                                    <button type="button" className="calendars_btn" data-bs-toggle="modal" data-bs-target="#myModal" onClick={() => { setIdModal(item.id) }}>
+                                                        <i className="fas fa-eye fa-lg calendars_icon" style={{ color: "#1f1f1e" }} />
+                                                    </button>
+                                                    <button type="button" className="calendars_btn" data-bs-toggle="modal" data-bs-target="#myModal" onClick={() => { setIdModal(item.id) }}>
+                                                        <i className="fas fa-eye fa-lg calendars_icon" style={{ color: "#1f1f1e" }} />
+                                                    </button>
+                                                </div>
+                                            </div>
 
-                                    //         <div className="card-body calendars_body">
-                                    //             <h5 className="card-title calendars_text">{item.name}</h5>
-                                    //             <p className="card-text calendars_price">$ {item.price}
-                                    //             </p>
-                                    //         </div>
-                                    //     </div>
-                                      
-                                    // </div>
-                                    <ProductCard key={index} item={item} />
+                                            <div className="card-body calendars_body">
+                                                <h5 className="card-title calendars_text">{item.name}</h5>
+                                                <p className="card-text calendars_price">$ {item.price}
+                                                </p>
+                                            </div>
+                                        </div> */}
+                                        <ProductCard key={index} item={item} />
+                                    </div>
+                                   
                                 )
                             })}
                             {/* Modal */}
