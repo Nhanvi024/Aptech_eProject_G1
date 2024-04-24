@@ -4,6 +4,7 @@ const DataContext = createContext();
 function DataProvider({ children }) {
     const [products, setProducts] = useState([])
     const [searchProduct, setSearchProduct] = useState('')
+    const [isDataLoaded, setIsDataLoaded] = useState(false)
     const webPage = [
         { name: 'HOME', href: '/' },
         { name: 'NEWS', href: '/news' },
@@ -22,6 +23,7 @@ function DataProvider({ children }) {
         fetch('data/data.json')
             .then(res => res.json())
             .then(data => setProducts(data))
+            .then(setIsDataLoaded(true))
     }, [])
 
 
@@ -31,7 +33,9 @@ function DataProvider({ children }) {
         searchProduct,
         setSearchProduct,
         btnActive,
-        setBtnActive
+        setBtnActive,
+        isDataLoaded,
+        setIsDataLoaded
     }
     return (
         <DataContext.Provider value={valueProvider}>
