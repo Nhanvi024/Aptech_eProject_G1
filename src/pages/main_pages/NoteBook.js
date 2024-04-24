@@ -1,6 +1,10 @@
 import { DataContext } from '../../context/DataContext';
 import './NoteBook.css'
 import React, { useEffect, useState } from 'react';
+import PriceFilter from '../../components/filterComponents/PriceFilter'
+import SortSelect from '../../components/filterComponents/SortSelect'
+import TypeFilter from '../../components/filterComponents/TypeFilter'
+
 
 
 function NoteBook(props) {
@@ -18,7 +22,9 @@ function NoteBook(props) {
                 {/* Sidebar area */}
                 <div className='row w-100 g-0 mt-3'>
                     <div className='col-sm-3 bg-info'>
-                        <p>CATEGORY</p>
+                        <SortSelect />
+                        <TypeFilter />
+                        <PriceFilter />
                     </div>
 
                     <div className='col-sm-9 px-3'>

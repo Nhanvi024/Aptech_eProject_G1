@@ -1,5 +1,5 @@
 import './Logo.css'
-import logoCalendar from '../../assets/image/header/logo/logoImage.png'
+import logoCalendar from '../../assets/image/header/logo/logo1.jpg'
 
 import React from 'react';
 // import logo from '../../assets/image/header/logo/logo.jpg'
