@@ -1,4 +1,9 @@
+
 import { DataContext } from '../../context/DataContext';
+import PriceFilter from '../../components/filterComponents/PriceFilter';
+import SortSelect from '../../components/filterComponents/SortSelect';
+import TypeFilter from '../../components/filterComponents/TypeFilter';
+
 import './NoteBook.css'
 import React, { useEffect, useState } from 'react';
 import PriceFilter from '../../components/filterComponents/PriceFilter'
@@ -15,6 +20,7 @@ function NoteBook(props) {
             .then(data => setNoteBooks(data))
     }, [])
     return (
+
         <div className='noteBookPageContainer container-fluid p-0'>
             <img className='imageBanner'
                 src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
@@ -119,6 +125,7 @@ function NoteBook(props) {
                 </div>
             </div>
         </div>
+
 
     );
 }
