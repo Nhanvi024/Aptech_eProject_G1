@@ -1,6 +1,82 @@
-.noteBookPageContainer{
+.noteBookPageContainer {
     width: 100%;
     position: relative;
     /* top: 180px; */
 
 }
+.Notebook_products{
+    display: flex;
+}
+.Notebook_item{
+    padding: 10px;
+    display: flex;
+}
+.Notebook_itembox{
+    max-width: 200px;
+    min-width: 175px;
+    display: block;
+    border: 0;
+    width: 20rem;
+    /* text-align: center; */
+    position: relative;
+}
+.NB_Category {
+    font-size: 20px;
+    display: flex;
+}
+.Notebook_imgContainer{
+    margin: auto;
+    padding: auto;
+    position: relative;
+}
+.Notebook_imgbtn {
+    position: absolute; 
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50%;
+    margin: auto;
+    padding: auto; 
+    padding-left: 30%;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+   
+}
+.Notebook_imgbtn:hover{
+    opacity: 1;
+}
+.notebook_btn{
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    left: 25%;
+    opacity: 0.5;
+    border: none;
+    border-radius: 5px;
+}
+.notebook_btn:hover{
+    opacity: 1;
+
+}
+.Notebook_name {
+    font-size: 16px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.Notebook_price{
+    color: rgb(255, 48, 48);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Notebook_img{
+    height: 25rem;
+    /* width: 19rem; */
+    border-radius: 10px;
+    padding: auto;
+}
+
