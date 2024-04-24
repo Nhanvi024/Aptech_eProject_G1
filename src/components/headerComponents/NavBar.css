@@ -17,8 +17,8 @@
 
 
 .navItem {
-    font-family: var(--ff-laila-serif);
-    font-size: var(--fs-400);
+    font-family: var(--ff-primary-font);
+    font-size: var(--fs-500);
     list-style: none;
 
     display: flex;
@@ -37,20 +37,6 @@
 
 }
 
-.listType {
-    visibility: hidden;
-    position: absolute;
-    top: 170px;
-}
-
-.navLink:hover+.listType,.listType:hover{
-    visibility: visible;
-    width: 200px;
-    height: fit-content;
-    background: rgb(255, 255, 255);
-}
-
-
 .navLink:hover {
     text-decoration: none;
     color: var(--hover-text-color);
@@ -63,3 +49,44 @@
     color: var(--active-text-color);
     border-bottom: 3px solid var(--secondary-background-clr);
 }
+
+/* ***************************************************************** */
+.listType {
+    text-decoration: none;
+    visibility: hidden;
+    position: absolute;
+    top: 170px;
+    padding: 15px;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    opacity: 0%;
+    transition: 0.5s;
+}
+
+.navLink:hover+.listType,
+.listType:hover {
+    visibility: visible;
+    width: 200px;
+    height: fit-content;
+    background: rgb(255, 255, 255);
+    opacity: 100%;
+
+}
+
+.listType-item{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: var(--fs-500);
+}
+
+.listType-item:hover{
+    text-decoration: none;
+    color: var(--active-text-color);
+}
+
+
