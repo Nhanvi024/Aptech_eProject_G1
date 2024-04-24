@@ -8,69 +8,41 @@ import DeleteIcon from '../../assets/image/header/icon/delIcon.svg'
 
 function CartList(props) {
     const [totalPrice, setTotalPrice] = useState(0);
-    const [product, setProduct] = useState([
-        {
-            id: "1",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 2,
-        },
-        {
-            id: "2",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 3,
-        },
-        {
-            id: "3",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 3,
-        },
-        {
-            id: "3",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 3,
-        },
-    ])
+    const {productCart, setProductCart} = useContext(DataContext)
+
+    console.log('productCart:', productCart);
 
     const handleDeleteItem = (idDelete) => {
-        let result = product.filter(item => item.id !== idDelete)
-        setProduct([...result])
+        let result = productCart.filter(item => item.id !== idDelete)
+        setProductCart([...result])
     }
 
     useEffect(() => {
         let total = 0
-        product.forEach((item) => {
+        productCart.forEach((item) => {
             total = total + (+item.price * item.quantity)
         })
         setTotalPrice(total)
-    }, [product])
+    }, [productCart])
 
     return (
         <div className='cardListContainer'>
             <div className='cartList-iconCart'>
                 <img className='cardIcon' src={CartIcon} alt='cartImage' />
-                {product.length ?
+                {productCart.length ?
                     <div className='itemQty'>
-                        {product.length}
+                        {productCart.length}
                     </div> :
                     <></>
                 }
 
             </div>
 
-
             < div className='cartList'>
-                {product.length ?
+                {productCart.length ?
                     <>
                         <div className='cartList_list'>
-                            {product.map((item, index) => {
+                            {productCart.map((item, index) => {
                                 return (
                                     <div key={index} className='cartList_list-item'>
                                         <div className='cartList_list-item-col1'>

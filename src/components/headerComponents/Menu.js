@@ -28,7 +28,6 @@ function Menu(props) {
                 calendarTypeList.push(item.type)
             }
         });
-        console.log(calendarTypeList);
     }
 
     const menuDetail = [
