@@ -1,5 +1,4 @@
-{
-    "noteBook": [
+[
         {
             "id": "NBJ1",
             "name": "Dusky Meadow Journal",
@@ -314,10 +313,7 @@
                 "image2":"https://m.media-amazon.com/images/S/aplus-media/kdp/4812e951-a7bc-4244-9ee1-c56e8a3ea932.__CR0,0,300,300_PT0_SX300_V1___.png",
                 "image3":"https://m.media-amazon.com/images/S/aplus-media/kdp/e2bdc006-e7ff-451f-8dfa-7926a7a04ba0.__CR0,0,300,300_PT0_SX300_V1___.png"
             }
-        }
-    ],
-    "noteBookNew": 
-    [
+        },
         {
             "id": "NBP1",
             "name": "Moleskine Classic Notebook",
@@ -529,4 +525,3 @@
             }
         }
     ]
-}
