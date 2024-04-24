@@ -1,12 +1,110 @@
-.calendarPageContainer{
+.calendarPageContainer {
     width: 100%;
-   
     position: relative;
     /* top: 180px; */
 
 }
-.imageBanner{
+
+.imageBanner {
     width: 100%;
     height: 475px;
     object-fit: cover;
+}
+
+.calendars_product {
+    display: flex;
+}
+
+.calendars_box {
+    display: block;
+    border: 0;
+    width: 20rem;
+    text-align: center;
+    position: relative;
+}
+
+.calendars_img {
+    height: 25rem;
+    /* width: 19rem; */
+    border-radius: 10px;
+    padding: auto;
+}
+
+.calendars_text {
+    /* text-align: center; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+    text-align: center;
+}
+
+.calendars_price {
+    text-align: center;
+    font-size: 14px;
+    color: crimson;
+    padding: 0;
+}
+
+.calendars_item {
+    padding: 10px;
+    display: flex;
+}
+
+.calendars_rowBtn {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    margin: auto;
+    padding: auto;
+    padding-left: 30%;
+    top: 50%;
+    text-align: end;
+    opacity: 0;
+
+}
+
+.calendars_rowBtn:hover {
+    opacity: 1;
+}
+
+.calendars_btn {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    left: 25%;
+    opacity: 0.5;
+    border: none;
+    border-radius: 5px;
+}
+
+.calendars_btn:hover {
+   opacity: 1;
+}
+
+.calendars_imgBox {
+    margin: auto;
+    padding: auto;
+    position: relative;
+}
+
+.calendars_body {
+    padding: 0;
+}
+
+.calendars_icon {
+    margin: auto;
+    padding: auto;
+    padding-left: -2px;
+
+}
+.calendars_boxCarImg{
+    margin: auto;
+    padding: auto;
+}
+.calendars_carouselImg{
+    object-fit: fill;
 }
