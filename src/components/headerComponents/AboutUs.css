@@ -73,20 +73,20 @@
         margin: auto;
     }
 
+    .header-group1{
+        width: 200px;
+    position: absolute;
+    right: 0;
+    top:20px;
+    
+    }
+
     .loginContainer {
-        position: absolute;
-        right: 0.5%;
-        bottom: 40%;
+ 
     }
 
     .cardListContainer {
-        width: 50px;
-        height: fit-content;
-        padding: 0;
-        position: absolute;
-        top:auto;
-        right: 0.5%;
-        bottom: 40%;
+   
     }
 
 
@@ -105,8 +105,12 @@
         height: 120px;
     }
 
-    .headerContainer_row1 {
-        flex-direction: column;
+    .header-group1{
+        width: 200px;
+    position: relative;
+    top: 0;
+    margin: auto;
+    
     }
 }
 
