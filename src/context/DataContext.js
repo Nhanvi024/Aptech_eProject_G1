@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react"; 
+import { createContext, useEffect, useState } from "react";
 
 const DataContext = createContext();
 function DataProvider({ children }) {
@@ -27,19 +27,22 @@ function DataProvider({ children }) {
             .then(setIsDataLoaded(true))
     }, [])
 
-    const handleAddProductCart = (idAdd) =>{
+
+    // ** Function Add product into Cart***********************************************
+    const handleAddProductCart = (idAdd) => {
         let productAdd = {};
-        if (!productCart.some(item=>item?.id === idAdd)) {
-            productAdd = products.noteBook.find(item=>item.id === idAdd)
-            if(!productAdd){
-                productAdd = products.calendar.find(item=>item.id === idAdd)
+        if (!productCart.some(item => item?.id === idAdd)) {
+            productAdd = products.noteBook.find(item => item.id === idAdd)
+            if (!productAdd) {
+                productAdd = products.calendar.find(item => item.id === idAdd)
             }
-            productCart.push({id: productAdd.id, name: productAdd.name, img: productAdd.image.mainImage, price: productAdd.price, quantity: 1});
-        } else{
-            productCart[productCart.indexOf(productCart.find(item=>item.id === idAdd))].quantity++;
+            productCart.push({ id: productAdd.id, name: productAdd.name, img: productAdd.image.mainImage, price: productAdd.price, quantity: 1 });
+        } else {
+            productCart[productCart.indexOf(productCart.find(item => item.id === idAdd))].quantity++;
         }
         setProductCart([...productCart])
     }
+    // ********************************************************************************
 
     let valueProvider = {
         products,
