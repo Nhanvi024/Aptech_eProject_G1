@@ -4,6 +4,7 @@ import './NewsPage.css'
 import React, { useContext, useState } from 'react';
 import Parser from "html-react-parser";
 import { DataContext } from '../../context/DataContext';
+import MenuSearch from '../../components/headerComponents/MenuSearch';
 
 function NewsPage(props) {
 
@@ -31,6 +32,7 @@ const html = `
 
                 <Link onClick={()=>setNews('News0')} to={news}>News 0</Link>
                 <Link onClick={()=>setNews('News1')} to={news}>News 1</Link>
+
 
             </section>
         </div>

@@ -1,0 +1,42 @@
+.menuSearch-container{
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+
+    position: absolute;
+    top: 90px;    
+
+}
+
+.menuSearch-icon{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: var(--secondary-background-clr);
+}
+.menuSearch-menuIcon{
+    width: 25px;
+}
+
+.menuSearch-searchIcon{
+    width: 25px;
+}
+.menuSearch-search{
+}
+.menuSearch-searchInput{
+    width: 100%;
+    position: absolute;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .menuSearch-container{
+        visibility: visible;
+    }
+}
