@@ -6,6 +6,7 @@ import { DataContext } from '../../context/DataContext';
 import CartIcon from '../../assets/image/header/icon/cartIcon.svg'
 import DeleteIcon from '../../assets/image/header/icon/delIcon.svg'
 
+
 function CartList(props) {
     const [totalPrice, setTotalPrice] = useState(0);
     const {productCart, setProductCart} = useContext(DataContext)
@@ -26,9 +27,9 @@ function CartList(props) {
     }, [productCart])
 
     return (
-        <div className='cardListContainer'>
+        <div className='cartListContainer'>
             <div className='cartList-iconCart'>
-                <img className='cardIcon' src={CartIcon} alt='cartImage' />
+                <img className='cartIcon' src={CartIcon} alt='cartImage' />
                 {productCart.length ?
                     <div className='itemQty'>
                         {productCart.length}
@@ -66,7 +67,7 @@ function CartList(props) {
                         <div className='cartList_bottom'>
                             <div className='cartList_bottom-sum'>
                                 <p className='cartList_bottom-sumText'>Sum: </p>
-                                <p className='cartList_bottom-sumPrice'>{totalPrice}<sup> $</sup></p>
+                                <p className='cartList_bottom-sumPrice'>{totalPrice.toFixed(2)}<sup> $</sup></p>
                             </div>
                             <button className='cartList_bottom-checkout'> Check Out</button>
                         </div>
