@@ -30,8 +30,11 @@
 
 }
 
-.servicesImage:hover{
-    transform: rotateY(90deg)
+.delivery:hover>.servicesImage,
+.support:hover>.servicesImage,
+.exchange_return:hover>.servicesImage,
+.standardPrice:hover>.servicesImage{
+    transform: rotateY(180deg)
 
 }
 

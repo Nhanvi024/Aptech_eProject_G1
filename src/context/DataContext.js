@@ -24,7 +24,7 @@ function DataProvider({ children }) {
         fetch('data/data.json')
             .then(res => res.json())
             .then(data => setProducts(data))
-            // .then(setIsDataLoaded(true))
+            .then(setIsDataLoaded(true))
     }, [])
 
     const handleAddProductCart = (idAdd) =>{
