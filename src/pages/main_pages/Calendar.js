@@ -1,13 +1,13 @@
 import './Calendar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React, { useEffect, useState,useContext } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { DataContext } from '../../context/DataContext';
 import ProductCard from '../../components/homepageComponents/ProductCard';
 
 function Calendar(props) {
-    let{products, setProducts}=useContext(DataContext);
+    let { products, setProducts } = useContext(DataContext);
     const [calendars, setCalendars] = useState([]);
-  
+
     const [idModal, setIdModal] = useState('');
     console.log(idModal)
     return (
@@ -45,6 +45,15 @@ function Calendar(props) {
                                                 </div>
                                             </div>
 
+                                    //         <div className="card-body calendars_body">
+                                    //             <h5 className="card-title calendars_text">{item.name}</h5>
+                                    //             <p className="card-text calendars_price">$ {item.price}
+                                    //             </p>
+                                    //         </div>
+                                    //     </div>
+
+                                    // </div>
+                                    <ProductCard key={index} item={item} />
                                             <div className="card-body calendars_body">
                                                 <h5 className="card-title calendars_text">{item.name}</h5>
                                                 <p className="card-text calendars_price">$ {item.price}
@@ -99,7 +108,7 @@ function Calendar(props) {
                                                                     <span className="visually-hidden">Previous</span>
                                                                 </button>
                                                                 <button
-                                                                      className="carousel-control-next" type="button"
+                                                                    className="carousel-control-next" type="button"
                                                                     data-bs-target="#carouselExampleIndicators" data-bs-slide="next" >
                                                                     <span className="carousel-control-next-icon" aria-hidden="true" />
                                                                     <span className="visually-hidden">Next</span>
