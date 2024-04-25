@@ -12,11 +12,10 @@ function HomePage(props) {
     const {
         products, searchProduct, setSearchProduct, isDataLoaded, setIsDataLoaded
     } = useContext(DataContext)
-    // console.log(products.noteBook);
 
     const [isPending, startTransition] = useTransition();
     const [notebookList, setNotebookList] = useState([]);
-    const [notebookTypeFilter, setNotebookTypeFilter] = useState("all")
+    const [calendarList, setCalendarList] = useState([]);
 
     // check window side and set number of items to display
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -52,13 +51,10 @@ function HomePage(props) {
     // ==================================================
 
     // maxpage and switch page
+    // next/prev notebook
     let section1MaxPage = Math.ceil((+Object.keys(notebookList || {}).length - itemPerPage) / 2);
-    // console.log("item per page1: ", itemPerPage);
-    // console.log("max page 1:", section1MaxPage);
-    // console.log("product notebook length: ", Object.keys(products.noteBook || {}).length);
-    // console.log("test item per page: ",itemPerPage);
     const [section1Page, setSection1Page] = useState(0)
-    // console.log("section1Page: ", section1Page);
+
     function handleSection1PageNext(params) {
         if (section1Page < section1MaxPage) {
             setSection1Page(pre => pre + 1)
@@ -73,10 +69,29 @@ function HomePage(props) {
             setSection1Page(section1MaxPage)
         }
     }
+
+    // next/prev calendar
+    let section2MaxPage = Math.ceil((+Object.keys(calendarList || {}).length - itemPerPage) / 2);
+    const [section2Page, setSection2Page] = useState(0)
+
+    function handleSection2PageNext(params) {
+        if (section2Page < section2MaxPage) {
+            setSection2Page(pre => pre + 1)
+        } else {
+            setSection2Page(0)
+        }
+    }
+    function handleSection2PagePrev(params) {
+        if (section2Page > 0) {
+            setSection2Page(pre => pre - 1)
+        } else {
+            setSection2Page(section2MaxPage)
+        }
+    }
     // ==================================================
 
     // Category list
-    let category1List = ['all'];
+    let category1List = ['all']; //notebook category list
     {
         products.length !== 0 && products.noteBook.map((item, index) => {
             if (!category1List.includes(item.type)) {
@@ -84,27 +99,24 @@ function HomePage(props) {
             }
         })
     };
-    // console.log("test category1List:", category1List);
+    let category2List = ['all']; //calendar category list
+    {
+        products.length !== 0 && products.calendar.map((item, index) => {
+            if (!category2List.includes(item.type)) {
+                category2List = [...category2List, item.type];
+            }
+        })
+    };
     // ==================================================
 
-    //
-    // console.log(notebookTypeFilter);
-    // console.log("test notebooklist:", notebookList);
-    // function notebookListFilter() {
-    //     if (isDataLoaded) {
-    //         if (notebookTypeFilter == 'all') {
-    //             setNotebookList(products.noteBook)
-    //         } else {
-    //             setNotebookList(products.noteBook.filter(item => item.type == notebookTypeFilter))
-    //         }
-    //     }
-    // }
+    // filter homepage by type
+    // filter notebook
+    const [notebookTypeFilter, setNotebookTypeFilter] = useState("all")
+
     useEffect(() => {
         if (isDataLoaded === true) {
-            // console.log("--------da load data");
             if (notebookTypeFilter === "all") {
                 setNotebookList(products.noteBook)
-                // console.log("test all");
             } else {
                 setNotebookList(products.noteBook.filter(item => item.type === notebookTypeFilter))
             }
@@ -112,8 +124,20 @@ function HomePage(props) {
         else { console.log("chua load data"); }
     }, [notebookTypeFilter, products])
 
-    // console.log("test load:", isDataLoaded);
-    // console.log("test product list:", products.noteBook);
+    // filter calendar
+    const [calendarTypeFilter, setCalendarTypeFilter] = useState("all")
+
+    useEffect(() => {
+        if (isDataLoaded === true) {
+            if (calendarTypeFilter === "all") {
+                setCalendarList(products.calendar)
+            } else {
+                setCalendarList(products.calendar.filter(item => item.type === calendarTypeFilter))
+            }
+        }
+        else { console.log("chua load data"); }
+    }, [calendarTypeFilter, products])
+    // ==================================================
 
     return (
         <div className='homePageContainer container-fluid p-0'>
@@ -177,64 +201,16 @@ function HomePage(props) {
             <section className='homepage-section-notebook-container container-md p-0 my-3 align-items-center'>
                 <div className='homepage-section-notebook row w-100 h-100 g-0 flex-row-reverse align-items-center'>
                     <div className='homepage-section-notebook-right col-md-8'>
-                        {/* <div className='row g-0'>
-                            <div className='homepage-section-notebook-right-row1 row m-auto mb-2'>
-                                <div className='col-8 g-0'>
-                                    <ul className="nav nav-tabs">
-                                        {products.length !== 0 && category1List.map((item, index) => {
-                                            let navClass = item == notebookTypeFilter ? "nav-item active" : "nav-item";
-                                            return (
-                                                <li className={navClass} key={index}>
-                                                    <a className="nav-link" onClick={() => { setNotebookTypeFilter(item); setSection1Page(0) }} >{item}</a>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </div>
-                                <div className='col-4 text-end'>
-                                    <span>
-                                        <button className="btn btn-primary pt-3 pb-0 me-1" onClick={handleSection1PagePrev}>
-                                            <p className='homepage-nextPrevButton'>&#8249;</p>
-                                        </button>
-                                        <span> {section1Page + 1}/{section1MaxPage + 1} </span>
-                                        <button className="btn btn-primary pt-3 pb-0 ms-1" onClick={handleSection1PageNext}>
-                                            <p className='homepage-nextPrevButton'>&#8250;</p>
-                                        </button>
-                                    </span>
-
-                                </div>
-                            </div>
-                            <div className='homepage-section-notebook-right-row2 row justify-content-center m-auto align-items-center'>
-                                {products.length === 0 &&
-                                    <div className="d-flex justify-content-center">
-                                        <div className="spinner-border text-danger" style={{ width: "5rem", height: "5rem" }} role="status">
-                                            <span className="visually-hidden">Loading...</span>
-                                        </div>
-                                    </div>}
-                                <div className='homepage-section-notebook-right-row2row row'>
-                                    {products.length !== 0 && notebookList.map((item, index) => {
-                                        if (index >= (section1Page * itemPerPage) && index < (section1Page + 1) * itemPerPage && index % 2 === 0) {
-                                            return (
-                                                <ProductCard key={index} item={item} />
-                                            )
-                                        }
-                                    })}
-                                </div>
-                                <div className='homepage-section-notebook-right-row2row row'>
-                                    {products.length !== 0 && notebookList.map((item, index) => {
-                                        if (index >= (section1Page * itemPerPage) && index < (section1Page + 1) * itemPerPage && index % 2 !== 0) {
-                                            return (
-                                                <ProductCard key={index} item={item} />
-                                            )
-                                        }
-                                    })}
-                                </div>
-                            </div>
-                        </div> */}
                         <div className='row g-0'>
                             <div className='homepage-section-notebook-right-row1 row m-auto mb-2'>
-                                <div className='col-8 g-0'>
-                                    <ul className="nav nav-tabs">
+                                <div className='col-10 col-sm-3 col-xl-2 text-center align-content-center'>
+                                    <button className='homepage-redirect-button row m-0 justify-items-center'
+                                        onClick={() => Navigate("/notebook")}>
+                                        <p className='m-0 py-3 homepage-redirect-button-text'>Notebook</p>
+                                    </button>
+                                </div>
+                                <div className='d-none d-sm-block col-7 col-xl-8 g-0'>
+                                    <ul className="nav nav-pills">
                                         {products.length !== 0 && category1List.map((item, index) => {
                                             let navClass = item === notebookTypeFilter ? "nav-item active" : "nav-item";
                                             return (
@@ -245,12 +221,11 @@ function HomePage(props) {
                                         })}
                                     </ul>
                                 </div>
-                                <div className='col-4 text-end'>
+                                <div className='col-2 text-end align-content-center'>
                                     <span>
                                         <button className="btn btn-primary pt-3 pb-0 me-1" onClick={handleSection1PagePrev}>
                                             <p className='homepage-nextPrevButton'>&#8249;</p>
                                         </button>
-                                        {/* <span> {section1Page + 1}/{section1MaxPage + 1} </span> */}
                                         <button className="btn btn-primary pt-3 pb-0 ms-1" onClick={handleSection1PageNext}>
                                             <p className='homepage-nextPrevButton'>&#8250;</p>
                                         </button>
@@ -270,7 +245,7 @@ function HomePage(props) {
                             </div>
                         </div>
                     </div>
-                    <div className='homepage-section-notebook-left col-md-4 p-3 d-flex'>
+                    <div className='homepage-section-notebook-left col-md-4 p-3 d-flex my-3'>
                         <div id="homepage-notebookCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
 
                             {/* <!-- Wrapper for slides --> */}
@@ -310,10 +285,91 @@ function HomePage(props) {
                     </div>
                 </div>
             </section>
-            <section className='section-notebook container-md p-0'>
-                <div className='row w-100 g-0'>
-                    <div className='col-sm-8 bg-warning'>333</div>
-                    <div className='col-sm-4 bg-success'>444</div>
+            <section className='homepage-section-notebook-container container-md p-0 my-3 align-items-center'>
+                <div className='homepage-section-notebook row w-100 h-100 g-0 flex-wrap align-items-center'>
+                    <div className='homepage-section-notebook-right col-md-8'>
+                        <div className='row g-0'>
+                            <div className='homepage-section-notebook-right-row1 row m-auto mb-2'>
+                                <div className='col-10 col-sm-3 col-xl-2 text-center align-content-center'>
+                                    <button className='homepage-redirect-button row m-0 justify-items-center'
+                                        onClick={() => Navigate("/calendar")}>
+                                        <p className='m-0 py-3 homepage-redirect-button-text'>calendar</p>
+                                    </button>
+                                </div>
+                                <div className='d-none d-sm-block col-7 col-xl-8 g-0'>
+                                    <ul className="nav nav-pills">
+                                        {products.length !== 0 && category2List.map((item, index) => {
+                                            let navClass = item === calendarTypeFilter ? "nav-item active" : "nav-item";
+                                            return (
+                                                <li className={navClass} key={index}>
+                                                    <a className="nav-link" onClick={() => { setCalendarTypeFilter(item); setSection2Page(0) }} >{item}</a>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </div>
+                                <div className='col-2 text-end align-content-center'>
+                                    <span>
+                                        <button className="btn btn-primary pt-3 pb-0 me-1" onClick={handleSection2PagePrev}>
+                                            <p className='homepage-nextPrevButton'>&#8249;</p>
+                                        </button>
+                                        <button className="btn btn-primary pt-3 pb-0 ms-1" onClick={handleSection2PageNext}>
+                                            <p className='homepage-nextPrevButton'>&#8250;</p>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className='homepage-section-notebook-right-row2 row justify-content-center m-auto align-items-center'>
+                                <div className='homepage-section-notebook-right-row2row'>
+                                    {products.length !== 0 && calendarList.map((item, index) => {
+                                        if (index >= (section2Page * 2) && index < (section2Page * 2) + itemPerPage) {
+                                            return (
+                                                <ProductCard key={index} item={item} />
+                                            )
+                                        }
+                                    })}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='homepage-section-notebook-left col-md-4 p-3 d-flex my-3'>
+                        <div id="homepage-notebookCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
+
+                            {/* <!-- Wrapper for slides --> */}
+                            <div className="carousel-inner d-flex">
+                                {products.length === 0 &&
+                                    <div className="d-flex justify-content-center">
+                                        <div className="spinner-border text-danger" style={{ width: "5rem", height: "5rem" }} role="status">
+                                            <span className="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>}
+                                {products.length !== 0 && products.calendar.map((item, index) => {
+                                    let classCarousel = index === 0 ? "carousel-item active" : "carousel-item"
+                                    return (
+                                        <div key={index} className={classCarousel} data-bs-interval="3000">
+                                            <div className='homepage-productCard-carouselImgContainer'>
+                                                <img
+                                                    src={item.image.mainImage}
+                                                    className='d-flex w-100 homepage-productCard-carouselImg' />
+                                            </div>
+                                            <div>
+                                                <div className='homepage-productCard-name'>{item.name}</div>
+                                                <div className='homepage-productCard-price'>${item.price}</div>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
+                            </div>
+
+                            {/* <!-- Left and right controls --> */}
+                            <button className="carousel-control-prev" data-bs-target="#homepage-notebookCarousel" data-bs-slide="prev">
+                                <span className="" aria-hidden="true"></span>
+                            </button>
+                            <button className="carousel-control-next" data-bs-target="#homepage-notebookCarousel" data-bs-slide="next">
+                                <span className="" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
             </section>
