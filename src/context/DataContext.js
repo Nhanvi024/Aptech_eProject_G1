@@ -29,34 +29,39 @@ function DataProvider({ children }) {
 
 
     // ** Function Add product into Cart***********************************************
-    const handleAddProductCart = (idAdd) => {
+    const handleAddProductCart = (itemAdd) => {
         let productAdd = {};
-        if (!productCart.some(item => item?.id === idAdd)) {
-            productAdd = products.noteBook.find(item => item.id === idAdd)
-            if (!productAdd) {
-                productAdd = products.calendar.find(item => item.id === idAdd)
-            }
-            productCart.push({ id: productAdd.id, name: productAdd.name, img: productAdd.image.mainImage, price: productAdd.price, quantity: 1 });
+        if (!productCart.some(item => item?.id === itemAdd.id)) {
+            productCart.push({ id: itemAdd.id, name: itemAdd.name, img: itemAdd.image.mainImage, price: itemAdd.price, quantity: 1 });
         } else {
-            productCart[productCart.indexOf(productCart.find(item => item.id === idAdd))].quantity++;
+            productCart[productCart.indexOf(productCart.find(item => item.id === itemAdd.id))].quantity++;
         }
         setProductCart([...productCart])
     }
     // ********************************************************************************
 
     let valueProvider = {
+        // products data read from json file --> many components are in use
         products,
         setProducts,
-        searchProduct,
-        setSearchProduct,
+
+        // Search Name of product
+        searchProduct,  // --> SearchPage.js
+        setSearchProduct, //--> SearchBox.js
+
+        // Button Link is activated, --> NavBar.js, Menu.js
         btnActive,
         setBtnActive,
+
+        // --> HomePage.js
         isDataLoaded,
         setIsDataLoaded,
 
+        // product list in Cart --> CartList.js
         productCart,
         setProductCart,
 
+        // function add product to cart --> ProductCard.js
         handleAddProductCart
     }
     return (
