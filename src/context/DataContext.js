@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react"; 
+import { createContext, useEffect, useState } from "react";
 
 const DataContext = createContext();
 function DataProvider({ children }) {
@@ -18,6 +18,7 @@ function DataProvider({ children }) {
     ]
     const [btnActive, setBtnActive] = useState(webPage[0].name)
 
+    const [productCart, setProductCart] = useState([])
 
     useEffect(() => {
         fetch('data/data.json')
@@ -27,6 +28,22 @@ function DataProvider({ children }) {
     }, [])
 
 
+    // ** Function Add product into Cart***********************************************
+    const handleAddProductCart = (idAdd) => {
+        let productAdd = {};
+        if (!productCart.some(item => item?.id === idAdd)) {
+            productAdd = products.noteBook.find(item => item.id === idAdd)
+            if (!productAdd) {
+                productAdd = products.calendar.find(item => item.id === idAdd)
+            }
+            productCart.push({ id: productAdd.id, name: productAdd.name, img: productAdd.image.mainImage, price: productAdd.price, quantity: 1 });
+        } else {
+            productCart[productCart.indexOf(productCart.find(item => item.id === idAdd))].quantity++;
+        }
+        setProductCart([...productCart])
+    }
+    // ********************************************************************************
+
     let valueProvider = {
         products,
         setProducts,
@@ -35,7 +52,12 @@ function DataProvider({ children }) {
         btnActive,
         setBtnActive,
         isDataLoaded,
-        setIsDataLoaded
+        setIsDataLoaded,
+
+        productCart,
+        setProductCart,
+
+        handleAddProductCart
     }
     return (
         <DataContext.Provider value={valueProvider}>
