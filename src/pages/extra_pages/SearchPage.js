@@ -1,3 +1,5 @@
+import './SearchPage.css'
+
 import React from 'react';
 
 function SearchPage(props) {
