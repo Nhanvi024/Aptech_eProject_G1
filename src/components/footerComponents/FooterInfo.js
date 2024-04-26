@@ -2,7 +2,7 @@ import './FooterInfo.css'
 import faceIcon from '../../assets/image/footer/icon/facebook.svg'
 import tweetterIcon from '../../assets/image/footer/icon/tweetter.svg'
 import instaIcon from '../../assets/image/footer/icon/instagram.svg'
-import logoCalendar from '../../assets/image/header/logo/logoImage.png'
+import logoCalendar from '../../assets/image/header/logo/logo.jpg'
 
 
 import React from 'react';
@@ -12,8 +12,7 @@ function FooterInfo(props) {
         <div className='footerInfoContainer'>
             <div className='logoFooter'>
                 <img className='logoFooter_logo' 
-                src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/logo.png?1711094550864'
-                // src={logoCalendar}
+                src={logoCalendar}
                 alt='logoFooter'/>
                 <div className='logoFooter_fanPage'>
                     <img className='logoFooter_fanPage-icon' src={faceIcon} alt='facebookIcon'/>

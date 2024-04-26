@@ -26,7 +26,6 @@ function NavBar(props) {
                 calendarTypeList.push(item.type)
             }
         });
-        console.log(calendarTypeList);
     }
 
 
