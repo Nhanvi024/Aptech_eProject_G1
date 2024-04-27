@@ -1,3 +1,4 @@
+
 import { DataContext } from '../../context/DataContext';
 import './NoteBook.css'
 import React, { useContext, useEffect, useState } from 'react';
@@ -15,6 +16,7 @@ function NoteBook(props) {
             .then(data => setProducts(data))
     }, [])
     return (
+
         <div className='noteBookPageContainer container-fluid p-0'>
             <img className='imageBanner'
                 src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
@@ -35,7 +37,7 @@ function NoteBook(props) {
                         <div className='row Notebook_products'>
                             {products.noteBook.map((item, index) => {
                                 return (
-                                    <div className='col-sm-3 Notebook_item' key={index}>
+                                    <div className='col-sm-3 Notebook_item'>
                                         {/* <div className='card text-center col Notebook_itembox'>
                                             <div className='row Notebook_imgContainer'>
                                                 <img src={item.image.mainImage} className='Notebook_img card-img-top ' alt='...'></img>
@@ -120,6 +122,7 @@ function NoteBook(props) {
                 </div>
             </div>
         </div>
+
 
     );
 }
