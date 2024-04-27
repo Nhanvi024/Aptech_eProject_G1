@@ -1,0 +1,68 @@
+<div class="contentnewTitle">
+                            <a href="News01.html"><h4>Planner Handbook Experience</h4></a>
+                            <div class="meta1">
+                                <span>
+                                    <h6>Posted on
+                                        <a href="../../about/about.html">February 12,2022</a>
+                                        by
+                                        <a href="../../about/about.html">admin</a>
+                                    </h6>
+                                </span>
+                            </div>
+                            <h6 class="Title1">
+                                Carrying a handbook by your side and using it for planning, you probably won't avoid the prying eye shots of many people. At a time when everything can be completed quickly and conveniently with just a few taps, pressing, recording beaks, positive hands to take photos ... Even planning can be very simple and easy. Almost everything has an "electronic app" to help you get things done more conveniently.
+                                <br><br>
+                                Then! Why would you want to be more troublesome and troublesome when you have to carry a notebook, a few pens, sit and take notes... Are you going backwards from the times?
+                            </h6>
+                            <br>
+                        </div>
+                        <div class="contentnewTitle1">
+                            <p style="font-style: italic;">* I'll stop saying that the Handbook manages work better than electronic devices. Because actually, many of you can manage your work better with a notebook, but many of you can also manage your work better with electronic apps. Using a notebook will have many benefits, but those applications also have offset benefits. You should spend time planning both across apps and on the notebook to determine which tools are right for you, don't let the flow of information from one dimension cause you to miss the opportunity to find the one that works best for you*</p>
+                            <br>
+                            <img src="/assets/image/news/news7/71.jpg" alt="">
+                            <br><br>
+
+                            <b>The information below the wire is for those who choose the notebook as a planning tool</b>
+                            <br><br>
+                            
+                            <b>I. Divide the plan for the month</b>
+                            <br><br>
+                            <p>
+                                In any planner book, if done correctly, there's a section called "monthly overview" - if you use Bullet Journal, this is The Monthly Layout. This is where you can get a quick overview of the important tasks of your month. Write here the plans that must not be changed such as birthdays, holidays, net payment days and all important days such as wedding days, class meetings ... Don't try to insert long to-do lists into this tiny layout.
+                            </p>
+                            <br>
+
+                            <b>II. Divide the plan for the week</b>
+                            <br><br>                            
+                            <p>
+                                The plan for "monthly overview" will be a "weekly overview" where you fill in the important things to accomplish during the week. Write down big goals that you can accomplish in 7 days, or things you need to do but not necessarily the exact day of the week.
+                            </p>
+                            <br>
+                            <img src="/assets/image/news/news7/72.jpg" alt="">
+                            <br><br>
+
+                            <b>III. Divide the plan for the day</b>
+                            <br><br>                            
+                            <p>
+                                Smaller than that is the plan for the day. Where you put all the rest here to make your day easier. What to wear, what to eat, what to practice and all the small events on a date, meet up, caffe with your friends... You can insert the to-do list here if necessary.                            
+                            </p>
+                            <br>
+                            <img src="/assets/image/news/news7/73.jpg" alt="">
+                            <br><br>
+
+                            <b>IV. Keep it a habit</b>
+                            <br><br>
+                            <p>
+                                Many of you want to manage your time well but don't have a habit of planning regularly, which will often lead to something called an "old book on the shelf" – yes, that's your unfinished plan book!
+                                <br><br>
+                                Specify a time to fill in the month page, weekly page, date page, at least fill in the things you can remember at that time, you can fill in later. With the day plan, you do not need to fill in every night or every morning, you can fill in at once several days. For Example, on Sundays, you will plan for mondays to Thursdays, and on Thursday evenings you plan fridays to Sundays. Or you can break it down, as long as you have good control over your time and don't mess up and lack your work.
+                            </p>
+                            <br>
+
+                            <b>V. Don't cram too much</b>
+                            <br><br>
+                            <p>
+                                Keeping the habit of writing is important, but sometimes a white page will also be good for managing your time. Many of you fill almost all activities during the day, during the week, during the month in the notebook and nails must complete them. Remember, planners are notebooks that make your life easier, sometimes you also need to change and do unforeseen things like visiting a grandmother's house, caffe alone or watching a random movie. Don't be too late in forcing yourself into a certain framework that is comfortable handling what you need, maybe some of the things you "wanted before" to make time for what you "want now."
+                            </p>   
+
+                        </div>

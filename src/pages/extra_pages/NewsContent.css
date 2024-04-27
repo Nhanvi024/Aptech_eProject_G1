@@ -37,6 +37,9 @@
         font-size: var(--fs-600);
         font-weight: 500;
     }
+    img{
+        width: 100%;
+    }
 }
 
 .contentnewTitle1 {
