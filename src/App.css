@@ -11,4 +11,6 @@
     font-family: var(--ff-primary-font);
     font-size:  var(--fs-300);
     font-weight: 700;
+
+    z-index: -2;
 }
