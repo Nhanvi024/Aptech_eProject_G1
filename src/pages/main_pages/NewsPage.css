@@ -1,7 +1,107 @@
-.newsPageContainer{
-    width: 100%;
-   
-    position: relative;
-    /* top: 180px; */
+.newsPageContainer {
+    width: 1200px;
+    height: fit-content;
 
+}
+
+.newsPage-newsUpdate {
+    width: 100%;
+
+}
+.newsPage-newsUpdate-name{
+    color: var(--active-text-color);
+}
+.newsPage-newsUpdate-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.newsPage-newsUpdate-news1 {
+    width: 550px;
+    cursor: pointer;
+
+    position: relative;
+
+    border: 1px solid red;
+}
+
+.newsPage-newsUpdate-news1-img {
+    width: 100%;
+    height: 354px;
+
+    object-fit: fill;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.newsPage-newsUpdate-news1-title {
+    border: none;
+    background-color: rgba(62, 62, 62, 0.6);
+    position: absolute;
+
+    margin: 20px;
+    padding: 10px 10px;
+
+    bottom: 10px;
+    left: 0;
+
+    text-align: left;
+    color: var(--secondary-text-color);
+    font-size: var(--fs-400);
+}
+
+.newsPage-newsUpdate-side{
+    width: 550px;
+
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.newsPage-newsUpdate-news2,
+.newsPage-newsUpdate-news3,
+.newsPage-newsUpdate-news4,
+.newsPage-newsUpdate-news5{
+    width: 260px;
+
+    position: relative;
+}
+
+.newsPage-newsUpdate-news2-img,
+.newsPage-newsUpdate-news3-img,
+.newsPage-newsUpdate-news4-img,
+.newsPage-newsUpdate-news5-img {
+    width: 100%;
+    height: 170px;
+
+    object-fit: fill;
+}
+
+.newsPage-newsUpdate-news2-title,
+.newsPage-newsUpdate-news3-title,
+.newsPage-newsUpdate-news4-title,
+.newsPage-newsUpdate-news5-title {
+    border: none;
+    background-color: rgba(62, 62, 62, 0.6);
+    position: absolute;
+
+    margin: 0 20px;
+    padding: 10px 10px;
+
+    bottom: 10px;
+    left: 0;
+
+    text-align: left;
+    color: var(--secondary-text-color);
+    font-size: var(--fs-200);
+}
+
+.newsPage-newsUpdate-news3-img{
+    border-top-right-radius: 15px;
+}
+.newsPage-newsUpdate-news5-img{
+    border-bottom-right-radius: 15px;
 }
