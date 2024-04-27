@@ -30,7 +30,6 @@ function DataProvider({ children }) {
 
     // ** Function Add product into Cart***********************************************
     const handleAddProductCart = (itemAdd) => {
-        let productAdd = {};
         if (!productCart.some(item => item?.id === itemAdd.id)) {
             productCart.push({ id: itemAdd.id, name: itemAdd.name, img: itemAdd.image.mainImage, price: itemAdd.price, quantity: 1 });
         } else {

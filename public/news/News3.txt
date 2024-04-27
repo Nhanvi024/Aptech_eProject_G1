@@ -1,0 +1,155 @@
+    <div className="contentnewTitle">
+        <a href="News01.html"><h4>What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar</h4></a>
+        <div className="meta1">
+            <span>
+                <h6>Posted on
+                    <a href="../../about/about.html">February 12,2022</a>
+                    by
+                    <a href="../../about/about.html">admin</a>
+                </h6>
+            </span>
+        </div>
+        <h6 className="Title1">
+            What is a calendar? When was the calendar born? What kind of calendars are there in the world? When has Vietnam used the calendar? You can find all the answers in the article below.                            </h6>
+    </div>
+    <div className="contentnewTitle1">
+        <br/>
+        <p>
+            Calendar is a very familiar concept for each of us. You can't imagine if the world you live in without a calendar, without a set and calculated time, life would be chaotic.
+            <br/><br/>
+            But what a calendar is, how history it is, is not clear to everyone. Let's take a closer look at the calendar in the article below.                      
+        </p>
+        <br/>
+
+        <b>1. What is the calendar?</b>
+        <br/><br/>
+        <p>
+            The need to record important events in the community has appeared since ancient times, when people did not have written words, can only use symbols on caves, trees, animal bones.
+            <br/><br/>
+            It comes from this human need, so the calendar was born. The birth schedule has made people campaign organized, have a much more unified time. 
+        </p>
+        <br/>
+        <img src="/assets/image/news/news3/31.jpg" alt=""/>
+        <i>Calendar was born to help people work more organized</i>
+        <br/><br/>
+
+        <p>
+            What is a calendar? The word "calendar" or "calendrier" of European languages is derived from the Latin word "Calendae."
+            <br/><br/>
+            The word means "first day of the Roman month", which is the time when people spend to announce the time for holding markets, festivals or other important events.
+            <br/><br/>
+            The calendar is built according to its own rules, is an organized system, used to record and calculate time in the most convenient way, help people live in a routine, serve religious ceremonies, as well as serve different historical and scientific purposes.
+        </p>
+        <br/>
+
+        <b>2. Popular calendar types in the world</b>
+        <br/><br/>
+        <p>
+            There are many different types of calendars in the world, but the most commonly known and used today are the solar, lunar, and lunar calendars.
+        </p>
+
+        <b>Solar Calendar</b>
+        <br/>
+        <p>
+            A calendar is the type of calendar where dates indicate the Earth's position in the motion around the Sun, or in other words, the sun's expressive position in the celestial sphere.
+            <br/><br/>
+            For Vietnamese people today, the term "calendar" is generally only the Gregorian calendar. The Gregorian calendar, also known as the Western Calendar or The Calendar, is a calendar introduced by Pope Gremiah XIII in 1582.
+            <br/><br/>
+            This type of calendar divides a year into 12 months with 365 days, adding 1 day every 4 years at the end of February to form a leap year with 366 days.
+        </p>
+        
+        <b>Lunar calendar</b>
+        <br/>
+        <p>
+            What is the lunar calendar? This type of calendar is calculated based on the cycles of the moon, however, the purest lunar calendar is in fact only the Islamic calendar. 
+            <br/><br/>
+            In the Islamic calendar, there are only 12 lunar months per year, and this calendar is used primarily for religious and religious purposes. 
+        </p>
+        <img src="/assets/image/news/news3/32.png" alt=""/>
+        <i>The lunar calendar is calculated according to the cycle of the moon.</i>
+        <br/>
+        <p>
+            Characteristic of this type of calendar is the continuity of the full moon cycle, it is not tied at all to the seasons of the year. This is why the time per year in the Islamic lunar calendar is about 11 or 12 days shorter than in countries that use the calendar. 
+            <br/><br/>
+            The calendar only matches the calendar year after every 33 or 34 Islamic years.
+        </p>
+
+        <b>Yin and yang calendar</b>
+        <br/>
+        <p>
+            The lunar calendar is the calendar calculated according to both the movement of the Moon and the symbolic motion of the Sun.
+            <br/><br/>
+            In this type of calendar, the months are maintained according to the lunar cycle, however there are also cases where leap months are added according to certain rules to adjust the feeding moon cycles to match the calendar year. 
+            <br/><br/>
+            Currently, Vietnamese refer to "lunar calendar" as a shallow calendar, a type of history commonly used in countries and regions influenced by Chinese culture.
+            <br/><br/>
+            In essence, this type of lunar calendar is due to the combination of pure lunar calendar with the time of gas secretion calculated according to the calendar.
+            <br/><br/>
+            The use of this type of calendar is to calculate the full moon days, the 1st day, the important festivals in a year such as Lunar New Year, Full Moon in July, Mid-Autumn Festival ... as well as to choose a good day for big jobs such as fasting, marriage, building houses ...
+        </p>
+        
+        <b>2. When did the calendar appear?</b>
+        <br/><br/>
+        <b>Europe</b>
+        <br/>
+        <p>
+            It was discovered that more than 20,000 years ago, hunters in Europe used tools to carve on tree trunks or animal bones to calculate the days by the moon. 
+            <br/><br/>
+            More than 4,000 years ago, perhaps stonehenge columns in England were arranged to identify the seasons and some important times of the year.
+            <br/><br/>
+            In Greece, clay archaeological artifacts dating back to the 13th century BC also show that the Greeks used the Lunar Calendar of alternating months of 29 and 30 days. 
+            <br/><br/>
+            In Rome, the calendar first appeared in the 7th or 8th century BC consisting of 304 days, including a total of 10 months with 6 months 30 days and 4 months 31 days.    
+        </p>
+        
+        <b>Mayans</b>
+        <br/>
+        <p>The Mayans built the calendar based on the cycles of activity of both the Moon, Sun, and Venus. Their calendar has two types of 260 days on 365 days.</p>  
+             
+        <b>Egypt</b>
+        <br/>
+        <p>The first calendar was created by the Egyptians more than 10,000 years ago, consisting of 360 days with 12 months, each month with 30 days.</p>    
+        <img src="/assets/image/news/news3/33.jpeg" alt=""/>
+        <i>Ancient Egyptian calendar</i>
+        <br/>
+        <p>But then, combined with astronomical observations and tidal phenomena on the Nile that people adjusted, it was adapted to a new type of calendar of 365 days.</p>
+
+        <b>Babylonians</b>
+        <br/>
+        <p>
+            The Babylonians began using the calendar around 2000 BC. The calendar consists of 12 months, alternating months with 29 and 30 days. By 380 BC, the calendar was improved and became more detailed with the addition of a combination of the moon and the weather.
+        </p>
+
+        <b>India</b>
+        <br/>
+        <p>
+            India's oldest calendar dates back to about 1000 BC. This type of calendar divides a year into 360 days with 12 negative months, each month has 27 or 28 days. Every 60 months, the missing days are further compensated by inserting additional leap months
+        </p>
+
+        <b>China</b>
+        <br/>
+        <p>
+            The lunar calendar appeared in China in the 14th century BC created by the Merchant Dynasty, but according to legend, the calendar may have appeared even earlier, from the time of the Three Emperors, i.e. 2637 BC, created by the Emperor.
+        </p>
+
+        <p>However, since the Merchants, the Chinese have known that a year is 365.25 days long, and the moon is 29.5 days long.</p>
+
+        <img src="/assets/image/news/news3/34.jpg" alt=""/>
+        <i>Vietnam currently uses lunar calendars</i>
+        <br/>
+
+        <p>For 1,000 years the North belonged until 1054, immediately King Li Tsaizong, our country used the same calendar as the Chinese calendar.
+            <br/><br/>
+            Since 1054, when King Li Tsong ascended the throne, it is said that our country has begun to compose its own calendar, based on chinese calendars.
+            <br/><br/>
+            From 1407, when it was colonised by the Ming Dynasty, our country switched to the calendar with the Ming Dynasty, until the time of King Gia Long, in 1812.
+            <br/><br/>
+            From 1813 to 1945, when France ruled our country, they created a table comparing the Yang calendar with the Yin yang calendar taken from China, while the Nguyens still composed their own calendars according to the Constitutional calendar (like the Qing Dynasty) in the Middle Ages.
+            <br/><br/>
+            From 1946 to 1967, Vietnam no longer compiled its own calendar, which publishers translated from the Chinese calendar.
+            <br/><br/>
+            From 1968 to now, after undergoing many time zone changes, Vietnam's official time was announced in time zone 7, while China has calculated it according to time zone 8, so Vietnam continues to compile its own calendar until now.
+            <br/><br/><br/>
+            (General)
+        </p>
+    </div>
