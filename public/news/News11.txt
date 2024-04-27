@@ -1,0 +1,80 @@
+<div class="contentnewTitle">
+                            <a href="News01.html"><h4>A small notebook can completely change your life.</h4></a>
+                            <div class="meta1">
+                                <span>
+                                    <h6>Posted on
+                                        <a href="../../about/about.html">February 12,2022</a>
+                                        by
+                                        <a href="../../about/about.html">admin</a>
+                                    </h6>
+                                </span>
+                            </div>
+                            <h6 class="Title1">
+                                Many people still have thoughts like, "I don't need to write for tired, reading is enough for me," a huge mistake! There are many studies that have shown that our brains have a completely different way of looking when we write than when we read or when we talk.
+                            </h6>   
+                            <br><br>
+                            <img src="/assets/image/news/news11/111.jpg" alt="">
+                            <br><br>
+                            
+                        </div>
+                        <div class="contentnewTitle1">
+                            <p>
+                                Scribe helps us organize and clarify our thoughts. You'll learn better when you take notes on your notebook and tend to follow them more. What will you write in your notebook?                            
+                            </p>
+                            <br>
+
+                            <b>1) Write down what you're looking for.</b>
+                            <br><br>
+                            <p>
+                                People who take the time to anticipate interesting experiences are often happier. So, at least once a week, make a plan, write them in a notebook, and when you need more motivation, think about the best things that can happen.
+                                <br><br>
+                                One study found that people who just thought about watching their favorite movie also increased endorphin levels in their bodies by 27%. Usually, the most enjoyable part of the activity is the anticipation for that activity. If you don't take some time to plan your travel plans, or simply plan to go out on the street with your friends, write it down on your calendar — whether it's a month or a year later. And every time you need to increase your happiness, think about it.                            
+                            </p>
+                            <p style="font-style: italic; font-size: small;">
+                                * Endorphins are neurotransmitters in the brain that have a positive emotional effect, improving mood. In particular, endorphins are also the body's natural painkiller, which helps reduce mental stress and slows aging.
+                            </p>
+                            <br>
+
+                            <b>2) Take note of your progress.</b>
+                            <br><br>
+                            <p>
+                                If you want to know about your strengths and weaknesses, try predicting them. Write it in a notebook, and then compare it to the results you've passed.This is a great way to know your natural aptitudes and improve it.
+                                <br><br>
+                                The only way to discover your strengths is through feedback. When you make an action decision write in the fact-making handbook that you want to achieve.9-12 months later compare it to the results you achieved: What skill did you use to produce such results? What ability do you need to strengthen in order for you to get the results you want? What bad habits prevent you from completing your actions? As you identify opportunities to improve your abilities, don't waste time on skills you don't specialize in, focus and build on your strengths.
+                                <br><br>
+                                You'll get to know yourself better and make more accurate choices when you record your feelings and expect things to happen.                            
+                            </p>
+                            <br>
+
+                            <b>3) Write in your notebook your goals.</b>
+                            <br><br>
+                            <p>
+                                It's easier to follow what you've written in your notebook. Write in your notebook the obstacles you obstruct your goal and how to solve it.
+                                <br><br>
+                                Writing in your notebook your goals can make you happier and can even help you get better. Everyone knows they should write their life goals in a notebook, and everyone has goals in life, but not everyone writes. Why? They take it too seriously and they're afraid to think about commitments, just write them down. Goals can change but in the meantime it can help them make decisions when they're stuck.                            
+                            </p>
+                            <br>
+
+
+                            <b>4) Write in your handbook of ideas.</b>
+                            <br><br>
+                            <p>
+                                A lot of geniuses always keep a notebook by their side. Why? You don't know when the idea will come to you, and when it comes, always be ready for it.
+                                <br><br>
+                                Creativity comes by spectacular brushstrokes and fast writing, and over time it will become a powerful idea. One of the common points of many people working in shared creative fields - whether drawing, acting, writing or researching - they often write or draw first ideas in a very basic way, even if they are very small ones. Instead of a super-big idea at once, the world's top creators often gather their own small ideas, link up and create super-big ideas.
+                                <br><br>
+                                Do you have an idea? A good idea? It doesn't matter if you write it down. There are a lot of ideas that are too normal to be good when you start working.                            
+                            </p>
+                            <br>
+
+                            <b>5) Write in your handbook your worries.</b>
+                            <br><br>
+                            <p>
+                                Studies show that writing about things that worry you helps you become calmer and even improve your performance.
+                                <br><br>
+                                Problems at work keep you worried even after work and you've left work. Write in a how book to deal with those issues before you leave the workplace. Some studies have proven that telling someone after you've been traumatized doesn't help you feel better, but writing down a notebook does.
+                                <br><br>
+                                Specifying time to worry is actually a good, interesting strategy as the name implies. Write your worries in your notebook, leave them there, and take some time off.
+                            </p>
+
+                        </div>
