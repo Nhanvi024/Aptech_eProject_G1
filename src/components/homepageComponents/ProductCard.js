@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { DataContext } from '../../context/DataContext';
 
 function ProductCard(props) {
-const { handleAddProductCart } = useContext(DataContext)
+const { handleAddProductCart,handleAddCart } = useContext(DataContext)
 
     let { item } = props
     return (
@@ -15,6 +15,7 @@ const { handleAddProductCart } = useContext(DataContext)
                     <div className='productCard-button-container'>
                     <button className='productCard-button1 fas fa-info'></button>
                     <button onClick={()=>handleAddProductCart(item.id)} className='productCard-button1 fas fa-cart-plus'></button>
+                    <button onClick={()=>handleAddCart(item)} className='productCard-button1 fas fa-cart-plus'></button>
                     <button className='productCard-button1 fas fa-eye'></button>
                     </div>
         

@@ -42,6 +42,16 @@ function DataProvider({ children }) {
         }
         setProductCart([...productCart])
     }
+
+    function handleAddCart(item) {
+        console.log("test add cart");
+        if(productCart.find(cart => cart.id === item.id)){
+            productCart[productCart.indexOf(productCart.find(cart => cart.id === item.id))].quantity++;
+        }else{
+            productCart.push( {id:item.id,name:item.name, img:item.image.mainImage,price:item.price,quantity:1})
+        }
+        setProductCart([...productCart])
+    }
     // ********************************************************************************
 
     let valueProvider = {
@@ -57,7 +67,8 @@ function DataProvider({ children }) {
         productCart,
         setProductCart,
 
-        handleAddProductCart
+        handleAddProductCart,
+        handleAddCart
     }
     return (
         <DataContext.Provider value={valueProvider}>
