@@ -15,7 +15,7 @@ function HotNews(props) {
                         return (
                             index < 4 &&
                             <button key={index} onClick={(e) => handleSelectNews(e)} className='newsPage-hotNews-newscard1' name={item.id}>
-                                <img className='newsPage-hotNews-img1' src={item.mainImage}/>
+                                <img className='newsPage-hotNews-img1' src={item.mainImage} alt='news'/>
                                 <p className='newsPage-hotNews-title1' >{item.title}</p>
                             </button>
                         )
@@ -27,7 +27,7 @@ function HotNews(props) {
                         return (
                             index > 1 && index < 5 &&
                             <button key={index} onClick={(e) => handleSelectNews(e)} className='newsPage-hotNews-newscard2'  name={item.id}>
-                                <img className='newsPage-hotNews-img2' src={item.mainImage}/>
+                                <img className='newsPage-hotNews-img2' src={item.mainImage} alt='news'/>
                                 <p className='newsPage-hotNews-title2'>{item.title}</p>
                             </button>
                         )

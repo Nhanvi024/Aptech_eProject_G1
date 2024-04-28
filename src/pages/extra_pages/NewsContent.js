@@ -4,11 +4,13 @@ import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import Parser from "html-react-parser";
 import RelatedNews from '../../components/newspageComponents/RelatedNews';
+import InterestedNews from '../../components/newspageComponents/InterestedNews';
+import InterestedNews2 from '../../components/newspageComponents/InterestedNews2';
 
 function NewsContent(props) {
     const { newscontent } = useParams()
     const [content, setContent] = useState('')
-    const [ newsSide, setNewsSide ] = useState({
+    const [newsSide, setNewsSide] = useState({
         relatedNews: [],
         iterestedNews: []
     })
@@ -25,17 +27,14 @@ function NewsContent(props) {
         fetch(`/news/${newscontent}.txt`)
             .then(res => res.text())
             .then(data => setContent(data))
-    },[])
+    }, [newscontent])
 
-    useEffect(()=>{
-        newsSide.relatedNews = news && news.filter(item=>{
-            item.type.id !== content 
-        })
-        newsSide.iterestedNews = news && news.filter(item=>item.type.newsReadLot === true)
-        setTypeNews({...typeNews})
-    },[news])
-
-
+    useEffect(() => {
+        let currentNews = news.find(item => item.id === newscontent)
+        newsSide.relatedNews = news && news.filter(item =>(item.type === currentNews.type && item.id !== newscontent))
+        newsSide.iterestedNews = news && news.filter(item =>(item.type !== currentNews.type && item.id !== newscontent))
+        setNewsSide({ ...newsSide })
+    }, [news,newscontent])
 
     return (
         <>
@@ -46,8 +45,10 @@ function NewsContent(props) {
                     {Parser(content)}
                 </div>
                 <div className='NewsContent-sidebar col-sm-4'>
-                    <RelatedNews />
+                    {newsSide.relatedNews.length && <RelatedNews relatedNews={newsSide.relatedNews} />}
+                    {newsSide.iterestedNews.length && <InterestedNews iterestedNews={newsSide.iterestedNews} />}
                 </div>
+                {newsSide.iterestedNews.length && <InterestedNews2 newsReadLot={newsSide.iterestedNews} />}
             </div>
         </>
     );

@@ -8,7 +8,7 @@ function RelatedNews(props) {
     const { relatedNews } = props
 
     const handleSelectNews = (e) => {
-        navigation(`/news/${e.currentTarget.name}`)
+        navigation(`/news/${e.target.name}`)
     }
     return (
         <div className='relatedNews'>
@@ -16,11 +16,14 @@ function RelatedNews(props) {
             <div className='relatedNews-container'>
                 {relatedNews && relatedNews.map((item, index) => {
                     return (
+                        index < 4 &&
                         <div key={index} className='relatedNews-newscard'>
-                            <img onClick={(e) => handleSelectNews(e)} className='relatedNews-img' src={item.mainImage} name={item.id} />
+                            <figure  >
+                                <img className='relatedNews-img' onClick={(e) => handleSelectNews(e)} src={item.mainImage} name={item.id} alt='news'/>
+                            </figure>
                             <div className='relatedNews-content'>
-                                <button onClick={(e) => handleSelectNews(e)} className='relatedNews-title'>{item.title} name={item.id}</button>
-                                <p className='relatedNews-desc'>{item.description}</p>
+                                <button onClick={(e) => handleSelectNews(e)} className='relatedNews-title' name={item.id}>{item.title} </button>
+                                <p className='relatedNews-desc'>Posted on {item.datePost} by {item.author}</p>
                             </div>
                         </div>
                     )
