@@ -3,9 +3,9 @@
         <div className="meta1">
             <span>
                 <h6>Posted on
-                    <a href="../../about/about.html">February 12,2022</a>
+                    <a href="/about">February 12,2022</a>
                     by
-                    <a href="../../about/about.html">admin</a>
+                    <a href="/about">admin</a>
                 </h6>
             </span>
         </div>

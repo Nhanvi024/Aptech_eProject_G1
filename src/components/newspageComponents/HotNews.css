@@ -1,0 +1,124 @@
+.newsPage-hotNews{
+    width: 1200px;
+    padding: 30px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsPage-hotNews-name{
+    width: 100%;
+    text-align: center;
+    font-size: var(--fs-900);
+    color: var(--active-text-color);
+    font-weight: bold;
+
+    border-bottom: 3px solid var(--active-text-color);
+    margin-bottom: 30px;
+}
+.newsPage-hotNews-container{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+.newsPage-hotNews-row1{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+}
+.newsPage-hotNews-newscard1{
+    border: none;
+    width: 255px;
+    height: 180px;
+    cursor: pointer;
+
+    position: relative;
+}
+.newsPage-hotNews-img1{
+    width: 255px;
+    height: 180px;
+
+    border-radius: 10px;
+    
+    object-fit: fill;
+    transition: 0.5s;
+
+}
+.newsPage-hotNews-title1{
+    width: 100%;
+    border: none;
+    background-color: rgba(62, 62, 62, 0.6);
+    border-radius: 5px;
+
+    padding: 8px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+    text-align: left;
+    color: var(--secondary-text-color);
+    font-size: var(--fs-200);
+
+    transition: 0.5s;
+}
+.newsPage-hotNews-newscard1:hover>.newsPage-hotNews-img1{
+    opacity: 80%;
+}
+.newsPage-hotNews-newscard1:hover>.newsPage-hotNews-title1{
+    bottom: 10px;
+}
+
+
+.newsPage-hotNews-row2{
+    width: 96%;
+    padding: 50px 20px;
+
+    background-color: rgb(211, 250, 240);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.newsPage-hotNews-newscard2{
+    border: none;
+    width: 320px;
+    height: 200px;
+    cursor: pointer;
+
+    position: relative;
+}
+.newsPage-hotNews-img2{
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+.newsPage-hotNews-title2{
+    width: 100%;
+    border: none;
+    background-color: rgba(62, 62, 62, 0.6);
+    border-radius: 5px;
+
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+
+    text-align: left;
+    color: var(--secondary-text-color);
+    font-size: var(--fs-200);
+
+    transition: 0.5s;
+}
+.newsPage-hotNews-newscard2:hover>.newsPage-hotNews-img2{
+    opacity: 80%;
+}
+.newsPage-hotNews-newscard2:hover>.newsPage-hotNews-title2{
+    bottom: 10px;
+}
