@@ -1,0 +1,29 @@
+.relatedNews{
+    width: 100%;
+
+}
+.relatedNews-container{
+}
+.relatedNews-name{
+    
+}
+.relatedNews-newscard{
+
+    width: 100%;
+    height: 105px;
+    display: flex;
+}
+.relatedNews-img{
+    width: 100px;
+    height: 80px;
+}
+.relatedNews-content{
+    display: flex;
+    flex-direction: column;
+}
+.relatedNews-title{
+
+}
+.relatedNews-desc{
+
+}

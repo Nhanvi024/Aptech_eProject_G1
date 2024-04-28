@@ -7,10 +7,12 @@
             "author": "admin",
             "mainImage": "/assets/image/news/news0/01.jpg",
             "content": "/news/News0.text",
+            "description": "A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want.",
             "status": {
                 "newsUpdate": true,
                 "newsReadLot": false,
-                "hotNews": false
+                "hotNews": false,
+                "readMore": false
             }
         },
         {
@@ -20,10 +22,12 @@
             "author": "admin",
             "mainImage": "/assets/image/news/news1/11.jpg",
             "content": "/news/News1.text",
+            "description": "A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want.",
             "status": {
                 "newsUpdate": true,
                 "newsReadLot": false,
-                "hotNews": false
+                "hotNews": false,
+                "readMore": false
             }
         },
         {
@@ -33,10 +37,12 @@
             "author": "admin",
             "mainImage": "/assets/image/news/news2/20.jpg",
             "content": "/news/News2.text",
+            "description": "A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want.",
             "status": {
                 "newsUpdate": true,
                 "newsReadLot": false,
-                "hotNews": false
+                "hotNews": false,
+                "readMore": false
             }
         },
         {
@@ -46,10 +52,12 @@
             "author": "admin",
             "mainImage": "/assets/image/news/news3/31.jpg",
             "content": "/news/News3.text",
+            "description": "A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want.",
             "status": {
                 "newsUpdate": true,
                 "newsReadLot": false,
-                "hotNews": false
+                "hotNews": false,
+                "readMore": false
             }
         },
         {
@@ -59,10 +67,12 @@
             "author": "admin",
             "mainImage": "/assets/image/news/news4/41.jpg",
             "content": "/news/News4.text",
+            "description": "A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want.",
             "status": {
                 "newsUpdate": true,
                 "newsReadLot": false,
-                "hotNews": false
+                "hotNews": false,
+                "readMore": false
             }
         }
     ],
@@ -72,7 +82,7 @@
             "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
             "datePost": "2023-10-10",
             "author": "admin",
-            "mainImage": "/assets/image/news/news0/01.jpg",
+            "mainImage": "/assets/image/news/news5/51.jpg",
             "content": "/news/News5.text",
             "description": "A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want."
         },
@@ -81,32 +91,52 @@
             "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
             "datePost": "2023-10-10",
             "author": "admin",
-            "mainImage": "/assets/image/news/news1/11.jpg",
+            "mainImage": "/assets/image/news/news6/61.jpg",
             "content": "/news/News6.text",
             "description": "Daily journaling is always the most common topic that people take notes on in a notebook. Journaling can help you improve your literary abilities, better understand yourself, reduce stress, and solve many other problems."
         },
         {
-            "id": "News6",
+            "id": "News7",
             "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
             "datePost": "2023-10-10",
             "author": "admin",
-            "mainImage": "/assets/image/news/news1/11.jpg",
+            "mainImage": "/assets/image/news/news7/71.jpg",
             "content": "/news/News6.text",
             "description": "Daily journaling is always the most common topic that people take notes on in a notebook. Journaling can help you improve your literary abilities, better understand yourself, reduce stress, and solve many other problems."
         },
         {
-            "id": "News6",
+            "id": "News8",
             "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
             "datePost": "2023-10-10",
             "author": "admin",
-            "mainImage": "/assets/image/news/news1/11.jpg",
+            "mainImage": "/assets/image/news/news8/81.jpg",
             "content": "/news/News6.text",
             "description": "Daily journaling is always the most common topic that people take notes on in a notebook. Journaling can help you improve your literary abilities, better understand yourself, reduce stress, and solve many other problems."
-        }
-    ],
-    "hotNews": [
+        },
         {
-
+            "id": "News9",
+            "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
+            "datePost": "2023-10-10",
+            "author": "admin",
+            "mainImage": "/assets/image/news/news9/91.jpg",
+            "content": "/news/News6.text",
+            "description": "Daily journaling is always the most common topic that people take notes on in a notebook. Journaling can help you improve your literary abilities, better understand yourself, reduce stress, and solve many other problems."
+        },   {
+            "id": "News10",
+            "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
+            "datePost": "2023-10-10",
+            "author": "admin",
+            "mainImage": "/assets/image/news/news10/101.jpg",
+            "content": "/news/News6.text",
+            "description": "Daily journaling is always the most common topic that people take notes on in a notebook. Journaling can help you improve your literary abilities, better understand yourself, reduce stress, and solve many other problems."
+        },   {
+            "id": "News11",
+            "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
+            "datePost": "2023-10-10",
+            "author": "admin",
+            "mainImage": "/assets/image/news/news11/111.jpg",
+            "content": "/news/News6.text",
+            "description": "Daily journaling is always the most common topic that people take notes on in a notebook. Journaling can help you improve your literary abilities, better understand yourself, reduce stress, and solve many other problems."
         }
     ]
 }
