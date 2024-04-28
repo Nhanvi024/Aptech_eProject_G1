@@ -12,7 +12,7 @@ import NewsUpdate from '../../components/newspageComponents/NewsUpdate';
 function NewsPage(props) {
     const navigation = useNavigate()
     const [news, setNews] = useState([])
-    const [ typeNews, setTypeNews ] = useState(
+    const [ statusNews, setStatusNews ] = useState(
         {
             newsUpdate: []  ,
             newsReadLot: [],
@@ -27,11 +27,11 @@ function NewsPage(props) {
     }, [])
 
     useEffect(()=>{
-        typeNews.newsUpdate = news && news.filter(item=>item.type.newsUpdate === true)
-        typeNews.newsReadLot = news && news.filter(item=>item.type.newsReadLot === true)
-        typeNews.hotNews = news && news.filter(item=>item.type.hotNews === true)
-        typeNews.newsSeeMore = news && news.filter(item=>item.type.readMore === true)
-        setTypeNews({...typeNews})
+        statusNews.newsUpdate = news && news.filter(item=>item.status.newsUpdate === true)
+        statusNews.newsReadLot = news && news.filter(item=>item.status.newsReadLot === true)
+        statusNews.hotNews = news && news.filter(item=>item.status.hotNews === true)
+        statusNews.newsSeeMore = news && news.filter(item=>item.status.readMore === true)
+        setStatusNews({...statusNews})
     },[news])
 
     const handleSelectNews = (e) => {
@@ -43,13 +43,12 @@ function NewsPage(props) {
 
             <img className='imageBanner'
                 src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
-            {/* src='https://phomit03.github.io/EProject1-RyanaCalendars/pages/NEWS/img/banner.jpg' alt='banner'></img> */}
             <div className='newsPageContainer'>
                 
-            {typeNews.newsUpdate.length && <NewsUpdate newsUpdate={typeNews.newsUpdate} handleSelectNews={handleSelectNews} />}
-            {typeNews.newsReadLot.length && <NewsReadLot newsReadLot={typeNews.newsReadLot} handleSelectNews={handleSelectNews} />}
-            {typeNews.hotNews.length && <HotNews hotNews={typeNews.hotNews} handleSelectNews={handleSelectNews}/>}
-            {typeNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={typeNews.newsSeeMore} handleSelectNews={handleSelectNews}/>}
+            {statusNews.newsUpdate.length && <NewsUpdate newsUpdate={statusNews.newsUpdate} handleSelectNews={handleSelectNews} />}
+            {statusNews.newsReadLot.length && <NewsReadLot newsReadLot={statusNews.newsReadLot} handleSelectNews={handleSelectNews} titleName="NEWS READ A LOT"/>}
+            {statusNews.hotNews.length && <HotNews hotNews={statusNews.hotNews} handleSelectNews={handleSelectNews}/>}
+            {statusNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={statusNews.newsSeeMore} handleSelectNews={handleSelectNews}/>}
                
             </div>
         </>
