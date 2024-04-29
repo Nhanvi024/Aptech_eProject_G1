@@ -73,7 +73,7 @@ function CartList(props) {
                         </div>
                     </> :
                     <>
-                        <p className='cartList_list-noitem'>No product into cart</p>
+                        <p className='cartList_list-noitem'>No product in cart</p>
                     </>
                 }
 
