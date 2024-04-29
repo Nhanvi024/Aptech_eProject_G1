@@ -20,7 +20,7 @@ function NewsReadLot(props) {
                                 <p className='newsPage-newsReadLot-title' >{item.title}</p>
                             </button>
                             <p className='newsPage-newsReadLot-posted'>Posted on {item.datePost} by {item.author}</p>
-                            <p className='newsPage-newsReadLot-content'><EllipsisText text={item.description} length={"200"} /></p>
+                            <p className='newsPage-newsReadLot-content'><EllipsisText text={item.description} length={200} /></p>
                         </div>
                     )
 

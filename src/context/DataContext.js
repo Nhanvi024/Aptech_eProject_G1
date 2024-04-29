@@ -18,8 +18,6 @@ function DataProvider({ children }) {
     ]
     const [btnActive, setBtnActive] = useState(webPage[0].name)
 
-    const [productCart, setProductCart] = useState([])
-
     useEffect(() => {
         fetch('data/data.json')
             .then(res => res.json())
@@ -28,7 +26,22 @@ function DataProvider({ children }) {
     }, [])
 
 
-    // ** Function Add product into Cart***********************************************
+
+    // ** Products Cart
+
+    const [productCart, setProductCart] = useState([])
+    const [totalPayment, setTotalPayment] = useState(0);
+
+    //** Calculate Total payment***************************************
+    useEffect(() => {
+        let total = 0
+        productCart.forEach((item) => {
+            total = total + (+item.price * item.quantity)
+        })
+        setTotalPayment(total)
+    }, [productCart])
+
+    // ** Function Add product into Cart********************************
     const handleAddProductCart = (itemAdd) => {
         if (!productCart.some(item => item?.id === itemAdd.id)) {
             productCart.push({ id: itemAdd.id, name: itemAdd.name, img: itemAdd.image.mainImage, price: itemAdd.price, quantity: 1 });
@@ -37,7 +50,14 @@ function DataProvider({ children }) {
         }
         setProductCart([...productCart])
     }
-    // ********************************************************************************
+
+
+    // ** Function delete product from Cart*****************************
+    const handleDeleteItem = (idDelete) => {
+        setProductCart(productCart.filter(item => item.id !== idDelete))
+    }
+
+
 
     let valueProvider = {
         // products data read from json file --> many components are in use
@@ -61,7 +81,12 @@ function DataProvider({ children }) {
         setProductCart,
 
         // function add product to cart --> ProductCard.js
-        handleAddProductCart
+        handleAddProductCart,
+
+        // function delete product from cart --> CartList.js, CartPage.js
+        totalPayment,
+        handleDeleteItem,
+
     }
     return (
         <DataContext.Provider value={valueProvider}>
