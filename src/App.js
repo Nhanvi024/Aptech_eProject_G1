@@ -17,6 +17,7 @@ import AllProductPage from './pages/extra_pages/AllProductsPage';
 import DownloadPage from './pages/extra_pages/DownloadPage';
 import AboutPage from './pages/main_pages/AboutPage';
 import NewsContent from './pages/extra_pages/NewsContent';
+import CartPage from './pages/extra_pages/CartPage';
 
 
 function App(props) {
@@ -37,6 +38,7 @@ function App(props) {
         <Route path='/search' element={<SearchPage />} />
         <Route path='/allproducts' element={<AllProductPage />} />
         <Route path='/download' element={<DownloadPage />} />
+        <Route path='/cart' element={<CartPage />} />
 
       </Routes>
       <Footer />

@@ -5,31 +5,17 @@ import { DataContext } from '../../context/DataContext';
 
 import CartIcon from '../../assets/image/header/icon/cartIcon.svg'
 import DeleteIcon from '../../assets/image/header/icon/delIcon.svg'
+import { useNavigate } from 'react-router-dom';
 
 
 function CartList(props) {
-    const [totalPrice, setTotalPrice] = useState(0);
-    const {productCart, setProductCart} = useContext(DataContext)
-
-    console.log('productCart:', productCart);
-
-    const handleDeleteItem = (idDelete) => {
-        let result = productCart.filter(item => item.id !== idDelete)
-        setProductCart([...result])
-    }
-
-    useEffect(() => {
-        let total = 0
-        productCart.forEach((item) => {
-            total = total + (+item.price * item.quantity)
-        })
-        setTotalPrice(total)
-    }, [productCart])
+    const navigate = useNavigate()
+    const {productCart, handleDeleteItem, totalPayment} = useContext(DataContext)
 
     return (
         <div className='cartListContainer'>
             <div className='cartList-iconCart'>
-                <img className='cartIcon' src={CartIcon} alt='cartImage' />
+                <img onClick={()=>navigate('/cart')} className='cartIcon' src={CartIcon} alt='cartImage' />
                 {productCart.length ?
                     <div className='itemQty'>
                         {productCart.length}
@@ -67,13 +53,13 @@ function CartList(props) {
                         <div className='cartList_bottom'>
                             <div className='cartList_bottom-sum'>
                                 <p className='cartList_bottom-sumText'>Sum: </p>
-                                <p className='cartList_bottom-sumPrice'>{totalPrice.toFixed(2)}<sup> $</sup></p>
+                                <p className='cartList_bottom-sumPrice'>{totalPayment.toFixed(2)}<sup> $</sup></p>
                             </div>
                             <button className='cartList_bottom-checkout'> Check Out</button>
                         </div>
                     </> :
                     <>
-                        <p className='cartList_list-noitem'>No product in cart</p>
+                        <p className='cartList_list-noitem'>No product in cart !</p>
                     </>
                 }
 
