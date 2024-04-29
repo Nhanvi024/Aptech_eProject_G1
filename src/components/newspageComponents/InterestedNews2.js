@@ -25,7 +25,7 @@ function InterestedNews2(props) {
                                 <p className='interestedNews2-newsReadLot-title' >{item.title}</p>
                             </button>
                             <p className='interestedNews2-newsReadLot-posted'>Posted on {item.datePost} by {item.author}</p>
-                            <p className='interestedNews2-newsReadLot-content'><EllipsisText text={item.description} length={"200"} /></p>
+                            <p className='interestedNews2-newsReadLot-content'><EllipsisText text={item.description} length={200} /></p>
                         </div>
                     )
 
