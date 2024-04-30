@@ -41,7 +41,7 @@ function TypeFilter(props) {
                 <div className='typeFilter-subitem'>
                 {notebookTypeList.map((item, index) => {
                     return (
-                       
+                            
                             <Link key={index} className='typeFilter-text'>{item}</Link>
                     )
                 })
