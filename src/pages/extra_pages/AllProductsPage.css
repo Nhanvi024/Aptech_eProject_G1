@@ -1,40 +1,50 @@
-.allProductsContainer{
+.allProducts-container{
     width: 1200px;
     height: fit-content;
 
     position: relative;
+
+    background-color: rgb(241, 252, 246);
+    border: 1px solid rgb(191, 251, 234);
+
 }
 
 .allProduct-sidebar{
-    height: 100%;
-    background-color: aqua;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
 .allProduct-productlist{
-    background-color: rgb(255, 247, 0);
-
     display: flex;
     flex-direction: column;
 }
 
 .allProduct-header{
     width: 100%;
-    height: fit-content;
+
+    height: 100px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
+}
+
+.allProduct-header-title{
+    font-size: var(--fs-500);
 }
 
 .allProduct-product{
     width: 100%;
     height: fit-content;
+    padding: 20px;
 
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-
-    border: 1px solid red;
-
 }
 .allProduct-product{
 

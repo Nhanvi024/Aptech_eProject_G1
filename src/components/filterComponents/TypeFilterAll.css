@@ -1,0 +1,119 @@
+.typeFilterAll-container {
+    width: 90%;
+    position: relative;
+}
+
+.typeFilterAll-head {
+    width: fit-content;
+    border: none;
+    border-bottom: 2px solid rgb(197, 197, 197);
+
+    background:  var( --secondary-background-clr);
+    transform: skew(30deg);
+
+    padding: 2px;
+}
+
+.typeFilterAll-title {
+    width: 100px;
+    margin: 0;
+    text-align: center;
+
+    font-size: var(--fs-600);
+
+    transform: skew(-30deg);
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    letter-spacing: 1px;
+}
+
+.typeFilterAll-list {
+    padding: 15px 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border: 1px solid var(--secondary-background-clr);
+    border-radius: 10px; 
+
+    padding-left: 30px;
+}
+
+.typeFilterAll-item-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.typeFilterAll-text {
+    text-decoration: none;
+    border: none;
+    background: none;
+    /* font-family: var(--ff-secondary-font); */
+    font-size: var(--fs-500);
+    color: var(--primary-text-color);
+}
+.typeFilterAll-text:hover {
+    text-decoration: none;
+}
+
+.typeFilterAll-subitemlist{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.typeFilterAll-subitem{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"]{
+    margin: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -moz-focusring:none;
+
+    /* create custom checkbox appearance */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    /* background-color only for content */
+    border: 0.5px solid rgb(186, 186, 186);
+    border-radius: 50%;
+
+    background-clip: content-box;
+    background-color: var(--primary-background-clr);
+
+    cursor: pointer;
+
+    &:hover {
+        background: 
+        linear-gradient(to bottom right,rgb(112, 255, 188),rgb(253, 253, 253) ) padding-box;
+        border: 1.5px solid rgb(186, 186, 186);
+    }
+    &:checked{
+        border: none;
+        background-clip: padding-box;
+        background-image: url('/public/assets/image/extra/icon-check.svg'), linear-gradient(to bottom right, rgb(4, 132, 42),rgb(253, 253, 253));
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    &:focus,
+    &:focus-visible{
+        outline: none;
+    }
+}
+
+.typeFilterAll-typename{
+    margin: 0;
+    font-size: var(--fs-400);
+}
