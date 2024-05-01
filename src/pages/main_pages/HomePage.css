@@ -18,7 +18,7 @@
 
 .homepage-section-notebook-right-row2 {
     min-height: 500px;
-    background: lightblue;
+    /* background: lightblue; */
     transition: all 1s;
 }
 
@@ -64,4 +64,16 @@
 
 .nav-item:hover {
     cursor: pointer;
+}
+.homepage-redirect-button{
+    background:  var( --secondary-background-clr);
+    transform: skew(15deg);
+    /* width: 100%; */
+    width: fit-content;
+    .homepage-redirect-button-text{
+        transform: skew(-25deg);
+        text-transform: uppercase;
+        color: var(--secondary-text-color);
+        letter-spacing: 1px;
+    }
 }

@@ -6,71 +6,44 @@ import { DataContext } from '../../context/DataContext';
 import CartIcon from '../../assets/image/header/icon/cartIcon.svg'
 import DeleteIcon from '../../assets/image/header/icon/delIcon.svg'
 
+
 function CartList(props) {
     const [totalPrice, setTotalPrice] = useState(0);
-    const [product, setProduct] = useState([
-        {
-            id: "1",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 2,
-        },
-        {
-            id: "2",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 3,
-        },
-        {
-            id: "3",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 3,
-        },
-        {
-            id: "3",
-            img: 'https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg',
-            name: "Wherever You Go, Go with All Your Heart Journal",
-            price: "8.99",
-            quantity: 3,
-        },
-    ])
+    const {productCart, setProductCart} = useContext(DataContext)
+
+    console.log('productCart:', productCart);
 
     const handleDeleteItem = (idDelete) => {
-        let result = product.filter(item => item.id !== idDelete)
-        setProduct([...result])
+        let result = productCart.filter(item => item.id !== idDelete)
+        setProductCart([...result])
     }
 
     useEffect(() => {
         let total = 0
-        product.forEach((item) => {
+        productCart.forEach((item) => {
             total = total + (+item.price * item.quantity)
         })
         setTotalPrice(total)
-    }, [product])
+    }, [productCart])
 
     return (
-        <div className='cardListContainer'>
+        <div className='cartListContainer'>
             <div className='cartList-iconCart'>
-                <img className='cardIcon' src={CartIcon} alt='cartImage' />
-                {product.length ?
+                <img className='cartIcon' src={CartIcon} alt='cartImage' />
+                {productCart.length ?
                     <div className='itemQty'>
-                        {product.length}
+                        {productCart.length}
                     </div> :
                     <></>
                 }
 
             </div>
 
-
             < div className='cartList'>
-                {product.length ?
+                {productCart.length ?
                     <>
                         <div className='cartList_list'>
-                            {product.map((item, index) => {
+                            {productCart.map((item, index) => {
                                 return (
                                     <div key={index} className='cartList_list-item'>
                                         <div className='cartList_list-item-col1'>
@@ -94,13 +67,13 @@ function CartList(props) {
                         <div className='cartList_bottom'>
                             <div className='cartList_bottom-sum'>
                                 <p className='cartList_bottom-sumText'>Sum: </p>
-                                <p className='cartList_bottom-sumPrice'>{totalPrice}<sup> $</sup></p>
+                                <p className='cartList_bottom-sumPrice'>{totalPrice.toFixed(2)}<sup> $</sup></p>
                             </div>
                             <button className='cartList_bottom-checkout'> Check Out</button>
                         </div>
                     </> :
                     <>
-                        <p className='cartList_list-noitem'>No product into cart</p>
+                        <p className='cartList_list-noitem'>No product in cart</p>
                     </>
                 }
 

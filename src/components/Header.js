@@ -8,11 +8,13 @@ import Menu from './headerComponents/Menu';
 import LogIn from './headerComponents/LogIn';
 import CartList from './headerComponents/CartList';
 import AboutUs from './headerComponents/AboutUs';
+import MenuSearch from './headerComponents/MenuSearch';
 
 
 function Header(props) {
 
     return (
+        <>
         <div className='headerContainer'>
 
             <div className='headerContainer_row1 row'>
@@ -30,7 +32,11 @@ function Header(props) {
                 <AboutUs />
             </div>
 
+
         </div>
+        <MenuSearch/>
+
+        </>
     );
 }
 

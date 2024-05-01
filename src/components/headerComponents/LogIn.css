@@ -25,5 +25,5 @@ padding-top: 10px;
 }
 
 .loginBtn{
-    border-right: 2px solid rgb(255, 0, 0);
+    border-right: 2px solid var(--secondary-background-clr);
 }
