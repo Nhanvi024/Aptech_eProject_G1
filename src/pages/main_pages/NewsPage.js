@@ -1,10 +1,16 @@
 import { Link} from 'react-router-dom';
 import './NewsPage.css'
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Parser from "html-react-parser";
+import { DataContext } from '../../context/DataContext';
+import MenuSearch from '../../components/headerComponents/MenuSearch';
+
 function NewsPage(props) {
+
+const { handleAddProductCart } = useContext(DataContext)
 const [news,setNews] = useState('')
+
 const html = `
   <h1>XSS Example</h1>
   <a href="javascript:alert(1)">Open Link</a>
@@ -20,8 +26,13 @@ const html = `
             {Parser(html)}
            </div>
             <section>
+                <button onClick={()=>handleAddProductCart('WC1')}>Add product</button>
+                <button onClick={()=>handleAddProductCart('NBJ4')}>Add product</button>
+
+
                 <Link onClick={()=>setNews('News0')} to={news}>News 0</Link>
                 <Link onClick={()=>setNews('News1')} to={news}>News 1</Link>
+
 
             </section>
         </div>

@@ -6,6 +6,7 @@ function ServicesBanner(props) {
         <div className='servicesContainer'>
             <div className='delivery'>
                 <img className='servicesImage' src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/policy1.png?1711094550864' alt='deliveryIcon'/>
+
                 <p className='servicesName' >DELIVERY</p>
             </div>
             <div className='support'>

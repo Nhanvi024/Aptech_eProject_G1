@@ -1,5 +1,41 @@
 .allProductsContainer{
     width: 1200px;
+    height: fit-content;
 
     position: relative;
+}
+
+.allProduct-sidebar{
+    height: 100%;
+    background-color: aqua;
+}
+
+.allProduct-productlist{
+    background-color: rgb(255, 247, 0);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.allProduct-header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.allProduct-product{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    border: 1px solid red;
+
+}
+.allProduct-product{
+
 }

@@ -42,14 +42,21 @@
 
 
 .sortSelect-list {
-    visibility: hidden;
+    display: none;
     width: 70%;
     border-radius: 5px;
+    padding: 10px;
+
+    position: absolute;
+    top: 25px;
+    background-color: aliceblue;
+
+    z-index: 1;
 }
 
 .sortSelect-select:hover+.sortSelect-list,
 .sortSelect-list:hover {
-    visibility: visible;
+   display: block;
     border-radius: 5px;
 }
 
