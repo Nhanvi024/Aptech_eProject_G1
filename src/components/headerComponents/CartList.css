@@ -1,21 +1,16 @@
 .cartListContainer {
     width: 25%;
     height: 100%;
-
-    position: relative;
-    /* border: 1px solid red; */
+    padding-top: 20px;
 
 }
 
-.cartList-iconCart{
-height: 50px;
-/* border: 1px solid red; */
-
+.cartList-iconCart {
+    position: relative;
 }
 
 .cartIcon {
     width: 35px;
-    margin-top: 10px;
     z-index: -1;
     color: var(--secondary-background-clr);
 
@@ -30,16 +25,16 @@ height: 50px;
 
 
     border-radius: 50%;
-    border: 4px solid rgb(255, 255, 255);
-    background-color: rgb(255, 0, 0);
+    border: 3px solid rgb(255, 255, 255);
+    background-color: var(--secondary-background-clr);
     position: absolute;
-    top: 0px;
-    right: 5px;
+    top: -15px;
+    left: 15px;
 
     text-align: center;
     align-content: center;
     color: white;
-   
+
     font-weight: 600;
 }
 
@@ -219,11 +214,52 @@ height: 50px;
 .cartList_bottom-sumPrice {
     align-content: center;
 }
+
 .cartList_bottom-sumPrice {
-   color: var(--active-text-color);
+    color: var(--active-text-color);
 }
 
-.cartList_list-noitem{
+.cartList_list-noitem {
     font-size: var(--fs-400);
     padding-top: 10px;
 }
+
+/** Responsive ************************************************************************************ */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .cartIcon {
+        width: 30px;
+    }
+
+    .itemQty {
+        width: 23px;
+        height: 23px;
+
+        top: -15px;
+        left: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .cartListContainer {
+        padding-top: 40px;
+    }
+    .cartListContainer:hover>.cartList {
+        visibility: hidden;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .cartListContainer {
+        padding-top: 0;
+    }
+    .cartListContainer:hover>.cartList {
+        visibility: hidden;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
