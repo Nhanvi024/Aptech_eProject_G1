@@ -1,15 +1,17 @@
 .sortSelect-container {
-    width: 180px;
+    width: 250px;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 10px;
 
     position: relative;
     font-family: var(--ff-secondary-font);
+    font-size: var(--fs-500);
 
+    border-radius: 5px;
 }
 
 
@@ -18,7 +20,7 @@
 }
 
 .sortSelect-select {
-    width: 120px;
+    width: 160px;
     cursor: pointer;
     margin: 0;
     display: flex;
@@ -43,13 +45,15 @@
 
 .sortSelect-list {
     display: none;
-    width: 70%;
+    width: 100%;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 20px;
 
     position: absolute;
     top: 25px;
-    background-color: aliceblue;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(227, 227, 227);
 
     z-index: 1;
 }

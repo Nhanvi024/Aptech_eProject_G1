@@ -25,7 +25,7 @@ function HotNews(props) {
                 <div className='newsPage-hotNews-row2'>
                     {hotNews && hotNews.map((item, index) => {
                         return (
-                            index > 1 && index < 5 &&
+                            index > 3 && index < 7 &&
                             <button key={index} onClick={(e) => handleSelectNews(e)} className='newsPage-hotNews-newscard2'  name={item.id}>
                                 <img className='newsPage-hotNews-img2' src={item.mainImage} alt='news'/>
                                 <p className='newsPage-hotNews-title2'>{item.title}</p>
