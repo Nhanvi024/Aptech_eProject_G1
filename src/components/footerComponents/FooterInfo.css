@@ -1,95 +1,231 @@
-.footerInfoContainer{
-    width: 80%;
+.footerInfoContainer {
+    width: 100%;
     height: 100%;
-    margin: auto;
-
+    padding: 0 10%;
     display: flex;
+    flex-direction: row;
+
 }
 
 /* ** Logo footer container *******************/
-.logoFooter{
-    width: 40%;
+.logoFooter {
+    width: 45%;
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+
+
+
 
 }
 
-.logoFooter_logo{
+.logoFooter_logo {
     width: 360px;
 }
 
-.logoFooter_fanPage{
+.logoFooter_fanPage {
     width: 360px;
 
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20%;
+
+
+
 }
-.logoFooter_fanPage-icon{
+
+.logoFooter_fanPage-icon {
     width: 30px;
     height: 30px;
     object-fit: contain;
 }
 
+.logoFooter_info {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .logoFooter_groupName,
 .logoFooter_class,
-.logoFooter_address{
-    width: 400px;
-    font-size: var(--fs-400);
+.logoFooter_address {
+    font-family: var(--ff-primary-font);
+    font-size: var(--fs-600);
+    font-weight: 500;
+    font-style: italic;
+    color: var(--active-text-color);
     padding-left: 20px;
 
 }
 
 /* ** Information footer container *******************/
-.infoFooter{
+.infoFooter {
     width: 60%;
     height: 100%;
 
     display: flex;
     justify-content: space-around;
+
+
 }
 
 .infoFooter_aboutUs,
-.infoFooter_products{
-    width: 50%;
+.infoFooter_products,
+.infoFooter_supports {
+    width: 33%;
     height: 100%;
-    padding: 50px;
+    padding: 50px 20px;
 
     font-size: var(--fs-500);
 
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+
 }
 
 .infoFooter_aboutUs-title,
-.infoFooter_products-title{
+.infoFooter_products-title,
+.infoFooter_supports-title {
 
     color: var(--active-text-color);
 
 }
 
 .infoFooter_aboutUs-list,
-.infoFooter_products-list{
-    list-style-type:none;
+.infoFooter_products-list {
+    list-style-type: none;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .infoFooter_products-item,
-.infoFooter_aboutUs-item{
+.infoFooter_aboutUs-item {
+    text-decoration: none;
     font-size: var(--fs-400);
+    color: var(--primary-text-color);
     cursor: pointer;
     transition: 0.1s;
 }
 
 .infoFooter_products-item:hover,
-.infoFooter_aboutUs-item:hover{
+.infoFooter_aboutUs-item:hover {
+    text-decoration: none;
+    color: var(--active-text-color);
+}
+
+.infoFooter_products-item:focus,
+.infoFooter_aboutUs-item:focus {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.infoFooter_products-item:hover,
+.infoFooter_aboutUs-item:hover {
     border-left: 4px solid var(--secondary-background-clr);
     padding-left: 10px;
 }
+
+
+.infoFooter_supports-container {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.infoFooter_supports-image {
+    width: 45px;
+
+}
+
+.infoFooter_supports-hotline {
+    margin: 0;
+    transition: 0.3s;
+}
+
+.infoFooter_supports-container:hover>.infoFooter_supports-hotline {
+    font-size: var(--fs-600);
+    margin: 0;
+}
+
+/** Responsive ************************************************************************************ */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .footerInfoContainer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoFooter {
+        width: 100%;
+        height: 100%;
+
+        gap: 5px;
+        border-bottom: 1px solid rgb(214, 214, 214);
+    }
+
+    .logoFooter_logo {
+        width: 100%;
+    }
+
+    .logoFooter_fanPage {
+        width: 100%;
+    }
+
+    .logoFooter_groupName,
+    .logoFooter_class,
+    .logoFooter_address {
+        font-size: var(--fs-500);
+    }
+
+    .infoFooter {
+        width: 100%;
+    }
+
+    .infoFooter_aboutUs,
+    .infoFooter_products,
+    .infoFooter_supports {
+        padding: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+
+
+    .infoFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .infoFooter_aboutUs,
+    .infoFooter_products,
+    .infoFooter_supports {
+        width: 100%;
+        padding: 10px 20px;
+        flex-direction: row;
+        gap: 50px;
+
+        border-bottom: 1px solid rgb(214, 214, 214);
+
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}

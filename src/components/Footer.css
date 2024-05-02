@@ -2,12 +2,10 @@
     width: 100%;
     height: fit-content;;
     
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     
-
     position: relative;
     bottom: 0;
     z-index: 1;
@@ -26,23 +24,27 @@
     height: 100px;
     background-color: var( --secondary-background-clr);
 
-    position: relative;
 }
 
 .footerContainer_row2 {
     width: 100%;
-    height: 350px;
+    height: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var( --primary-background-clr);
 
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 
 .footerContainer_row3 {
     width: 100%;
     height: 50px;
-    background-color: rgb(147, 147, 147);
+    background-color: rgb(51,51,51);
     margin: 0;
 
     display: flex;
     justify-content: space-between;
 }
+
