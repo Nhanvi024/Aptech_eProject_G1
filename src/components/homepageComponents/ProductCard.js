@@ -106,22 +106,6 @@ function ProductCard(props) {
 										<img src={item.image.image3} className="thumbImg d-block w-100" alt="..." />
 									</button>
 								</div>
-								{/* <button
-									className="carousel-control-prev"
-									type="button"
-									data-bs-target="#modalCarousel"
-									data-bs-slide="prev">
-									<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span className="visually-hidden">Previous</span>
-								</button>
-								<button
-									className="carousel-control-next"
-									type="button"
-									data-bs-target="#modalCarousel"
-									data-bs-slide="next">
-									<span className="carousel-control-next-icon" aria-hidden="true"></span>
-									<span className="visually-hidden">Next</span>
-								</button> */}
 							</div>
 						</div>
 						<div className="col-12 p-0 col-lg-6 p-5" style={{fontSize: 'var(--fs-500)'}}>
@@ -154,6 +138,7 @@ function ProductCard(props) {
 							<div className="">
 								<br />
 								<div className="fw-bold fs-2 text-center">Description</div>
+								<hr />
 								<div>{item.desc}</div>
 								<br />
 								<div>{item.descDetail}</div>
@@ -161,6 +146,7 @@ function ProductCard(props) {
 							</div>
 							<div>
 								<div className="fw-bold fs-2 text-center">Specification</div>
+								<hr />
 								<div>Dimensions: {item.param.size}</div>
 								<div>Weight: {item.param.weight}</div>
 								<div>Pages: {item.param.pages}</div>
