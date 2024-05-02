@@ -1,0 +1,237 @@
+.cartPage-container {
+    width: 1200px;
+
+    padding: 30px 50px;
+    background-color: rgb(247, 255, 251);
+    border: 1px solid rgb(191, 251, 234);
+}
+.cartPage-name{
+    color: var(--active-text-color);
+    font-weight: bold;
+}
+
+.cartPage-table {
+    width: 100%;
+    padding: 30px;
+
+    th {
+        height: 50px;
+        border-bottom: 1px solid var(--secondary-background-clr);
+    }
+
+    td {
+        height: 120px;
+    }
+}
+
+.cartPage-delete,
+.cartPage-product,
+.cartPage-price,
+.cartPage-quantity,
+.cartPage-subtotal {
+    font-size: var(--fs-600);
+}
+
+.cartPage-delete {
+    width: 5%;
+}
+
+.cartPage-product {
+    width: 45%;
+}
+
+.cartPage-price {
+    width: 15%;
+}
+
+.cartPage-quantity {
+    width: 20%;
+}
+
+.cartPage-subtotal {
+    width: 15%;
+}
+
+/* Tablt td */
+.cartPage-td-delete {}
+
+.cartPage-td-product {
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.cartPage-td-price,
+.cartPage-td-quantity,
+.cartPage-td-subtotal{
+
+}
+
+/* *************************************************** */
+
+.cartPage-item-delete {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+
+}
+
+.cartPage-item-imagebg {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    background-color: rgba(214, 253, 250, 0.5);
+
+    display: flex;
+}
+
+.cartPage-item-image {
+    height: 60px;
+
+    position: relative;
+    margin: auto;
+}
+
+.cartPage-item-name {
+    width: 350px;
+    font-size: var(--fs-400);
+    font-weight: 500;
+    color: rgb(85, 85, 85);
+    margin: 0;
+}
+
+.cartPage-item-price {
+    padding: 10px 0;
+    margin: 0;
+    font-size: var(--fs-400);
+    color: var(--active-text-color);
+}
+
+.cartPage-item-qty {
+    width: 45%;
+    height: 40px;
+    border: 1px solid rgb(215, 215, 215);
+
+    padding: 10px 0px 10px 20px;
+    margin: 0;
+
+    border-radius: 5px;
+
+    position: relative;
+}
+.cartPage-item-qty:focus{
+    outline: none;
+}
+
+.cartPage-item-qty::-webkit-outer-spin-button, 
+.cartPage-item-qty::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    background: #FFF url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAKUlEQVQYlWNgwAT/sYhhKPiPT+F/LJgEsHv37v+EMGkmkuImoh2NoQAANlcun/q4OoYAAAAASUVORK5CYII=) no-repeat center center;
+    width: 25px;
+    height: 40px;
+    border-left: 1px solid #BBB;
+    opacity: 0.8; /* shows Spin Buttons per default (Chrome >= 39) */
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.cartPage-item-subtotal{
+    padding: 10px 0;
+    margin: 0;
+    font-size: var(--fs-400);
+    color: var(--active-text-color);
+}
+
+
+.cartPage-bottom-sum,
+.cartPage-bottom-button {
+    padding: 30px;
+    font-family: var(--ff-secondary-font);
+    font-size: var(--fs-700);
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: flex-end;
+
+    border-top: 2px solid rgb(211, 211, 211);
+
+    position: relative;
+}
+
+.cartPage-bottom-sumText{
+    position: absolute;
+    left: 70%;
+}
+.cartPage-bottom-sumPrice {
+    align-content: center;
+    position: relative;
+    right: 70px;
+   color: var(--active-text-color);
+
+}
+.cartPage-bottom-button {
+    padding: 0 30px;
+    gap: 20px;
+    border: none;
+    font-size: var(--fs-500);
+
+}
+
+.cartPage-bottom-checkout{
+    width: 200px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    text-decoration: none;
+    background-color: var(--secondary-background-clr);
+
+    color:  var(--secondary-text-color);
+
+}
+
+.cartPage-bottom-back{
+    width: 200px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    background-color: rgb(199, 199, 199);
+    color:  var(--primary-text-color);
+}
+
+.cartPage-bottom-back:hover,
+.cartPage-bottom-back:active{
+    text-decoration: none;
+    background-color: rgb(149, 149, 149);
+    color:  var(--secondary-text-color);
+}
+
+.cartPage-bottom-checkout:hover,
+.cartPage-bottom-checkout:active{
+    text-decoration: none;
+    background-color: rgb(78, 198, 150);
+    color:  var(--secondary-text-color);
+}
+
+.cartPage-noitem{
+    padding: 30px;
+    font-size: var(--fs-500);
+}

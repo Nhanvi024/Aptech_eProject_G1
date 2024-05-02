@@ -1,0 +1,61 @@
+<div class="contentnewTitle">
+                            <a href="News01.html"><h4>Why should you keep a journal?</h4></a>
+                            <div class="meta1">
+                                <span>
+                                    <h6>Posted on
+                                        <a href="/about">February 12,2022</a>
+                                        by
+                                        <a href="/about">admin</a>
+                                    </h6>
+                                </span>
+                            </div>
+                            <h6 class="Title1">
+                                A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want.
+                                <br><br>
+                                If you're just starting to think about journaling, maybe you haven't figured out how to start it, you'll probably want to refer to the article below!
+                            </h6>
+                            <br><br>
+                            <img src="/assets/image/news/news5/51.jpg" alt="">
+                        </div>
+                        <div class="contentnewTitle1">
+                            <br><br>
+                            <p>
+                                Do you notice movies when the character is going crazy? Psychologists often recommend keeping a journal to stabilize their spirits and also as a way to help them recover from trauma.
+                            </p>
+                            <br>
+                            <img src="/assets/image/news/news5/52.png" alt="">
+                            <br><br>
+                            <p>  
+                                You don't have mental problems (and don't watch Sherlock either)? No problem ! Since journaling is more than just that, here are other benefits that journaling can give you:
+                            </p>
+                            <br>
+
+                            <b>Improve your scribe skills.</b>
+                            <br><br>
+                            <p>Have you ever wanted to be able to write better. The only way to do that is to write. By keeping a journal, you record day by day what you know and things that interest you. When writing a journal, you won't need to worry about anything other than writing, you don't care about misspelling or grammar. You only take notes as freely as possible. Over time, you'll see how you've progressed.</p>
+
+                            <b>Archive memories.</b>
+                            <br><br>
+                            <p>Have you ever read old messages, reviewed old photos, and you have old feelings? Happy feelings are of course good, but sad emotions aren't bad either, they can help you feel proud to have overcome those feelings.</p>
+
+                            <b>Private and honest.</b>
+                            <br><br>
+                            <p>
+                                No matter what kind of "fuck everything!", there's a space you have that will always worry about what other people think of you, how they react, and how they feel when you share your thoughts with them. You can't always be 100% honest! You have thoughts that you don't want anyone to know you have!
+                            </p>
+
+                            <b>With diaries, you don't have to worry about anyone, just you and your diary.</b>
+                            <br><br>
+                            <p>
+                                But why write when it's clear you don't want anyone to know, why not let those thoughts rot and be forgotten?
+                                <br><br>
+                                Writing down your thoughts from inside your head allows you to review and understand your thoughts better than letting them run around your head. Writing it will give you an accurate assessment of your thoughts or views.
+                                <br><br>
+                                Honesty allows you to understand yourself. And you know! Knowing yourself is the best way to help you control your life.
+                            </p>
+
+                            <b>Solve your problems.</b>
+                            <br><br>
+                            <p>Journaling is also one of the most effective ways to solve your problems. You may have problems with your classmates or colleagues. You feel stuck in your job but can't decide whether to go or stay. By writing your problems on white paper, you'll see and reread them more clearly. You can also describe your thoughts on your problem, thereby offering a more specific solution.</p>
+                        
+                        </div>

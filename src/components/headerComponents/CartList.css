@@ -18,6 +18,8 @@ height: 50px;
     margin-top: 10px;
     z-index: -1;
     color: var(--secondary-background-clr);
+
+    cursor: pointer;
 }
 
 .itemQty {
