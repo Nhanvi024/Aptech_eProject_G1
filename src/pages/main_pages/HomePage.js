@@ -249,6 +249,7 @@ function HomePage(props) {
 										</span>
 									</div>
 								</div>
+								<hr className="p-0"></hr>
 								<div className="homepage-section-notebook-right-row2 row justify-content-center m-auto align-items-center">
 									<div className="homepage-section-notebook-right-row2row">
 										{products.length !== 0 &&
@@ -349,6 +350,7 @@ function HomePage(props) {
 										</span>
 									</div>
 								</div>
+								<hr className="p-0"></hr>
 								<div className="homepage-section-notebook-right-row2 row justify-content-center m-auto align-items-center">
 									<div className="homepage-section-notebook-right-row2row">
 										{products.length !== 0 &&

@@ -1,10 +1,10 @@
 .priceFilter-container {
-    width: 200px;
-
+    width: 90%;
     position: relative;
 }
 
 .priceFilter-head {
+    width: 100%;
     border: none;
     border-bottom: 2px solid rgb(197, 197, 197);
     margin-bottom: 10px;
@@ -14,26 +14,34 @@
 .priceFilter-title {
     width: 100px;
     margin: 0;
+    padding: 5px 0;
     text-align: center;
-    font-family: var(--ff-secondary-font);
-    font-size: var(--fs-500);
-    background-color: var(--secondary-background-clr);
 
-    transform: matrix(1, 0, 0.176327, 1, 0, 0);
+    font-size: var(--fs-600);
+    font-style: italic;
+
+    transform: skew(15deg);
+    background:  var( --secondary-background-clr);
+
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    letter-spacing: 1px;
 }
 
 .priceFilter-list{
-    padding: 10px 15px;
+    padding: 20px 50px;
+
 
     display: flex;
     flex-direction: column;
+    gap: 10px;
 
     border: 1px solid var(--secondary-background-clr);
     border-radius: 10px; 
 }
 .priceFilter-pricerange{
     display: flex;
-    align-items: baseline;
+    align-items: center;
 
     gap: 10px;
 }
@@ -41,5 +49,6 @@
 
 }
 .priceFilter-label{
-
+    margin: 0;
+    font-size: var(--fs-400);
 }

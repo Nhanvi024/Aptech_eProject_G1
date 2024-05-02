@@ -1,67 +1,194 @@
-{
-    "newsUpdate": [
-        {
-            "id": "News0",
-            "title": "12 zodiac signs of birth, month of birth &amp; symbols",
-            "datePost": "February 12,2022",
-            "author": "admin",
-            "mainImage": "/assets/image/news/news0/01.jpg",
-            "content": "/news/News0.text"
-        },
-        {
-            "id": "News1",
-            "title": "History of the calendar",
-            "datePost": "February 12,2022",
-            "author": "admin",
-            "mainImage": "/assets/image/news/news1/11.jpg",
-            "content": "/news/News1.text"
-        },
-        {
-            "id": "News2",
-            "title": "The Birth of the Calendar and Astronomy",
-            "datePost": "February 12,2022",
-            "author": "admin",
-            "mainImage": "/assets/image/news/news2/20.jpg",
-            "content": "/news/News2.text"
-        },
-        {
-            "id": "News3",
-            "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
-            "datePost": "February 12,2022",
-            "author": "admin",
-            "mainImage": "/assets/image/news/news3/31.jpg",
-            "content": "/news/News3.text"
-        },
-        {
-            "id": "News4",
-            "title": "Horoscope of 12 armored animals in 2022",
-            "datePost": "February 12,2022",
-            "author": "admin",
-            "mainImage": "/assets/image/news/news4/41.jpg",
-            "content": "/news/News4.text"
+[
+    {
+        "id": "News0",
+        "title": "12 zodiac signs of birth, month of birth &amp; symbols",
+        "type": "calendar news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news0/01.jpg",
+        "content": "/news/News0.text",
+        "description": "You've probably heard of the 12 zodiac signs and know whoever belongs to which zodiac sign will have its own characteristic personality traits. Do you know exactly which 12 zodiac signs, birth dates, and birth months of the 12 zodiac signs are? Let's find out about the 12 zodiac signs of birth.",
+        "status": {
+            "newsUpdate": true,
+            "newsReadLot": false,
+            "hotNews": false,
+            "readMore": true
         }
-    ],
-    "newsReadLot": [
-        {
-            "id": "News0",
-            "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
-            "datePost": "2023-10-10",
-            "author": "admin",
-            "mainImage": "/assets/image/news/news0/01.jpg",
-            "content": "/news/News0.text"
-        },
-        {
-            "id": "News1",
-            "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
-            "datePost": "2023-10-10",
-            "author": "admin",
-            "mainImage": "/assets/image/news/news1/11.jpg",
-            "content": "/news/News1.text"
+    },
+    {
+        "id": "News1",
+        "title": "History of the calendar",
+        "type": "calendar news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news1/11.jpg",
+        "content": "/news/News1.text",
+        "description": "The calendar was set in 753 BC, from the lunar cycle, so there were many deviations from the solar cycle, which had to go through many modifications to get the calendar exactly as it is today.",
+        "status": {
+            "newsUpdate": true,
+            "newsReadLot": false,
+            "hotNews": false,
+            "readMore": false
         }
-    ],
-    "hotNews": [
-        {
-
+    },
+    {
+        "id": "News2",
+        "title": "The Birth of the Calendar and Astronomy",
+        "type": "calendar news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news2/20.jpg",
+        "content": "/news/News2.text",
+        "description": "Are you looking for the 'Birth of The French calendar and astronomy'? Do you love the field of astrology and are studying the topics related to it? Are you passionate about learning the history of today's watches? In the article below, we will help you learn the birth of the calendar and astronomy as well as the birth meanings of these two classic scientific achievements.",
+        "status": {
+            "newsUpdate": true,
+            "newsReadLot": false,
+            "hotNews": true,
+            "readMore": false
         }
-    ]
-}
+    },
+    {
+        "id": "News3",
+        "title": "What is a calendar? When does the calendar appear? Origin of The Vietnamese Calendar",
+        "type": "calendar news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news3/31.jpg",
+        "content": "/news/News3.text",
+        "description": "What is a calendar? When was the calendar born? What kind of calendars are there in the world? When has Vietnam used the calendar? You can find all the answers in the article below.",
+        "status": {
+            "newsUpdate": true,
+            "newsReadLot": false,
+            "hotNews": false,
+            "readMore": true
+        }
+    },
+    {
+        "id": "News4",
+        "title": "Horoscope of 12 armored animals in 2022",
+        "type": "calendar news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news4/41.jpg",
+        "content": "/news/News4.text",
+        "description": "2022 Water Tiger Year - 12 Armored Animals (Also known as Gold Jewelry) is started from February 1, 2022 (lunar calendar january 1, 2023) to January 21, 2023 (lunar calendar december 30, 2023). Gradually ranked 3rd in the ranking of 12 Armored Animals. There is an interesting legend about the 12 Armored Animals as follows: The Jade Emperor wants to choose 12 armored animals as his palace bodyguard. He chose The Buffalo as the first because of his honesty and diligence, but beyond everyone's expectations, the intelligent Rat sneaked up on His shadow and took the number one position at a critical time. Tigers are named King of the Forest while Dragons are named The Lord of the Sea, behind Sửu. The Cat won the race with the Dragon and won 4th place. Snakes, Horses, Goats, Monkeys and Chickens followed. Dogs are punished as the last for biting cats. In fact, dogs came in 11th, as Pigs (Pigs) came late for the interview - pigs finally came in last place. In 2022, also known as the Year of the Water Tiger, the people who hold the tiger are very strong in their hearts and are not easily defeated, but they are also easier to promote themselves. In 2022, which armors will be rich, lucky, successful, which armor will encounter difficulties, fortunes. Invite you to the 365th Millennium Calendar to see the 2022 Horoscope of 12 Armored Animals. Famous People such as The Late General Secretary Le Hong Phong was born in 1902, Leader of Yen Bai Uprising: Nguyen Thai Truong (01-02-1902-Tram Pham) Vietnamese businessman: Doan Nguyen Duc (also known as Bau Duc - Chairman of Hoang Anh Gia Lai Group (06-12-1962). The founder of the World's First Islamic Republic of Iran: Ayatollah Khomeini (September 24, 1902) American actor Tom Cruise( July 3, 1962- Rat).",
+        "status": {
+            "newsUpdate": true,
+            "newsReadLot": false,
+            "hotNews": true,
+            "readMore": true
+        }
+    },
+    {
+        "id": "News5",
+        "title": "Why should you keep a journal?",
+        "type": "journal news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news5/51.jpg",
+        "content": "/news/News5.text",
+        "description": "A diary is a private place where you can put any thought, feeling, perspective on everything from work, study, affection, friends... Or simply, a journal is where you take notes of whatever you want.",
+        "status": {
+            "newsUpdate": false,
+            "newsReadLot": true,
+            "hotNews": true,
+            "readMore": false
+        }
+    },
+    {
+        "id": "News6",
+        "title": "How to start journaling?",
+        "type": "journal news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news6/61.jpg",
+        "content": "/news/News6.text",
+        "description": "Daily journaling is always the most common topic that people take notes on in a notebook. Journaling can help you improve your literary abilities, better understand yourself, reduce stress, and solve many other problems.",
+        "status": {
+            "newsUpdate": false,
+            "newsReadLot": true,
+            "hotNews": false,
+            "readMore": true
+        }
+    },
+    {
+        "id": "News7",
+        "title": "Planner Handbook Experience",
+        "type": "journal news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news7/71.jpg",
+        "content": "/news/News6.text",
+        "description": "Carrying a handbook by your side and using it for planning, you probably won't avoid the prying eye shots of many people. At a time when everything can be completed quickly and conveniently with just a few taps, pressing, recording beaks, positive hands to take photos ... Even planning can be very simple and easy. Almost everything has an 'electronic app' to help you get things done more conveniently.",
+        "status": {
+            "newsUpdate": false,
+            "newsReadLot": true,
+            "hotNews": true,
+            "readMore": true
+        }
+    },
+    {
+        "id": "News8",
+        "title": "Develop Effective Time Management Skills",
+        "type": "journal news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news8/81.jpg",
+        "content": "/news/News6.text",
+        "description": "Modern society goes hand in hand with having a lot of concerns besides studying, relaxing, earning money, or looking for work. So developing a strategy to manage time for those needs is the right thing to do. Sometimes your time is not enough to compare to the time it takes for the work you need to do, which can lead to stress.",
+        "status": {
+            "newsUpdate": false,
+            "newsReadLot": true,
+            "hotNews": false,
+            "readMore": false
+        }
+    },
+    {
+        "id": "News9",
+        "title": "Good or Bad Journaling?",
+        "type": "journal news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news9/91.jpg",
+        "content": "/news/News6.text",
+        "description": "In the old days, it was normal to keep a journal, but now you can keep a journal is considered a phenomenon. Everything is posted on Facebook, Zalo, Blog... already. There's no longer the concept of the first diary in my life.",
+        "status": {
+            "newsUpdate": false,
+            "newsReadLot": false,
+            "hotNews": true,
+            "readMore": false
+        }
+    },
+    {
+        "id": "News10",
+        "title": "How to understand yourself?",
+        "type": "journal news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news10/101.jpg",
+        "content": "/news/News6.text",
+        "description": "Have you ever wondered why you're so tired in the middle of this busy life, you're stuck in the middle of a mess with no way out... Everything has its reasons, the above problems appear to be because you cannot understand yourself. Sometimes understanding your heart is more important than you imagined.",
+        "status": {
+            "newsUpdate": false,
+            "newsReadLot": false,
+            "hotNews": true,
+            "readMore": false
+        }
+    },
+    {
+        "id": "News11",
+        "title": "A small notebook can completely change your life.",
+        "type": "journal news",
+        "datePost": "February 12,2022",
+        "author": "admin",
+        "mainImage": "/assets/image/news/news11/111.jpg",
+        "content": "/news/News6.text",
+        "description": "Many people still have thoughts like, 'I don't need to write for tired, reading is enough for me,' a huge mistake! There are many studies that have shown that our brains have a completely different way of looking when we write than when we read or when we talk.",
+        "status": {
+            "newsUpdate": false,
+            "newsReadLot": false,
+            "hotNews": true,
+            "readMore": false
+        }
+    }
+]

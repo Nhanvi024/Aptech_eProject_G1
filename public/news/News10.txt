@@ -1,0 +1,79 @@
+<div class="contentnewTitle">
+                            <a href="News01.html"><h4>How to understand yourself?</h4></a>
+                            <div class="meta1">
+                                <span>
+                                    <h6>Posted on
+                                        <a href="/about">February 12,2022</a>
+                                        by
+                                        <a href="/about">admin</a>
+                                    </h6>
+                                </span>
+                            </div>
+                            <h6 class="Title1">
+                                Have you ever wondered why you're so tired in the middle of this busy life, you're stuck in the middle of a mess with no way out... Everything has its reasons, the above problems appear to be because you cannot understand yourself. Sometimes understanding your heart is more important than you imagined.
+                            </h6>   
+                            <br><br>
+                            <img src="/assets/image/news/news10/101.jpg" alt="">
+                            <br><br>
+                            
+                        </div>
+                        <div class="contentnewTitle1">
+                            <p>
+                                How to understand yourself, very simply. Let's get to know yourself through the following simple steps.
+                            </p>
+                            <br>
+
+                            <b>Know your personality.</b>
+                            <br><br>
+                            <p>
+                                The first key that opens your inner door is to understand your personality. Never think that your point of view is always the same as everyone else's, you will be a completely different person when you are in a crowded place and when you are alone.
+                                <br><br>    
+                                Pay attention to your personality from the inside out, to know exactly who you are and who you are. Be aware of what makes you react in a certain way in the myriad situations you encounter in your life. Always ask questions about what you see and give yourself satisfactory answers.
+                                <br><br>
+                                What kind of person are you really? Where is your own personality? Which of your friends or when you come into contact with strangers? How are you painting your own portrait when you step out into the outside world? Have you ever thought about these things, grasp your personality well, this is what makes you more confident every day.                            
+                            </p>
+                            <br>
+
+                            <b>Know your core values.</b>
+                            <br><br>
+                            <p>
+                                Core values are also considered ethical principles and standards that you consider important. Normally, each person will make their own list of core values, but no matter how many, you have to remember that those values must play an important role in making decisions, influencing, resolving conflicts,  communicate... In everyday life.
+                                <br><br>
+                                How do you know what your core values are? No matter where you are or what you do, what values you can never give up, they are definitely your own core values.                            
+                            </p>
+                            <br>
+
+                            <b>Know your body well.</b>
+                            <br><br>
+                            <p>
+                                Do you really know your body when you've spent a third of your life? When you think you know your body, that's when you're no different from a child. The deeper we delve into our own bodies, the more mysterious it becomes, the more we urge us to explore more thoroughly.
+                                <br><br>
+                                And miraculously, the more we press our bodies, the more unexpected surprises it creates, which makes a lot of people excited and amazed. Try to feel each breath, discover what your abilities are, learn more about the limits you can reach.
+                                <br><br>
+                                Never say you can't do this without once putting yourself to the test. Before you succumb to your amazing abilities, try looking at yourself, spending more time slowing down exploring your body more comprehensively.                            
+                            </p>
+                            <br>
+
+
+                            <b>Know what your dreams are.</b>
+                            <br><br>
+                            <p>
+                                Your dreams and hopes are the first step towards the future. They don't just show up for fun, they're also a place you can be proud to live. So dreams are very important things, they are worth pursuing. Try to know your dreams and never lose them.
+                                <br><br>
+                                Whatever your dream, try to make it part of your daily pursuit. Take it seriously and take it seriously. Working hard to achieve your dreams is the right direction, instead of just hiding and feeling ashamed of your own dreams.                            
+                            </p>
+                            <br>
+
+                            <b>I know what I like and don't like.</b>
+                            <br><br>
+                            <p>
+                                You have to know what interests you and is equally important, you have to know what you don't like. There are many people in the world who just follow what is flourishing and deny what they think is really bad. Don't live like them, it will make you lose confidence in yourself.
+                                <br><br>
+                                Spend more time knowing what you like and don't like, never ask for advice from others, remember that it's only you who decide everything.
+                                <br><br>
+                                Identifying your own likes and dislikes requires a lot of emotion. Don't try to get involved in things you don't love, or ignore things that make you happy, you're slowly leaving your true self behind. Try to stay true to what you like and what you don't like, because not everyone likes it except yourself.
+                                <br><br>
+                                Grasping and understanding yourself allows you to reach for endless sources of happiness, sometimes in your dreams, it is unimaginable. If you do that, you'll find happy energy even on the darkest days.
+                            </p>
+
+                        </div>
