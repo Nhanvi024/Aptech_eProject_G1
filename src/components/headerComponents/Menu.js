@@ -13,6 +13,8 @@ function Menu(props) {
         { name: 'HOME', href: '/' },
         { name: 'NEWS', href: '/news' },
         { name: 'ALL PRODUCTS', href: '/allproducts' },
+        { name: 'CALENDAR', href: '/calendar' },
+        { name: 'NOTEBOOK', href: '/notebook' },
         { name: 'DOWNLOAD', href: '/download' },
         { name: 'CONTACT', href: '/contact' },
 
