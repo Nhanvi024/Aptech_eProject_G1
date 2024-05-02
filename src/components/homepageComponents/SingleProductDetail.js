@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
 import {DataContext} from '../../context/DataContext';
+import ProductCard from './ProductCard';
 
 function SingleProductDetail(props) {
 	const {products, handleAddProductCart, isDataLoaded} = useContext(DataContext);
@@ -8,6 +9,7 @@ function SingleProductDetail(props) {
 	const {productId} = useParams();
 	console.log(products);
 	console.log(productId);
+	const [relateList, setRelateList] = useState([]);
 	const [item, setItem] = useState({
 		id: '',
 		name: '',
@@ -31,21 +33,24 @@ function SingleProductDetail(props) {
 	});
 	useEffect(() => {
 		if (isDataLoaded) {
-			products.noteBook.map((itema, index) => {
+			products.noteBook.map((itema) => {
 				if (itema.id === productId) {
 					setItem(itema);
+					setRelateList(products.noteBook.filter((item) => item.type == itema.type));
 				}
 				return null;
 			});
-			products.calendar.map((itema, index) => {
+			products.calendar.map((itema) => {
 				if (itema.id === productId) {
 					setItem(itema);
+					setRelateList(products.calendar.filter((item) => item.type == itema.type));
 				}
 				return null;
 			});
 		}
 	}, [isDataLoaded, products, productId]);
 	console.log('itemtest:', item);
+	console.log('test relate list:', relateList);
 	if (products.length !== 0) {
 		return (
 			<div className="container-fluid">
@@ -54,7 +59,7 @@ function SingleProductDetail(props) {
 					src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823"
 					alt="banner"></img>
 
-				<div className="container row p-0 mx-auto p-3">
+				<div className="container row mx-auto p-3">
 					<div className="col-12 p-0 col-lg-6">
 						<div id="modalCarouselDetail" className="carousel slide" data-bs-ride="carousel">
 							<div className="carousel-inner carda">
@@ -106,22 +111,6 @@ function SingleProductDetail(props) {
 									<img src={item.image.image3} className="thumbImg d-block w-100" alt="..." />
 								</button>
 							</div>
-							{/* <button
-									className="carousel-control-prev"
-									type="button"
-									data-bs-target="#modalCarouselDetail"
-									data-bs-slide="prev">
-									<span className="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span className="visually-hidden">Previous</span>
-								</button>
-								<button
-									className="carousel-control-next"
-									type="button"
-									data-bs-target="#modalCarouselDetail"
-									data-bs-slide="next">
-									<span className="carousel-control-next-icon" aria-hidden="true"></span>
-									<span className="visually-hidden">Next</span>
-								</button> */}
 						</div>
 					</div>
 					<div className="col-12 p-0 col-lg-6 p-5" style={{fontSize: 'var(--fs-500)'}}>
@@ -173,6 +162,18 @@ function SingleProductDetail(props) {
 							<br />
 						</div>
 					</div>
+				</div>
+				<div className="modal-priceTag row m-0 justify-items-center ms-3 my-4 mt-0">
+					<h2 className="modal-priceTag-text px-5 py-2">Related products</h2>
+				</div>
+				<hr></hr>
+				<div className="container row mx-auto p-3">
+					{relateList.length !== 0 &&
+						relateList.map((item, index) => {
+							// if (index >= section1Page * 2 && index < section1Page * 2 + itemPerPage) {
+							// }
+							return <ProductCard key={index} item={item} />;
+						})}
 				</div>
 			</div>
 		);
