@@ -1,5 +1,5 @@
 .menuSearch-container {
-    visibility: hidden;
+    display: none;
     width: 100%;
     z-index: 1;
 
@@ -47,13 +47,39 @@
     z-index: -1;
 }
 
+#menu-modal{
+    display: none;
+}
 
-.menuSearch-menuDetail {
+#menu-modal:checked+.menuSearch-modal {
+    visibility: visible;
+    #menuSearch-menuDetail {
+        transform: translateX(0%);
+    }
+}
+
+/* #menu-modal:checked+#menuSearch-menuDetail {
+    transform: translateX(0%);
+} */
+
+.menuSearch-modal {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(142, 141, 141, 0.5);
+}
+
+#menuSearch-menuDetail {
+    transform: translateX(-100%);
+    transition: 0.3s;
+
     width: 250px;
     height: 100vh;
     padding-top: 20px;
     background-color: rgb(255, 255, 255);
-    transform: translateX(0px);
 
     position: fixed;
     top: 0;
@@ -65,6 +91,7 @@
     }
 }
 
+
 .menuSearch-menuList {
     width: 100%;
     height: fit-content;
@@ -72,19 +99,23 @@
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 
 .menuSearch-menuTab {
     width: 100%;
     height: 40px;
+    padding: 30px 0;
     padding-left: 20px;
 
     display: flex;
     align-items: center;
     gap: 10px;
+
+    border-bottom: 1px solid rgb(222, 222, 222,0.5) ;
+
 }
+
 .menuSearch-iconRedArrow::before {
     content: "\f105";
     font-family: "Font Awesome 5 free";
@@ -108,6 +139,11 @@
     transition: color 0.3s;
 }
 
+#menuSearch-menuTab_3,
+#menuSearch-menuTab_4{
+    padding-left: 40px;
+}
+
 
 
 /** Responsive ************************************************************************************ */
@@ -118,7 +154,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
     .menuSearch-container {
-        visibility: visible;
+       display: block;
     }
 }
 

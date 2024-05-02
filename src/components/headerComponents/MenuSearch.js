@@ -8,6 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Logo from './Logo';
 
 function MenuSearch(props) {
+    const [showModal, setShowModal] = useState(false)
     const { setSearchProduct } = useContext(DataContext)
     const [searchText, setSearchText] = useState('')
     const navigate = useNavigate()
@@ -34,8 +35,12 @@ function MenuSearch(props) {
     return (
         <div className='menuSearch-container'>
             <div className='menuSearch-icon'>
-                <img className='menuSearch-menuIcon' src={MenuIcon} alt='menuIcon' />
-                <img onClick={() => $("#menuSearch-searchInput").toggle()} className='menuSearch-searchIcon' src={searchIcon} alt='searchIcon' />
+                <img
+                    onClick={() => setShowModal(pre => !pre)}
+                    className='menuSearch-menuIcon'
+                    src={MenuIcon} alt='menuIcon'
+                />
+                <img onClick={() => $("#menuSearch-searchInput").slideToggle()} className='menuSearch-searchIcon' src={searchIcon} alt='searchIcon' />
             </div>
             <div className='menuSearch-search'>
                 <input
@@ -43,21 +48,27 @@ function MenuSearch(props) {
                     onKeyDown={(e) => handleSearch(e)}
                     id='menuSearch-searchInput' type='text' placeholder='Typing your search and press enter ...' />
             </div>
-            <div className='menuSearch-menuDetail'>
-                <Logo />
-                <div className='menuSearch-menuList'>
-                    {menuDetail.map((item, index) => {
-                        return (
-                            <div key={index} className='menuSearch-menuTab' id={`menuSearch-menuTab_${index}`} onClick={(e) => console.log(e.target.id)}>
-                                <div className='menuSearch-iconRedArrow' />
-                                <Link className='menuSearch-tabLink' onClick={() => setBtnActive(item.name)} to={item.href}>{item.name}</Link>
-                            </div>
-                        )
-                    })}
+
+            <input type='checkbox' id='menu-modal' checked={showModal} />
+            <div className='menuSearch-modal' onClick={() => setShowModal(pre => !pre)}>
+                <div id='menuSearch-menuDetail'>
+                    <Logo />
+                    <div className='menuSearch-menuList'>
+                        {menuDetail.map((item, index) => {
+                            return (
+                                <div key={index} className='menuSearch-menuTab' id={`menuSearch-menuTab_${index}`} onClick={(e) => console.log(e.target.id)}>
+                                    <div className='menuSearch-iconRedArrow' />
+                                    <Link className='menuSearch-tabLink' onClick={() => setBtnActive(item.name)} to={item.href}>{item.name}</Link>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
 
             </div>
         </div>
+
+
     );
 }
 

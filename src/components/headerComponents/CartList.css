@@ -28,7 +28,7 @@
     border: 3px solid rgb(255, 255, 255);
     background-color: var(--secondary-background-clr);
     position: absolute;
-    top: -15px;
+    top: -18px;
     left: 15px;
 
     text-align: center;
@@ -236,8 +236,8 @@
         width: 23px;
         height: 23px;
 
-        top: -15px;
-        left: 10px;
+        top: -17px;
+        left: 12px;
     }
 }
 
