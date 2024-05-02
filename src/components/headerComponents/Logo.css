@@ -2,8 +2,6 @@
     width: 25%;
     height: 100px;
     padding: 0;
-
-    /* border: 1px solid red; */
 }
 
 .logoImage {
@@ -11,5 +9,33 @@
     height: 100%;
 
     object-fit: contain;
+}
+
+/** Responsive ************************************************************************************ */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
 
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .logoContainer {
+        position: relative;
+        margin: auto;
+
+        width: fit-content;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .logoContainer {
+        height: 75%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
