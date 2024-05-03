@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react"; 
+import {createContext, useEffect, useState} from 'react';
 
 const DataContext = createContext();
 function DataProvider({ children }) {
@@ -18,13 +18,12 @@ function DataProvider({ children }) {
     ]
     const [btnActive, setBtnActive] = useState(webPage[0].name)
 
-    useEffect(() => {
-        fetch('data/data.json')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-            .then(setIsDataLoaded(true))
-    }, [])
-
+	useEffect(() => {
+		fetch('data/data.json')
+			.then((res) => res.json())
+			.then((data) => setProducts(data))
+			.then(setIsDataLoaded(true));
+	}, []);
 
     // ** Products Cart
 
@@ -94,7 +93,4 @@ function DataProvider({ children }) {
     )
 }
 
-export {
-    DataContext,
-    DataProvider
-}
+export {DataContext, DataProvider};

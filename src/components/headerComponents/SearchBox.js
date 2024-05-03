@@ -1,7 +1,7 @@
-import './SearchBox.css'
+import './SearchBox.css';
 
-import React, { useContext, useState } from 'react';
-import { DataContext } from '../../context/DataContext';
+import React, {useContext, useState} from 'react';
+import {DataContext} from '../../context/DataContext';
 
 import searchIcon from '../../assets/image/header/icon/search.svg'
 import { useNavigate } from 'react-router-dom';
