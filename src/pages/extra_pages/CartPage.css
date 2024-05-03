@@ -227,8 +227,9 @@
 .cartPage-bottom-checkout:hover,
 .cartPage-bottom-checkout:active{
     text-decoration: none;
-    background-color: rgb(78, 198, 150);
     color:  var(--secondary-text-color);
+    background: var(--secondary-background-clr);
+    opacity: 0.8;
 }
 
 .cartPage-noitem{
