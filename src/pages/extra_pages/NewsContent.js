@@ -50,6 +50,8 @@ function NewsContent(props) {
                 </div>
                 {newsSide.iterestedNews.length && <InterestedNews2 newsReadLot={newsSide.iterestedNews} />}
             </div>
+
+
         </>
     );
 }
