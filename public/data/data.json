@@ -15,10 +15,10 @@
                 "weight": "250g"
             },
             "image": {
-                "mainImage": "https://m.media-amazon.com/images/I/91XZWblXa0L._SY425_.jpg",
-                "image1": "https://m.media-amazon.com/images/I/91VWzXZPTBL._SY425_.jpg",
-                "image2": "https://m.media-amazon.com/images/S/aplus-media/vc/f504546c-a83b-4706-b15d-2b8bbb59388c._SL300__.jpg",
-                "image3": "https://m.media-amazon.com/images/S/aplus-media/vc/e9f356be-d0d5-4b30-9a31-8698872679cb._SL300__.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ1-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ1-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ1-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ1-4.jpg"
             }
         },
         {
@@ -36,10 +36,10 @@
                 "weight": "250g"
             },
             "image": {
-                "mainImage": "https://m.media-amazon.com/images/I/91JHQUAHJCL._SY425_.jpg",
-                "image1": "https://m.media-amazon.com/images/S/aplus-media/sota/3e87f7e2-a1c1-4773-a15d-312ca73f90a3.__CR0,0,300,300_PT0_SX300_V1___.jpeg",
-                "image2": "https://m.media-amazon.com/images/S/aplus-media/sota/020507cd-f304-4c90-a18e-20ba33845174.__CR0,0,220,220_PT0_SX220_V1___.jpeg",
-                "image3": "https://m.media-amazon.com/images/S/aplus-media/sota/84d78ff1-3833-4833-88f5-9c75b5d459c6.__CR0,0,220,220_PT0_SX220_V1___.jpeg"
+                "mainImage": "/assets/image/notebooks/NBJ2-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ2-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ2-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ2-4.jpg"
             }
         },
         {
@@ -57,10 +57,10 @@
                 "weight": "250g"
             },
             "image": {
-                "mainImage": "https://m.media-amazon.com/images/I/915p4HsJtzL._SY342_.jpg",
-                "image1": "https://m.media-amazon.com/images/I/91vKIcjZtJL._SY342_.jpg",
-                "image2": "https://m.media-amazon.com/images/I/81TVN9PcqpL._SX445_.jpg",
-                "image3": "https://m.media-amazon.com/images/I/815BoFLjShL._SX445_.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ3-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ3-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ3-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ3-4.jpg"
             }
         },
         {
@@ -78,10 +78,10 @@
                 "weight": "270g"
             },
             "image": {
-                "mainImage": "https://m.media-amazon.com/images/I/A1l9ZLRx48L._SY425_.jpg",
-                "image1": "https://m.media-amazon.com/images/I/A12gjqSpTKL._SY425_.jpg",
-                "image2": "https://m.media-amazon.com/images/S/aplus-media/vc/02d3e1e3-3d88-4c07-84ef-89337dc984c1.__CR0,0,2160,2160_PT0_SX300_V1___.jpg",
-                "image3": "https://m.media-amazon.com/images/S/aplus-media/vc/3481f7ec-9eec-4cfd-bc31-fdf1a7c6654d.__CR0,0,2520,2520_PT0_SX300_V1___.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ4-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ4-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ4-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ4-4.jpg"
             }
         },
         {
@@ -99,10 +99,10 @@
                 "weight": "363g"
             },
             "image": {
-                "mainImage": "https://m.media-amazon.com/images/I/91c82W1gIgL._SY425_.jpg",
-                "image1": "https://m.media-amazon.com/images/I/916OravsnaL._SY425_.jpg",
-                "image2": "https://m.media-amazon.com/images/S/aplus-media/vc/3d93a3a8-94f2-4640-ac41-e7957b4b176c._CR0,0,2472,2472_PT0_SX300__.jpg",
-                "image3": "https://m.media-amazon.com/images/S/aplus-media/vc/60812f70-b742-495e-b3f2-72c55dc76b99._CR0,0,2544,2544_PT0_SX300__.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ5-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ5-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ5-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ5-4.jpg"
             }
         },
         {
@@ -120,10 +120,10 @@
                 "weight": "998g"
             },
             "image": {
-                "mainImage": "https://m.media-amazon.com/images/I/81-NVPsQNIL._AC_SX425_.jpg",
-                "image1": "https://m.media-amazon.com/images/I/71Z9CFraQcL._AC_SX425_.jpg",
-                "image2": "https://m.media-amazon.com/images/I/71JEaeg-3bL._AC_SX425_.jpg",
-                "image3": "https://m.media-amazon.com/images/I/812yoejDcrL._AC_SX425_.jpg"
+                "mainImage": "/assets/image/notebooks/NBD1-1.jpg",
+                "image1": "/assets/image/notebooks/NBD1-2.jpg",
+                "image2": "/assets/image/notebooks/NBD1-3.jpg",
+                "image3": "/assets/image/notebooks/NBD1-4.jpg"
             }
         },
         {
@@ -141,10 +141,10 @@
                 "weight": "517g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/71H0Tuvq-kL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/61kixtKpalL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/71kaBM7Q7OL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/61xGjpkRQRL._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBD2-1.jpg",
+                "image1":"/assets/image/notebooks/NBD2-2.jpg",
+                "image2":"/assets/image/notebooks/NBD2-3.jpg",
+                "image3":"/assets/image/notebooks/NBD2-4.jpg"
             }
         },
         {
@@ -162,10 +162,10 @@
                 "weight": "363g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/71vSQaRTWOL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/61m1le280CL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/61Rf3bUVwiL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/71kREctuK8L._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBD3-1.jpg",
+                "image1":"/assets/image/notebooks/NBD3-2.jpg",
+                "image2":"/assets/image/notebooks/NBD3-3.jpg",
+                "image3":"/assets/image/notebooks/NBD3-4.jpg"
             }
         },
         {
@@ -183,10 +183,10 @@
                 "weight": "150g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/81EjJjk4RqL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/71w2KhciqaL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/71oKMXdavrL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/S/aplus-media-library-service-media/5c070b5b-d8a5-4b70-922d-b183ae2e7492.__CR0,0,300,300_PT0_SX300_V1___.jpg"
+                "mainImage":"/assets/image/notebooks/NBD4-1.jpg",
+                "image1":"/assets/image/notebooks/NBD4-2.jpg",
+                "image2":"/assets/image/notebooks/NBD4-3.jpg",
+                "image3":"/assets/image/notebooks/NBD4-4.jpg"
             }
         },
         {
@@ -204,10 +204,10 @@
                 "weight": "280g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/513OUvP1OmL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/517IfzjZpsL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/71lXmazrQLL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/61rSCmO7paL._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBD5-1.jpg",
+                "image1":"/assets/image/notebooks/NBD5-2.jpg",
+                "image2":"/assets/image/notebooks/NBD5-3.jpg",
+                "image3":"/assets/image/notebooks/NBD5-4.jpg"
             }
         },
         {
@@ -225,10 +225,10 @@
                 "weight": "306g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/61ZP9SjBcVL._SY425_.jpg",
-                "image1":"https://m.media-amazon.com/images/S/aplus-media/kdp/52e2a60b-0210-4424-a12e-0396d93d3a28.__CR240,0,1440,1440_PT0_SX220_V1___.jpg",
-                "image2":"https://m.media-amazon.com/images/S/aplus-media/kdp/3c3d8499-9aa5-4fb0-a828-dcc078914c43.__CR240,0,1440,1440_PT0_SX220_V1___.jpg",
-                "image3":"https://m.media-amazon.com/images/S/aplus-media/kdp/5033f106-fcbf-49c3-8528-f002fa7f85a4.__CR240,0,1440,1440_PT0_SX220_V1___.jpg"
+                "mainImage":"/assets/image/notebooks/NBS1-1.jpg",
+                "image1":"/assets/image/notebooks/NBS1-2.jpg",
+                "image2":"/assets/image/notebooks/NBS1-3.jpg",
+                "image3":"/assets/image/notebooks/NBS1-4.jpg"
             }
         },
         {
@@ -246,10 +246,10 @@
                 "weight": "330g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/71cN+aurCqL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/71sohla6PiL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/61ty0V4gKIL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/71YfceLBAjL._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBS2-1.jpg",
+                "image1":"/assets/image/notebooks/NBS2-2.jpg",
+                "image2":"/assets/image/notebooks/NBS2-3.jpg",
+                "image3":"/assets/image/notebooks/NBS2-4.jpg"
             }
         },
         {
@@ -267,10 +267,10 @@
                 "weight": "422g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/51zyWP5ZkXL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/S/aplus-media-library-service-media/353fd8f1-3259-406f-937b-70ea7db2d62c.__CR0,0,300,300_PT0_SX300_V1___.jpg",
-                "image2":"https://m.media-amazon.com/images/I/71foUWU8LiL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/S/aplus-media-library-service-media/4b826b0f-ee10-44d1-88f9-73c90203e33f.__CR0,0,300,300_PT0_SX300_V1___.jpg"
+                "mainImage":"/assets/image/notebooks/NBS3-1.jpg",
+                "image1":"/assets/image/notebooks/NBS3-2.jpg",
+                "image2":"/assets/image/notebooks/NBS3-3.jpg",
+                "image3":"/assets/image/notebooks/NBS3-4.jpg"
             }
         },
         {
@@ -288,10 +288,10 @@
                 "weight": "385g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/81eYCnNGNLL._SY425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/716m5UI4ybL._SX606_.jpg",
-                "image2":"https://m.media-amazon.com/images/S/aplus-media/vc/ae82ca8b-d2bd-480b-a781-09b7ab0e3fe4._SL220__.jpg",
-                "image3":"https://m.media-amazon.com/images/S/aplus-media/vc/d5632d1e-dea0-42a5-ac8c-378146a7da58._SL300__.jpg"
+                "mainImage":"/assets/image/notebooks/NBS4-1.jpg",
+                "image1":"/assets/image/notebooks/NBS4-2.jpg",
+                "image2":"/assets/image/notebooks/NBS4-3.jpg",
+                "image3":"/assets/image/notebooks/NBS4-4.jpg"
             }
         },
         {
@@ -309,10 +309,10 @@
                 "weight": "318g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/61mGnCMUbmL._SY425_.jpg",
-                "image1":"https://m.media-amazon.com/images/S/aplus-media/kdp/2efacb8a-25fe-42a9-9d4b-e2fd6cc2cf0a.__CR0,0,300,300_PT0_SX300_V1___.png",
-                "image2":"https://m.media-amazon.com/images/S/aplus-media/kdp/4812e951-a7bc-4244-9ee1-c56e8a3ea932.__CR0,0,300,300_PT0_SX300_V1___.png",
-                "image3":"https://m.media-amazon.com/images/S/aplus-media/kdp/e2bdc006-e7ff-451f-8dfa-7926a7a04ba0.__CR0,0,300,300_PT0_SX300_V1___.png"
+                "mainImage":"/assets/image/notebooks/NBS5-1.jpg",
+                "image1":"/assets/image/notebooks/NBS5-2.jpg",
+                "image2":"/assets/image/notebooks/NBS5-3.jpg",
+                "image3":"/assets/image/notebooks/NBS5-4.jpg"
             }
         },
         {
@@ -330,10 +330,10 @@
                 "weight": "326g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/81BiGWHeIPL._AC_SY741_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/81W+X9UPesL._AC_SY679_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/61psmC8GarL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/51z0JW2ZOKL._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBP1-1.jpg",
+                "image1":"/assets/image/notebooks/NBP1-2.jpg",
+                "image2":"/assets/image/notebooks/NBP1-3.jpg",
+                "image3":"/assets/image/notebooks/NBP1-4.jpg"
             }
         },
         {
@@ -351,10 +351,10 @@
                 "weight": "517g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/91HYkwYwv1L._SY425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/91JVLYREOTL._SY425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/61Lsrh-0FML._SY425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/91OwkwDShYL._SY425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBP2-1.jpg",
+                "image1":"/assets/image/notebooks/NBP2-2.jpg",
+                "image2":"/assets/image/notebooks/NBP2-3.jpg",
+                "image3":"/assets/image/notebooks/NBP2-4.jpg"
             }
         },
         {
@@ -372,10 +372,10 @@
                 "weight": "476g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/A1l4T7rMZvL._AC_SY679_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/916bkDuJJqL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/811UJ6o619L._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/812LuA7VT+L._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBP3-1.jpg",
+                "image1":"/assets/image/notebooks/NBP3-2.jpg",
+                "image2":"/assets/image/notebooks/NBP3-3.jpg",
+                "image3":"/assets/image/notebooks/NBP3-4.jpg"
             }
         },
         {
@@ -393,10 +393,10 @@
                 "weight": "767g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/71+QK5pJQmL._AC_SX679_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/71nep5CsyNS._AC_SX679_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/71DFf3Qs2US._AC_SX679_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/61YQujRpDsS._AC_SX679_.jpg"
+                "mainImage":"/assets/image/notebooks/NBP4-1.jpg",
+                "image1":"/assets/image/notebooks/NBP4-2.jpg",
+                "image2":"/assets/image/notebooks/NBP4-3.jpg",
+                "image3":"/assets/image/notebooks/NBP4-4.jpg"
             }
         },
         {
@@ -414,10 +414,10 @@
                 "weight": "454g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/91QdwcK8NgL._AC_SX679_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/613Pa7no86L._AC_SX679_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/81vX+rdCHwL._AC_SX679_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/81b1PYER+DL._AC_SX679_.jpg"
+                "mainImage":"/assets/image/notebooks/NBP5-1.jpg",
+                "image1":"/assets/image/notebooks/NBP5-2.jpg",
+                "image2":"/assets/image/notebooks/NBP5-3.jpg",
+                "image3":"/assets/image/notebooks/NBP5-4.jpg"
             }
         },
         {
@@ -435,10 +435,10 @@
                 "weight": "20g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/71zNpZTB6pL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/61qxyYzcBwL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/S/aplus-media/vc/806b17da-7f6f-489c-932a-523b05173265.__CR0,0,300,300_PT0_SX300_V1___.jpg",
-                "image3":"https://m.media-amazon.com/images/S/aplus-media/vc/1f7b2ca4-5663-44a6-b139-c880c3d5c859.__CR0,122,960,960_PT0_SX300_V1___.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT1-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT1-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT1-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT1-4.jpg"
             }
         },
         {
@@ -456,10 +456,10 @@
                 "weight": "1g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/51DZylxVCbL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/51Ku1h+a9CL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/61il4DzEGPL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/51L2m+j9-gL._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT2-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT2-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT2-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT2-4.jpg"
             }
         },
         {
@@ -477,10 +477,10 @@
                 "weight": "448g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/A1obvvjNxtL._SY425_.jpg",
-                "image1":"https://m.media-amazon.com/images/S/aplus-media/vc/c452b484-d4c8-4823-9561-4e47ab6bfbaf._CR0,0,2560,2560_PT0_SX220__.jpg",
-                "image2":"https://m.media-amazon.com/images/S/aplus-media/vc/6539512f-8ba4-4394-b75c-5d0b3dc00bd7._CR0,0,2200,2200_PT0_SX220__.jpg",
-                "image3":"https://m.media-amazon.com/images/S/aplus-media/vc/756c1586-412a-42e2-9dbe-c42508b79d25._CR0,0,2560,2560_PT0_SX220__.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT3-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT3-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT3-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT3-4.jpg"
             }
         },
         {
@@ -498,10 +498,10 @@
                 "weight": "350g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/51HBq8+9-bL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/61XCVjnqmiL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/619C2r3A91L._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/51N82leNLqL._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT4-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT4-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT4-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT4-4.jpg"
             }
         },
         {
@@ -519,10 +519,10 @@
                 "weight": "448g"
             },
             "image": {
-                "mainImage":"https://m.media-amazon.com/images/I/51PHsOTz3CL._AC_SX425_.jpg",
-                "image1":"https://m.media-amazon.com/images/I/61wqQm5PVRL._AC_SX425_.jpg",
-                "image2":"https://m.media-amazon.com/images/I/612P+skPAQL._AC_SX425_.jpg",
-                "image3":"https://m.media-amazon.com/images/I/61a+Mqahn5L._AC_SX425_.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT5-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT5-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT5-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT5-4.jpg"
             }
         }
     ],
@@ -543,10 +543,10 @@
                 "weight": "230g"
             },
             "image": {
-                "mainImage":"data/calendars/WC1-1.jpg",
-                "image1":"data/calendars/WC1-2.jpg",
-                "image2":"data/calendars/WC1-3.jpg",
-                "image3":"data/calendars/WC1-4.jpg"
+                "mainImage":"/assets/image/calendars/WC1-1.jpg",
+                "image1":"/assets/image/calendars/WC1-2.jpg",
+                "image2":"/assets/image/calendars/WC1-3.jpg",
+                "image3":"/assets/image/calendars/WC1-4.jpg"
             }
         },
         {
@@ -565,10 +565,10 @@
                 "weight": "200g"
             },
             "image": {
-                "mainImage":"data/calendars/WC2-1.jpg",
-                "image1":"data/calendars/WC2-2.jpg",
-                "image2":"data/calendars/WC2-3.jpg",
-                "image3":"data/calendars/WC2-4.jpg"
+                "mainImage":"/assets/image/calendars/WC2-1.jpg",
+                "image1":"/assets/image/calendars/WC2-2.jpg",
+                "image2":"/assets/image/calendars/WC2-3.jpg",
+                "image3":"/assets/image/calendars/WC2-4.jpg"
             }
         },
         {
@@ -587,10 +587,10 @@
                 "weight": "230g"
             },
             "image": {
-                "mainImage":"data/calendars/WC3-1.jpg",
-                "image1":"data/calendars/WC3-2.jpg",
-                "image2":"data/calendars/WC3-3.jpg",
-                "image3":"data/calendars/WC3-4.jpg"
+                "mainImage":"/assets/image/calendars/WC3-1.jpg",
+                "image1":"/assets/image/calendars/WC3-2.jpg",
+                "image2":"/assets/image/calendars/WC3-3.jpg",
+                "image3":"/assets/image/calendars/WC3-4.jpg"
             }
         },
         {
@@ -609,10 +609,10 @@
                 "weight": "180g"
             },
             "image": {
-                "mainImage":"data/calendars/WC4-1.jpg",
-                "image1":"data/calendars/WC4-2.jpg",
-                "image2":"data/calendars/WC4-3.jpg",
-                "image3":"data/calendars/WC4-4.jpg"
+                "mainImage":"/assets/image/calendars/WC4-1.jpg",
+                "image1":"/assets/image/calendars/WC4-2.jpg",
+                "image2":"/assets/image/calendars/WC4-3.jpg",
+                "image3":"/assets/image/calendars/WC4-4.jpg"
             }
         },
         {
@@ -631,10 +631,10 @@
                 "weight": "257g"
             },
             "image": {
-                "mainImage":"data/calendars/WC5-1.jpg",
-                "image1":"data/calendars/WC5-2.jpg",
-                "image2":"data/calendars/WC5-3.jpg",
-                "image3":"data/calendars/WC5-4.jpg"
+                "mainImage":"/assets/image/calendars/WC5-1.jpg",
+                "image1":"/assets/image/calendars/WC5-2.jpg",
+                "image2":"/assets/image/calendars/WC5-3.jpg",
+                "image3":"/assets/image/calendars/WC5-4.jpg"
             }
         },
         {
@@ -653,10 +653,10 @@
                 "weight": "250g"
             },
             "image": {
-                "mainImage":"data/calendars/WC6-1.jpg",
-                "image1":"data/calendars/WC6-2.jpg",
-                "image2":"data/calendars/WC6-3.jpg",
-                "image3":"data/calendars/WC6-4.jpg"
+                "mainImage":"/assets/image/calendars/WC6-1.jpg",
+                "image1":"/assets/image/calendars/WC6-2.jpg",
+                "image2":"/assets/image/calendars/WC6-3.jpg",
+                "image3":"/assets/image/calendars/WC6-4.jpg"
             }
         },
         {
@@ -675,10 +675,10 @@
                 "weight": "260g"
             },
             "image": {
-                "mainImage":"data/calendars/WC7-1.jpg",
-                "image1":"data/calendars/WC7-2.jpg",
-                "image2":"data/calendars/WC7-3.jpg",
-                "image3":"data/calendars/WC7-4.jpg"
+                "mainImage":"/assets/image/calendars/WC7-1.jpg",
+                "image1":"/assets/image/calendars/WC7-2.jpg",
+                "image2":"/assets/image/calendars/WC7-3.jpg",
+                "image3":"/assets/image/calendars/WC7-4.jpg"
             }
         },
         {
@@ -697,10 +697,10 @@
                 "weight": "226g"
             },
             "image": {
-                "mainImage":"data/calendars/WC8-1.jpg",
-                "image1":"data/calendars/WC8-2.jpg",
-                "image2":"data/calendars/WC8-3.jpg",
-                "image3":"data/calendars/WC8-4.jpg"
+                "mainImage":"/assets/image/calendars/WC8-1.jpg",
+                "image1":"/assets/image/calendars/WC8-2.jpg",
+                "image2":"/assets/image/calendars/WC8-3.jpg",
+                "image3":"/assets/image/calendars/WC8-4.jpg"
             }
         },
         {
@@ -718,10 +718,10 @@
                 "weight": "280"
             },
             "image": {
-                "mainImage":"data/calendars/WC9-1.jpg",
-                "image1":"data/calendars/WC9-2.jpg",
-                "image2":"data/calendars/WC9-3.jpg",
-                "image3":"data/calendars/WC9-4.jpg"
+                "mainImage":"/assets/image/calendars/WC9-1.jpg",
+                "image1":"/assets/image/calendars/WC9-2.jpg",
+                "image2":"/assets/image/calendars/WC9-3.jpg",
+                "image3":"/assets/image/calendars/WC9-4.jpg"
             }
         },
         {
@@ -740,10 +740,10 @@
                 "weight": "180g"
             },
             "image": {
-                "mainImage":"data/calendars/DC1-1.jpg",
-                "image1":"data/calendars/DC1-2.jpg",
-                "image2":"data/calendars/DC1-3",
-                "image3":"data/calendars/DC1-4.jpg"
+                "mainImage":"/assets/image/calendars/DC1-1.jpg",
+                "image1":"/assets/image/calendars/DC1-2.jpg",
+                "image2":"/assets/image/calendars/DC1-3",
+                "image3":"/assets/image/calendars/DC1-4.jpg"
             }
         },
         {
@@ -762,10 +762,10 @@
                 "weight": "500g"
             },
             "image": {
-                "mainImage":"data/calendars/DC2-1.jpg",
-                "image1":"data/calendars/DC2-2.jpg",
-                "image2":"data/calendars/DC2-2.jpg",
-                "image3":"data/calendars/DC2-4.jpg"
+                "mainImage":"/assets/image/calendars/DC2-1.jpg",
+                "image1":"/assets/image/calendars/DC2-2.jpg",
+                "image2":"/assets/image/calendars/DC2-2.jpg",
+                "image3":"/assets/image/calendars/DC2-4.jpg"
             }
         },
         {
@@ -784,10 +784,10 @@
                 "weight": "150g"
             },
             "image": {
-                "mainImage":"data/calendars/DC3-1.jpg",
-                "image1":"data/calendars/DC3-2.jpg",
-                "image2":"data/calendars/DC3-3.jpg",
-                "image3":"data/calendars/DC3-4.jpg"
+                "mainImage":"/assets/image/calendars/DC3-1.jpg",
+                "image1":"/assets/image/calendars/DC3-2.jpg",
+                "image2":"/assets/image/calendars/DC3-3.jpg",
+                "image3":"/assets/image/calendars/DC3-4.jpg"
             }
         },
         {
@@ -806,10 +806,10 @@
                 "weight": "190g"
             },
             "image": {
-                "mainImage":"data/calendars/DC4-1.jpg",
-                "image1":"data/calendars/DC4-2.jpg",
-                "image2":"data/calendars/DC4-3.jpg",
-                "image3":"data/calendars/DC4-4.jpg"
+                "mainImage":"/assets/image/calendars/DC4-1.jpg",
+                "image1":"/assets/image/calendars/DC4-2.jpg",
+                "image2":"/assets/image/calendars/DC4-3.jpg",
+                "image3":"/assets/image/calendars/DC4-4.jpg"
             }
         },
         {
@@ -828,10 +828,10 @@
                 "weight": "407g"
             },
             "image": {
-                "mainImage":"data/calendars/DC5-1.jpg",
-                "image1":"data/calendars/DC5-2.jpg",
-                "image2":"data/calendars/DC5-3.jpg",
-                "image3":"data/calendars/DC5-4.jpg"
+                "mainImage":"/assets/image/calendars/DC5-1.jpg",
+                "image1":"/assets/image/calendars/DC5-2.jpg",
+                "image2":"/assets/image/calendars/DC5-3.jpg",
+                "image3":"/assets/image/calendars/DC5-4.jpg"
             }
         },
         {
@@ -850,10 +850,10 @@
                 "weight": "60g"
             },
             "image": {
-                "mainImage":"data/calendars/DC6-1.jpg",
-                "image1":"data/calendars/DC6-2.jpg",
-                "image2":"data/calendars/DC6-3.jpg",
-                "image3":"data/calendars/DC6-4.jpg"
+                "mainImage":"/assets/image/calendars/DC6-1.jpg",
+                "image1":"/assets/image/calendars/DC6-2.jpg",
+                "image2":"/assets/image/calendars/DC6-3.jpg",
+                "image3":"/assets/image/calendars/DC6-4.jpg"
             }
         },
         {
@@ -872,10 +872,10 @@
                 "weight": "200"
             },
             "image": {
-                "mainImage":"data/calendars/DC7-1.jpg",
-                "image1":"data/calendars/DC7-2.jpg",
-                "image2":"data/calendars/DC7-3.jpg",
-                "image3":"data/calendars/DC7-4.jpg"
+                "mainImage":"/assets/image/calendars/DC7-1.jpg",
+                "image1":"/assets/image/calendars/DC7-2.jpg",
+                "image2":"/assets/image/calendars/DC7-3.jpg",
+                "image3":"/assets/image/calendars/DC7-4.jpg"
             }
         },
         {
@@ -894,10 +894,10 @@
                 "weight": "189g"
             },
             "image": {
-                "mainImage":"data/calendars/DC8-1.jpg",
-                "image1":"data/calendars/DC8-2.jpg",
-                "image2":"data/calendars/DC8-3.jpg",
-                "image3":"data/calendars/DC8-4.jpg"
+                "mainImage":"/assets/image/calendars/DC8-1.jpg",
+                "image1":"/assets/image/calendars/DC8-2.jpg",
+                "image2":"/assets/image/calendars/DC8-3.jpg",
+                "image3":"/assets/image/calendars/DC8-4.jpg"
             }
         },
         {
@@ -915,10 +915,10 @@
                 "weight": "29.5g"
             },
             "image": {
-                "mainImage":"data/calendars/PC1-1.jpg",
-                "image1":"data/calendars/PC1-2.jpg",
-                "image2":"data/calendars/PC1-3.jpg",
-                "image3":"data/calendars/PC1-1.jpg"
+                "mainImage":"/assets/image/calendars/PC1-1.jpg",
+                "image1":"/assets/image/calendars/PC1-2.jpg",
+                "image2":"/assets/image/calendars/PC1-3.jpg",
+                "image3":"/assets/image/calendars/PC1-1.jpg"
             }
         },
         {
@@ -937,10 +937,10 @@
                 "weight": "500g"
             },
             "image": {
-                "mainImage":"data/calendars/PC2-1.jpg",
-                "image1":"data/calendars/PC2-2.jpg",
-                "image2":"data/calendars/PC2-3.jpg",
-                "image3":"data/calendars/PC2-4.jpg"
+                "mainImage":"/assets/image/calendars/PC2-1.jpg",
+                "image1":"/assets/image/calendars/PC2-2.jpg",
+                "image2":"/assets/image/calendars/PC2-3.jpg",
+                "image3":"/assets/image/calendars/PC2-4.jpg"
             }
         },
         {
@@ -958,10 +958,31 @@
                 "weight": "350g"
             },
             "image": {
-                "mainImage":"data/calendars/PC3-1.jpg",
-                "image1":"data/calendars/PC3-2.jpg",
-                "image2":"data/calendars/PC3-3.jpg",
-                "image3":"data/calendars/PC3-4.jpg"
+                "mainImage":"/assets/image/calendars/PC3-1.jpg",
+                "image1":"/assets/image/calendars/PC3-2.jpg",
+                "image2":"/assets/image/calendars/PC3-3.jpg",
+                "image3":"/assets/image/calendars/PC3-4.jpg"
+            }
+        },
+        {
+            "id": "PC4",
+            "name": "Multi-function desk perpetual calendar",
+            "type": "Perpetual Calendar",
+            "price": "19.51",
+            "stock": "3",
+            "desc": "The perpetual calendar shows the month and day, just simple cards to show the correct date.",
+            "descDetail": "The calendar is compactly designed, does not take up much space in the workspace, and is easy to store and move. In addition, the product brings high aesthetic value, with meticulousness and sophistication on each wood grain. Create a youthful and dynamic office.",
+            "param": {
+                "size": "25 x 30 x 1",
+                "pages": "0",
+                "material": "wood",
+                "weight": "350g"
+            },
+            "image": {
+                "mainImage":"/assets/image/calendars/PC4-1.jpg",
+                "image1":"/assets/image/calendars/PC4-2.jpg",
+                "image2":"/assets/image/calendars/PC4-3.jpg",
+                "image3":"/assets/image/calendars/PC4-4.jpg"
             }
         },
         {
@@ -979,10 +1000,73 @@
                 "weight": "453"
             },
             "image": {
-                "mainImage":"data/calendars/SC1-1.jpg",
-                "image1":"data/calendars/SC1-2.jpg",
-                "image2":"data/calendars/SC1-3.jpg",
-                "image3":"data/calendars/SC1-4.jpg"
+                "mainImage":"/assets/image/calendars/SC1-4.jpg",
+                "image1":"/assets/image/calendars/SC1-2.jpg",
+                "image2":"/assets/image/calendars/SC1-3.jpg",
+                "image3":"/assets/image/calendars/SC1-4.jpg"
+            }
+        },
+        {
+            "id": "SC2",
+            "name": "Food Sticker Calendar",
+            "type": "Sticker Calendar",
+            "price": "10.99",
+            "stock": "4",
+            "desc": "The calendar has a sophisticated design, with soft and modern lines.",
+            "descDetail": "The calendar has both a solar and lunar calendar, marking important holidays of the year. It shows drawings of Korean street foods",
+            "param": {
+                "size": "13 x 18 ",
+                "pages": "13",
+                "material": "glossy paper",
+                "weight": "453"
+            },
+            "image": {
+                "mainImage":"/assets/image/calendars/SC2-1.jpg",
+                "image1":"/assets/image/calendars/SC2-2.jpg",
+                "image2":"/assets/image/calendars/SC2-3.jpg",
+                "image3":"/assets/image/calendars/SC2-4.jpg"
+            }
+        },
+        {
+            "id": "SC3",
+            "name": "Trees Sticker Calendar 2024",
+            "type": "Sticker Calendar",
+            "price": "13.99",
+            "stock": "2",
+            "desc": "The calendar has a sophisticated design, with soft and modern lines.",
+            "descDetail": "The calendar has both a solar and lunar calendar, marking important holidays of the year. It is made from Korean art paper with wood fiber spotted patterns like traditional handicraft products, ivory white color.",
+            "param": {
+                "size": "13 x 18 ",
+                "pages": "13",
+                "material": "glossy paper",
+                "weight": "453"
+            },
+            "image": {
+                "mainImage":"/assets/image/calendars/SC3-1.jpg",
+                "image1":"/assets/image/calendars/SC3-2.jpg",
+                "image2":"/assets/image/calendars/SC3-3.jpg",
+                "image3":"/assets/image/calendars/SC3-4.jpg"
+            }
+        },
+        {
+            "id": "SC4",
+            "name": "Daily Life Sticker Calendar 2024",
+            "type": "Sticker Calendar",
+            "price": "9.10",
+            "stock": "2",
+            "desc": "The calendar has a sophisticated design, with soft and modern lines.",
+            "descDetail": "The calendar has both a solar and lunar calendar, marking important holidays of the year. It is made from Korean art paper with wood fiber spotted patterns like traditional handicraft products, ivory white color.",
+            "param": {
+                "size": "13 x 18 ",
+                "pages": "13",
+                "material": "glossy paper",
+                "weight": "453"
+            },
+            "image": {
+                "mainImage":"/assets/image/calendars/SC4-1.jpg",
+                "image1":"/assets/image/calendars/SC4-2.jpg",
+                "image2":"/assets/image/calendars/SC4-3.jpg",
+                "image3":"/assets/image/calendars/SC4-4.jpg"
             }
         }
     
