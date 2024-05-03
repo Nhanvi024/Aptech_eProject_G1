@@ -4,7 +4,6 @@
     padding: 0 10%;
     display: flex;
     flex-direction: row;
-
 }
 
 /* ** Logo footer container *******************/
@@ -16,14 +15,12 @@
     flex-direction: column;
     gap: 20px;
 
-
-
-
+    .logoContainer {
+        width: 360px;
+        height: 144px;
+    }
 }
 
-.logoFooter_logo {
-    width: 360px;
-}
 
 .logoFooter_fanPage {
     width: 360px;
@@ -167,6 +164,7 @@
         width: 100%;
         flex-direction: column;
         align-items: center;
+
     }
 
     .logoFooter {
@@ -175,10 +173,11 @@
 
         gap: 5px;
         border-bottom: 1px solid rgb(214, 214, 214);
-    }
 
-    .logoFooter_logo {
-        width: 100%;
+        .logoContainer {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .logoFooter_fanPage {
@@ -204,9 +203,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-
-
-
     .infoFooter {
         display: flex;
         flex-direction: column;

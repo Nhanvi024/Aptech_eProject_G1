@@ -6,14 +6,16 @@ import instaIcon from '../../assets/image/footer/icon/instagram.svg'
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../headerComponents/Logo';
 
 function FooterInfo(props) {
     return (
         <div className='footerInfoContainer'>
             <div className='logoFooter'>
-                <img className='logoFooter_logo' 
+                {/* <img className='logoFooter_logo' 
                 src='/assets/image//logo/logo.jpg'
-                alt='logoFooter'/>
+                alt='logoFooter'/> */}
+                <Logo/>
                 <div className='logoFooter_fanPage'>
                     <img className='logoFooter_fanPage-icon' src={faceIcon} alt='facebookIcon'/>
                     <img className='logoFooter_fanPage-icon' src={tweetterIcon} alt='tweetterIcon'/>
