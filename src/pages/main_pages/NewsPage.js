@@ -1,41 +1,57 @@
-import { Link} from 'react-router-dom';
 import './NewsPage.css'
 
-import React, { useContext, useState } from 'react';
-import Parser from "html-react-parser";
-import { DataContext } from '../../context/DataContext';
-import MenuSearch from '../../components/headerComponents/MenuSearch';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import NewsReadLot from '../../components/newspageComponents/NewsReadLot';
+import HotNews from '../../components/newspageComponents/HotNews';
+import NewsSeeMore from '../../components/newspageComponents/NewsSeeMore';
+import NewsUpdate from '../../components/newspageComponents/NewsUpdate';
+
 
 function NewsPage(props) {
+    const navigation = useNavigate()
+    const [news, setNews] = useState([])
+    const [ statusNews, setStatusNews ] = useState(
+        {
+            newsUpdate: []  ,
+            newsReadLot: [],
+            hotNews: [],
+            newsSeeMore: [],
+        }
+    )
+    useEffect(() => {
+        fetch('/data/news.json')
+            .then(res => res.json())
+            .then(data => setNews(data))
+    }, [])
 
-const { handleAddProductCart } = useContext(DataContext)
-const [news,setNews] = useState('')
+    useEffect(()=>{
+        statusNews.newsUpdate = news && news.filter(item=>item.status.newsUpdate === true)
+        statusNews.newsReadLot = news && news.filter(item=>item.status.newsReadLot === true)
+        statusNews.hotNews = news && news.filter(item=>item.status.hotNews === true)
+        statusNews.newsSeeMore = news && news.filter(item=>item.status.readMore === true)
+        setStatusNews({...statusNews})
+    },[news])
 
-const html = `
-  <h1>XSS Example</h1>
-  <a href="javascript:alert(1)">Open Link</a>
-`;
+    const handleSelectNews = (e) => {
+        navigation(`/news/${e.currentTarget.name}`)
+    }
 
     return (
-        <div className='newsPageContainer'>
-            <section>
-            <img className='imageBanner' 
-            src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
-            </section>
-           <div>
-            {Parser(html)}
-           </div>
-            <section>
-                <button onClick={()=>handleAddProductCart('WC1')}>Add product</button>
-                <button onClick={()=>handleAddProductCart('NBJ4')}>Add product</button>
+        <>
 
-
-                <Link onClick={()=>setNews('News0')} to={news}>News 0</Link>
-                <Link onClick={()=>setNews('News1')} to={news}>News 1</Link>
-
-
-            </section>
-        </div>
+            <img className='imageBanner'
+                src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
+            <div className='newsPageContainer'>
+                
+            {statusNews.newsUpdate.length && <NewsUpdate newsUpdate={statusNews.newsUpdate} handleSelectNews={handleSelectNews} />}
+            {statusNews.newsReadLot.length && <NewsReadLot newsReadLot={statusNews.newsReadLot} handleSelectNews={handleSelectNews} titleName="NEWS READ A LOT"/>}
+            {statusNews.hotNews.length && <HotNews hotNews={statusNews.hotNews} handleSelectNews={handleSelectNews}/>}
+            {statusNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={statusNews.newsSeeMore} handleSelectNews={handleSelectNews}/>}
+               
+            </div>
+        </>
     );
 }
 

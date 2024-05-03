@@ -1,88 +1,168 @@
 <div class="contentnewTitle">
-                            <a href="News01.html"><h4>Good or Bad Journaling?</h4></a>
+                            <a href="News01.html"><h4>History of the calendar</h4></a>
                             <div class="meta1">
                                 <span>
                                     <h6>Posted on
-                                        <a href="../../about/about.html">February 12,2022</a>
+                                        <a href="/about">February 12,2022</a>
                                         by
-                                        <a href="../../about/about.html">admin</a>
+                                        <a href="/about">admin</a>
                                     </h6>
                                 </span>
                             </div>
                             <h6 class="Title1">
-                                In the old days, it was normal to keep a journal, but now you can keep a journal is considered a phenomenon. Everything is posted on Facebook, Zalo, Blog... already. There's no longer the concept of the first diary in my life.                            
+                                The calendar was set in 753 BC, from the lunar cycle, so there were many deviations from the solar cycle, which had to go through many modifications to get the calendar exactly as it is today.
                             </h6>
-                            <br>
-                            <img src="../img/news9/92.jpg" alt="">
-                            <br><br>
-                            
                         </div>
                         <div class="contentnewTitle1">
-                            <b>My Diary Story</b>
+                            <br>
+                            <img src="/assets/image/news/news1/11.jpg" alt="">
                             <br><br>
                             <p>
-                                I don't remember when I started keeping a diary, I just remember that the reason I wrote the diary was because I imitated my best friend. I want to know what journaling is like. Seeing my friend he had a few or three notebooks to keep in his diary. And every book, which also presents the "beautiful clean word", so I just followed. Then, I started to make a habit of keeping a daily diary and writing about whatever I wanted to write, writing down all my feelings. 
+                                In 532, Denys le Petit, correcting the nature of Easter since the birth of Christ, which he decreed on December 25, 753 Rome. The 754th Year of Rome becomes year 1 (no year 0). This type of calculation has been used by France since the 8th century. It was later found that Denys had been miscalcundered for at least four years. 2000 should have been 2005.
                                 <br><br>
-                                When I first started writing, I didn't know what to write, all the writing was boring. For example, the day... month... five days it's sunny/rainy, today having lunch with fish, or something like whining about the test, writing some poems, lyrics I like to go in there. However, back then, it was true to write, now I want to read it too much but unfortunately the forgetfulness does not know where to throw away.
+                                In 1515 Copernic attended the calendar revision.
                                 <br><br>
-                                And I remember that the first notebook I used to write a diary was a small and slightly thin notebook, hard paper cover, it looked a bit weird, not as beautiful as the leather notebooks now.
-                            </p>
-                            <br>
-                            <img src="../img/news9/91.jpg" alt="">
-                            <i>Keep a daily diary in English.</i><br>
-                            <p>At one point, I only wrote a diary in a foreign language because I didn't want others to see and read. But not long after that, I gave up. The real big reason is because my language level is too low. I write a lot when I don't even know what I'm writing. ^^
+                                1582 Gregory III invited astronomers Lilio, Clavius and Chacon to create a new calendar and found that according to the sun, César was 10 days late, so the pope jumped to 10 days for Rome and the countries of Espagne and Portugal: after October 4, 1582, October 15, 1582. France followed later, until December 9, 1582, and England waited until August 2, 1752, for an additional 11 days (after September 2, 1752).
                                 <br><br>
-                                When I was in school, every night before I went to bed, I sat down for 20 minutes to write a few lines of mood. Now it's getting bigger and bigger, but lazy. I haven't been in the habit of journaling for a long time. What about you?
-                            </p>
-
-                            <b>Good or Bad Journaling?</b>
-                            <br><br>
-                            <p>
-                                What if you ask me, is journaling good or bad? I'll tell you, this is a very good thing to do. If you have time to groove, you can keep a daily diary and it will probably give you a whole collection of memories that you can go back years to remember the past.                            
-                            </p>
-                            <br>
-
-                            <b>The advantages of journaling.</b>
-                            <br><br>
-                            <b>1. Your writing skills have improved. </b>
-                            <p>
-                                Have you ever looked back at the text over time? I do that a lot. And after a while of journaling, I realized that my words were beautiful and my mind was a little wiser. At the same time, taking notes regularly will help you become a better writer.
-                            </p>
-
-                            <b>2. Journaling helps you boost your memory.</b>
-                            <p>
-                                Let's say, even if you lose almost all of your memory, there's something that can remind you of your precious moments and goals.                            
-                            </p>
-                            <br>
-                            <img src="../img/news9/93.jpg" alt="">
-                            <i>Journaling can help boost memory and cognition</i><br>
-
-                            <b>3. You become more comfortable with yourself.</b>
-                            <p>
-                                There are many times when you feel your head is about to explode and you feel broken or desperate. Emotions like anger, hate, happiness, etc. will be controlled in the process of writing them down and that will make you calmer.                            
-                            </p>
-
-                            <b>4. You become more observable.</b>
-                            <p>
-                                You start to reflect more and pay attention to things you may not have noticed before. You tend to find metaphors in your daily life when you sit down and reflect to fill out your diary of the day.                            
-                            </p>
-
-                            <b>5. Help you improve your mistakes.</b>
-                            <p>
-                                You can write in your journal your mistakes and then resolve to change yourself. The best part is, later you can skim through these items and see what changes happen in you and it can become an inspiring and enjoyable reading.                            
-                            </p>
-                            <br>
-
-                            <b>Disadvantages of journaling</b>
-                            <br><br>
-                            <p>
-                                The biggest downside of journaling is assuming you've shared some personal moments of your life in a diary. But it was seen by an unknown person then it created problems. Or you want to write down some memories of your past (before marriage) that can't be shared with your husband and unfortunately it's seen by your husband by mistake, it can ruin your whole life. So be aware of all the unsimfit things while keeping a journal.
+                                In the 14th century, the date of schooling.
                                 <br><br>
-                                And now choose a notebook as a brand new attractive diary for yourself.
+                                In the late 16th century, educated people knew what day, month, and year they were in thanks to the calendar and from there they were able to record the events that occurred. Without a calendar, there would be no history.
+                                <br><br>
+                                From the 16th to the 19th centuries, Europe expanded, making the world aware of the Grégorien calendar: the american, Asian and African colonial peoples had to use their own calendars, and after independence, they continued to use it.
+                                <br><br>
+                                About 1,550 historical calendars appear in Germany:
+                                <br><br>
+                                In the 17th century, the calendar was used to organize the future. Since 1679, the Academy of Sciences has printed an official calendar every year and has since reprinted it in most calendar books (almanach).
+                                <br><br>
+                                In the 19th century, agendas and calendars were slowly popularized. The calendar form is the same as the calendar we currently use: days of the week and the number of days of the month.
+                                <br><br>
+                                In 1834, Pie Marc Mastrofini proposed that the end of the year be a "white day" that does not count, so that every other day gathers exactly 52 weeks (52x7 =364 days).
+                                <br><br>
+                                In 1849, Auguste Compte scheduled 13 months evenly, followed by a "white day."
+                                <br><br>
+                                Camille Flammarion, after calling against the Gregorien calendar, made a 12-month calendar featuring the same triangulations (calendrier universel).
+                                <br><br>
+                                In 1884, time zones were divided into 24 zones of slitting from north to south with greenwich meridian as the standard.
+                                <br><br>
+                                Since 1922, the Association of Nations has established a committee to study calendar revisions and concluded that there must be no change of calendar but a stable date for the Pâques holiday.
+                                <br><br>
+                                The ONU League of Nations, which finds that the Gregorien calendar is not suitable for current economic activity, intends to revise the calendar for the 21st century (which has been foresqualid for an international examination).
                             </p>
                             <br>
-                            <img src="../img/news9/94.jpg" alt="">
-                            <br><br>
-                            <p>I really recommend keeping a journal because it's the best thing we can remember about the past. Every day taking some time to keep a journal, whether in the morning or in the evening, is an act of self-discipline. Like muscle, the stronger you train it.</p>
 
+                            <b>Calendar of countries</b>
+                            <br><br>
+
+                            <h5 style="font-size: medium; font-weight: 550;">I. Roman history Numa Pompilius</h5>
+                            <p>From the beginning, the calendar was created from the lunar cycle. In 753 BC, the time of Rome's establishment, a year had 10 months as follows:</p>
+                            <img src="/assets/image/news/news1/13.jpg" alt="">
+                            <p>Naming the month:<br>
+                                At first, people named it in lyretic order, but eventually they decided to use the names of the gods for a few months:
+                                The first month takes the name of the god of war Mars after the Myth of Rome because Mars is also considered the god of trees, spring and youth. Mars has long been the first month of the year.
+                                The second month takes the name Aperta, the nickname of Apollon, the god of art(music), of medicine, of prophecy and divination. First, northern Greece, Apollon was also known as Phoebos, the sun god.
+                                The third month is Maïus, the common name for Jupiter.
+                                The fourth month is Junon, Jupiter's wife.
+                                Other months continue to use numbers [quin (5), sex (6), sept(7), oct (8), no (9) dec (10)].
+                            </p>
+                            <br>
+
+                            <h5 style="font-size: medium; font-weight: 550;">II. Julien Calendar</h5>
+                            <img src="/assets/image/news/news1/14.jpg" alt="">
+                            <p>But then for the sake of the officials in the election, the error of the calendar grew, and finally in 708 Rome (46 BC), the equinox (équinoxe, spring equinoxe and autumn equinox) was three months apart. It means harvesting in January, the coldest month!
+                                It was then that General Julius Caesar intervened. To end the abuse of politicians at the time, Julius Caesar dispatched a Greek astronomer named Sosigene of Alexandrie to modify the crop calendar to suit the calendar (of Egyptian origin) established by the Greek astronomer Eudoxe in the 4th century BC.
+                                <br>
+                                The Julien calendar has 365 days, divided into 12 months and an additional 1 day every four years. This calendar remained in use until the 20th century in some countries.
+                                <br>
+                                However, with this system, there are too many years because compared to the astronomical season, there are about 11 minutes earlier each year. Caesar seemed to know this, but he didn't consider it important.
+                            </p>
+                            <br>
+
+                            <h5 style="font-size: medium; font-weight: 550;">III. Gregorien Calendar</h5>
+                            <img src="/assets/image/news/news1/15.jpg" alt="">
+                            <p>However, this calendar is basically 365 days a year and exactly 6 hours, but in fact a century is reduced by half a second and for example Julius's time is 365 days 5 hours 48 minutes and 56 seconds, through the end of the 16th century is 365 days, 5 hours, 48 minutes 47 seconds until the 20th century, to 365 days 5 hours 48 minutes 46 seconds. If you count an even schedule of 365 days and 6 hours, with an error of 11 minutes for a year, it is wrong to be 1 day every 128 years.
+                                <br>
+                                At the time of the reform of the julien calendar, spring feces arrived on March 25
+                                In 325 on the 21st until the 16th century, the spring feces arrived on the 10th of the same month when the calendar dated the 21st spring and feces, the spring feces had actually passed 10 days. Pâques was celebrated too late. And if the gap is growing, one can celebrate Pâques 1, 2, 3 months after the astronomical day and the date on the calendar will no longer correspond to the seasons of the year...
+                                That's why we have to change to correct it. At this time the popes in Rome replaced the emperors, so this period Pope Gregory XIII took the lead. In 1582 he issued an executive order to cancel 10 days of the calendar.
+                                <br>
+                                To avoid the wrong calendar as last time, the Pope decided to add 4 new years to a day.
+                                <br>
+                                This calendar, called the grégorien calendar, applies to Christian countries and to France instantly. In Rome, Espagne and Portugal, as well as Christian churches, the next day of Thursday 4 October 1582 is October 15, 1582. During the reign of Henri III, the next day of Sunday, December 9, 1582, was Monday, December 20, 1582. Britain had to wait until September 3, 1752 to apply, Russia in 1918, Greece in 1923, Only 26 years after the reform of the calendar of Pope Gregory XII, Quebec adopted (1608), Japan: 1873, China 1912, Greece, Roumanie: 1820 ...
+                            </p>
+                            <br>
+
+                            <h5 style="font-size: medium; font-weight: 550;">IV. Calendar of coligny commune</h5>
+                            <p>
+                                In 1897 in the commune of Coligny, between Ain and Jura on the road from Lyon to Strasbourg, more than 550 pieces of bronze, probably of metal diggers were discovered. Of the copper fragments found, about 400 pieces formed into large idols, and 150 pieces made up of calendars. They were bought by the Lyon Museum and restored. The calendar consists of a length of 150 cm and 80 cm of width, divided into a 5-year cycle (called "lustre"), each year 12 months alternating 30 and 29 days. But to get along with the solar year, it takes an additional 2 months of leap (30 days).
+                                <br>
+                                This type of calendar follows the rotational cycle of both the moon and the sun: in the 5-year cycle (lustre) consists of 3 years there are 12 months 29 and 30 days and 2 years have 13 months (two more months are 30 days).
+                                <br>
+                                Twenty-five years after julien reform, gaulois still use their old calendars without religious holidays.
+                            </p>
+                            <img src="/assets/image/news/news1/16.jpg" alt="">
+                            <p>
+                                The calendar is written in gaulois, but engraved into Roman letters and numbers, consisting of 16 columns, more than 2000 words for which more than half of the letters are preserved and is considered the longest written article in gaulois to date. 
+                                <br>
+                                If you count the repeating words, there are 60 different gaulois words. Many words are unknown. For example, does the word Atenoux not know if it is "returning to darkness"? , is mat and anmat "favorable" and "detrimental" or is "complete" and "lacking"?
+                                <br>
+                                Gaulois people calculate that every "century", i.e. 30 years (because according to them, 30 years is a human life, including 6 lustre, each lustre is 5 years) is to spend 30 days surplus to have an average year of 365.2 days.
+                                <br>
+                                A year is divided into 2 moonfish and each month is divided into two times 15 days separated by atenoux and before each day leave a hole to put in a latch just the day used. The date is written from I to XV before ATENOVX (V = U), and after this letter is from I to XIII or XV.
+                                <br>
+                                The gaulois man calculates the day from dark. There is no word "week" or "crop."
+                                <br>
+                                The year begins in November.
+                                <br>
+                                62 months are divided into 16 columns. There are 14 month names: the names of 12 months repeat 5 times, the other 2 only appear once.
+                                <br>
+                                Here's the name of the 12 months:
+                                <br>
+                                X... (first leap month), SAMON, DUMAN, RIUROS, ANAGANTIO, OGRON, CUTIOS, CIALLOS B.IS (2nd leap month), GIAMONI, SIMIVIS, EQUOS, ELEMBIU, AEDRINI et CANTLOS.
+                                Details of the year gaulois are not clearly defined.
+                                The calendar is complex, typefaced and numerical, indicating that it dates back to the 2nd century, two centuries after the julien calendar. And since the calendar is explored in common with the idol, it is thought to be the religious calendar placed in the temple.
+                            </p>
+                            <br>
+
+                            <h5 style="font-size: medium; font-weight: 550;">V. French Republic Calendar</h5>
+                            <p>
+                                The Republic calendar was established by the Treaty of October 5, 1793.
+                                <br>
+                                The calendar begins on September 22, 1792, the date of the founding of the Republic.
+                                A year divided into 12 months, each month divided into 3 times 10 days = 30 days
+                                5 more days: 360 + 5 = 365 named Vertu, Génie, Travail, Opinion and Récompenses
+                                One extra day in the good years is the national day.
+                            </p>
+                            <img src="/assets/image/news/news1/17.jpg" alt="">
+                            <p>
+                                Napoleon cancelled the calendar on January 1, 1806 and changed it back to the Grégorien calendar.
+                                <br>
+                                The people were confused and did not know the date, but they suffered because otherwise they would be executed. However, some people think it has poetry that should set the song.
+                                <br>
+                                This calendar theoretically began on September 22, 1792, but was used after a year. Lasted until December 31, 1805, meaning 13 years and 3 months. It was then used by Paris from May 6 to 23, 1871 (i.m., from May 16 to May 3, 1871).
+                            </p>
+                            <br>
+
+                            <h5 style="font-size: medium; font-weight: 550;">VI. Vietnamese and Chinese calendars</h5>
+                            <p>
+                                Vietnamese people use the lunar calendar to calculate the ceremony and choose the day for important tasks such as wedding, building houses, opening business shops ... This lunar calendar is like the Chinese lunar calendar, which is based on the moon's cycle and coordinates with the movement of the earth around the sun. Each year there are 12 months, the full month has 30 days, the missing month, 29 days. Every 19 years, the profit is 7 times, each time a month. The first month of the year is January and the last month of the year is december that should never be taken as leap month. New Year's Day, the first day of the lunar new year, is the second day of the lunar new year after the Winter solstice, often referred to as the longest night of the year. Depending on the moon on the Eastern Sol monday, the first day of the year will come between 30 and 59 days after that date. Therefore, the first day of Tet can only be between January 20 and February 21 of the calendar. The lunar month usually goes after the calendar month one or two things, such as the lunar march corresponding to April or the month of the calendar year.
+                                <br>
+                                The lunar year is not calculated by numbers but uses a compound name of two words. The first letter is one of the 10 heavenly cans (Giap, Noi, Bính, Dinh, Mau, Ky, Canh, Tan, Tram and Quy). The second word is one of the 12 sub-branches (Ty, Tau, Gradual, Crown or Tip, Cun, Tuan, Ngo, Smell, Body, Rooster, Tet and Pig). Twelve genera are the names of 12 animals. The Vietnamese lunar calendar is different from the Chinese lunar calendar in that the Year of History is according to the Vietnamese calendar is the year of the buffalo, while China is the cow, and the Year of the Crown or Tip in Vietnam is the year of the cat, in the Chinese calendar is the year of the rabbit. Since the common multiples of 10 (heavenly cans) and 12 (geo genera) are 60, every 60 years, the names of the years are correctly corrected again. And so each can only goes with six of the 12 branches, or each year according to the gene can only go with 5 cans. For example, Can Giap only goes with the years of Ty, Gradual, Cun, Ngo, Ton and Tet, while Can Dien only goes with the years of Use, Crown, Horse, Smell, Rooster and Pig.
+                                <br>
+                                Tran Ngoc Thuy Trang (former president of UVSA) commented that the years starting with Can Canh have a unit number of 0, Tan has a unit number of 1... according to the number of calendar years, but the correspondence is unknown. In fact, it is correspondence one to one: since the number system is used in decimal, from 0 to 9, the number of units per year corresponds to ten cans, does not move, does not change. The year with can Canh always corresponds to the calendar year with the last number of 0 (such as Canh Cuong is 1940, 2000; Canh Ngo is 1990, Canh To is 1980...), The last number is 1 (Tan Tien is 1941, 2001; Tan Smell is 1991, Tan Rooster is 1981...), Tram corresponds to the last number of 2 (Tram Ngo is 1942, 2002, Tram To is 1992, Tram Tet is 1982 ...), Quarter, with the last number is 3 (Guiyi is 1943, 2003; Guihai is 1983, Quarter Rooster is 1993 ...), Armor corresponding to the last number is 4 (Armor is 1944, 2004; Armor Is 1994, Giap Phat is 1974 ...) et cetera. Every twelve years as a great year, 60 years as a cycle and 3,600 years as an epoch.
+                            </p>
+                            <img src="/assets/image/news/news1/18.jpg" alt=""><br>
+                            <p>Each lunar year is divided into 24 parts.</p>
+                            <img src="/assets/image/news/news1/19.jpg" alt="">
+                            <br><br>
+
+                            <h5 style="font-size: medium; font-weight: 550;">VII. Japanese calendar</h5>
+                            <p>In addition to Vietnam and China, Japan also uses the lunar calendar as above.
+                                <br>
+                                The Japanese call it ki. Spring division in Japanese is Shunbun, summer sol sol is Geshi, Autumn stool is Shuubun and East Solfect is Touji.
+                                <br>
+                                The monthly name in the Japanese calendar was not in the way of counting numbers but by crop or field work. January is MuTsuki means spring, March is Yayohi, which means green grass, June is Mina Tzuki, watering month (bringing water into the field), August is Ha Tzuki, i.e. month of leaves. Especially october, known as the month of the gods, KaNa Tzuki because of the legend of the gods meeting at Izumo Shrine in shimane. Therefore, October is still considered as the month without divine protection in other governments.
+                            </p>
+                            <img src="/assets/image/news/news1/110.jpg" alt="">
+                            <p>The lunar month has three weeks, according to the moon: upper, midweek and lower week. The Japanese lunar calendar has divided the week by seven days since 807. In 806, Koubou Daishi said it was impossible to accurately calculate the bad day in the Japanese calendar because he did not know the secret day, japanese as Mitsubi. In fact, Mitsubi is due to the word Mitsu, the sound from the Samarkand me-ruu dialect is Sunday. Since then, the Japanese calendar has adopted a seven-day week after the sun and the names of the six planets in the solar system. In his 1007 memoir, Michinaga Fujiwara recorded September 23 as the third day (Kayoubi), the day of Mars.</p>
+  
                         </div>

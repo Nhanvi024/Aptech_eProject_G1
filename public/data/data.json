@@ -15,10 +15,10 @@
                 "weight": "250g"
             },
             "image": {
-                "mainImage": "data/notebooks/NBJ1-1.jpg",
-                "image1": "data/notebooks/NBJ1-2.jpg",
-                "image2": "data/notebooks/NBJ1-3.jpg",
-                "image3": "data/notebooks/NBJ1-4.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ1-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ1-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ1-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ1-4.jpg"
             }
         },
         {
@@ -36,10 +36,10 @@
                 "weight": "250g"
             },
             "image": {
-                "mainImage": "data/notebooks/NBJ2-1.jpg",
-                "image1": "data/notebooks/NBJ2-2.jpg",
-                "image2": "data/notebooks/NBJ2-3.jpg",
-                "image3": "data/notebooks/NBJ2-4.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ2-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ2-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ2-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ2-4.jpg"
             }
         },
         {
@@ -57,10 +57,10 @@
                 "weight": "250g"
             },
             "image": {
-                "mainImage": "data/notebooks/NBJ3-1.jpg",
-                "image1": "data/notebooks/NBJ3-2.jpg",
-                "image2": "data/notebooks/NBJ3-3.jpg",
-                "image3": "data/notebooks/NBJ3-4.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ3-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ3-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ3-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ3-4.jpg"
             }
         },
         {
@@ -78,10 +78,10 @@
                 "weight": "270g"
             },
             "image": {
-                "mainImage": "data/notebooks/NBJ4-1.jpg",
-                "image1": "data/notebooks/NBJ4-2.jpg",
-                "image2": "data/notebooks/NBJ4-3.jpg",
-                "image3": "data/notebooks/NBJ4-4.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ4-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ4-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ4-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ4-4.jpg"
             }
         },
         {
@@ -99,10 +99,10 @@
                 "weight": "363g"
             },
             "image": {
-                "mainImage": "data/notebooks/NBJ5-1.jpg",
-                "image1": "data/notebooks/NBJ5-2.jpg",
-                "image2": "data/notebooks/NBJ5-3.jpg",
-                "image3": "data/notebooks/NBJ5-4.jpg"
+                "mainImage": "/assets/image/notebooks/NBJ5-1.jpg",
+                "image1": "/assets/image/notebooks/NBJ5-2.jpg",
+                "image2": "/assets/image/notebooks/NBJ5-3.jpg",
+                "image3": "/assets/image/notebooks/NBJ5-4.jpg"
             }
         },
         {
@@ -120,10 +120,10 @@
                 "weight": "998g"
             },
             "image": {
-                "mainImage": "data/notebooks/NBD1-1.jpg",
-                "image1": "data/notebooks/NBD1-2.jpg",
-                "image2": "data/notebooks/NBD1-3.jpg",
-                "image3": "data/notebooks/NBD1-4.jpg"
+                "mainImage": "/assets/image/notebooks/NBD1-1.jpg",
+                "image1": "/assets/image/notebooks/NBD1-2.jpg",
+                "image2": "/assets/image/notebooks/NBD1-3.jpg",
+                "image3": "/assets/image/notebooks/NBD1-4.jpg"
             }
         },
         {
@@ -141,10 +141,10 @@
                 "weight": "517g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBD2-1.jpg",
-                "image1":"data/notebooks/NBD2-2.jpg",
-                "image2":"data/notebooks/NBD2-3.jpg",
-                "image3":"data/notebooks/NBD2-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBD2-1.jpg",
+                "image1":"/assets/image/notebooks/NBD2-2.jpg",
+                "image2":"/assets/image/notebooks/NBD2-3.jpg",
+                "image3":"/assets/image/notebooks/NBD2-4.jpg"
             }
         },
         {
@@ -162,10 +162,10 @@
                 "weight": "363g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBD3-1.jpg",
-                "image1":"data/notebooks/NBD3-2.jpg",
-                "image2":"data/notebooks/NBD3-3.jpg",
-                "image3":"data/notebooks/NBD3-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBD3-1.jpg",
+                "image1":"/assets/image/notebooks/NBD3-2.jpg",
+                "image2":"/assets/image/notebooks/NBD3-3.jpg",
+                "image3":"/assets/image/notebooks/NBD3-4.jpg"
             }
         },
         {
@@ -183,10 +183,10 @@
                 "weight": "150g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBD4-1.jpg",
-                "image1":"data/notebooks/NBD4-2.jpg",
-                "image2":"data/notebooks/NBD4-3.jpg",
-                "image3":"data/notebooks/NBD4-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBD4-1.jpg",
+                "image1":"/assets/image/notebooks/NBD4-2.jpg",
+                "image2":"/assets/image/notebooks/NBD4-3.jpg",
+                "image3":"/assets/image/notebooks/NBD4-4.jpg"
             }
         },
         {
@@ -204,10 +204,10 @@
                 "weight": "280g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBD5-1.jpg",
-                "image1":"data/notebooks/NBD5-2.jpg",
-                "image2":"data/notebooks/NBD5-3.jpg",
-                "image3":"data/notebooks/NBD5-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBD5-1.jpg",
+                "image1":"/assets/image/notebooks/NBD5-2.jpg",
+                "image2":"/assets/image/notebooks/NBD5-3.jpg",
+                "image3":"/assets/image/notebooks/NBD5-4.jpg"
             }
         },
         {
@@ -225,10 +225,10 @@
                 "weight": "306g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBS1-1.jpg",
-                "image1":"data/notebooks/NBS1-2.jpg",
-                "image2":"data/notebooks/NBS1-3.jpg",
-                "image3":"data/notebooks/NBS1-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBS1-1.jpg",
+                "image1":"/assets/image/notebooks/NBS1-2.jpg",
+                "image2":"/assets/image/notebooks/NBS1-3.jpg",
+                "image3":"/assets/image/notebooks/NBS1-4.jpg"
             }
         },
         {
@@ -246,10 +246,10 @@
                 "weight": "330g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBS2-1.jpg",
-                "image1":"data/notebooks/NBS2-2.jpg",
-                "image2":"data/notebooks/NBS2-3.jpg",
-                "image3":"data/notebooks/NBS2-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBS2-1.jpg",
+                "image1":"/assets/image/notebooks/NBS2-2.jpg",
+                "image2":"/assets/image/notebooks/NBS2-3.jpg",
+                "image3":"/assets/image/notebooks/NBS2-4.jpg"
             }
         },
         {
@@ -267,10 +267,10 @@
                 "weight": "422g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBS3-1.jpg",
-                "image1":"data/notebooks/NBS3-2.jpg",
-                "image2":"data/notebooks/NBS3-3.jpg",
-                "image3":"data/notebooks/NBS3-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBS3-1.jpg",
+                "image1":"/assets/image/notebooks/NBS3-2.jpg",
+                "image2":"/assets/image/notebooks/NBS3-3.jpg",
+                "image3":"/assets/image/notebooks/NBS3-4.jpg"
             }
         },
         {
@@ -288,10 +288,10 @@
                 "weight": "385g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBS4-1.jpg",
-                "image1":"data/notebooks/NBS4-2.jpg",
-                "image2":"data/notebooks/NBS4-3.jpg",
-                "image3":"data/notebooks/NBS4-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBS4-1.jpg",
+                "image1":"/assets/image/notebooks/NBS4-2.jpg",
+                "image2":"/assets/image/notebooks/NBS4-3.jpg",
+                "image3":"/assets/image/notebooks/NBS4-4.jpg"
             }
         },
         {
@@ -309,10 +309,10 @@
                 "weight": "318g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBS5-1.jpg",
-                "image1":"data/notebooks/NBS5-2.jpg",
-                "image2":"data/notebooks/NBS5-3.jpg",
-                "image3":"data/notebooks/NBS5-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBS5-1.jpg",
+                "image1":"/assets/image/notebooks/NBS5-2.jpg",
+                "image2":"/assets/image/notebooks/NBS5-3.jpg",
+                "image3":"/assets/image/notebooks/NBS5-4.jpg"
             }
         },
         {
@@ -330,10 +330,10 @@
                 "weight": "326g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBP1-1.jpg",
-                "image1":"data/notebooks/NBP1-2.jpg",
-                "image2":"data/notebooks/NBP1-3.jpg",
-                "image3":"data/notebooks/NBP1-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBP1-1.jpg",
+                "image1":"/assets/image/notebooks/NBP1-2.jpg",
+                "image2":"/assets/image/notebooks/NBP1-3.jpg",
+                "image3":"/assets/image/notebooks/NBP1-4.jpg"
             }
         },
         {
@@ -351,10 +351,10 @@
                 "weight": "517g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBP2-1.jpg",
-                "image1":"data/notebooks/NBP2-2.jpg",
-                "image2":"data/notebooks/NBP2-3.jpg",
-                "image3":"data/notebooks/NBP2-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBP2-1.jpg",
+                "image1":"/assets/image/notebooks/NBP2-2.jpg",
+                "image2":"/assets/image/notebooks/NBP2-3.jpg",
+                "image3":"/assets/image/notebooks/NBP2-4.jpg"
             }
         },
         {
@@ -372,10 +372,10 @@
                 "weight": "476g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBP3-1.jpg",
-                "image1":"data/notebooks/NBP3-2.jpg",
-                "image2":"data/notebooks/NBP3-3.jpg",
-                "image3":"data/notebooks/NBP3-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBP3-1.jpg",
+                "image1":"/assets/image/notebooks/NBP3-2.jpg",
+                "image2":"/assets/image/notebooks/NBP3-3.jpg",
+                "image3":"/assets/image/notebooks/NBP3-4.jpg"
             }
         },
         {
@@ -393,10 +393,10 @@
                 "weight": "767g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBP4-1.jpg",
-                "image1":"data/notebooks/NBP4-2.jpg",
-                "image2":"data/notebooks/NBP4-3.jpg",
-                "image3":"data/notebooks/NBP4-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBP4-1.jpg",
+                "image1":"/assets/image/notebooks/NBP4-2.jpg",
+                "image2":"/assets/image/notebooks/NBP4-3.jpg",
+                "image3":"/assets/image/notebooks/NBP4-4.jpg"
             }
         },
         {
@@ -414,10 +414,10 @@
                 "weight": "454g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBP5-1.jpg",
-                "image1":"data/notebooks/NBP5-2.jpg",
-                "image2":"data/notebooks/NBP5-3.jpg",
-                "image3":"data/notebooks/NBP5-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBP5-1.jpg",
+                "image1":"/assets/image/notebooks/NBP5-2.jpg",
+                "image2":"/assets/image/notebooks/NBP5-3.jpg",
+                "image3":"/assets/image/notebooks/NBP5-4.jpg"
             }
         },
         {
@@ -435,10 +435,10 @@
                 "weight": "20g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBDT1-1.jpg",
-                "image1":"data/notebooks/NBDT1-2.jpg",
-                "image2":"data/notebooks/NBDT1-3.jpg",
-                "image3":"data/notebooks/NBDT1-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT1-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT1-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT1-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT1-4.jpg"
             }
         },
         {
@@ -456,10 +456,10 @@
                 "weight": "1g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBDT2-1.jpg",
-                "image1":"data/notebooks/NBDT2-2.jpg",
-                "image2":"data/notebooks/NBDT2-3.jpg",
-                "image3":"data/notebooks/NBDT2-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT2-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT2-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT2-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT2-4.jpg"
             }
         },
         {
@@ -477,10 +477,10 @@
                 "weight": "448g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBDT3-1.jpg",
-                "image1":"data/notebooks/NBDT3-2.jpg",
-                "image2":"data/notebooks/NBDT3-3.jpg",
-                "image3":"data/notebooks/NBDT3-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT3-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT3-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT3-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT3-4.jpg"
             }
         },
         {
@@ -498,10 +498,10 @@
                 "weight": "350g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBDT4-1.jpg",
-                "image1":"data/notebooks/NBDT4-2.jpg",
-                "image2":"data/notebooks/NBDT4-3.jpg",
-                "image3":"data/notebooks/NBDT4-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT4-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT4-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT4-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT4-4.jpg"
             }
         },
         {
@@ -519,10 +519,10 @@
                 "weight": "448g"
             },
             "image": {
-                "mainImage":"data/notebooks/NBDT5-1.jpg",
-                "image1":"data/notebooks/NBDT5-2.jpg",
-                "image2":"data/notebooks/NBDT5-3.jpg",
-                "image3":"data/notebooks/NBDT5-4.jpg"
+                "mainImage":"/assets/image/notebooks/NBDT5-1.jpg",
+                "image1":"/assets/image/notebooks/NBDT5-2.jpg",
+                "image2":"/assets/image/notebooks/NBDT5-3.jpg",
+                "image3":"/assets/image/notebooks/NBDT5-4.jpg"
             }
         }
     ],

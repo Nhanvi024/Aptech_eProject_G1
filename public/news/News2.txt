@@ -1,0 +1,65 @@
+<div class="contentnewTitle">
+                            <a href="News01.html"><h4>The Birth of the Calendar and Astronomy</h4></a>
+                            <div class="meta1">
+                                <span>
+                                    <h6>Posted on
+                                        <a href="/about">February 12,2022</a>
+                                        by
+                                        <a href="/about">admin</a>
+                                    </h6>
+                                </span>
+                            </div>
+                            <h6 class="Title1">
+                                Are you looking for the "Birth of The French calendar and astronomy"? Do you love the field of astrology and are studying the topics related to it? Are you passionate about learning the history of today's watches? In the article below, we will help you learn the birth of the calendar and astronomy as well as the birth meanings of these two classic scientific achievements.                            
+                            </h6>
+                        </div>
+                        <div class="contentnewTitle1">
+                            <br>
+                            <img src="/assets/image/news/news2/20.jpg" alt="">
+                            <br><br>
+                            <b>The Birth of the French Calendar</b>
+                            <br><br>
+                            <p>
+                                The calendar is considered a system of organizing time recording. It displays the regulation of civil life religious ceremonies. The calendar is also used for historical and archaeological purposes. 
+                                <br><br>
+                                The ancients relied on the movement of the sun and moon. From there they calculated the agricultural calendar for example a year with 356 days. These days will be divided equally into 12 months and then divided into full hours in season. 
+                                <br><br>
+                                The birth of the French calendar has the effect of helping to plant the right seasonally.                            
+                            </p>
+                            <br>
+
+                            <b>The Birth of Astronomy</b>
+                            <br><br>
+                            <img src="/assets/image/news/news2/22.jpg" alt="">
+                            <br><br>
+                            <p>
+                                Astronomy is one of the earliest sciences. Humans also rely on the movement of the sun and moon to find the rules. The most basic findings of prehistoric people are the recognition of the times of the changing seasons. In addition, the ancients believed that mysterious astronomical phenomena would be a harbinger in life and strengthen the beliefs of mankind. 
+                                <br><br>
+                                In particular, astronomy has a very important application in cultivation and breeding. 
+                                The farmer a copper that hunters observe and astronomically to recognize the seasonal catch as well as production accordingly. 
+                                <br><br>
+                                By ancient times, mankind appeared ancient civilizations such as Egyptian civilization. Egyptian civilization made great strides When inventing the lunar calendar with 12 months. There will be 29 to 30 days per month. And every 2 and 3 years they will add one month to fit the seasons of the year.
+                            </p>
+                            <br>
+
+                            <b>Application of French Calendar and Astronomy</b>
+                            <br><br>
+                            <img src="/assets/image/news/news2/23.jpg" alt="">
+                            <br><br>
+                            <p>
+                                Over a period of "profound" development history, the french and astronomical calendars have appeared in various forms in human life. The two most popular and meaningful apps in human life are Calendar and Clock. 
+                                <br><br>
+                                Thanks to them, humans are able to recognize time, know early - dark, divide the seasons, etc. Through this, people have plans to implement accurately, meticulously as well as get prepared to respond to different times.
+                                <br><br>
+                                The advent of the french calendar and astronomy has positively affected human life. It has changed people's daily lifestyles and activities. Since then, it has also influenced many of the great inventions of later humanity.                              
+                            </p>
+                            <br><br>
+
+                            <b>Summary</b>
+                            <br><br>
+                            <p>
+                                It can be seen that the birth of the calendar and astronomy marked the remarkable development of mankind. Humans also use natural phenomena to serve their lives. Don't forget to follow us in the next articles to share a lot of useful and interesting knowledge!
+                            </p>
+
+ 
+                        </div>
