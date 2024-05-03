@@ -5,7 +5,13 @@
 
 }
 .Notebook_products{
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .Notebook_item{
     padding: 10px;

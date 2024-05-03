@@ -1,17 +1,9 @@
 import './SortSelect.css'
 
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 function SortSelect(props) {
-    const selectArray = [
-        { name: "Select Sort", value: "default" },
-        { name: "Name A → Z", value: "type1" },
-        { name: "Name Z → A", value: "type2" },
-        { name: "Price Ascending", value: "type3" },
-        { name: "Price Descending", value: "type4" },
-    ]
-    const [select, setSelect] = useState(selectArray[0])
-
+const {select, setSelect, selectArray} = props
     return (
         <div className='sortSelect-container'>
             <p className='sortSelect-label'>Sort by: </p>
