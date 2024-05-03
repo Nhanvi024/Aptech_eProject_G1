@@ -12,7 +12,7 @@ import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 function NoteBook(props) {
     const { products, setProducts } = useContext(DataContext);
     const { noteBook } = products
-   
+
     const [showList, setShowList] = useState([])
 
     const selectArray = [
@@ -146,12 +146,12 @@ function NoteBook(props) {
 
             // Filter price
             (
-                (priceFilter.price_range0.check && (product.price >= priceFilter.price_range0.min) && (product.price < priceFilter.price_range0.max ))||
-                (priceFilter.price_range1.check && (product.price >= priceFilter.price_range1.min) && (product.price < priceFilter.price_range1.max ))||
-                (priceFilter.price_range2.check && (product.price >= priceFilter.price_range2.min) && (product.price < priceFilter.price_range2.max ))||
-                (priceFilter.price_range3.check && (product.price >= priceFilter.price_range3.min) && (product.price < priceFilter.price_range3.max ))||
-                (priceFilter.price_range4.check && (product.price >= priceFilter.price_range4.min) && (product.price < priceFilter.price_range4.max ))||
-                (priceFilter.price_range5.check && (product.price >= priceFilter.price_range5.min) && (product.price < priceFilter.price_range5.max ))||
+                (priceFilter.price_range0.check && (product.price >= priceFilter.price_range0.min) && (product.price < priceFilter.price_range0.max)) ||
+                (priceFilter.price_range1.check && (product.price >= priceFilter.price_range1.min) && (product.price < priceFilter.price_range1.max)) ||
+                (priceFilter.price_range2.check && (product.price >= priceFilter.price_range2.min) && (product.price < priceFilter.price_range2.max)) ||
+                (priceFilter.price_range3.check && (product.price >= priceFilter.price_range3.min) && (product.price < priceFilter.price_range3.max)) ||
+                (priceFilter.price_range4.check && (product.price >= priceFilter.price_range4.min) && (product.price < priceFilter.price_range4.max)) ||
+                (priceFilter.price_range5.check && (product.price >= priceFilter.price_range5.min) && (product.price < priceFilter.price_range5.max)) ||
 
                 !(
                     priceFilter.price_range0.check ||
@@ -171,35 +171,32 @@ function NoteBook(props) {
                 src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
             <div className='noteBookPageContainer container p-0'>
                 {/* Sidebar area */}
-                <div className='row w-100 g-0 mt-3'>
-                    <div className='col-sm-3'>
-                    
-                    <TypeFilterAll
-                        typeFilter={typeFilter}
-                        setTypeFilter={setTypeFilter}
-                        notebookTypeList={notebookTypeList}
-                    />
-                    <PriceFilter priceFilter={priceFilter}
-                        setPriceFilter={setPriceFilter} />
+                <div className='allProducts-container'>
+                    <div className='allProduct-sidebar col-sm-3'>
+                        <TypeFilterAll
+                            typeFilter={typeFilter}
+                            setTypeFilter={setTypeFilter}
+                            notebookTypeList={notebookTypeList}
+                        />
+                        <PriceFilter priceFilter={priceFilter}
+                            setPriceFilter={setPriceFilter} />
                     </div>
 
-                    <div className='col-sm-9 px-3'>
-                        <div className='row m-auto mb-2'>
-                            <div className='col-sm-6'>NOTEBOOK</div>
+                    <div className='allProduct-productlist col-sm-9'>
+                        <div className='allProduct-header'>
+                            <p className='allProduct-header-title'>All Product</p>
                             <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
                         </div>
-
-                        <div className='Notebook_products'>
-                        {showList.map((item, index) => {
-                            return (
-                                handleFilterAll(item) // All conditional to filter (price + type)
-                                &&
-                                <div key={index} className='allProduct-product-item'>
-                                    <ProductCard item={item} />
-                                </div>
+                        <div className='allProduct-product'>
+                            {showList.map((item, index) => {
+                                return (
+                                    handleFilterAll(item) // All conditional to filter (price + type)
+                                    &&
+                                    <div key={index} className='allProduct-product-item'>
+                                        <ProductCard item={item} />
+                                    </div>
                                 )
                             })}
-
                         </div>
                     </div>
                 </div>
