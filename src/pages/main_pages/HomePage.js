@@ -364,7 +364,7 @@ function HomePage(props) {
 							</div>
 						</div>
 						<div className="homepage-section-notebook-left col-md-4 p-3 d-flex my-3">
-							<div id="homepage-notebookCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
+							<div id="homepage-calendarCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
 								{/* <!-- Wrapper for slides --> */}
 								<div className="carousel-inner d-flex">
 									{products.length === 0 && (
@@ -398,10 +398,10 @@ function HomePage(props) {
 								</div>
 
 								{/* <!-- Left and right controls --> */}
-								<button className="carousel-control-prev" data-bs-target="#homepage-notebookCarousel" data-bs-slide="prev">
+								<button className="carousel-control-prev" data-bs-target="#homepage-calendarCarousel" data-bs-slide="prev">
 									<span className="" aria-hidden="true"></span>
 								</button>
-								<button className="carousel-control-next" data-bs-target="#homepage-notebookCarousel" data-bs-slide="next">
+								<button className="carousel-control-next" data-bs-target="#homepage-calendarCarousel" data-bs-slide="next">
 									<span className="" aria-hidden="true"></span>
 								</button>
 							</div>

@@ -19,9 +19,12 @@ function DataProvider({ children }) {
     const [btnActive, setBtnActive] = useState(webPage[0].name)
 
 	useEffect(() => {
-		fetch('data/data.json')
+		fetch('/data/data.json')
 			.then((res) => res.json())
-			.then((data) => setProducts(data))
+			.then((data) => {
+                console.log("data: ",data);
+                setProducts(data)
+            })
 			.then(setIsDataLoaded(true));
 	}, []);
 
@@ -86,6 +89,7 @@ function DataProvider({ children }) {
         handleDeleteItem,
 
     }
+    console.log("alo co goi chjua ko");
     return (
         <DataContext.Provider value={valueProvider}>
             {children}
