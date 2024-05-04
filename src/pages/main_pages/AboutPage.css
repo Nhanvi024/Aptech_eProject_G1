@@ -1,5 +1,6 @@
 .aboutPage-container {
-    width: 1200px;
-
+    top: 180px;
+    margin-bottom: 180px;
     position: relative;
+    /* height: 1500px; */
 }

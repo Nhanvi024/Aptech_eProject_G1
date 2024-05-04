@@ -34,13 +34,13 @@ function App(props) {
 				<Route path="/contact" element={<ContactPage />} />
 				<Route path="/news" element={<NewsPage />} />
 				<Route path="/about" element={<AboutPage />} />
-				
+
 				<Route path="news/:newscontent" element={<NewsContent />} />
 				<Route path="/search" element={<SearchPage />} />
-				<Route path="/allproducts" element={<AllProductPage />}/>
+				<Route path="/allproducts" element={<AllProductPage />} />
 				<Route path="/detail/:productId" element={<SingleProductDetail />} />
 				<Route path="/download" element={<DownloadPage />} />
-        <Route path='/cart' element={<CartPage />} />
+				<Route path="/cart" element={<CartPage />} />
 			</Routes>
 			<Footer />
 		</div>
