@@ -1,29 +1,60 @@
-.loginContainer{
+.loginContainer {
     width: 80%;
-height: 50px;
-padding-top: 10px;
+    padding-top: 22px;
+    padding-right: 20px;
+
 
     display: flex;
     justify-content: end;
-
-    /* border: 1px solid red; */
 }
 
-.loginBtn, .singinBtn { 
+.loginBtn,
+.singinBtn {
+    width: 70px;
     height: fit-content;
 
-    /* font-family: var(--ff-laila-serif); */
-    font-size: var(--fs-300);
+    font-size: var(--fs-400);
     font-weight: 500;
-    width:40%;
-
-    position: relative;
-    top: 10%;
 
     background: none;
     border: none;
 }
 
-.loginBtn{
+.loginBtn {
     border-right: 2px solid var(--secondary-background-clr);
 }
+
+/** Responsive ************************************************************************************ */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .loginContainer {
+        padding-right: 10px;
+    }
+    .loginBtn,
+    .singinBtn {
+        width: 60px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .loginContainer {
+        padding-top: 40px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .loginContainer {
+        padding: 0 10px;
+        justify-content: start;
+    }
+    .loginBtn,
+    .singinBtn {
+        width: 80px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}

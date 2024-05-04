@@ -22,7 +22,6 @@ function CartList(props) {
                     </div> :
                     <></>
                 }
-
             </div>
 
             < div className='cartList'>
