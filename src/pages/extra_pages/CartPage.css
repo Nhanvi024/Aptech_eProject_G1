@@ -2,8 +2,8 @@
     width: 1200px;
 
     padding: 30px 50px;
-    background-color: rgb(247, 255, 251);
-    border: 1px solid rgb(191, 251, 234);
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 .cartPage-name{
     color: var(--active-text-color);
