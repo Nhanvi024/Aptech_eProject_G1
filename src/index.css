@@ -4,7 +4,8 @@
 
 :root {
   /* colors */
-  --main-color:  #57A399;
+  --main-color-code: 62 50% 40%;
+  --main-color:  hsl(var(--main-color-code));
   /* --main-color:  #2f8872; */
 
   --primary-background-clr: white;

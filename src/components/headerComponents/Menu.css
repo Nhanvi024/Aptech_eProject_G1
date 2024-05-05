@@ -22,6 +22,8 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    cursor: pointer;
 }
 
 .menuIcon {
@@ -39,8 +41,7 @@
 
 /* Hover menu button to show menu detail */
 
-.menuDetail {
-    visibility: hidden;
+#menuDetail {
     width: 100%;
     height: fit-content;
     padding-bottom: 20px;
@@ -48,54 +49,38 @@
     position: absolute;
     top: 44px;
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 
     display: flex;
     flex-direction: column;
 
-    box-shadow: 2px 2px 8px rgb(209, 209, 209);
-
-    opacity: 0%;
-    transition: 0.5s;
+    box-shadow: 2px 2px 8px rgb(185, 185, 185);
+    display: none;
 }
 
-.menuButton:hover+.menuDetail,
-.menuDetail:hover {
-    visibility: visible;
-    opacity: 100%;
+.menu-products-container {
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+
+
 }
 
 .menuTab {
     width: 100%;
-    height: 40px;
-    padding-left: 20px;
+    height: fit-content;
 
     display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.iconRedArrow::before {
-    content: "\f105";
-    font-family: "Font Awesome 5 free";
-    font-weight: 900;
-    align-content: center;
-
-    color: var(--secondary-background-clr);
-}
-
-.iconBlackArrow::before {
-    content: "\f105";
-    font-family: "Font Awesome 5 free";
-    font-weight: 900;
-    align-content: center;
-
-    color: #000000;
-
-    align-self: end;
+    flex-direction: column;
 }
 
 .tabLink,
 .tabLink:hover {
+    width: 100%;
+    height: 100%;
     text-decoration: none;
 
     width: 80%;
@@ -105,32 +90,65 @@
     color: var(--primary-text-color);
     font-weight: bold;
 
-    transition: color 0.3s;
+    &:hover {
+        text-decoration: none;
+        color: var(--active-text-color);
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+
+
 }
 
-#menuTab_3,
-#menuTab_4{
-    padding-left: 40px;
+.iconArrow {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 }
 
+#menu-products-child-container {
+    padding: 5px 15px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-products-child-tab {
+    display: flex;
+    gap: 10px
+}
+
+.menu-products-child {
+    text-decoration: none;
+    color: var(--primary-text-color);
+
+    &:hover {
+        text-decoration: none;
+        color: var(--active-text-color);
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+}
 
 /** Responsive ************************************************************************************ */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-}
+@media only screen and (max-width: 1200px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {  
+@media only screen and (max-width: 992px) {
     .menuContainer {
         display: none;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-
-}
+@media only screen and (max-width: 768px) {}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}

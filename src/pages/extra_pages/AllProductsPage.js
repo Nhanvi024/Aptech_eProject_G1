@@ -104,11 +104,11 @@ function AllProductsPage(props) {
             setTypeList({ ...typeList })
 
             // Add all types to array want to filter
-            setTypeFilter({
-                ...typeFilter,
-                noteBookFilter: [...notebookTypeList],
-                calendarFilter: [...calendarTypeList],
-            })
+            // setTypeFilter({
+            //     ...typeFilter,
+            //     noteBookFilter: [...notebookTypeList],
+            //     calendarFilter: [...calendarTypeList],
+            // })
         }
     }
 
@@ -158,18 +158,21 @@ function AllProductsPage(props) {
     const handleFilterAll = (product) => {
         return (
             // Filter type
-            (typeFilter.noteBookFilter.some(item => item === product.type) ||
-                typeFilter.calendarFilter.some(item => item === product.type))
+            ((typeFilter.noteBookFilter.some(item => item === product.type) ||
+                (!typeFilter.noteBookFilter.length && !typeFilter.calendarFilter.length && typeList.notebookTypeList.some(item => item === product.type))) ||
+            (typeFilter.calendarFilter.some(item => item === product.type) ||
+                (!typeFilter.calendarFilter.length && !typeFilter.noteBookFilter.length && typeList.calendarTypeList.some(item => item === product.type))))
+        
             &&
 
             // Filter price
             (
-                (priceFilter.price_range0.check && (product.price >= priceFilter.price_range0.min) && (product.price < priceFilter.price_range0.max ))||
-                (priceFilter.price_range1.check && (product.price >= priceFilter.price_range1.min) && (product.price < priceFilter.price_range1.max ))||
-                (priceFilter.price_range2.check && (product.price >= priceFilter.price_range2.min) && (product.price < priceFilter.price_range2.max ))||
-                (priceFilter.price_range3.check && (product.price >= priceFilter.price_range3.min) && (product.price < priceFilter.price_range3.max ))||
-                (priceFilter.price_range4.check && (product.price >= priceFilter.price_range4.min) && (product.price < priceFilter.price_range4.max ))||
-                (priceFilter.price_range5.check && (product.price >= priceFilter.price_range5.min) && (product.price < priceFilter.price_range5.max ))||
+                (priceFilter.price_range0.check && (product.price >= priceFilter.price_range0.min) && (product.price < priceFilter.price_range0.max)) ||
+                (priceFilter.price_range1.check && (product.price >= priceFilter.price_range1.min) && (product.price < priceFilter.price_range1.max)) ||
+                (priceFilter.price_range2.check && (product.price >= priceFilter.price_range2.min) && (product.price < priceFilter.price_range2.max)) ||
+                (priceFilter.price_range3.check && (product.price >= priceFilter.price_range3.min) && (product.price < priceFilter.price_range3.max)) ||
+                (priceFilter.price_range4.check && (product.price >= priceFilter.price_range4.min) && (product.price < priceFilter.price_range4.max)) ||
+                (priceFilter.price_range5.check && (product.price >= priceFilter.price_range5.min) && (product.price < priceFilter.price_range5.max)) ||
 
                 !(
                     priceFilter.price_range0.check ||
@@ -180,46 +183,46 @@ function AllProductsPage(props) {
                     priceFilter.price_range5.check
                 ))
         )
-    }
+}
 
-    return (
-        <>
-            <img className='imageBanner'
-                src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
-            <div className='allProducts-container'>
-                <div className='allProduct-sidebar col-sm-3'>
-                    <TypeFilterAll
-                        typeFilter={typeFilter}
-                        setTypeFilter={setTypeFilter}
-                        notebookTypeList={notebookTypeList}
-                        calendarTypeList={calendarTypeList}
-                    />
+return (
+    <>
+        <img className='imageBanner'
+            src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
+        <div className='allProducts-container'>
+            <div className='allProduct-sidebar col-sm-3'>
+                <TypeFilterAll
+                    typeFilter={typeFilter}
+                    setTypeFilter={setTypeFilter}
+                    notebookTypeList={notebookTypeList}
+                    calendarTypeList={calendarTypeList}
+                />
 
-                    <PriceFilter priceFilter={priceFilter}
-                        setPriceFilter={setPriceFilter} />
-                </div>
-                <div className='allProduct-productlist col-sm-9'>
-                    <div className='allProduct-header'>
-                        <p className='allProduct-header-title'>All Product</p>
-                        <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
-                    </div>
-                    <div className='allProduct-product'>
-                        {showList.map((item, index) => {
-                            return (
-                                handleFilterAll(item) // All conditional to filter (price + type)
-                                &&
-                                <div key={index} className='allProduct-product-item'>
-                                    <ProductCard item={item} />
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-
+                <PriceFilter priceFilter={priceFilter}
+                    setPriceFilter={setPriceFilter} />
             </div>
-        </>
+            <div className='allProduct-productlist col-sm-9'>
+                <div className='allProduct-header'>
+                    <p className='allProduct-header-title'>All Product</p>
+                    <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
+                </div>
+                <div className='allProduct-product'>
+                    {showList.map((item, index) => {
+                        return (
+                            handleFilterAll(item) // All conditional to filter (price + type)
+                            &&
+                            <div key={index} className='allProduct-product-item'>
+                                <ProductCard item={item} />
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
 
-    );
+        </div>
+    </>
+
+);
 }
 
 export default AllProductsPage;
