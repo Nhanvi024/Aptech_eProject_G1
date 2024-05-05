@@ -8,15 +8,15 @@
 .checkout-info {
     height: 100vh;
 
-    background-color: rgb(247, 255, 251);
-    border: 1px solid rgb(191, 251, 234);
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 
 .checkout-payment {
     height: 100vh;
 
-    background-color: rgb(247, 255, 251);
-    border: 1px solid rgb(191, 251, 234);
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 
 .checkout-cart {

@@ -4,7 +4,6 @@ import './NoteBook.css'
 import React, { useContext, useEffect, useState } from 'react';
 import PriceFilter from '../../components/filterComponents/PriceFilter'
 import SortSelect from '../../components/filterComponents/SortSelect'
-import TypeFilter from '../../components/filterComponents/TypeFilter'
 import ProductCard from '../../components/homepageComponents/ProductCard';
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 
