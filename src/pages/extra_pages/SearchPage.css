@@ -1,8 +1,8 @@
 .searchPage-container{
     width: 1200px;
 
-    background-color: rgb(241, 252, 246);
-    border: 1px solid rgb(191, 251, 234);
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 .searchPage-result{
     font-weight: 700;

@@ -8,7 +8,7 @@ function NewsReadLot(props) {
 
     return (
 
-        <div className='newsPage-newsReadLot'>
+        <div className='newsPage-newsReadLot1'>
             <h1 className='newsPage-newsReadLot-name'>NEWS READ A LOT</h1>
             <div className='newsPage-newsReadLot-container'>
                 {newsReadLot && newsReadLot.map((item, index) => {

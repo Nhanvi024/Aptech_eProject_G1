@@ -18,7 +18,7 @@ const handleSearch = () =>{
     return (
         <div className='searchContainer'>
             <div className='searchBox'>
-            <input className='searchInput' onChange={(e)=>setSearchText(e.target.value)} type="text"  placeholder="What are you looking for?"/>
+            <input className='searchInput' onChange={(e)=>setSearchText(e.target.value)} type="text"  placeholder="Enter product name"/>
                 <button className='searchButton' onClick={()=>handleSearch()}><img className='searchImage' src={searchIcon} alt='searchIcon'></img></button>  
             </div>
                  
