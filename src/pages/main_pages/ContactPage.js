@@ -2,7 +2,7 @@ import './ContactPage.css'
 import addressIcon from '../../assets/image/contact/address.svg'
 import phoneIcon from '../../assets/image/contact/phone.svg'
 import emailIcon from '../../assets/image/contact/email.svg'
-
+import { motion } from 'framer-motion'
 
 import React, { useState } from 'react';
 
@@ -82,6 +82,11 @@ function ContactPage(props) {
 
     return (
         <>
+         <motion.div initial={{ opacity: 0 }}
+                transition={{ delay: 0.2 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
             <img className='imageBanner'
                 src='https://abbl.com/wp-content/uploads/2023/02/abbl-contact-banner.jpg' alt='banner'></img>
 
@@ -148,6 +153,7 @@ function ContactPage(props) {
 
 
             </div>
+            </motion.div>
         </>
 
     );
