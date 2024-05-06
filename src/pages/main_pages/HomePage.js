@@ -5,7 +5,7 @@ import '../../components/homepageComponents/ProductCard.css';
 import React, {useContext, useEffect, useMemo, useState, useTransition} from 'react';
 import ProductCard from '../../components/homepageComponents/ProductCard';
 import {DataContext} from '../../context/DataContext';
-
+import { motion } from 'framer-motion';
 function HomePage(props) {
 	const Navigate = useNavigate();
 	const {products, searchProduct, setSearchProduct, isDataLoaded, setIsDataLoaded} = useContext(DataContext);
@@ -144,6 +144,11 @@ function HomePage(props) {
 
 	return (
 		<>
+		<motion.div initial={{ opacity: 0 }}
+                transition={{ delay: 0.2 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
 			<div className="homePageContainer container-fluid p-0">
 				<section className="homepage-section-carousel">
 					<div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -409,6 +414,7 @@ function HomePage(props) {
 					</div>
 				</section>
 			</div>
+			</motion.div>
 		</>
 	);
 }
