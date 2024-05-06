@@ -28,7 +28,7 @@
 
 .aboutUsBtn:hover {
     text-decoration: none;
-    border-bottom: 3px solid var(--secondary-background-clr);
+    border-bottom: 4px solid var(--secondary-background-clr);
     color: var(--primary-text-color);
 
 }
@@ -36,7 +36,7 @@
 .aboutUsBtn[active="true"] {
     text-decoration: none;
     color: var(--active-text-color);
-    border-bottom: 3px solid var(--secondary-background-clr);
+    border-bottom: 4px solid var(--secondary-background-clr);
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

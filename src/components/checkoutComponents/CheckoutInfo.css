@@ -1,0 +1,28 @@
+.checkout-info {
+    height: 100vh;
+
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
+}
+
+.checkout-info>.logoContainer {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+}
+
+.checkout-info-input{
+    border: 1px solid gray;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.checkout-info-notes{
+    border: 1px solid gray;
+    width: 100%;
+    min-height: 210px;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
