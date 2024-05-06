@@ -78,7 +78,8 @@
     width: 96%;
     padding: 50px 20px;
 
-    background-color: rgb(211, 250, 240);
+    /* background-color: rgb(211, 250, 240); */
+    background-color: #CAF4FF;
     border-radius: 20px;
 
     display: flex;

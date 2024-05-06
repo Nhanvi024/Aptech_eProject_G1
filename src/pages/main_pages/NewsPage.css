@@ -7,7 +7,8 @@
     flex-direction: column;
     gap: 80px;
 
-    background-color: rgb(241, 252, 246);
+    /* background-color: rgb(241, 252, 246); */
+    background-color: #EEF7FF;
     border: 1px solid rgb(191, 251, 234);
 }
 

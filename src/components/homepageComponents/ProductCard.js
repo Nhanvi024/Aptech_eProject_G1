@@ -23,7 +23,7 @@ function ProductCard(props) {
 			<div className="text-center mx-auto col homepage-productCard">
 				<div>
 					<div className="homepage-productCard-imgContainer">
-						<img className="homepage-productCard-img" src={item.image.mainImage} alt="..."></img>
+						<img className="homepage-productCard-img" src={item.image.mainImage} alt="..." onClick={() => navigate(`/detail/${item.id}`)}></img>
 						<div className="productCard-button-container">
 							{/* button add to cart */}
 							<button className="productCard-button1 fas fa-cart-plus" onClick={() => handleAddProductCart(item)}></button>
