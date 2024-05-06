@@ -91,7 +91,7 @@ function CartPage(props) {
                     </> :
                     <>
                         <p className='cartPage-noitem'>No product in cart !</p>
-                        <Link className='cartPage-bottom-back' to='/'> Back to the store</Link>
+                        <Link className='cartPage-bottom-back' to='/'>Back to the store</Link>
                     </>
                 }
             </div>

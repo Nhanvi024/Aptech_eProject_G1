@@ -5,12 +5,6 @@
     display: flex;
 }
 
-.checkout-info {
-    height: 100vh;
-
-    background-color: hsl(var(--main-color-code) / 0.05);
-    border: 1px solid hsl(var(--main-color-code) / 0.5);
-}
 
 .checkout-payment {
     height: 100vh;
