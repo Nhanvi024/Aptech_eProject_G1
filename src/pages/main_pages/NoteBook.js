@@ -9,9 +9,11 @@ import ProductCard from '../../components/homepageComponents/ProductCard';
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 
 
+
 function NoteBook(props) {
     const { products, setProducts } = useContext(DataContext);
-    const { noteBook } = products
+    const { noteBook } = products;
+    
 
     const [showList, setShowList] = useState([])
 
@@ -78,7 +80,7 @@ function NoteBook(props) {
     })
 
     const handleReadyTypeData = () => {
-        {
+        if (noteBook){
             noteBook.forEach(item => {
                 if (!notebookTypeList.includes(item.type)) {
                     notebookTypeList.push(item.type)
@@ -164,44 +166,46 @@ function NoteBook(props) {
         )
     }
 
+        
+
     return (
 
-        <div className='noteBookPageContainer container-fluid p-0'>
+        <>
+            
+
             <img className='imageBanner'
                 src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
-            <div className='noteBookPageContainer container p-0'>
-                {/* Sidebar area */}
-                <div className='allProducts-container'>
-                    <div className='allProduct-sidebar col-sm-3'>
-                        <TypeFilterAll
-                            typeFilter={typeFilter}
-                            setTypeFilter={setTypeFilter}
-                            notebookTypeList={notebookTypeList}
-                        />
-                        <PriceFilter priceFilter={priceFilter}
-                            setPriceFilter={setPriceFilter} />
-                    </div>
-
-                    <div className='allProduct-productlist col-sm-9'>
-                        <div className='allProduct-header'>
-                            <p className='allProduct-header-title'>All Product</p>
-                            <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
-                        </div>
-                        <div className='allProduct-product'>
-                            {showList.map((item, index) => {
-                                return (
-                                    handleFilterAll(item) // All conditional to filter (price + type)
-                                    &&
-                                    <div key={index} className='allProduct-product-item'>
-                                        <ProductCard item={item} />
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
+            {/* Sidebar area */}
+            <div className='allProducts-container'>
+                <div className='allProduct-sidebar col-sm-3'>
+                    <TypeFilterAll
+                        typeFilter={typeFilter}
+                        setTypeFilter={setTypeFilter}
+                        notebookTypeList={notebookTypeList}
+                    />
+                    <PriceFilter priceFilter={priceFilter}
+                        setPriceFilter={setPriceFilter} />
                 </div>
+
+                <div className='allProduct-productlist col-sm-9'>
+                    <div className='allProduct-header'>
+                        <p className='allProduct-header-title'>Notebooks</p>
+                        <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
+                    </div>
+                    <div className='allProduct-product'>
+                        {showList.map((item, index) => {
+                            return (
+                                handleFilterAll(item) // All conditional to filter (price + type)
+                                &&
+                                <div key={index} className='allProduct-product-item'>
+                                    <ProductCard item={item} className='productCard' />
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>    
             </div>
-        </div>
+        </>
 
 
     );
