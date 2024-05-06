@@ -7,8 +7,29 @@
     flex-direction: column;
     gap: 80px;
 
-    /* background-color: rgb(241, 252, 246); */
-    background-color: #EEF7FF;
-    border: 1px solid rgb(191, 251, 234);
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 
+
+/** Responsive ************************************************************************************ */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .newsPageContainer {
+        width: 992px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .newsPageContainer {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
