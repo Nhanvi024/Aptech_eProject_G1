@@ -7,7 +7,7 @@ import NewsReadLot from '../../components/newspageComponents/NewsReadLot';
 import HotNews from '../../components/newspageComponents/HotNews';
 import NewsSeeMore from '../../components/newspageComponents/NewsSeeMore';
 import NewsUpdate from '../../components/newspageComponents/NewsUpdate';
-
+import { motion } from 'framer-motion';
 
 function NewsPage(props) {
     const navigation = useNavigate()
@@ -40,6 +40,11 @@ function NewsPage(props) {
 
     return (
         <>
+          <motion.div initial={{ opacity: 0 }}
+                transition={{ delay: 0.2 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
 
             <img className='imageBanner'
                 src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
@@ -51,6 +56,7 @@ function NewsPage(props) {
             {statusNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={statusNews.newsSeeMore} handleSelectNews={handleSelectNews}/>}
                
             </div>
+            </motion.div>
         </>
     );
 }
