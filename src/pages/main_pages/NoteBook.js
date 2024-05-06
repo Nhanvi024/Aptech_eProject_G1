@@ -4,7 +4,6 @@ import './NoteBook.css'
 import React, { useContext, useEffect, useState } from 'react';
 import PriceFilter from '../../components/filterComponents/PriceFilter'
 import SortSelect from '../../components/filterComponents/SortSelect'
-import TypeFilter from '../../components/filterComponents/TypeFilter'
 import ProductCard from '../../components/homepageComponents/ProductCard';
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 
@@ -166,7 +165,7 @@ function NoteBook(props) {
         )
     }
 
-        
+
 
     return (
 
@@ -189,7 +188,7 @@ function NoteBook(props) {
 
                 <div className='allProduct-productlist col-sm-9'>
                     <div className='allProduct-header'>
-                        <p className='allProduct-header-title'>Notebooks</p>
+                        <p className='allProduct-header-title'>Notebook</p>
                         <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
                     </div>
                     <div className='allProduct-product'>

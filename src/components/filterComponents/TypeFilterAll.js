@@ -15,12 +15,24 @@ function TypeFilterAll(props) {
         setTypeFilter({ ...typeFilter })
     }
 
+    const handleAllNoteBookFilter = (e) => {
+        e.target.checked?
+        setTypeFilter({ ...typeFilter, noteBookFilter: [...notebookTypeList] }) : 
+        setTypeFilter({ ...typeFilter, noteBookFilter: [] })
+    }
+
     const handleCalendarFilter = (e) => {
         e.target.checked ?
             calendarFilter.push(e.target.name) :
             calendarFilter.splice(calendarFilter.indexOf(e.target.name), 1)
 
         setTypeFilter({ ...typeFilter })
+    }
+
+    const handleAllCalendarFilter = (e) => {
+        e.target.checked?
+        setTypeFilter({ ...typeFilter, calendarFilter: [...calendarTypeList] }) : 
+        setTypeFilter({ ...typeFilter, calendarFilter: [] })
     }
 
     return (
@@ -31,9 +43,13 @@ function TypeFilterAll(props) {
             <div className='typeFilterAll-list'>
                 {notebookTypeList &&
                     <div className='typeFilterAll-item-container'>
-                        <button onClick={() => setTypeFilter({ ...typeFilter, noteBookFilter: [...notebookTypeList] })} className='typeFilterAll-text'>Notebook</button>
-
+                        <p className='typeFilterAll-text'>Notebook</p>
+                        <div className='typeFilterAll-notebookAll'>
+                                <input onChange={(e) => handleAllNoteBookFilter(e)} className="typeFilterAll-typebox" name='notebookAll' type="checkbox" id='notebookAll' checked={noteBookFilter.length == notebookTypeList.length}/>
+                                <label className='typeFilterAll-typename' htmlFor='notebookAll'>All Notebook</label>
+                            </div>
                         <div className='typeFilterAll-subitemlist'>
+                          
                             {notebookTypeList.map((item, index) => {
                                 return (
                                     <div className='typeFilterAll-subitem' key={index}>
@@ -48,9 +64,13 @@ function TypeFilterAll(props) {
                 }
                 {calendarTypeList &&
                     <div className='typeFilterAll-item-container'>
-                        <button onClick={() => setTypeFilter({ ...typeFilter, calendarFilter: [...calendarTypeList] })} className='typeFilterAll-text'>Calendar</button>
-
+                        <p className='typeFilterAll-text'>Calendar</p>
+                        <div className='typeFilterAll-calendarAll'>
+                                <input onChange={(e) => handleAllCalendarFilter(e)} className="typeFilterAll-typebox" name='calendarAll' type="checkbox" id='calendarAll' />
+                                <label className='typeFilterAll-typename' htmlFor='calendarAll'>All Calendar</label>
+                            </div>
                         <div className='typeFilterAll-subitemlist'>
+                   
                             {calendarTypeList.map((item, index) => {
                                 return (
                                     <div className='typeFilterAll-subitem' key={index}>

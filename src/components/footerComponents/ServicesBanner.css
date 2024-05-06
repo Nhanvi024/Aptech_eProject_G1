@@ -1,19 +1,20 @@
-.servicesContainer {
-    width: 80%;
+.servicesBanner-container {
+    width: 100%;
     height: 100%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-   
+    justify-content: center;
+    gap: 60px;
+  
+
 }
 
-.delivery,
-.support,
-.exchange_return,
-.standardPrice {
+.servicesBanner-delivery,
+.servicesBanner-support,
+.servicesBanner-exchange_return,
+.servicesBanner-standardPrice {
     width: 240px;
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -24,9 +25,6 @@
 
     transition: 0.3s;
     transform: rotateY(0deg);
-    /* background-color: aquamarine; */
-
-
 }
 
 .delivery:hover>.servicesImage,
@@ -34,9 +32,7 @@
 .exchange_return:hover>.servicesImage,
 .standardPrice:hover>.servicesImage{
     transform: rotateY(360deg)
-
 }
-
 
 .servicesName {
     width: 180px;
@@ -45,3 +41,4 @@
     align-content: center;
     color: var(--secondary-text-color);
 }
+
