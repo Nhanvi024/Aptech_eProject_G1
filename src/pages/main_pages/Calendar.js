@@ -6,6 +6,7 @@ import ProductCard from '../../components/homepageComponents/ProductCard';
 import PriceFilter from '../../components/filterComponents/PriceFilter'
 import SortSelect from '../../components/filterComponents/SortSelect'
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll'
+import { motion } from 'framer-motion';
 function Calendar(props) {
     let { products, setProducts } = useContext(DataContext);
 
@@ -65,7 +66,7 @@ function Calendar(props) {
     // Reload page to update sort
     useEffect(() => {
         handleSortAll()
-    }, [select])
+    }, [select, products])
 
 
     // ** Filter type **********************************************
@@ -175,8 +176,13 @@ function Calendar(props) {
 
     return (
         <>
+         <motion.div initial={{ opacity: 0 }}
+                transition={{ delay: 0.2 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
             <img className='imageBanner'
-                src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
+                src='https://www.muji.us/cdn/shop/collections/collection_page_stationery_calendar_planner_2043x630.jpg?v=1668704287'  alt='calendarBanner'></img>
             <div className='allProducts-container'>
                 <div className='allProduct-sidebar col-sm-3'>
                     <TypeFilterAll
@@ -207,6 +213,7 @@ function Calendar(props) {
                 </div>
 
             </div>
+            </motion.div>
         </>
 
     );

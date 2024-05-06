@@ -2,6 +2,8 @@
     width: 1200px;
     padding-bottom: 50px;
     position: relative;
+    padding: auto;
+    margin: auto;
 }
 
 .contactPageContainer_row1 {
