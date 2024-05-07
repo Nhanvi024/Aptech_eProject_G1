@@ -21,16 +21,85 @@ function CheckOut(props) {
             fee: 5
         }
     ]
+
+    const [errors, setErrors] = useState({ nameError: '', emailError: '', addressError: '', phoneError: '' });
+    const [form, setForm] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        address: '',
+        comment: ''
+    })
+    const handleInput = (e) => {
+        let { name, value } = e.target
+        handleValidate(name, value)
+        setForm({ ...form, [name]: value })
+    }
+
+    const handleSubmit = (e) => {
+
+        if (Object.keys(errors).length !== 0) {
+            e.preventDefault();
+            alert('All field is required')
+        } else {
+            alert('Thank you for contacting us!!!')
+        }
+    }
+
+    const handleValidate = (name, value) => {
+        switch (name) {
+            case 'name':
+                if (value === '') {
+                    errors.nameError = 'Name is required';
+                } else if (value.length < 3) {
+                    errors.nameError = 'Name must be greater than 3';
+                } else {
+                    delete errors.nameError;
+                }
+                break;
+            case 'email':
+                let emailRegEx = /^\w+@\w+\.[a-zA-Z]{2,4}$/;
+                if (value === '') {
+                    errors.emailError = ' Email is required';
+                } else if (!emailRegEx.test(value)) {
+                    errors.emailError = 'Email is not correct';
+                } else {
+                    delete errors.emailError;
+                }
+                break;
+            case 'phone':
+                let phoneRegEx = /^[0-9]{10,12}$/;
+                if (value === '') {
+                    errors.phoneError = 'Phone number is required';
+                } else if (!phoneRegEx.test(value)) {
+                    errors.phoneError = 'Phone number is not correct';
+                } else {
+                    delete errors.phoneError;
+                }
+                break;
+            case 'address':
+                if (value === '') {
+                    errors.addressError = 'Address is required';
+                } else {
+                    delete errors.addressError;
+                }
+                break;
+            default:
+
+        }
+    }
+
+
     return (
         <>
             <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp'></img>
             <div className='checkout-container'>
-                <CheckoutInfo/>
-                <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods= {shippingMethods}/>
-                <CheckoutCart shipping={shipping}/>
+                <CheckoutInfo handleInput={handleInput} errors={errors}/>
+                <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods={shippingMethods} />
+                <CheckoutCart shipping={shipping} handleSubmit={handleSubmit}/>
             </div>
         </>
-    
+
     );
 }
 

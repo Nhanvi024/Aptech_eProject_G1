@@ -1,0 +1,59 @@
+.checkout-payment {
+    min-height: 100vh;
+    height: fit-content;
+    padding: 20px;
+
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
+}
+.checkout-delivery,
+.checkout-paymentMethod{
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.checkout-paymentImage{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.payment-info{
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0 10px 0;
+    padding: 15px;
+    align-content: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
+}
+
+
+#bank-info,
+#paypal-info{
+    display: none;
+}
+
+.bank-info-name,
+.bank-info-bank,
+.bank-info-account{
+    display: flex;
+}
+.bank-info-title{
+    width: 50%;
+    color: rgb(0, 46, 250);
+}
+.bank-info-info{
+
+}
+
+
