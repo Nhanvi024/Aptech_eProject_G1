@@ -20,7 +20,7 @@
     font-style: italic;
 
     transform: skew(15deg);
-    background:  var( --secondary-background-clr);
+    background: var(--secondary-background-clr);
 
     text-transform: uppercase;
     color: var(--secondary-text-color);
@@ -35,7 +35,7 @@
     gap: 20px;
 
     border: 1px solid var(--secondary-background-clr);
-    border-radius: 10px; 
+    border-radius: 10px;
 
     padding-left: 30px;
 }
@@ -49,36 +49,41 @@
 }
 
 .typeFilterAll-text {
-    text-decoration: none;
+    margin: 0;
     border: none;
     background: none;
-    /* font-family: var(--ff-secondary-font); */
+
     font-size: var(--fs-500);
     color: var(--primary-text-color);
 }
-.typeFilterAll-text:hover {
-    text-decoration: none;
-}
 
-.typeFilterAll-subitemlist{
+
+.typeFilterAll-subitemlist {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.typeFilterAll-subitem{
+.typeFilterAll-subitem {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-input[type="checkbox"]{
+.typeFilterAll-notebookAll,
+.typeFilterAll-calendarAll{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"] {
     margin: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    -moz-focusring:none;
+    -moz-focusring: none;
 
     /* create custom checkbox appearance */
     display: inline-block;
@@ -95,25 +100,26 @@ input[type="checkbox"]{
     cursor: pointer;
 
     &:hover {
-        background: 
-        linear-gradient(to bottom right,rgb(112, 255, 188),rgb(253, 253, 253) ) padding-box;
+        background:
+            linear-gradient(to bottom right, hsl(var(--main-color-code)/0.5), rgb(253, 253, 253)) padding-box;
         border: 1.5px solid rgb(186, 186, 186);
     }
-    &:checked{
+
+    &:checked {
         border: none;
         background-clip: padding-box;
-        background-image: url('/public/assets/image/extra/icon-check.svg'), linear-gradient(to bottom right, rgb(4, 132, 42),rgb(253, 253, 253));
+        background-image: url('/public/assets/image/extra/icon-check.svg'), linear-gradient(to bottom right, hsl(var(--main-color-code)/1), rgb(253, 253, 253));
         background-position: center;
         background-repeat: no-repeat;
     }
 
     &:focus,
-    &:focus-visible{
+    &:focus-visible {
         outline: none;
     }
 }
 
-.typeFilterAll-typename{
+.typeFilterAll-typename {
     margin: 0;
     font-size: var(--fs-400);
 }

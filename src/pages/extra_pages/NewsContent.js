@@ -24,7 +24,7 @@ function NewsContent(props) {
 
 
     useEffect(() => {
-        fetch(`/news/${newscontent}.txt`)
+        fetch(`/assets/news/${newscontent}.txt`)
             .then(res => res.text())
             .then(data => setContent(data))
     }, [newscontent])

@@ -2,8 +2,8 @@
     width: 1200px;
 
     padding: 30px 50px;
-    background-color: rgb(247, 255, 251);
-    border: 1px solid rgb(191, 251, 234);
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 .cartPage-name{
     color: var(--active-text-color);
@@ -227,8 +227,9 @@
 .cartPage-bottom-checkout:hover,
 .cartPage-bottom-checkout:active{
     text-decoration: none;
-    background-color: rgb(78, 198, 150);
     color:  var(--secondary-text-color);
+    background: var(--secondary-background-clr);
+    opacity: 0.8;
 }
 
 .cartPage-noitem{

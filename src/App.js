@@ -1,8 +1,8 @@
 import './App.css';
 
-import React, {useContext} from 'react';
-import {Route, Routes, useParams} from 'react-router-dom';
-import {DataContext} from './context/DataContext';
+import React, { useContext } from 'react';
+import { Route, Routes, useParams } from 'react-router-dom';
+import { DataContext } from './context/DataContext';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -19,10 +19,11 @@ import AboutPage from './pages/main_pages/AboutPage';
 import NewsContent from './pages/extra_pages/NewsContent';
 import CartPage from './pages/extra_pages/CartPage';
 import SingleProductDetail from './components/homepageComponents/SingleProductDetail';
+import CheckOut from './pages/extra_pages/CheckOut';
 
 function App(props) {
-	const {searchProduct} = useContext(DataContext);
-	const {productId} = useParams();
+	const { searchProduct } = useContext(DataContext);
+	const { productId } = useParams();
 
 	return (
 		<div className="calendarWebStore">
@@ -40,7 +41,8 @@ function App(props) {
 				<Route path="/allproducts" element={<AllProductPage />} />
 				<Route path="/detail/:productId" element={<SingleProductDetail />} />
 				<Route path="/download" element={<DownloadPage />} />
-				<Route path="/cart" element={<CartPage />} />
+				<Route path='/cart' element={<CartPage />} />
+				<Route path='/checkout' element={<CheckOut/>}/>
 			</Routes>
 			<Footer />
 		</div>
