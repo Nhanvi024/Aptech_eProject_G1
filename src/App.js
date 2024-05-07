@@ -20,6 +20,7 @@ import NewsContent from './pages/extra_pages/NewsContent';
 import CartPage from './pages/extra_pages/CartPage';
 import SingleProductDetail from './components/homepageComponents/SingleProductDetail';
 import CheckOut from './pages/extra_pages/CheckOut';
+import AnimationRoute from './components/AnimationComponents/AnimationRoute';
 
 function App(props) {
 	const { searchProduct } = useContext(DataContext);
@@ -28,22 +29,7 @@ function App(props) {
 	return (
 		<div className="calendarWebStore">
 			<Header />
-			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route path="/calendar" element={<Calendar />} />
-				<Route path="/notebook" element={<NoteBook />} />
-				<Route path="/contact" element={<ContactPage />} />
-				<Route path="/news" element={<NewsPage />} />
-				<Route path="/about" element={<AboutPage />} />
-
-				<Route path="news/:newscontent" element={<NewsContent />} />
-				<Route path="/search" element={<SearchPage />} />
-				<Route path="/allproducts" element={<AllProductPage />} />
-				<Route path="/detail/:productId" element={<SingleProductDetail />} />
-				<Route path="/download" element={<DownloadPage />} />
-				<Route path='/cart' element={<CartPage />} />
-				<Route path='/checkout' element={<CheckOut/>}/>
-			</Routes>
+		<AnimationRoute/>
 			<Footer />
 		</div>
 	);

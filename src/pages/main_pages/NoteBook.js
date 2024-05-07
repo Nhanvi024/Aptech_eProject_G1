@@ -6,8 +6,7 @@ import PriceFilter from '../../components/filterComponents/PriceFilter'
 import SortSelect from '../../components/filterComponents/SortSelect'
 import ProductCard from '../../components/homepageComponents/ProductCard';
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
-
-
+import { motion } from 'framer-motion';
 
 function NoteBook(props) {
     const { products, setProducts } = useContext(DataContext);
@@ -79,7 +78,7 @@ function NoteBook(props) {
     })
 
     const handleReadyTypeData = () => {
-        if (noteBook){
+       if(noteBook) {
             noteBook.forEach(item => {
                 if (!notebookTypeList.includes(item.type)) {
                     notebookTypeList.push(item.type)
@@ -168,44 +167,44 @@ function NoteBook(props) {
 
 
     return (
+        <motion.div initial={{ opacity: 0 }}
+            transition={{ delay: 0.2 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
+                <img className='imageBanner'
+                    src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
+                    {/* Sidebar area */}
+                    <div className='allProducts-container'>
+                        <div className='allProduct-sidebar col-xl-3 col-md-5 col-sm-6  '>
+                            <TypeFilterAll
+                                typeFilter={typeFilter}
+                                setTypeFilter={setTypeFilter}
+                                notebookTypeList={notebookTypeList}
+                            />
+                            <PriceFilter priceFilter={priceFilter}
+                                setPriceFilter={setPriceFilter} />
+                        </div>
 
-        <>
-            
-
-            <img className='imageBanner'
-                src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
-            {/* Sidebar area */}
-            <div className='allProducts-container'>
-                <div className='allProduct-sidebar col-sm-3'>
-                    <TypeFilterAll
-                        typeFilter={typeFilter}
-                        setTypeFilter={setTypeFilter}
-                        notebookTypeList={notebookTypeList}
-                    />
-                    <PriceFilter priceFilter={priceFilter}
-                        setPriceFilter={setPriceFilter} />
-                </div>
-
-                <div className='allProduct-productlist col-9'>
-                    <div className='allProduct-header'>
-                        <p className='allProduct-header-title'>Notebook</p>
-                        <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
+                        <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6 '>
+                            <div className='allProduct-header'>
+                                <p className='allProduct-header-title'>All Product</p>
+                                <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
+                            </div>
+                            <div className='allProduct-product'>
+                                {showList.map((item, index) => {
+                                    return (
+                                        handleFilterAll(item) // All conditional to filter (price + type)
+                                        &&
+                                        <div key={index} className='allProduct-product-item'>
+                                            <ProductCard item={item} />
+                                        </div>
+                                    )
+                                })}
+                            </div>
+                        </div>
                     </div>
-                    <div className='allProduct-product'>
-                        {showList.map((item, index) => {
-                            return (
-                                handleFilterAll(item) // All conditional to filter (price + type)
-                                &&
-                                <div key={index} className='allProduct-product-item'>
-                                    <ProductCard item={item} className='productCard' />
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>    
-            </div>
-        </>
-
+        </motion.div>
 
     );
 }
