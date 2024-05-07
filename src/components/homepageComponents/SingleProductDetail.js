@@ -2,10 +2,11 @@ import React, {useContext, useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
 import {DataContext} from '../../context/DataContext';
 import ProductCard from './ProductCard';
+import './SingleProductDetail.css';
 
 function SingleProductDetail(props) {
 	const {products, handleAddProductCart, isDataLoaded} = useContext(DataContext);
-	console.log("products list: ",products);
+	console.log('products list: ', products);
 	const navigate = useNavigate();
 	const {productId} = useParams();
 	console.log(productId);
@@ -57,8 +58,7 @@ function SingleProductDetail(props) {
 					className="imageBanner"
 					src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823"
 					alt="banner"></img>
-
-				<div className="container row mx-auto p-3">
+				<div className="container row mx-auto p-3 mt-5">
 					<div className="col-12 p-0 col-lg-6">
 						<div id="modalCarouselDetail" className="carousel slide" data-bs-ride="carousel">
 							<div className="carousel-inner carda">
@@ -75,7 +75,7 @@ function SingleProductDetail(props) {
 									<img src={item.image.image3} className="largeImg d-block w-100" alt="..." />
 								</div>
 							</div>
-							<div className="carousel-indicators carda">
+							<div className="carousel-indicators carda mt-5">
 								<button
 									type="button"
 									data-bs-target="#modalCarouselDetail"
@@ -110,10 +110,20 @@ function SingleProductDetail(props) {
 									<img src={item.image.image3} className="thumbImg d-block w-100" alt="..." />
 								</button>
 							</div>
+								<button className="carousel-control-prev" data-bs-target="#modalCarouselDetail" data-bs-slide="prev">
+									<span className="carousel-control-prev-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
+								</button>
+								<button className="carousel-control-next" data-bs-target="#modalCarouselDetail" data-bs-slide="next">
+									<span className="carousel-control-next-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
+								</button>
+							
+							
 						</div>
 					</div>
 					<div className="col-12 p-0 col-lg-6 p-5" style={{fontSize: 'var(--fs-500)'}}>
-						<h1 className="text-danger" style={{fontSize: 'var(--fs-900)'}}>{item.name}</h1>
+						<h1 className="text-danger" style={{fontSize: 'var(--fs-900)'}}>
+							{item.name}
+						</h1>
 						<div className="row">
 							<div className="col">Category: {item.type}</div>
 							<div className="col">Stock: {item.stock > 0 ? item.stock + ' item(s) available' : 'Out of Stock'}</div>
@@ -176,8 +186,8 @@ function SingleProductDetail(props) {
 				</div>
 			</div>
 		);
-	// } else {
-	// 	console.log('chua co data roi');
+		// } else {
+		// 	console.log('chua co data roi');
 	}
 }
 

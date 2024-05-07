@@ -20,7 +20,7 @@ function ProductCard(props) {
 	// console.log('test item: ', item);
 	return (
 		<>
-			<div className="text-center mx-auto col homepage-productCard">
+			<div className="text-center mx-auto col homepage-productCard my-2">
 				<div>
 					<div className="homepage-productCard-imgContainer">
 						<img className="homepage-productCard-img" src={item.image.mainImage} alt="..."></img>

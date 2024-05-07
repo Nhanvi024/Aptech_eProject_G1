@@ -89,7 +89,6 @@ function DataProvider({ children }) {
         handleDeleteItem,
 
     }
-    console.log("alo co goi chjua ko");
     return (
         <DataContext.Provider value={valueProvider}>
             {children}
