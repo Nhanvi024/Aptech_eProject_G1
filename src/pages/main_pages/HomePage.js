@@ -18,7 +18,7 @@ import 'swiper/css/bundle';
 
 // import required modules
 import {Grid, Navigation} from 'swiper/modules';
-
+import { motion } from 'framer-motion';
 function HomePage(props) {
 	const Navigate = useNavigate();
 	const {products, searchProduct, setSearchProduct, isDataLoaded, setIsDataLoaded} = useContext(DataContext);
@@ -161,6 +161,11 @@ function HomePage(props) {
 
 	return (
 		<>
+		<motion.div initial={{ opacity: 0 }}
+                transition={{ delay: 0.2 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+            >
 			<div className="homePageContainer container-fluid p-0">
 				<section className="homepage-section-carousel">
 					<div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -599,6 +604,7 @@ function HomePage(props) {
 					</div>
 				</section>
 			</div>
+			</motion.div>
 		</>
 	);
 }
