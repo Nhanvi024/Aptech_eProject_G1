@@ -1,6 +1,17 @@
 .aboutPage-container {
-    top: 180px;
-    margin-bottom: 180px;
-    position: relative;
-    /* height: 1500px; */
+    width: 100%;
+}
+.aboutPage-company-image {
+    width: 100%;
+	object-fit: contain;
+}
+.aboutPage-company-introduce{
+	font-size: var(--fs-500);
+
+}
+.aboutPage-team{
+    .aboutPage-team-title{
+	font-size: var(--fs-900);
+
+    }
 }
