@@ -186,7 +186,7 @@ function NoteBook(props) {
                         setPriceFilter={setPriceFilter} />
                 </div>
 
-                <div className='allProduct-productlist col-sm-9'>
+                <div className='allProduct-productlist col-9'>
                     <div className='allProduct-header'>
                         <p className='allProduct-header-title'>Notebook</p>
                         <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
