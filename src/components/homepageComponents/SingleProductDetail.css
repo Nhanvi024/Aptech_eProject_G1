@@ -1,0 +1,10 @@
+.carousel-indicators.carda {
+	padding: 5px;
+	border: 2px solid gray;
+	border-radius: 10px;
+  height: fit-content;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	filter: invert(30%);
+}

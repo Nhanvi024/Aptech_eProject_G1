@@ -6,7 +6,7 @@ import {useNavigate} from 'react-router-dom';
 
 function ProductCard(props) {
 	let {item} = props;
-	const {handleAddProductCart} = useContext(DataContext);
+	const {handleAddProductCart, isDataLoaded} = useContext(DataContext);
 	const [show, setShow] = useState(false);
 	const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ function ProductCard(props) {
 	// console.log('test item: ', item);
 	return (
 		<>
-			<div className="text-center mx-auto col homepage-productCard">
+			<div className="text-center mx-auto col homepage-productCard my-2">
 				<div>
 					<div className="homepage-productCard-imgContainer">
 						<img className="homepage-productCard-img" src={item.image.mainImage} alt="..."></img>
@@ -54,107 +54,111 @@ function ProductCard(props) {
 					<Modal.Title>Product's detail</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<div className="container row p-0 mx-auto p-3">
-						<div className="col-12 p-0 col-lg-6">
-							<div id="modalCarousel" className="carousel slide" data-bs-ride="carousel">
-								<div className="carousel-inner carda">
-									<div className="carousel-item active">
-										<img src={item.image.mainImage} className="largeImg d-block w-100" alt="..." />
+					{isDataLoaded && (
+						<div className="container row p-0 mx-auto p-3">
+							<div className="col-12 p-0 col-lg-6">
+								<div id="modalCarousel" className="carousel slide" data-bs-ride="carousel">
+									<div className="carousel-inner carda">
+										<div className="carousel-item active">
+											<img src={item.image.mainImage} className="largeImg d-block w-100" alt="..." />
+										</div>
+										<div className="carousel-item">
+											<img src={item.image.image1} className="largeImg d-block w-100" alt="..." />
+										</div>
+										<div className="carousel-item">
+											<img src={item.image.image2} className="largeImg d-block w-100" alt="..." />
+										</div>
+										<div className="carousel-item">
+											<img src={item.image.image3} className="largeImg d-block w-100" alt="..." />
+										</div>
 									</div>
-									<div className="carousel-item">
-										<img src={item.image.image1} className="largeImg d-block w-100" alt="..." />
-									</div>
-									<div className="carousel-item">
-										<img src={item.image.image2} className="largeImg d-block w-100" alt="..." />
-									</div>
-									<div className="carousel-item">
-										<img src={item.image.image3} className="largeImg d-block w-100" alt="..." />
+									<div className="carousel-indicators carda">
+										<button
+											type="button"
+											data-bs-target="#modalCarousel"
+											data-bs-slide-to="0"
+											className="thumbnail active"
+											aria-current="true"
+											aria-label="Slide 1">
+											<img src={item.image.mainImage} className="thumbImg d-block w-100" alt="..." />
+										</button>
+										<button
+											className="thumbnail"
+											type="button"
+											data-bs-target="#modalCarousel"
+											data-bs-slide-to="1"
+											aria-label="Slide 2">
+											<img src={item.image.image1} className="thumbImg d-block w-100" alt="..." />
+										</button>
+										<button
+											className="thumbnail"
+											type="button"
+											data-bs-target="#modalCarousel"
+											data-bs-slide-to="2"
+											aria-label="Slide 3">
+											<img src={item.image.image2} className="thumbImg d-block w-100" alt="..." />
+										</button>
+										<button
+											className="thumbnail"
+											type="button"
+											data-bs-target="#modalCarousel"
+											data-bs-slide-to="3"
+											aria-label="Slide 4">
+											<img src={item.image.image3} className="thumbImg d-block w-100" alt="..." />
+										</button>
 									</div>
 								</div>
-								<div className="carousel-indicators carda">
+							</div>
+							<div className="col-12 p-0 col-lg-6 p-5" style={{fontSize: 'var(--fs-500)', fontFamily:'var(--ff-primary-font)'}}>
+								<h1 className="text-danger">{item.name}</h1>
+								<div className="row">
+									<div className="col">Category: {item.type}</div>
+									<div className="col">Status: {item.stock > 0 ? item.stock + ' item(s) available' : 'Out of Stock'}</div>
+								</div>
+								<div className="modal-priceTag row justify-items-center ms-3 my-4 pt-1">
+									<h2 className="modal-priceTag-text px-5 py-2">${item.price}</h2>
+								</div>
+								<div className="">
 									<button
-										type="button"
-										data-bs-target="#modalCarousel"
-										data-bs-slide-to="0"
-										className="thumbnail active"
-										aria-current="true"
-										aria-label="Slide 1">
-										<img src={item.image.mainImage} className="thumbImg d-block w-100" alt="..." />
+										className="btn btn-lg mx-1 px-5 btn-primary"
+										style={{fontSize: 'var(--fs-500)', fontFamily:'var(--ff-primary-font)'}}
+										onClick={() => {
+											handleAddProductCart(item);
+										}}>
+										Add to cart
 									</button>
 									<button
-										className="thumbnail"
-										type="button"
-										data-bs-target="#modalCarousel"
-										data-bs-slide-to="1"
-										aria-label="Slide 2">
-										<img src={item.image.image1} className="thumbImg d-block w-100" alt="..." />
+										className="btn btn-lg mx-1 px-5 btn-warning"
+										style={{fontSize: 'var(--fs-500)', fontFamily:'var(--ff-primary-font)'}}
+										onClick={() => {
+											handleAddProductCart(item);
+											handleClose();
+											navigate('/cart');
+										}}>
+										Buy now
 									</button>
-									<button
-										className="thumbnail"
-										type="button"
-										data-bs-target="#modalCarousel"
-										data-bs-slide-to="2"
-										aria-label="Slide 3">
-										<img src={item.image.image2} className="thumbImg d-block w-100" alt="..." />
-									</button>
-									<button
-										className="thumbnail"
-										type="button"
-										data-bs-target="#modalCarousel"
-										data-bs-slide-to="3"
-										aria-label="Slide 4">
-										<img src={item.image.image3} className="thumbImg d-block w-100" alt="..." />
-									</button>
+								</div>
+								<div className="">
+									<br />
+									<div className="fw-bold fs-2 text-center">Description</div>
+									<hr />
+									<div>{item.desc}</div>
+									<br />
+									<div>{item.descDetail}</div>
+									<br />
+								</div>
+								<div>
+									<div className="fw-bold fs-2 text-center">Specification</div>
+									<hr />
+									<div>Dimensions: {item.param.size}</div>
+									<div>Weight: {item.param.weight}</div>
+									<div>Pages: {item.param.pages}</div>
+									<div>Material: {item.param.material}</div>
+									<br />
 								</div>
 							</div>
 						</div>
-						<div className="col-12 p-0 col-lg-6 p-5" style={{fontSize: 'var(--fs-500)'}}>
-							<h1 className="text-danger">{item.name}</h1>
-							<div className="row">
-								<div className="col">Category: {item.type}</div>
-								<div className="col">Status: {item.stock > 0 ? item.stock + ' item(s) available' : 'Out of Stock'}</div>
-							</div>
-							<div className="modal-priceTag row m-0 justify-items-center ms-3 my-4">
-								<h2 className="modal-priceTag-text px-5 py-2">${item.price}</h2>
-							</div>
-							<div className="">
-								<button
-									className="btn btn-lg mx-1 px-5 btn-primary"
-									onClick={() => {
-										handleAddProductCart(item);
-									}}>
-									Add to cart
-								</button>
-								<button
-									className="btn btn-lg mx-1 px-5 btn-warning"
-									onClick={() => {
-										handleAddProductCart(item);
-										handleClose();
-										navigate('/cart');
-									}}>
-									Buy now
-								</button>
-							</div>
-							<div className="">
-								<br />
-								<div className="fw-bold fs-2 text-center">Description</div>
-								<hr />
-								<div>{item.desc}</div>
-								<br />
-								<div>{item.descDetail}</div>
-								<br />
-							</div>
-							<div>
-								<div className="fw-bold fs-2 text-center">Specification</div>
-								<hr />
-								<div>Dimensions: {item.param.size}</div>
-								<div>Weight: {item.param.weight}</div>
-								<div>Pages: {item.param.pages}</div>
-								<div>Material: {item.param.material}</div>
-								<br />
-							</div>
-						</div>
-					</div>
+					)}
 				</Modal.Body>
 				{/* <Modal.Footer>
 					<Button variant="danger" onClick={handleClose}>
