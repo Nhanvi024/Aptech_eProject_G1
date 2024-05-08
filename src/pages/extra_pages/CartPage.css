@@ -37,19 +37,23 @@
 }
 
 .cartPage-product {
-    width: 45%;
+    width: 40%;
+
 }
 
 .cartPage-price {
     width: 15%;
+
 }
 
 .cartPage-quantity {
     width: 20%;
+
 }
 
 .cartPage-subtotal {
     width: 15%;
+
 }
 
 /* Tablt td */
@@ -62,6 +66,7 @@
     align-items: center;
     justify-content: start;
     gap: 20px;
+    border: 1px solid red;
 }
 
 .cartPage-td-price,
@@ -97,11 +102,13 @@
 }
 
 .cartPage-item-name {
-    width: 350px;
+    width: 70%;
     font-size: var(--fs-400);
     font-weight: 500;
     color: rgb(85, 85, 85);
     margin: 0;
+
+    border: 1px solid red;
 }
 
 .cartPage-item-price {
@@ -116,7 +123,7 @@
     height: 40px;
     border: 1px solid rgb(215, 215, 215);
 
-    padding: 10px 0px 10px 20px;
+    padding: 10px 0px 10px 8%;
     margin: 0;
 
     border-radius: 5px;
@@ -235,4 +242,31 @@
 .cartPage-noitem{
     padding: 30px;
     font-size: var(--fs-500);
+}
+
+/** Responsive ************************************************************************************ */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .cartPage-container {
+        width: 100%;
+        border: 1px solid red;
+    }
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .cartPage-subtotal {
+       display: none;
+    }
+    .cartPage-td-subtotal{
+        display: none;
+    }
 }

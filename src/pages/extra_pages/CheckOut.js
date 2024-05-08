@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import CheckoutCart from '../../components/checkoutComponents/CheckoutCart';
 import CheckoutInfo from '../../components/checkoutComponents/CheckoutInfo';
 import PaymentMethod from '../../components/checkoutComponents/PaymentMethod';
@@ -6,6 +7,8 @@ import './CheckOut.css'
 import React, { useContext, useState } from 'react';
 
 function CheckOut(props) {
+    const navigate = useNavigate()
+    const { productCart } = useContext(DataContext)
     const [shipping, setShipping] = useState({
         name: 'Fast delivery',
         fee: 10
@@ -36,13 +39,14 @@ function CheckOut(props) {
         setForm({ ...form, [name]: value })
     }
 
-    const handleSubmit = (e) => {
+    const handleConfirmOrder = (e) => {
 
         if (Object.keys(errors).length !== 0) {
             e.preventDefault();
             alert('All field is required')
         } else {
-            alert('Thank you for contacting us!!!')
+            alert('Order successfully. Thank you!!!')
+            navigate('/')
         }
     }
 
@@ -90,13 +94,14 @@ function CheckOut(props) {
     }
 
 
+
     return (
         <>
             <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp'></img>
             <div className='checkout-container'>
                 <CheckoutInfo handleInput={handleInput} errors={errors}/>
-                <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods={shippingMethods} />
-                <CheckoutCart shipping={shipping} handleSubmit={handleSubmit}/>
+                <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods={shippingMethods} errors={errors} />
+                <CheckoutCart shipping={shipping} handleConfirmOrder={handleConfirmOrder}/>
             </div>
         </>
 

@@ -14,7 +14,6 @@ function CheckoutCart(props) {
             <div className='checkout-cart-container'>
                 <div className='checkout-cart-header'>
                     <h2>Cart: {productCart.length} product(s)</h2>
-
                 </div>
                 <div className='checkout-cart-body'>
                     <div className='checkout-cart-productsList'></div>
