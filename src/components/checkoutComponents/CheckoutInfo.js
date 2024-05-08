@@ -6,7 +6,7 @@ function CheckoutInfo(props) {
     const { handleInput, errors } = props
 
     return (
-        <div className='checkout-info col-sm-4'>
+        <div className='checkout-info'>
             <div className='checkout-info-container'>
                 <h2 className='checkout-info-title'>Order Information</h2>
                 <form>

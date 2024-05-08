@@ -1,8 +1,7 @@
 .checkout-info {
-    height: 100vh;
+    width: 33.3333%;
+    height: fit-content;
     padding: 20px;
-    background-color: hsl(var(--main-color-code) / 0.05);
-    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 
 .checkout-info-container{
@@ -11,6 +10,12 @@
     border-radius: 5px;
     margin-bottom: 10px;
     padding: 15px;
+}
+
+.checkout-info-container>h2{
+    font-size: var(--fs-700);
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 .checkout-info-input{
     border: 1px solid gray;
@@ -26,4 +31,32 @@
     min-height: 210px;
     padding: 10px 10px;
     border-radius: 5px;
+}
+
+
+/** Responsive ************************************************************************************ */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .checkout-info {
+        padding: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .checkout-info {
+        width: 100%;
+        min-height: fit-content;
+        order: 2;
+
+        padding: 30px 30px 0 30px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+   
 }
