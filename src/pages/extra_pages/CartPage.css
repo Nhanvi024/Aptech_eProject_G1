@@ -1,6 +1,6 @@
 .cartPage-container {
     width: 1200px;
-
+    margin: auto;
     padding: 30px 50px;
     background-color: hsl(var(--main-color-code) / 0.05);
     border: 1px solid hsl(var(--main-color-code) / 0.5);
@@ -58,7 +58,7 @@
 }
 
 /* Tablt td */
-.cartPage-td-delete {}
+/* .cartPage-td-delete {} */
 
 .cartPage-td-product {
     height: 100px;
@@ -69,9 +69,11 @@
     gap: 20px;
 }
 
-.cartPage-td-price,
+/* .cartPage-td-price,
 .cartPage-td-quantity,
-.cartPage-td-subtotal {}
+.cartPage-td-subtotal{
+
+} */
 
 /* *************************************************** */
 

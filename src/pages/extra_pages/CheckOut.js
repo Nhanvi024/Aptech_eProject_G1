@@ -5,7 +5,7 @@ import PaymentMethod from '../../components/checkoutComponents/PaymentMethod';
 import { DataContext } from '../../context/DataContext';
 import './CheckOut.css'
 import React, { useContext, useState } from 'react';
-
+import { motion } from 'framer-motion';
 function CheckOut(props) {
     const navigate = useNavigate()
     const { productCart } = useContext(DataContext)
@@ -96,14 +96,20 @@ function CheckOut(props) {
 
 
     return (
-        <>
+        <motion.div initial={{ opacity: 0 }}
+
+            animate={{ opacity: 1, transition: { duration: 1 } }}
+            exit={{ opacity: 0, transition: { duration: 0 } }}
+        >
+           
             <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp'></img>
             <div className='checkout-container'>
-                <CheckoutInfo handleInput={handleInput} errors={errors}/>
+                <CheckoutInfo handleInput={handleInput} errors={errors} />
                 <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods={shippingMethods} errors={errors} />
-                <CheckoutCart shipping={shipping} handleConfirmOrder={handleConfirmOrder}/>
+                <CheckoutCart shipping={shipping} handleConfirmOrder={handleConfirmOrder} />
             </div>
-        </>
+           
+         </motion.div>
 
     );
 }
