@@ -161,6 +161,10 @@ function HomePage(props) {
 
 	return (
 		<>
+		<motion.div initial={{opacity: 0}} 
+		
+		animate={{ opacity: 1, transition:{duration:1}}}
+		exit={{opacity: 0, transition:{duration:0} }}>
 			<div className="homePageContainer container-fluid p-0">
 				<section className="homepage-section-carousel container-fluid p-0 my-3 align-items-center">
 					<div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -221,7 +225,7 @@ function HomePage(props) {
 						</button>
 					</div>
 				</section>
-				<motion.div initial={{opacity: 0}} transition={{delay: 0.2,duration:0.5}} animate={{opacity: 1}} exit={{opacity: 0}}>
+				
 					<section className="homepage-section-notebook-container container-md p-0 my-3 align-items-center">
 						<div className="homepage-section-notebook row w-100 h-100 g-0 flex-row-reverse align-items-center">
 							<div className="homepage-section-notebook-right col-md-8">
@@ -597,8 +601,9 @@ function HomePage(props) {
 							</div>
 						</div>
 					</section>
-				</motion.div>
+			
 			</div>
+			</motion.div>
 		</>
 	);
 }

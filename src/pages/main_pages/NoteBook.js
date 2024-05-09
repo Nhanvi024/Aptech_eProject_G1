@@ -162,14 +162,12 @@ function NoteBook(props) {
                 ))
         )
     }
-
     return (
         <motion.div initial={{ opacity: 0 }}
-            transition={{ delay: 0.2 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+           
+            animate={{ opacity: 1, transition:{duration:1}}}
+            exit={{opacity: 0, transition:{duration:0} }}
         >
-            <div className='noteBookPageContainer container-fluid p-0'>
                 <img className='imageBanner'
                     src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
                 <div className='noteBookPageContainer container p-0'>
@@ -204,9 +202,8 @@ function NoteBook(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </motion.div>
-
     );
 }
 
