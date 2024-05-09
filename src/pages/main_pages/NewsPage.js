@@ -39,13 +39,14 @@ function NewsPage(props) {
     }
 
     return (
+
         <motion.div initial={{ opacity: 0 }}
             transition={{ delay: 0.2 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
             <div className='newspage-container'>
-                <img className='newspage-imageBanner'
+                <img className='imageBanner'
                     src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
                 <div className='newsPageContainer'>
 
@@ -58,6 +59,7 @@ function NewsPage(props) {
             </div>
 
         </motion.div>
+
     );
 }
 
