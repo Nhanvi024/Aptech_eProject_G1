@@ -40,7 +40,7 @@ function AnimationRoute() {
 				<Route path="/allproducts" element={<AllProductPage />} />
 				<Route path="/detail/:productId" element={<SingleProductDetail/>} />
 				<Route path="/download" element={<DownloadPage />} />
-				<Route path="/downloadproduct" element={<DownloadProduct />} />
+				<Route path="/downloadproduct" element={<DownloadProduct/>} />
 				<Route path="/downloadallproduct" element={<DownloadAll />} />
 				<Route path='/cart' element={<CartPage />} />
 				<Route path='/checkout' element={<CheckOut/>}/>
