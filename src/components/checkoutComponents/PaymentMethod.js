@@ -49,7 +49,7 @@ function PaymentMethod(props) {
                     <p className='bank-info-account'><span className='bank-info-title'>Account Number:</span><span className='bank-info-info'>0123456789</span></p>
                 </div>
                 <div id='paypal-info'>
-                    {/* <PaypalPayment shipping={shipping} errors={errors}/> */}
+                    <PaypalPayment shipping={shipping} errors={errors}/>
                 </div>
                 <div style={{ color: 'red' }}>Please ensure your order information is correct</div>
             </div>
