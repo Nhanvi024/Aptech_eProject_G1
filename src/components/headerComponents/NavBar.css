@@ -41,13 +41,13 @@
     text-decoration: none;
     color: var(--hover-text-color);
 
-    border-bottom: 3px solid var(--secondary-background-clr);
+    border-bottom: 4px solid var(--secondary-background-clr);
 }
 
 .navLink[active="true"] {
     text-decoration: none;
     color: var(--active-text-color);
-    border-bottom: 3px solid var(--secondary-background-clr);
+    border-bottom: 4px solid var(--secondary-background-clr);
 }
 
 /* ***************************************************************** */

@@ -1,197 +1,34 @@
 .checkout-container {
     width: 1200px;
-    height: 100vh;
     margin: auto;
-    display: flex;
-}
+    height: fit-content;
 
-.checkout-info {
-    height: 100vh;
+    display: flex;
+    justify-content: space-around;
 
     background-color: hsl(var(--main-color-code) / 0.05);
     border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 
-.checkout-payment {
-    height: 100vh;
-
-    background-color: hsl(var(--main-color-code) / 0.05);
-    border: 1px solid hsl(var(--main-color-code) / 0.5);
-}
-
-.checkout-cart {
-    height: 100vh;
-
-    background-color: rgb(247, 255, 251);
-    border: 1px solid rgb(191, 251, 234);
-}
+/** Responsive ************************************************************************************ */
 
 
-
-/* Checkout cart body *************************************** */
-.checkout-cart-body {
-    width: 100%;
-    max-height: 500px;
-    overflow: auto;
-  
-    width: 100%;
-    max-height: 390px;
-
-    margin-bottom: 20px;
-    overflow: auto;
-
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-
-
-    /* width */
-    &::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-        background: var(--secondary-background-clr);
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .checkout-container{
+        width: 100%;
     }
 }
 
-.checkout-cart-product {
-    width: 100%;
-    padding: 10px 0;
-
-    display: flex;
-    justify-content: space-between;
-
-    border-bottom: 1px solid rgb(201, 201, 201);
-}
-
-.checkout-cart-item-col1 {
-    position: relative;
-}
-
-.checkout-cart-item-imagebg {
-    margin: 0;
-    width: 70px;
-    height: 70px;
-
-    background-color: rgb(230, 238, 237);
-    display: flex;
-}
-
-.checkout-cart-item-image {
-    height: 50px;
-
-    position: relative;
-    margin: auto;
-}
-
-.checkout-cart-item-qty {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    align-content: center;
-    font-size: var(--fs-100);
-    background-color: var(--secondary-background-clr);
-    color: white;
-    border-radius: 10px;
-
-    position: absolute;
-    top: -10px;
-    right: -10px;
-
-}
-
-.checkout-cart-item-col2 {
-    width: 210px;
-    padding-left: 15px;
-    align-content: center;
-}
-
-/* .checkout-cart-item-name {} */
-
-.checkout-cart-item-col3 {
-    width: 60px;
-    text-align: center;
-    align-content: center;
-}
-
-/* .checkout-cart-subtotal {} */
-
-/** Cart footer ****************************** */
-.checkout-cart-footer{
-    padding-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-
-    border-top:1px solid grey ;
-}
-
-.checkout-cart-footerrow1,
-.checkout-cart-footerrow2,
-.checkout-cart-footerrow3{
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: var(--fs-400);
-    font-weight: 600;
-}
-
-.checkout-cart-footerrow3{
-    border-top:1px solid grey ;
-    font-size: var(--fs-600);  
-}
-.checkout-cart-totalPrice{
-    color: red;
-    font-weight: bold;
-}
-.checkout-cart-order{
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    color: var(--secondary-text-color);
-    font-size: var(--fs-400);
-    background-color: var(--secondary-background-clr);
-}
-
-input[type="radio"]{
-    margin: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    -moz-focusring:none;
-
-    /* create custom checkbox appearance */
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-
-    /* background-color only for content */
-    border: 0.5px solid rgb(186, 186, 186);
-    border-radius: 50%;
-
-    background-clip: content-box;
-    background-color: var(--primary-background-clr);
-
-    cursor: pointer;
-
-    &:hover {
-        background: 
-        linear-gradient(to bottom right,rgb(112, 255, 188),rgb(253, 253, 253) ) padding-box;
-        border: 1.5px solid rgb(186, 186, 186);
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .checkout-container{
+       flex-direction: column;
+       align-items: center;
     }
-    &:checked{
-        border: none;
-        background-clip: padding-box;
-        background-image: url('/public/assets/image/extra/icon-check.svg'), linear-gradient(to bottom right, rgb(4, 132, 42),rgb(253, 253, 253));
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+}
 
-    &:focus,
-    &:focus-visible{
-        outline: none;
-    }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+   
 }
