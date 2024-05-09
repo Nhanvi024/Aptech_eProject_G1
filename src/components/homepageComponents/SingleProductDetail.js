@@ -32,8 +32,8 @@ function SingleProductDetail(props) {
 			image3: '',
 		},
 	});
-	console.log("test item single:",itemSingle);
-	console.log(typeof(itemSingle));
+	console.log('test item single:', itemSingle);
+	console.log(typeof itemSingle);
 
 	useEffect(() => {
 		if (products.length !== 0) {
@@ -127,7 +127,9 @@ function SingleProductDetail(props) {
 						</h1>
 						<div className="row">
 							<div className="col">Category: {itemSingle.type}</div>
-							<div className="col">Stock: {itemSingle.stock > 0 ? itemSingle.stock + ' item(s) available' : 'Out of Stock'}</div>
+							<div className="col">
+								Stock: {itemSingle.stock > 0 ? itemSingle.stock + ' item(s) available' : 'Out of Stock'}
+							</div>
 						</div>
 						<div className="modal-priceTag row justify-items-center ms-3 my-4 pt-2">
 							<h2 className="modal-priceTag-text px-5 py-2">${itemSingle.price}</h2>

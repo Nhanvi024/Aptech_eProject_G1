@@ -65,7 +65,9 @@ function ProductCard(props) {
 				</Modal.Header>
 				<Modal.Body>
 					{isDataLoaded && (
-						<div className="container row p-0 mx-auto p-3">
+						<div
+							className="container row p-0 mx-auto p-3"
+							style={{fontSize: 'var(--fs-600)', fontFamily: 'var(--ff-primary-font)'}}>
 							<div className="col-12 p-0 col-lg-6">
 								<div id="modalCarousel" className="carousel slide" data-bs-ride="carousel">
 									<div className="carousel-inner carda">
@@ -117,6 +119,12 @@ function ProductCard(props) {
 											<img src={item.image.image3} className="thumbImg d-block w-100" alt="..." />
 										</button>
 									</div>
+									<button className="carousel-control-prev" data-bs-target="#modalCarousel" data-bs-slide="prev">
+										<span className="carousel-control-prev-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
+									</button>
+									<button className="carousel-control-next" data-bs-target="#modalCarousel" data-bs-slide="next">
+										<span className="carousel-control-next-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
+									</button>
 								</div>
 							</div>
 							<div
