@@ -1,5 +1,6 @@
 .checkout-container {
     width: 1200px;
+    margin: auto;
     height: fit-content;
 
     display: flex;
