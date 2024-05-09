@@ -1,7 +1,7 @@
 .checkout-container {
     width: 1200px;
     height: 100vh;
-
+    margin: auto;
     display: flex;
 }
 
@@ -108,7 +108,7 @@
     align-content: center;
 }
 
-.checkout-cart-item-name {}
+/* .checkout-cart-item-name {} */
 
 .checkout-cart-item-col3 {
     width: 60px;
@@ -116,7 +116,7 @@
     align-content: center;
 }
 
-.checkout-cart-subtotal {}
+/* .checkout-cart-subtotal {} */
 
 /** Cart footer ****************************** */
 .checkout-cart-footer{
