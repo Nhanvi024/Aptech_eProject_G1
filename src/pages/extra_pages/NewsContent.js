@@ -41,7 +41,7 @@ function NewsContent(props) {
             <motion.div initial={{ opacity: 0 }}
 
                 animate={{ opacity: 1, transition: { duration: 1 } }}
-                exit={{ opacity: 0, transition: { duration: 0.1 } }}
+                exit={{ opacity: 0, transition: { duration: 0 } }}
             >
                 <img className='imageBanner'
                     src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>

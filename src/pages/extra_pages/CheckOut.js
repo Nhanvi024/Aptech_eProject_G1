@@ -26,7 +26,7 @@ function CheckOut(props) {
             <motion.div initial={{ opacity: 0 }}
 
                 animate={{ opacity: 1, transition: { duration: 1 } }}
-                exit={{ opacity: 0, transition: { duration: 0.1 } }}
+                exit={{ opacity: 0, transition: { duration: 0} }}
             >
                 <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp'></img>
                 <div className='checkout-container'>
