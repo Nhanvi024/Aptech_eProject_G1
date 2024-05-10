@@ -1,10 +1,7 @@
 import React, {useContext, useEffect, useRef, useState} from 'react';
 import './DownloadProduct.css';
 import {useLocation, useNavigate} from 'react-router-dom';
-import {DataContext} from '../../context/DataContext';
 import {jsPDF} from 'jspdf';
-import html2canvas from 'html2canvas';
-import {Callbacks} from 'jquery';
 
 function DownloadProduct(props) {
 	// let {item} = props;
@@ -41,7 +38,7 @@ function DownloadProduct(props) {
 	}
 	useEffect(() => {
 		generatePDF();
-		navigate('/');
+		navigate(-1);
 	}, [item]);
 	return (
 		<div className="downloadproduct-container">
