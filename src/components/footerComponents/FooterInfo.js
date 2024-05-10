@@ -2,6 +2,9 @@ import './FooterInfo.css'
 import faceIcon from '../../assets/image/footer/icon/facebook.svg'
 import tweetterIcon from '../../assets/image/footer/icon/tweetter.svg'
 import instaIcon from '../../assets/image/footer/icon/instagram.svg'
+import logoCalendar from '../../assets/image/header/logo/logoImage.png'
+import RYANA9 from '../../assets/image/logo/RYANA9.png'
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../headerComponents/Logo';
@@ -10,8 +13,10 @@ function FooterInfo(props) {
     return (
         <div className='footerInfoContainer'>
             <div className='logoFooter'>
-                <Logo/>
-
+                <img className='logoFooter_logo' 
+                src={RYANA9}
+                // src={logoCalendar}
+                alt='logoFooter'/>
                 <div className='logoFooter_fanPage'>
                     <img className='logoFooter_fanPage-icon' src={faceIcon} alt='facebookIcon'/>
                     <img className='logoFooter_fanPage-icon' src={tweetterIcon} alt='tweetterIcon'/>
