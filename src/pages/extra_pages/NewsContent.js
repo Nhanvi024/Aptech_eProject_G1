@@ -46,10 +46,10 @@ function NewsContent(props) {
                 <img className='imageBanner'
                     src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
                 <div className='NewsContent-container'>
-                    <div className='NewsContent-content col-sm-8'>
+                    <div className='NewsContent-content col-lg-8 col-sm-12'>
                         {Parser(content)}
                     </div>
-                    <div className='NewsContent-sidebar col-sm-4'>
+                    <div className='NewsContent-sidebar col-lg-4'>
                         {newsSide.relatedNews.length && <RelatedNews relatedNews={newsSide.relatedNews} />}
                         {newsSide.iterestedNews.length && <InterestedNews iterestedNews={newsSide.iterestedNews} />}
                     </div>
