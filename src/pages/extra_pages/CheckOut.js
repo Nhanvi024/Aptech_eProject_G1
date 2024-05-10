@@ -108,7 +108,7 @@ function CheckOut(props) {
                             <p className='checkout-cart-totalText'>Total: </p>
                             <p className='checkout-cart-totalPrice'>{(totalPayment+shipping.fee).toFixed(2)}<sup> $</sup></p>
                         </div>
-                        <button className='checkout-cart-order'>Confirm Ordder</button>
+                        <button className='checkout-cart-order'>Confirm Order</button>
                     </div>
 
                 </div>
