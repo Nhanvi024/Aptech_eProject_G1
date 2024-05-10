@@ -5,14 +5,17 @@ import {motion} from 'framer-motion';
 function AboutPage(props) {
 	return (
 		<>
-			<motion.div className="" initial={{opacity: 0}}
-			 
-			 animate={{ opacity: 1, transition:{duration:1}}}
-			 exit={{opacity: 0, transition:{duration:0} }}>
-				<img
-					className="imageBanner"
-					src="https://i0.wp.com/currentpr.com/wp-content/uploads/2018/02/banner-meet-team.jpg?resize=1200%2C338&ssl=1"
-					alt="banner"></img>
+			<motion.div
+				className="test"
+				initial={{opacity: 0}}
+				animate={{opacity: 1, transition: {duration: 1}}}
+				exit={{opacity: 0, transition: {duration: 0}}}>
+				<div className="bannerContainer container-xl">
+					<img
+						className="imageBanner"
+						src="https://i0.wp.com/currentpr.com/wp-content/uploads/2018/02/banner-meet-team.jpg?resize=1200%2C338&ssl=1"
+						alt="banner"></img>
+				</div>
 				<div className="aboutPage-container container-xl text-center my-5">
 					<div className="aboutPage-company">
 						<h1 className="aboutPage-company-title">Ryana Calendar</h1>
