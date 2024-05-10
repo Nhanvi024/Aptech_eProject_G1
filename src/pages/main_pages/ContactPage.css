@@ -141,7 +141,7 @@
     }
     .contactPageContainer_row1 {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .contact_info{
         width: 100%;
@@ -155,4 +155,26 @@
         height: 450px;
         margin: auto;
      }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    .contactPageContainer {
+        width: 100%;
+    }
+    .contactPageContainer_row1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact_info{
+        width: 100%;
+    }
+    .contact_comment{
+        width: 100%;
+    }
+    .contactPageContainer_row2 {
+        display: block;
+        width: 90%;
+        height: 450px;
+        margin: auto;
+    }
 }

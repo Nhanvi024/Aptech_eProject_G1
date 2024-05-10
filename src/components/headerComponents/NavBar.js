@@ -51,36 +51,10 @@ function NavBar(props) {
                                 active={btnActive === item.name ? 'true' : 'false'}
                                 to={item.href} >{item.name}</NavLink>
 
-                            { item.name === 'CALENDAR'?
-                                <div className='listType'>
-                                    
-                                        {calendarTypeList.map((item,index)=>{
-                                            return(
-                                                <Link className='listType-item' key={index}>{item}</Link>
-                                            )
-                                        })}
-                                    
-                                </div> :
-                            item.name === 'NOTEBOOK'?
-                                <div className='listType'>
-                                     {notebookTypeList.map((item,index)=>{
-                                            return(
-                                                <Link className='listType-item' key={index}>{item}</Link>
-                                            )
-                                        })}
-                                </div>:
-                                <></>
-                            }
-
                         </li>
                     )
                 })}
             </ul >
-
-
-
-
-
         </div >
     );
 }

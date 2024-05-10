@@ -1,9 +1,13 @@
 .homepage-section-carousel {
 	position: relative;
 	z-index: 0;
-	min-height: 220px;
+	min-height: 300px;
 }
-
+.homepage-carousel-img {
+	/* max-height: 500px; */
+	min-height: 300px;
+	/* object-fit: contain; */
+}
 .homepage-section-notebook-container {
 	min-height: 540px;
 	/* max-height: 540px; */
@@ -69,7 +73,8 @@
 	background: var(--secondary-background-clr);
 	transform: skew(15deg);
 	width: 100%;
-	/* width: fit-content; */
+	border: none;
+	transition: all 0.3s;
 	.homepage-redirect-button-text {
 		transform: skew(-25deg);
 		text-transform: uppercase;
@@ -77,15 +82,34 @@
 		letter-spacing: 1px;
 	}
 }
+.homepage-redirect-button:hover {
+	background: var(--hover-button-color) !important;
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-	filter: invert(50%);
+	background-image: none;
+	align-content: center;
+	transform: scale(0.5, 1);
+}
+.carousel-control-next-icon:after {
+	content: '>';
+	font-size: 100px;
+	color: var(--secondary-background-clr);
+}
+
+.carousel-control-prev-icon:after {
+	content: '<';
+	font-size: 100px;
+	color: var(--secondary-background-clr);
 }
 .homepage-list-nextprevBtn {
 	color: white;
 	background: var(--secondary-background-clr);
 	font-size: var(--fs-500);
-	border: 1px solid var(--secondary-background-clr);
+	border: 1px solid var(--secondary-background-clr) 0;
+}
+.homepage-list-nextprevBtn:hover {
+	background: var(--hover-button-color) !important;
 }
 .nav-item.active {
 	.nav-link {
@@ -99,28 +123,27 @@
 	}
 }
 .nav-link:hover {
-	background: green !important;
+	background: var(--hover-button-color) !important;
 	color: white !important;
 }
 
 .swiper {
-  height: 100%;
+	height: 100%;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
+	text-align: center;
+	font-size: 18px;
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
-

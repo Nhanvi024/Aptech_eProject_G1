@@ -1,8 +1,19 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect, useRef, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
 import {DataContext} from '../../context/DataContext';
 import ProductCard from './ProductCard';
 import './SingleProductDetail.css';
+// Import Swiper React components
+import {Swiper, SwiperSlide} from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+import 'swiper/css/bundle';
+
+// import required modules
+import {Grid, Navigation} from 'swiper/modules';
 
 function SingleProductDetail(props) {
 	const {products, handleAddProductCart, isDataLoaded} = useContext(DataContext);
@@ -11,7 +22,7 @@ function SingleProductDetail(props) {
 	const {productId} = useParams();
 	console.log(productId);
 	const [relateList, setRelateList] = useState([]);
-	const [item, setItem] = useState({
+	const [itemSingle, setItemSingle] = useState({
 		id: '',
 		name: '',
 		type: '',
@@ -32,17 +43,20 @@ function SingleProductDetail(props) {
 			image3: '',
 		},
 	});
+	console.log('test item single:', itemSingle);
+	console.log(typeof itemSingle);
+	const swiperRefNotebook = useRef();
 	useEffect(() => {
 		if (products.length !== 0) {
 			products.noteBook.map((itema) => {
 				if (itema.id === productId) {
-					setItem(itema);
+					setItemSingle(itema);
 					setRelateList(products.noteBook.filter((item) => item.type == itema.type));
 				}
 			});
 			products.calendar.map((itema) => {
 				if (itema.id === productId) {
-					setItem(itema);
+					setItemSingle(itema);
 					setRelateList(products.calendar.filter((item) => item.type == itema.type));
 				}
 			});
@@ -63,16 +77,16 @@ function SingleProductDetail(props) {
 						<div id="modalCarouselDetail" className="carousel slide" data-bs-ride="carousel">
 							<div className="carousel-inner carda">
 								<div className="carousel-item active">
-									<img src={item.image.mainImage} className="largeImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.mainImage} className="largeImg d-block w-100" alt="..." />
 								</div>
 								<div className="carousel-item">
-									<img src={item.image.image1} className="largeImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.image1} className="largeImg d-block w-100" alt="..." />
 								</div>
 								<div className="carousel-item">
-									<img src={item.image.image2} className="largeImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.image2} className="largeImg d-block w-100" alt="..." />
 								</div>
 								<div className="carousel-item">
-									<img src={item.image.image3} className="largeImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.image3} className="largeImg d-block w-100" alt="..." />
 								</div>
 							</div>
 							<div className="carousel-indicators carda mt-5">
@@ -83,7 +97,7 @@ function SingleProductDetail(props) {
 									className="thumbnail active"
 									aria-current="true"
 									aria-label="Slide 1">
-									<img src={item.image.mainImage} className="thumbImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.mainImage} className="thumbImg d-block w-100" alt="..." />
 								</button>
 								<button
 									className="thumbnail"
@@ -91,7 +105,7 @@ function SingleProductDetail(props) {
 									data-bs-target="#modalCarouselDetail"
 									data-bs-slide-to="1"
 									aria-label="Slide 2">
-									<img src={item.image.image1} className="thumbImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.image1} className="thumbImg d-block w-100" alt="..." />
 								</button>
 								<button
 									className="thumbnail"
@@ -99,7 +113,7 @@ function SingleProductDetail(props) {
 									data-bs-target="#modalCarouselDetail"
 									data-bs-slide-to="2"
 									aria-label="Slide 3">
-									<img src={item.image.image2} className="thumbImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.image2} className="thumbImg d-block w-100" alt="..." />
 								</button>
 								<button
 									className="thumbnail"
@@ -107,47 +121,53 @@ function SingleProductDetail(props) {
 									data-bs-target="#modalCarouselDetail"
 									data-bs-slide-to="3"
 									aria-label="Slide 4">
-									<img src={item.image.image3} className="thumbImg d-block w-100" alt="..." />
+									<img src={itemSingle.image.image3} className="thumbImg d-block w-100" alt="..." />
 								</button>
 							</div>
-								<button className="carousel-control-prev" data-bs-target="#modalCarouselDetail" data-bs-slide="prev">
-									<span className="carousel-control-prev-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
-								</button>
-								<button className="carousel-control-next" data-bs-target="#modalCarouselDetail" data-bs-slide="next">
-									<span className="carousel-control-next-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
-								</button>
-							
-							
+							<button className="carousel-control-prev" data-bs-target="#modalCarouselDetail" data-bs-slide="prev">
+								<span className="carousel-control-prev-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
+							</button>
+							<button className="carousel-control-next" data-bs-target="#modalCarouselDetail" data-bs-slide="next">
+								<span className="carousel-control-next-icon h-75 w-100 align-self-start" aria-hidden="true"></span>
+							</button>
 						</div>
 					</div>
 					<div className="col-12 p-0 col-lg-6 p-5" style={{fontSize: 'var(--fs-500)'}}>
 						<h1 className="text-danger" style={{fontSize: 'var(--fs-900)'}}>
-							{item.name}
+							{itemSingle.name}
 						</h1>
 						<div className="row">
-							<div className="col">Category: {item.type}</div>
-							<div className="col">Stock: {item.stock > 0 ? item.stock + ' item(s) available' : 'Out of Stock'}</div>
+							<div className="col">Category: {itemSingle.type}</div>
+							<div className="col">
+								Stock: {itemSingle.stock > 0 ? itemSingle.stock + ' item(s) available' : 'Out of Stock'}
+							</div>
 						</div>
 						<div className="modal-priceTag row justify-items-center ms-3 my-4 pt-2">
-							<h2 className="modal-priceTag-text px-5 py-2">${item.price}</h2>
+							<h2 className="modal-priceTag-text px-5 py-2">${itemSingle.price}</h2>
 						</div>
 						<div className="">
 							<button
 								className="btn btn-lg mx-1 my-1 px-5 btn-primary fs-3"
 								onClick={() => {
-									handleAddProductCart(item);
+									handleAddProductCart(itemSingle);
 								}}>
 								Add to cart
 							</button>
 							<button
 								className="btn btn-lg mx-1 my-1 px-5 btn-warning fs-3"
 								onClick={() => {
-									handleAddProductCart(item);
+									handleAddProductCart(itemSingle);
 									navigate('/cart');
 								}}>
 								Buy now
 							</button>
-							<button className="btn btn-lg mx-1 my-1 px-5 btn-info fs-3" onClick={() => navigate('/')}>
+							<button
+								className="btn btn-lg mx-1 my-1 px-5 btn-danger fs-3"
+								onClick={() => navigate('/downloadproduct', {state: itemSingle})}>
+								Download PDF
+							</button>
+							<br />
+							<button className="btn btn-lg mx-1 my-1 px-4 btn-info fs-3" onClick={() => navigate('/')}>
 								Back to homepage
 							</button>
 						</div>
@@ -156,38 +176,92 @@ function SingleProductDetail(props) {
 							<br />
 							<div className="fw-bold fs-2 text-center">Description</div>
 							<hr></hr>
-							<div>{item.desc}</div>
+							<div>{itemSingle.desc}</div>
 							<br />
-							<div>{item.descDetail}</div>
+							<div>{itemSingle.descDetail}</div>
 							<br />
 						</div>
 						<div>
 							<div className="fw-bold fs-2 text-center">Specification</div>
 							<hr></hr>
-							<div>Dimensions: {item.param.size}</div>
-							<div>Weight: {item.param.weight}</div>
-							<div>Pages: {item.param.pages}</div>
-							<div>Material: {item.param.material}</div>
+							<div>Dimensions: {itemSingle.param.size}</div>
+							<div>Weight: {itemSingle.param.weight}</div>
+							<div>Pages: {itemSingle.param.pages}</div>
+							<div>Material: {itemSingle.param.material}</div>
 							<br />
 						</div>
 					</div>
 				</div>
-				<div className="modal-priceTag row m-0 justify-items-center ms-3 my-4 mt-0">
-					<h2 className="modal-priceTag-text px-5 py-2">Related products</h2>
+				<div className="row m-0 ms-3 my-4 mt-0">
+					<div className="row">
+						<div className="col-8">
+							<div className="modal-priceTag text-center">
+								<h2 className="modal-priceTag-text m-0 pt-3 pb-2 px-4">Related products</h2>
+							</div>
+						</div>
+						<div className="col-4 text-end">
+							<button
+								className="btn btn-success pt-4 pb-0 me-1 homepage-list-nextprevBtn"
+								onClick={() => swiperRefNotebook.current?.slidePrev()}>
+								<p className="homepage-nextPrevButton">&#8249;</p>
+							</button>
+							<button
+								className="btn btn-success pt-4 pb-0 ms-1 homepage-list-nextprevBtn"
+								onClick={() => swiperRefNotebook.current?.slideNext()}>
+								<p className="homepage-nextPrevButton">&#8250;</p>
+							</button>
+						</div>
+					</div>
 				</div>
 				<hr></hr>
 				<div className="container row mx-auto p-3">
-					{relateList.length !== 0 &&
+					{/* {relateList.length !== 0 &&
 						relateList.map((item, index) => {
-							// if (index >= section1Page * 2 && index < section1Page * 2 + itemPerPage) {
-							// }
 							return <ProductCard key={index} item={item} />;
-						})}
+						})} */}
+					<Swiper
+						breakpoints={{
+							1: {
+								slidesPerView: 1,
+							},
+							290: {
+								slidesPerView: 2,
+							},
+							490: {
+								slidesPerView: 3,
+							},
+							768: {
+								slidesPerView: 4,
+							},
+							992: {
+								slidesPerView: 5,
+							},
+							1200: {
+								slidesPerView: 6,
+							},
+							1400: {
+								slidesPerView: 7,
+							},
+						}}
+						// spaceBetween={30}
+						rewind={true}
+						modules={[Navigation]}
+						onBeforeInit={(swiper) => {
+							swiperRefNotebook.current = swiper;
+						}}
+						className="mySwiper">
+						{relateList.length !== 0 &&
+							relateList.map((item, index) => {
+								return (
+									<SwiperSlide key={index}>
+										<ProductCard item={item} />
+									</SwiperSlide>
+								);
+							})}
+					</Swiper>
 				</div>
 			</div>
 		);
-		// } else {
-		// 	console.log('chua co data roi');
 	}
 }
 
