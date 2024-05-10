@@ -4,7 +4,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+
+First, git clone: https://github.com/Nhanvi024/Aptech_eProject_G1.git
+
+In the project directory:
+
+First, you must run:
+
+### `npm install`
+
+To install all nescessary libraries.
+
+Then you can run:
 
 ### `npm start`
 
