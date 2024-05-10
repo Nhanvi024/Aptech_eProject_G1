@@ -1,27 +1,29 @@
-table,
-th,
-td {
-	border: 0.1px solid black;
-	/* border: none; */
-	border-collapse: collapse;
-	/* background: lightblue; */
-	font-size: 22px;
-}
-table {
-	table-layout: auto;
-	width: 100%;
-}
-tr {
-	height: 40px;
-}
-td {
-	width: fit-content;
-}
-#download-content,
-#download-content1 {
-	width: 1414px;
-	/* height: 1000px; */
-}
-.page-break {
-  page-break-inside: avoid;
+.downloadAll {
+	table,
+	th,
+	td {
+		border: 0.1px solid black;
+		/* border: none; */
+		border-collapse: collapse;
+		/* background: lightblue; */
+		font-size: 22px;
+	}
+	table {
+		table-layout: auto;
+		width: 100%;
+	}
+	tr {
+		height: 40px;
+	}
+	td {
+		width: fit-content;
+	}
+	#download-content,
+	#download-content1 {
+		width: 1414px;
+		/* height: 1000px; */
+	}
+	.page-break {
+		page-break-inside: avoid;
+	}
 }
