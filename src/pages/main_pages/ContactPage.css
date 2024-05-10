@@ -4,6 +4,8 @@
     position: relative;
     padding: auto;
     margin: auto;
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 
 .contactPageContainer_row1 {

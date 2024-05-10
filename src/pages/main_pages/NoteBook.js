@@ -10,7 +10,8 @@ import { motion } from 'framer-motion';
 
 function NoteBook(props) {
     const { products, setProducts } = useContext(DataContext);
-    const { noteBook } = products
+    const { noteBook } = products;
+    
 
     const [showList, setShowList] = useState([])
 
@@ -168,12 +169,13 @@ function NoteBook(props) {
             animate={{ opacity: 1, transition:{duration:1}}}
             exit={{opacity: 0, transition:{duration:0} }}
         >
-                <img className='imageBanner'
+                <img className='imageBanner d-block w-100'
                     src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
-                <div className='noteBookPageContainer container p-0'>
                     {/* Sidebar area */}
                     <div className='allProducts-container'>
-                        <div className='allProduct-sidebar col-sm-3'>
+                
+
+                        <div className='allProduct-sidebar col-xl-3 col-md-5 col-sm-6  '>
                             <TypeFilterAll
                                 typeFilter={typeFilter}
                                 setTypeFilter={setTypeFilter}
@@ -183,9 +185,9 @@ function NoteBook(props) {
                                 setPriceFilter={setPriceFilter} />
                         </div>
 
-                        <div className='allProduct-productlist col-sm-9'>
+                        <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6 '>
                             <div className='allProduct-header'>
-                                <p className='allProduct-header-title'>All Product</p>
+                                <p className='allProduct-header-title'>Notebook</p>
                                 <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
                             </div>
                             <div className='allProduct-product'>
@@ -201,7 +203,7 @@ function NoteBook(props) {
                             </div>
                         </div>
                     </div>
-                </div>
+               
             
         </motion.div>
     );
