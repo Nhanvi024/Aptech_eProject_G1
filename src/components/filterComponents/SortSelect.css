@@ -12,11 +12,14 @@
     font-size: var(--fs-500);
 
     border-radius: 5px;
+    background-color: hsl(var(--main-color-code));
+    color: white;
 }
 
 
 .sortSelect-label {
     margin: 0;
+    
 }
 
 .sortSelect-select {
@@ -56,6 +59,7 @@
     border: 1px solid rgb(227, 227, 227);
 
     z-index: 1;
+    color: black;
 }
 
 .sortSelect-select:hover+.sortSelect-list,
