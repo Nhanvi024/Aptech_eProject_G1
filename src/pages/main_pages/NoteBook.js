@@ -188,7 +188,7 @@ function NoteBook(props) {
 
                         <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6 '>
                             <div className='allProduct-header'>
-                                <p className='allProduct-header-title'>All Product</p>
+                                <p className='allProduct-header-title'>Notebook</p>
                                 <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
                             </div>
                             <div className='allProduct-product'>

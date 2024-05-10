@@ -203,7 +203,7 @@ return (
             </div>
             <div className='allProduct-productlist col-sm-9'>
                 <div className='allProduct-header'>
-                    <p className='allProduct-header-title'>All Product</p>
+                    <p className='allProduct-header-title'>All Products</p>
                     <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
                 </div>
                 <div className='allProduct-product'>

@@ -31,7 +31,7 @@ function SearchPage(props) {
             <img className='imageBanner'
                 src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg'></img>
             <div className='searchPage-container'>
-                <h1>Search Page</h1>
+                <h1 className='text-center'>Search Page</h1>
                 {!searchList.length ? <h2 className='searchPage-result'>No results found</h2> : <h2 className='searchPage-result'>{searchList.length} matching search results</h2>}
                 <div className='searchPage-searchlist'>
                     {searchList.map((item, index) => {
