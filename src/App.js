@@ -4,24 +4,22 @@ import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import AnimationRoute from './components/AnimationComponents/AnimationRoute';
-import { PayPalScriptProvider } from '@paypal/react-paypal-js';
+import {PayPalScriptProvider} from '@paypal/react-paypal-js';
 
 function App(props) {
 	const initialOptions = {
-        clientId: "AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr",
-        currency: "USD",
-        intent: "capture",
-        components: 'buttons'
-    };
+		clientId: 'AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr',
+		currency: 'USD',
+		intent: 'capture',
+		components: 'buttons',
+	};
 	return (
 		<div className="calendarWebStore">
-                <PayPalScriptProvider options={initialOptions}>
+			<PayPalScriptProvider options={initialOptions}>
 				<Header />
-			<AnimationRoute />
-			<Footer />
-				</PayPalScriptProvider>
-
-		
+				<AnimationRoute />
+				<Footer />
+			</PayPalScriptProvider>
 		</div>
 	);
 }

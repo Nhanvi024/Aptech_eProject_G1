@@ -161,71 +161,71 @@ function HomePage(props) {
 
 	return (
 		<>
-		<motion.div initial={{opacity: 0}} 
-		
-		animate={{ opacity: 1, transition:{duration:1}}}
-		exit={{opacity: 0, transition:{duration:0} }}>
-			<div className="homePageContainer container-fluid p-0">
-				<section className="homepage-section-carousel container-fluid p-0 my-3 align-items-center">
-					<div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
-						{/* <!-- Indicators --> */}
-						<div className="carousel-indicators">
-							<li data-bs-target="#myCarousel" data-bs-slide-to="0" className="active"></li>
-							<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-							<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-							<li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
-							<li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+			<motion.div
+				initial={{opacity: 0}}
+				animate={{opacity: 1, transition: {duration: 1}}}
+				exit={{opacity: 0, transition: {duration: 0}}}>
+				<div className="homePageContainer container-fluid p-0">
+					<section className="homepage-section-carousel container-fluid p-0 my-3 align-items-center">
+						<div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
+							{/* <!-- Indicators --> */}
+							<div className="carousel-indicators">
+								<li data-bs-target="#myCarousel" data-bs-slide-to="0" className="active"></li>
+								<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+								<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+								<li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+								<li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+							</div>
+							{/* <!-- Wrapper for slides --> */}
+							<div className="carousel-inner">
+								<div className="carousel-item active" data-bs-interval="3000">
+									<img
+										src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_1.jpg?1711094550864"
+										alt="Ribbon Collection"
+										className="homepage-carousel-img d-block w-100"
+										onClick={() => Navigate('/news')}
+									/>
+								</div>
+								<div className="carousel-item" data-bs-interval="3000">
+									<img
+										src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_2.jpg?1711094550864"
+										alt="Notebook 1"
+										className="homepage-carousel-img d-block w-100"
+										onClick={() => Navigate('/calendar')}
+									/>
+								</div>
+								<div className="carousel-item" data-bs-interval="3000">
+									<img
+										src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_3.jpg?1711094550864"
+										alt="Notebook 2"
+										className="homepage-carousel-img d-block w-100"
+									/>
+								</div>
+								<div className="carousel-item" data-bs-interval="3000">
+									<img
+										src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_4.jpg?1711094550864"
+										alt="Notebook 3"
+										className="homepage-carousel-img d-block w-100"
+									/>
+								</div>
+								<div className="carousel-item" data-bs-interval="3000">
+									<img
+										src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_5.jpg?1711094550864"
+										alt="Notebook 4"
+										className="homepage-carousel-img d-block w-100"
+									/>
+								</div>
+							</div>
+							{/* <!-- Left and right controls --> */}
+							<button className="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
+								<span className="carousel-control-prev-icon h-100 w-50" aria-hidden="true"></span>
+							</button>
+							<button className="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
+								<span className="carousel-control-next-icon h-100 w-50" aria-hidden="true"></span>
+							</button>
 						</div>
-						{/* <!-- Wrapper for slides --> */}
-						<div className="carousel-inner">
-							<div className="carousel-item active" data-bs-interval="3000">
-								<img
-									src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_1.jpg?1711094550864"
-									alt="Ribbon Collection"
-									className="homepage-carousel-img d-block w-100"
-									onClick={() => Navigate('/news')}
-								/>
-							</div>
-							<div className="carousel-item" data-bs-interval="3000">
-								<img
-									src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_2.jpg?1711094550864"
-									alt="Notebook 1"
-									className="homepage-carousel-img d-block w-100"
-									onClick={() => Navigate('/calendar')}
-								/>
-							</div>
-							<div className="carousel-item" data-bs-interval="3000">
-								<img
-									src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_3.jpg?1711094550864"
-									alt="Notebook 2"
-									className="homepage-carousel-img d-block w-100"
-								/>
-							</div>
-							<div className="carousel-item" data-bs-interval="3000">
-								<img
-									src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_4.jpg?1711094550864"
-									alt="Notebook 3"
-									className="homepage-carousel-img d-block w-100"
-								/>
-							</div>
-							<div className="carousel-item" data-bs-interval="3000">
-								<img
-									src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/slider_5.jpg?1711094550864"
-									alt="Notebook 4"
-									className="homepage-carousel-img d-block w-100"
-								/>
-							</div>
-						</div>
-						{/* <!-- Left and right controls --> */}
-						<button className="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
-							<span className="carousel-control-prev-icon h-100 w-50" aria-hidden="true"></span>
-						</button>
-						<button className="carousel-control-next" data-bs-target="#myCarousel" data-bs-slide="next">
-							<span className="carousel-control-next-icon h-100 w-50" aria-hidden="true"></span>
-						</button>
-					</div>
-				</section>
-				
+					</section>
+
 					<section className="homepage-section-notebook-container container-md p-0 my-3 align-items-center">
 						<div className="homepage-section-notebook row w-100 h-100 g-0 flex-row-reverse align-items-center">
 							<div className="homepage-section-notebook-right col-md-8">
@@ -267,7 +267,7 @@ function HomePage(props) {
 												</ul>
 											</div>
 										</div>
-										<div className="col-6 col-sm-6text-end align-content-center text-end">
+										<div className="col-6 col-sm-6 text-end align-content-center text-end">
 											<span>
 												<button
 													className="btn btn-success pt-4 pb-0 me-1 homepage-list-nextprevBtn"
@@ -601,8 +601,7 @@ function HomePage(props) {
 							</div>
 						</div>
 					</section>
-			
-			</div>
+				</div>
 			</motion.div>
 		</>
 	);

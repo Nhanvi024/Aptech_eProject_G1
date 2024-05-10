@@ -1,8 +1,19 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect, useRef, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
 import {DataContext} from '../../context/DataContext';
 import ProductCard from './ProductCard';
 import './SingleProductDetail.css';
+// Import Swiper React components
+import {Swiper, SwiperSlide} from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/grid';
+import 'swiper/css/pagination';
+import 'swiper/css/bundle';
+
+// import required modules
+import {Grid, Navigation} from 'swiper/modules';
 
 function SingleProductDetail(props) {
 	const {products, handleAddProductCart, isDataLoaded} = useContext(DataContext);
@@ -32,9 +43,9 @@ function SingleProductDetail(props) {
 			image3: '',
 		},
 	});
-	console.log("test item single:",itemSingle);
-	console.log(typeof(itemSingle));
-
+	console.log('test item single:', itemSingle);
+	console.log(typeof itemSingle);
+	const swiperRefNotebook = useRef();
 	useEffect(() => {
 		if (products.length !== 0) {
 			products.noteBook.map((itema) => {
@@ -127,7 +138,9 @@ function SingleProductDetail(props) {
 						</h1>
 						<div className="row">
 							<div className="col">Category: {itemSingle.type}</div>
-							<div className="col">Stock: {itemSingle.stock > 0 ? itemSingle.stock + ' item(s) available' : 'Out of Stock'}</div>
+							<div className="col">
+								Stock: {itemSingle.stock > 0 ? itemSingle.stock + ' item(s) available' : 'Out of Stock'}
+							</div>
 						</div>
 						<div className="modal-priceTag row justify-items-center ms-3 my-4 pt-2">
 							<h2 className="modal-priceTag-text px-5 py-2">${itemSingle.price}</h2>
@@ -153,7 +166,8 @@ function SingleProductDetail(props) {
 								onClick={() => navigate('/downloadproduct', {state: itemSingle})}>
 								Download PDF
 							</button>
-							<button className="btn btn-lg mx-1 my-1 px-5 btn-info fs-3" onClick={() => navigate('/')}>
+							<br />
+							<button className="btn btn-lg mx-1 my-1 px-4 btn-info fs-3" onClick={() => navigate('/')}>
 								Back to homepage
 							</button>
 						</div>
@@ -178,22 +192,76 @@ function SingleProductDetail(props) {
 						</div>
 					</div>
 				</div>
-				<div className="modal-priceTag row m-0 justify-items-center ms-3 my-4 mt-0">
-					<h2 className="modal-priceTag-text px-5 py-2">Related products</h2>
+				<div className="row m-0 ms-3 my-4 mt-0">
+					<div className="row">
+						<div className="col-8">
+							<div className="modal-priceTag text-center">
+								<h2 className="modal-priceTag-text m-0 pt-3 pb-2 px-4">Related products</h2>
+							</div>
+						</div>
+						<div className="col-4 text-end">
+							<button
+								className="btn btn-success pt-4 pb-0 me-1 homepage-list-nextprevBtn"
+								onClick={() => swiperRefNotebook.current?.slidePrev()}>
+								<p className="homepage-nextPrevButton">&#8249;</p>
+							</button>
+							<button
+								className="btn btn-success pt-4 pb-0 ms-1 homepage-list-nextprevBtn"
+								onClick={() => swiperRefNotebook.current?.slideNext()}>
+								<p className="homepage-nextPrevButton">&#8250;</p>
+							</button>
+						</div>
+					</div>
 				</div>
 				<hr></hr>
 				<div className="container row mx-auto p-3">
-					{relateList.length !== 0 &&
+					{/* {relateList.length !== 0 &&
 						relateList.map((item, index) => {
-							// if (index >= section1Page * 2 && index < section1Page * 2 + itemPerPage) {
-							// }
 							return <ProductCard key={index} item={item} />;
-						})}
+						})} */}
+					<Swiper
+						breakpoints={{
+							1: {
+								slidesPerView: 1,
+							},
+							290: {
+								slidesPerView: 2,
+							},
+							490: {
+								slidesPerView: 3,
+							},
+							768: {
+								slidesPerView: 4,
+							},
+							992: {
+								slidesPerView: 5,
+							},
+							1200: {
+								slidesPerView: 6,
+							},
+							1400: {
+								slidesPerView: 7,
+							},
+						}}
+						// spaceBetween={30}
+						rewind={true}
+						modules={[Navigation]}
+						onBeforeInit={(swiper) => {
+							swiperRefNotebook.current = swiper;
+						}}
+						className="mySwiper">
+						{relateList.length !== 0 &&
+							relateList.map((item, index) => {
+								return (
+									<SwiperSlide key={index}>
+										<ProductCard item={item} />
+									</SwiperSlide>
+								);
+							})}
+					</Swiper>
 				</div>
 			</div>
 		);
-		// } else {
-		// 	console.log('chua co data roi');
 	}
 }
 
