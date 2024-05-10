@@ -1,0 +1,98 @@
+.checkout-payment {
+    width: 33.3333%;
+    height: fit-content;
+    padding: 20px;
+
+}
+.checkout-delivery>h2,
+.checkout-paymentMethod>h2{
+    font-size: var(--fs-700);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.checkout-delivery,
+.checkout-paymentMethod{
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.checkout-payment-option,
+.checkout-delivery-option{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.checkout-paymentImage{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.payment-info{
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0 10px 0;
+    padding: 15px;
+    align-content: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    background-color: hsl(var(--main-color-code) / 0.05);
+    border: 1px solid hsl(var(--main-color-code) / 0.5);
+}
+
+
+#bank-info,
+#paypal-info{
+    display: none;
+}
+
+.bank-info-name,
+.bank-info-bank,
+.bank-info-account{
+    display: flex;
+}
+.bank-info-title{
+    width: 50%;
+    color: rgb(0, 46, 250);
+}
+.bank-info-info{
+
+}
+
+
+/** Responsive ************************************************************************************ */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .checkout-payment {
+        padding: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    .checkout-payment {
+        width: 100%;
+        min-height: fit-content;
+        order: 3;
+
+        padding: 30px 30px 0 30px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+   
+}

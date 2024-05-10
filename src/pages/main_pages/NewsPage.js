@@ -12,9 +12,9 @@ import { motion } from 'framer-motion';
 function NewsPage(props) {
     const navigation = useNavigate()
     const [news, setNews] = useState([])
-    const [ statusNews, setStatusNews ] = useState(
+    const [statusNews, setStatusNews] = useState(
         {
-            newsUpdate: []  ,
+            newsUpdate: [],
             newsReadLot: [],
             hotNews: [],
             newsSeeMore: [],
@@ -26,38 +26,40 @@ function NewsPage(props) {
             .then(data => setNews(data))
     }, [])
 
-    useEffect(()=>{
-        statusNews.newsUpdate = news && news.filter(item=>item.status.newsUpdate === true)
-        statusNews.newsReadLot = news && news.filter(item=>item.status.newsReadLot === true)
-        statusNews.hotNews = news && news.filter(item=>item.status.hotNews === true)
-        statusNews.newsSeeMore = news && news.filter(item=>item.status.readMore === true)
-        setStatusNews({...statusNews})
-    },[news])
+    useEffect(() => {
+        statusNews.newsUpdate = news && news.filter(item => item.status.newsUpdate === true)
+        statusNews.newsReadLot = news && news.filter(item => item.status.newsReadLot === true)
+        statusNews.hotNews = news && news.filter(item => item.status.hotNews === true)
+        statusNews.newsSeeMore = news && news.filter(item => item.status.readMore === true)
+        setStatusNews({ ...statusNews })
+    }, [news])
 
     const handleSelectNews = (e) => {
         navigation(`/news/${e.currentTarget.name}`)
     }
 
     return (
-        <>
-          <motion.div initial={{ opacity: 0 }}
-                transition={{ delay: 0.2 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-            >
 
-            <img className='imageBanner'
-                src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
-            <div className='newsPageContainer'>
-                
-            {statusNews.newsUpdate.length && <NewsUpdate newsUpdate={statusNews.newsUpdate} handleSelectNews={handleSelectNews} />}
-            {statusNews.newsReadLot.length && <NewsReadLot newsReadLot={statusNews.newsReadLot} handleSelectNews={handleSelectNews} titleName="NEWS READ A LOT"/>}
-            {statusNews.hotNews.length && <HotNews hotNews={statusNews.hotNews} handleSelectNews={handleSelectNews}/>}
-            {statusNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={statusNews.newsSeeMore} handleSelectNews={handleSelectNews}/>}
-               
+        <motion.div initial={{ opacity: 0 }}
+           
+            animate={{ opacity: 1, transition:{duration:1}}}
+            exit={{opacity: 0, transition:{duration:0} }}
+        >
+            <div className='newspage-container'>
+                <img className='imageBanner'
+                    src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
+                <div className='newsPageContainer'>
+
+                    {statusNews.newsUpdate.length && <NewsUpdate newsUpdate={statusNews.newsUpdate} handleSelectNews={handleSelectNews} />}
+                    {statusNews.newsReadLot.length && <NewsReadLot newsReadLot={statusNews.newsReadLot} handleSelectNews={handleSelectNews} titleName="NEWS READ A LOT" />}
+                    {statusNews.hotNews.length && <HotNews hotNews={statusNews.hotNews} handleSelectNews={handleSelectNews} />}
+                    {statusNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={statusNews.newsSeeMore} handleSelectNews={handleSelectNews} />}
+
+                </div>
             </div>
-            </motion.div>
-        </>
+
+        </motion.div>
+
     );
 }
 

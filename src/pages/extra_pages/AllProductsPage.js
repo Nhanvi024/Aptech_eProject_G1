@@ -3,7 +3,8 @@ import SortSelect from '../../components/filterComponents/SortSelect';
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 import ProductCard from '../../components/homepageComponents/ProductCard';
 import { DataContext } from '../../context/DataContext';
-import './AllProductsPage.css'
+import {motion} from 'framer-motion';
+import './AllProductsPage.css';
 
 import React, { useContext, useEffect, useState } from 'react';
 
@@ -160,9 +161,9 @@ function AllProductsPage(props) {
             // Filter type
             ((typeFilter.noteBookFilter.some(item => item === product.type) ||
                 (!typeFilter.noteBookFilter.length && !typeFilter.calendarFilter.length && typeList.notebookTypeList.some(item => item === product.type))) ||
-            (typeFilter.calendarFilter.some(item => item === product.type) ||
-                (!typeFilter.calendarFilter.length && !typeFilter.noteBookFilter.length && typeList.calendarTypeList.some(item => item === product.type))))
-        
+                (typeFilter.calendarFilter.some(item => item === product.type) ||
+                    (!typeFilter.calendarFilter.length && !typeFilter.noteBookFilter.length && typeList.calendarTypeList.some(item => item === product.type))))
+
             &&
 
             // Filter price
@@ -183,46 +184,52 @@ function AllProductsPage(props) {
                     priceFilter.price_range5.check
                 ))
         )
-}
+    }
 
-return (
-    <>
-        <img className='imageBanner'
-            src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
-        <div className='allProducts-container'>
-            <div className='allProduct-sidebar col-sm-3'>
-                <TypeFilterAll
-                    typeFilter={typeFilter}
-                    setTypeFilter={setTypeFilter}
-                    notebookTypeList={notebookTypeList}
-                    calendarTypeList={calendarTypeList}
-                />
+    return (
+        <>
+            <motion.div initial={{ opacity: 0 }}
 
-                <PriceFilter priceFilter={priceFilter}
-                    setPriceFilter={setPriceFilter} />
-            </div>
-            <div className='allProduct-productlist col-sm-9'>
-                <div className='allProduct-header'>
-                    <p className='allProduct-header-title'>All Products</p>
-                    <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
+                animate={{ opacity: 1, transition: { duration: 1 } }}
+                exit={{ opacity: 0, transition: { duration: 0} }}
+            >
+                <img className='imageBanner'
+                    src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
+                <div className='allProducts-container'>
+                    <div className='allProduct-sidebar col-sm-3'>
+                        <TypeFilterAll
+                            typeFilter={typeFilter}
+                            setTypeFilter={setTypeFilter}
+                            notebookTypeList={notebookTypeList}
+                            calendarTypeList={calendarTypeList}
+                        />
+
+                        <PriceFilter priceFilter={priceFilter}
+                            setPriceFilter={setPriceFilter} />
+                    </div>
+                    <div className='allProduct-productlist col-sm-9'>
+                        <div className='allProduct-header'>
+                            <p className='allProduct-header-title'>All Products</p>
+                            <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
+                        </div>
+                        <div className='allProduct-product'>
+                            {showList.map((item, index) => {
+                                return (
+                                    handleFilterAll(item) // All conditional to filter (price + type)
+                                    &&
+                                    <div key={index} className='allProduct-product-item'>
+                                        <ProductCard item={item} />
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+
                 </div>
-                <div className='allProduct-product'>
-                    {showList.map((item, index) => {
-                        return (
-                            handleFilterAll(item) // All conditional to filter (price + type)
-                            &&
-                            <div key={index} className='allProduct-product-item'>
-                                <ProductCard item={item} />
-                            </div>
-                        )
-                    })}
-                </div>
-            </div>
+            </motion.div>
+        </>
 
-        </div>
-    </>
-
-);
+    );
 }
 
 export default AllProductsPage;

@@ -1,10 +1,14 @@
-import Logo from '../../components/headerComponents/Logo';
+import { useNavigate } from 'react-router-dom';
+import CheckoutCart from '../../components/checkoutComponents/CheckoutCart';
+import CheckoutInfo from '../../components/checkoutComponents/CheckoutInfo';
+import PaymentMethod from '../../components/checkoutComponents/PaymentMethod';
 import { DataContext } from '../../context/DataContext';
 import './CheckOut.css'
 import React, { useContext, useState } from 'react';
-
+import { motion } from 'framer-motion';
 function CheckOut(props) {
-    const { productCart, totalPayment } = useContext(DataContext)
+    const navigate = useNavigate()
+    const { productCart } = useContext(DataContext)
     const [shipping, setShipping] = useState({
         name: 'Fast delivery',
         fee: 10
@@ -21,99 +25,92 @@ function CheckOut(props) {
         }
     ]
 
+    const [errors, setErrors] = useState({ nameError: '', emailError: '', addressError: '', phoneError: '' });
+    const [form, setForm] = useState({
+        name: '',
+        phone: '',
+        email: '',
+        address: '',
+        comment: ''
+    })
+    const handleInput = (e) => {
+        let { name, value } = e.target
+        handleValidate(name, value)
+        setForm({ ...form, [name]: value })
+    }
+
+    const handleConfirmOrder = (e) => {
+
+        if (Object.keys(errors).length !== 0) {
+            e.preventDefault();
+            alert('All field is required')
+        } else {
+            alert('Order successfully. Thank you!!!')
+            navigate('/')
+        }
+    }
+
+    const handleValidate = (name, value) => {
+        switch (name) {
+            case 'name':
+                if (value === '') {
+                    errors.nameError = 'Name is required';
+                } else if (value.length < 3) {
+                    errors.nameError = 'Name must be greater than 3';
+                } else {
+                    delete errors.nameError;
+                }
+                break;
+            case 'email':
+                let emailRegEx = /^\w+@\w+\.[a-zA-Z]{2,4}$/;
+                if (value === '') {
+                    errors.emailError = ' Email is required';
+                } else if (!emailRegEx.test(value)) {
+                    errors.emailError = 'Email is not correct';
+                } else {
+                    delete errors.emailError;
+                }
+                break;
+            case 'phone':
+                let phoneRegEx = /^[0-9]{10,12}$/;
+                if (value === '') {
+                    errors.phoneError = 'Phone number is required';
+                } else if (!phoneRegEx.test(value)) {
+                    errors.phoneError = 'Phone number is not correct';
+                } else {
+                    delete errors.phoneError;
+                }
+                break;
+            case 'address':
+                if (value === '') {
+                    errors.addressError = 'Address is required';
+                } else {
+                    delete errors.addressError;
+                }
+                break;
+            default:
+
+        }
+    }
+
+
+
     return (
-        <>
+     
+        <motion.div initial={{ opacity: 0 }}
+
+            animate={{ opacity: 1, transition: { duration: 1 } }}
+            exit={{ opacity: 0, transition: { duration: 0 } }}
+        >
+           
             <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp'></img>
             <div className='checkout-container'>
-                <div className='checkout-info col-sm-4'>
-                    <Logo />
-                    <h2>Order Information</h2>
-                    <form>
-                        <div className="mb-3 mt-3">
-                            <input type="name" className="form-control" id="name" placeholder="Full Name" name="name" />
-                        </div>
-                        <div className="mb-3 mt-3">
-                            <input type="email" className="form-control" id="email" placeholder="Email" name="email" />
-                        </div>
-                        <div className="mb-3">
-                            <input type="phone" className="form-control" id="phone" placeholder="Phone Number" name="phone" />
-                        </div>
-                        <div className="mb-3">
-                            <input type="address" className="form-control" id="address" placeholder="Address" name="address" />
-                        </div>
-                        <textarea id="notes" className="form-control"></textarea>
-                    </form>
-                </div>
-                <div className='checkout-payment col-sm-4'>
-                    <h2>Delivery</h2>
-                    {shippingMethods.map((item, index) => {
-                        return (
-                            <div className="form-check">
-                                <input onChange={()=>setShipping(item)} type="radio" className="form-check-input" id={item.name} value={item.fee} checked={shipping.name === item.name}/>
-                                <label className="form-check-label" htmlFor={item.name}>{item.name}</label>
-                            </div>
-                        )
-                    })
-                    }
-
-                    <h2>Payment methods</h2>
-                    <div className="form-check">
-                        <input type="radio" className="form-check-input" id="cash" name="payment" defaultChecked/>
-                        <label className="form-check-label" htmlFor="cash">Cash on delivery (CCOD)</label>
-                    </div>
-                    <div className="form-check">
-                        <input type="radio" className="form-check-input" id="bank" name="payment"/>
-                        <label className="form-check-label" htmlFor="bank">Bank transfer</label>
-                    </div>
-                </div>
-                <div className='checkout-cart col-sm-4'>
-                    <div className='checkout-cart-header'>
-                        <h2>Cart: {productCart.length} product(s)</h2>
-
-                    </div>
-                    <div className='checkout-cart-body'>
-                        <div className='checkout-cart-productsList'></div>
-                        {productCart.map((item, index) => {
-                            return (
-                                <div key={index} className='checkout-cart-product'>
-                                    <div className='checkout-cart-item-col1'>
-                                        <figure className='checkout-cart-item-imagebg'>
-                                            <img className='checkout-cart-item-image' src={item.img} alt='productImage' />
-                                        </figure>
-                                        <p className='checkout-cart-item-qty'>{item.quantity}</p>
-                                    </div>
-                                    <div className='checkout-cart-item-col2'>
-                                        <p className='checkout-cart-item-name'>{item.name}</p>
-                                    </div>
-                                    <div className='checkout-cart-item-col3'>
-                                        <p className='checkout-cart-subtotal'>{(item.price * item.quantity).toFixed(2)}<sup>$</sup></p>
-
-                                    </div>
-                                </div>
-                            )
-                        })
-
-                        }
-                    </div>
-                    <div className='checkout-cart-footer'>
-                        <div className='checkout-cart-footerrow1'>
-                            <p className='checkout-cart-subtotalText'>Subtotal: </p>
-                            <p className='checkout-cart-subtotalPrice'>{totalPayment.toFixed(2)}<sup> $</sup></p>
-                        </div>
-                        <div className='checkout-cart-footerrow2'>
-                            <p className='checkout-cart-shippingText'>Shipping: </p>
-                            <p className='checkout-cart-shippingPrice'>{shipping.fee.toFixed(2)}<sup> $</sup></p>
-                        </div>
-                        <div className='checkout-cart-footerrow3'>
-                            <p className='checkout-cart-totalText'>Total: </p>
-                            <p className='checkout-cart-totalPrice'>{(totalPayment+shipping.fee).toFixed(2)}<sup> $</sup></p>
-                        </div>
-                        <button className='checkout-cart-order'>Confirm Order</button>
-                    </div>
-
-                </div>
+                <CheckoutInfo handleInput={handleInput} errors={errors} />
+                <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods={shippingMethods} errors={errors} />
+                <CheckoutCart shipping={shipping} handleConfirmOrder={handleConfirmOrder} />
             </div>
-        </>
+           
+         </motion.div>
 
     );
 }

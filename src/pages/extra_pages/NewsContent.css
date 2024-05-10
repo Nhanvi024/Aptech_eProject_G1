@@ -1,5 +1,6 @@
 .NewsContent-container {
     width: 1200px;
+    margin: auto;
     background-color: hsl(var(--main-color-code) / 0.05);
     border: 1px solid hsl(var(--main-color-code) / 0.5);
 

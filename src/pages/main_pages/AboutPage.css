@@ -1,17 +1,15 @@
 .aboutPage-container {
-    width: 100%;
+	width: 100%;
 }
 .aboutPage-company-image {
-    width: 100%;
+	width: 100%;
 	object-fit: contain;
 }
-.aboutPage-company-introduce{
+.aboutPage-company-introduce {
 	font-size: var(--fs-500);
-
 }
-.aboutPage-team{
-    .aboutPage-team-title{
-	font-size: var(--fs-900);
-
-    }
+.aboutPage-team {
+	.aboutPage-team-title {
+		font-size: var(--fs-900);
+	}
 }
