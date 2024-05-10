@@ -5,6 +5,7 @@ import {DataContext} from '../../context/DataContext';
 import {jsPDF} from 'jspdf';
 import html2canvas from 'html2canvas';
 import {Callbacks} from 'jquery';
+import { motion } from 'framer-motion';
 
 function DownloadProduct(props) {
 	// let {item} = props;
@@ -43,7 +44,14 @@ function DownloadProduct(props) {
 		generatePDF();
 		navigate('/');
 	}, [item]);
+
+	
 	return (
+		<motion.div initial={{ opacity: 0 }}
+
+		animate={{ opacity: 0 }}
+		exit={{ opacity: 0 }}
+            >
 		<div className="downloadproduct-container">
 			<div className="content row">
 				<div className="container row" id="download-content">
@@ -106,6 +114,7 @@ function DownloadProduct(props) {
 				</div>
 			</div>
 		</div>
+		</motion.div>
 	);
 }
 
