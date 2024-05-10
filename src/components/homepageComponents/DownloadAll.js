@@ -26,7 +26,7 @@ function DownloadAll(props) {
 	}, []);
 	if (products.length !== 0) {
 		return (
-			<div className="container-fluid h-100" id="downloadAll" style={{zIndex: 2}}>
+			<div className="container-fluid h-100 downloadAll" id="downloadAll" style={{zIndex: 2}}>
 				<div id="content-notebook">
 					<table className="text-center" style={{border: 'none'}}>
 						<thead className="">
@@ -54,8 +54,8 @@ function DownloadAll(props) {
 												<th rowSpan={4}>{index + 1}</th>
 												<th rowSpan={4}>{item.id}</th>
 												<td rowSpan={4}>{item.name}</td>
-												{/* <td rowSpan={4}>{item.image.mainImage}</td> */}
-												<td rowSpan={4}>images</td>
+												<td rowSpan={4}><img src={item.image.mainImage} alt="" style={{maxHeight:'150px'}}/></td>
+												{/* <td rowSpan={4}>images</td> */}
 												<td>{item.param.size}</td>
 												<td rowSpan={4}>${item.price}</td>
 												<td rowSpan={4}>{item.stock}</td>
@@ -70,10 +70,10 @@ function DownloadAll(props) {
 												<td>{item.param.pages}</td>
 											</tr>
 										</tbody>
-										{index == 4 ? pagebreaknotebook : ''}
-										{index == 10 ? pagebreaknotebook : ''}
-										{index == 16 ? pagebreaknotebook : ''}
-										{index == 22 ? pagebreaknotebook : ''}
+										{index === 4 ? pagebreaknotebook : ''}
+										{index === 10 ? pagebreaknotebook : ''}
+										{index === 16 ? pagebreaknotebook : ''}
+										{index === 22 ? pagebreaknotebook : ''}
 									</>
 								);
 							})}
@@ -112,8 +112,8 @@ function DownloadAll(props) {
 												<th rowSpan={4}>{index + 1}</th>
 												<th rowSpan={4}>{item.id}</th>
 												<td rowSpan={4}>{item.name}</td>
-												{/* <td rowSpan={4}>{item.image.mainImage}</td> */}
-												<td rowSpan={4}>images</td>
+												<td rowSpan={4}><img src={item.image.mainImage} alt="" style={{maxHeight:'150px'}}/></td>
+												{/* <td rowSpan={4}>images</td> */}
 												<td>{item.param.size}</td>
 												<td rowSpan={4}>${item.price}</td>
 												<td rowSpan={4}>{item.stock}</td>
@@ -128,10 +128,10 @@ function DownloadAll(props) {
 												<td>{item.param.pages}</td>
 											</tr>
 										</tbody>
-										{index == 4 ? pagebreaknotebook : ''}
-										{index == 10 ? pagebreaknotebook : ''}
-										{index == 16 ? pagebreaknotebook : ''}
-										{index == 22 ? pagebreaknotebook : ''}
+										{index === 4 ? pagebreaknotebook : ''}
+										{index === 10 ? pagebreaknotebook : ''}
+										{index === 16 ? pagebreaknotebook : ''}
+										{index === 22 ? pagebreaknotebook : ''}
 									</>
 								);
 							})}
