@@ -169,7 +169,7 @@ function NoteBook(props) {
             animate={{ opacity: 1, transition:{duration:1}}}
             exit={{opacity: 0, transition:{duration:0} }}
         >
-                <img className='imageBanner'
+                <img className='imageBanner d-block w-100'
                     src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
                     {/* Sidebar area */}
                     <div className='allProducts-container'>
