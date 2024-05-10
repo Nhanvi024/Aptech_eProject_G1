@@ -157,6 +157,7 @@ function ProductCard(props) {
 										}}>
 										Buy now
 									</button>
+									<br />
 									<button
 										className="btn btn-lg mx-1 px-5 my-1 btn-danger"
 										style={{fontSize: 'var(--fs-500)'}}
@@ -181,6 +182,14 @@ function ProductCard(props) {
 									<div>Pages: {item.param.pages}</div>
 									<div>Material: {item.param.material}</div>
 									<br />
+								</div>
+								<div className="text-end">
+									<button
+										className="btn btn-lg mx-1 px-5 my-1 btn-danger"
+										style={{fontSize: 'var(--fs-500)'}}
+										onClick={() => handleClose()}>
+										Close
+									</button>
 								</div>
 							</div>
 						</div>
