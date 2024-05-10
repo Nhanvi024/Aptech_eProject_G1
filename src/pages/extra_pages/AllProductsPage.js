@@ -195,7 +195,7 @@ function AllProductsPage(props) {
             >
                 <img className='imageBanner'
                     src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
-                <div className='allProducts-container'>
+                <div className='allProducts-container row'>
                     <div className='allProduct-sidebar col-sm-3'>
                         <TypeFilterAll
                             typeFilter={typeFilter}
