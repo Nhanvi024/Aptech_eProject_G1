@@ -1,10 +1,9 @@
 
 .allProducts-container{
+    z-index: 100;
     width: 1200px;
     height: fit-content;
-
     position: relative;
-
     background-color: hsl(var(--main-color-code) / 0.05);
     border: 1px solid hsl(var(--main-color-code) / 0.5);
     padding: auto;

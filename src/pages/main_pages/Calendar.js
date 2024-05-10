@@ -183,7 +183,7 @@ function Calendar(props) {
             >
             <img className='imageBanner'
                 src='https://www.muji.us/cdn/shop/collections/collection_page_stationery_calendar_planner_2043x630.jpg?v=1668704287'  alt='calendarBanner'></img>
-            <div className='allProducts-container'>
+            <div className='allProducts-container row'>
                 <div className='allProduct-sidebar col-sm-3'>
                     <TypeFilterAll
                         typeFilter={typeFilter}
