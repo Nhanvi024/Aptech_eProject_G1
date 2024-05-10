@@ -3,7 +3,7 @@ import faceIcon from '../../assets/image/footer/icon/facebook.svg'
 import tweetterIcon from '../../assets/image/footer/icon/tweetter.svg'
 import instaIcon from '../../assets/image/footer/icon/instagram.svg'
 import logoCalendar from '../../assets/image/header/logo/logoImage.png'
-import RYANA9 from '../../assets/image/logo/RYANA9.png'
+// import RYANA9 from 'assets/image/logo/RYANA9.png'
 
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -14,7 +14,7 @@ function FooterInfo(props) {
         <div className='footerInfoContainer'>
             <div className='logoFooter'>
                 <img className='logoFooter_logo' 
-                src={RYANA9}
+                src='/assets/image/logo/RYANA9.png'
                 // src={logoCalendar}
                 alt='logoFooter'/>
                 <div className='logoFooter_fanPage'>
