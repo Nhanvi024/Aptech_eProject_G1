@@ -8,7 +8,7 @@
     border: 1px solid hsl(var(--main-color-code) / 0.5);
     padding: auto;
     margin: auto;
-
+    display: block;
 }
 
 .allProduct-sidebar{
