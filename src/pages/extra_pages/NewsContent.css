@@ -1,3 +1,6 @@
+.newsContent-page-container{
+    width: 100%;
+}
 .NewsContent-container {
     width: 1200px;
     margin: auto;
@@ -13,6 +16,7 @@
         color: inherit;
         cursor:pointer;
    }
+
 }
 
 .NewsContent-content{
@@ -70,9 +74,6 @@
 @media only screen and (max-width: 1200px) {
     .NewsContent-container {
         width: 100%;
-    }
-    .NewsContent-sidebar{
-        /* display: none; */
     }
 }
 

@@ -45,7 +45,7 @@ function TypeFilterAll(props) {
                     <div className='typeFilterAll-item-container'>
                         <p className='typeFilterAll-text'>Notebook</p>
                         <div className='typeFilterAll-notebookAll'>
-                                <input onChange={(e) => handleAllNoteBookFilter(e)} className="typeFilterAll-typebox" name='notebookAll' type="checkbox" id='notebookAll' checked={noteBookFilter.length == notebookTypeList.length}/>
+                                <input onChange={(e) => handleAllNoteBookFilter(e)} className="typeFilterAll-typebox" name='notebookAll' type="checkbox" id='notebookAll' checked={noteBookFilter.length === notebookTypeList.length}/>
                                 <label className='typeFilterAll-typename' htmlFor='notebookAll'>All Notebook</label>
                             </div>
                         <div className='typeFilterAll-subitemlist'>
@@ -66,7 +66,7 @@ function TypeFilterAll(props) {
                     <div className='typeFilterAll-item-container'>
                         <p className='typeFilterAll-text'>Calendar</p>
                         <div className='typeFilterAll-calendarAll'>
-                                <input onChange={(e) => handleAllCalendarFilter(e)} className="typeFilterAll-typebox" name='calendarAll' type="checkbox" id='calendarAll' />
+                                <input onChange={(e) => handleAllCalendarFilter(e)} className="typeFilterAll-typebox" name='calendarAll' type="checkbox" id='calendarAll' checked={calendarFilter.length === calendarTypeList.length} />
                                 <label className='typeFilterAll-typename' htmlFor='calendarAll'>All Calendar</label>
                             </div>
                         <div className='typeFilterAll-subitemlist'>
@@ -84,7 +84,6 @@ function TypeFilterAll(props) {
                     </div>
                 }
             </div>
-
         </div>
     );
 }
