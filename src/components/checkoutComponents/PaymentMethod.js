@@ -12,6 +12,7 @@ function PaymentMethod(props) {
         e.target.id === 'bank' ? $('#bank-info').slideDown() : $('#bank-info').slideUp()
         e.target.id === 'paypal' ? $('#paypal-info').slideDown() : $('#paypal-info').slideUp()
     }
+
     return (
         <div className='checkout-payment'>
             <div className='checkout-delivery'>
@@ -49,7 +50,9 @@ function PaymentMethod(props) {
                     <p className='bank-info-account'><span className='bank-info-title'>Account Number:</span><span className='bank-info-info'>0123456789</span></p>
                 </div>
                 <div id='paypal-info'>
+
                     <PaypalPayment shipping={shipping} errors={errors}/>
+
                 </div>
                 <div style={{ color: 'red' }}>Please ensure your order information is correct</div>
             </div>

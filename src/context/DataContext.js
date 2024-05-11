@@ -1,3 +1,4 @@
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import {createContext, useEffect, useState} from 'react';
 
 const DataContext = createContext();
@@ -22,7 +23,6 @@ function DataProvider({ children }) {
 		fetch('/data/data.json')
 			.then((res) => res.json())
 			.then((data) => {
-                console.log("data: ",data);
                 setProducts(data)
             })
 			.then(setIsDataLoaded(true));
@@ -89,9 +89,19 @@ function DataProvider({ children }) {
         handleDeleteItem,
 
     }
+    const initialOptions = {
+        clientId: 'AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr',
+        currency: 'USD',
+        intent: 'capture',
+        components: 'buttons',
+    };
     return (
         <DataContext.Provider value={valueProvider}>
+			<PayPalScriptProvider options={initialOptions}>
+
             {children}
+			</PayPalScriptProvider>
+
         </DataContext.Provider>
     )
 }
