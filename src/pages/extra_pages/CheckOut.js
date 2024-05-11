@@ -6,6 +6,7 @@ import { DataContext } from '../../context/DataContext';
 import './CheckOut.css'
 import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 function CheckOut(props) {
     const navigate = useNavigate()
     const { productCart } = useContext(DataContext)
@@ -107,6 +108,7 @@ function CheckOut(props) {
             <div className='checkout-container'>
                 <CheckoutInfo handleInput={handleInput} errors={errors} />
                 <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods={shippingMethods} errors={errors} />
+                
                 <CheckoutCart shipping={shipping} handleConfirmOrder={handleConfirmOrder} />
             </div>
            

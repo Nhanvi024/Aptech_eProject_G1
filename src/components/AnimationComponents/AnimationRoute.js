@@ -19,14 +19,17 @@ import CheckOut from '../../pages/extra_pages/CheckOut';
 import {AnimatePresence} from "framer-motion";
 import DownloadProduct from '../homepageComponents/DownloadProduct';
 import DownloadAll from '../homepageComponents/DownloadAll';
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 
 
 function AnimationRoute() {
   const location =useLocation();
+
   return (
   
       <AnimatePresence>
+
       <Routes location={location} key={location.pathname}>
 				<Route path="/" element={<HomePage/>} />
 				<Route path="/calendar" element={<Calendar />} />
@@ -43,8 +46,11 @@ function AnimationRoute() {
 				<Route path="/downloadproduct" element={<DownloadProduct/>} />
 				<Route path="/downloadallproduct" element={<DownloadAll />} />
 				<Route path='/cart' element={<CartPage />} />
+
 				<Route path='/checkout' element={<CheckOut/>}/>
+
 			</Routes>
+
       </AnimatePresence>
   
   )

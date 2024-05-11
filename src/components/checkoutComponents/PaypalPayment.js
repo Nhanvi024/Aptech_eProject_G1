@@ -1,6 +1,6 @@
 import './PaypalPayment.css'
 import React, { useContext } from 'react';
-import { PayPalButtons, PayPalScriptProvider } from "@paypal/react-paypal-js";
+import { PayPalButtons, PayPalScriptProvider, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 import { DataContext } from '../../context/DataContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,6 +8,10 @@ function PaypalPayment(props) {
     const navigate = useNavigate()
     const { shipping, errors } = props
     const { totalPayment } = useContext(DataContext)
+
+    console.log('checkout:', shipping);
+    console.log('payment:', totalPayment);
+
     const onCreateOrder = (data, actions) => {
 
         return actions.order.create({
@@ -33,16 +37,24 @@ function PaypalPayment(props) {
 
     }
 
+    const onError = (data, actions) => {
+        console.log("An Error occured with your payment ");
+    };
+
+    const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
     return (
         <div className='paypalPeyment-container'>
-            <PayPalButtons
-                style={{ layout: "vertical" }}
-                disabled={false}
-                forceReRender={[shipping, totalPayment]}
-                fundingSource={undefined}
-                createOrder={(data, actions) => onCreateOrder(data, actions)}
-                onApprove={(data, actions) => onApproveOrder(data, actions)}
-            />
+            {isPending ? <p>LOADING...</p> :
+                <PayPalButtons
+                    style={{ layout: "vertical" }}
+                    disabled={false}
+                    forceReRender={[shipping, totalPayment]}
+                    fundingSource={undefined}
+                    createOrder={(data, actions) => onCreateOrder(data, actions)}
+                    onApprove={(data, actions) => onApproveOrder(data, actions)}
+                    onError={(data, actions) => onError(data,actions)}
+                />
+            }
         </div>
 
     );
