@@ -10,7 +10,7 @@ import React from 'react';
 function Logo(props) {
     const navigate = useNavigate()
     return (
-        <div className='logoContainer'>
+        <div className='logoContainer' onClick={()=>navigate('/')}>
             <img className='logoImage' 
             src='/assets/image/logo/RYANA9.png' 
             // src={logoCalendar}
