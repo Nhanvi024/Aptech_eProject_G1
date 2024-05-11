@@ -10,7 +10,6 @@ import NewsPage from '../../pages/main_pages/NewsPage';
 
 import SearchPage from '../../pages/extra_pages/SearchPage';
 import AllProductPage from '../../pages/extra_pages/AllProductsPage';
-import DownloadPage from '../../pages/extra_pages/DownloadPage';
 import AboutPage from '../../pages/main_pages/AboutPage';
 import NewsContent from '../../pages/extra_pages/NewsContent';
 import CartPage from '../../pages/extra_pages/CartPage';
@@ -19,9 +18,6 @@ import CheckOut from '../../pages/extra_pages/CheckOut';
 import {AnimatePresence} from "framer-motion";
 import DownloadProduct from '../homepageComponents/DownloadProduct';
 import DownloadAll from '../homepageComponents/DownloadAll';
-import { PayPalScriptProvider } from '@paypal/react-paypal-js';
-
-
 
 function AnimationRoute() {
   const location =useLocation();
@@ -42,7 +38,6 @@ function AnimationRoute() {
 				<Route path="/search" element={<SearchPage/>} />
 				<Route path="/allproducts" element={<AllProductPage />} />
 				<Route path="/detail/:productId" element={<SingleProductDetail/>} />
-				<Route path="/download" element={<DownloadPage />} />
 				<Route path="/downloadproduct" element={<DownloadProduct/>} />
 				<Route path="/downloadallproduct" element={<DownloadAll />} />
 				<Route path='/cart' element={<CartPage />} />

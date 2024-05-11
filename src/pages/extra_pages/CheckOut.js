@@ -1,15 +1,16 @@
+import './CheckOut.css'
+
 import { useNavigate } from 'react-router-dom';
 import CheckoutCart from '../../components/checkoutComponents/CheckoutCart';
 import CheckoutInfo from '../../components/checkoutComponents/CheckoutInfo';
 import PaymentMethod from '../../components/checkoutComponents/PaymentMethod';
 import { DataContext } from '../../context/DataContext';
-import './CheckOut.css'
 import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
-import { PayPalScriptProvider } from '@paypal/react-paypal-js';
+
 function CheckOut(props) {
     const navigate = useNavigate()
-    const { productCart } = useContext(DataContext)
+    const { setProductCart } = useContext(DataContext)
     const [shipping, setShipping] = useState({
         name: 'Fast delivery',
         fee: 10
@@ -41,12 +42,12 @@ function CheckOut(props) {
     }
 
     const handleConfirmOrder = (e) => {
-
         if (Object.keys(errors).length !== 0) {
             e.preventDefault();
             alert('All field is required')
         } else {
             alert('Order successfully. Thank you!!!')
+            setProductCart([])
             navigate('/')
         }
     }
@@ -98,7 +99,7 @@ function CheckOut(props) {
 
     return (
      
-        <motion.div initial={{ opacity: 0 }}
+        <motion.div className='checkout-page-container' initial={{ opacity: 0 }}
 
             animate={{ opacity: 1, transition: { duration: 1 } }}
             exit={{ opacity: 0, transition: { duration: 0 } }}
