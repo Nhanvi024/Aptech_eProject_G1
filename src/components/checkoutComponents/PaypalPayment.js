@@ -6,11 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 function PaypalPayment(props) {
     const navigate = useNavigate()
-    const { shipping, errors } = props
-    const { totalPayment } = useContext(DataContext)
-
-    console.log('checkout:', shipping);
-    console.log('payment:', totalPayment);
+    const { shipping } = props
+    const { totalPayment, setProductCart } = useContext(DataContext)
 
     const onCreateOrder = (data, actions) => {
 
@@ -32,19 +29,14 @@ function PaypalPayment(props) {
         return actions.order.capture().then((details) => {
             const name = details.payer.name.given_name;
             alert(`Transaction completed by ${name}`);
+            setProductCart([])
             navigate('/')
         });
 
     }
 
-    const onError = (data, actions) => {
-        console.log("An Error occured with your payment ");
-    };
-
-    const [{ options, isPending }, dispatch] = usePayPalScriptReducer();
     return (
         <div className='paypalPeyment-container'>
-            {isPending ? <p>LOADING...</p> :
                 <PayPalButtons
                     style={{ layout: "vertical" }}
                     disabled={false}
@@ -52,9 +44,7 @@ function PaypalPayment(props) {
                     fundingSource={undefined}
                     createOrder={(data, actions) => onCreateOrder(data, actions)}
                     onApprove={(data, actions) => onApproveOrder(data, actions)}
-                    onError={(data, actions) => onError(data,actions)}
                 />
-            }
         </div>
 
     );
