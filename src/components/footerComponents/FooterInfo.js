@@ -13,10 +13,11 @@ function FooterInfo(props) {
     return (
         <div className='footerInfoContainer'>
             <div className='logoFooter'>
-                <img className='logoFooter_logo' 
+                {/* <img className='logoFooter_logo' 
                 src='/assets/image/logo/RYANA9.png'
                 // src={logoCalendar}
-                alt='logoFooter'/>
+                alt='logoFooter'/> */}
+                <Logo/>
                 <div className='logoFooter_fanPage'>
                     <img className='logoFooter_fanPage-icon' src={faceIcon} alt='facebookIcon'/>
                     <img className='logoFooter_fanPage-icon' src={tweetterIcon} alt='tweetterIcon'/>
