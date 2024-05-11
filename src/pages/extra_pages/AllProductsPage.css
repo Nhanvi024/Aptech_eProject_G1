@@ -8,7 +8,7 @@
     border: 1px solid hsl(var(--main-color-code) / 0.5);
     padding: auto;
     margin: auto;
-
+    display: block;
 }
 
 .allProduct-sidebar{
@@ -35,7 +35,6 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: -40px;
-    
 
 }
 

@@ -9,12 +9,15 @@ import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 import { motion } from 'framer-motion';
 
 function NoteBook(props) {
-    const { products, setProducts } = useContext(DataContext);
+    const { products } = useContext(DataContext);
     const { noteBook } = products;
 
-
+    // Array product to show on page   
     const [showList, setShowList] = useState([])
 
+    // ** Sort Function ***************************************
+
+    // Array sort type (name, price,...)
     const selectArray = [
         { name: "Select Sort", value: "default" },
         { name: "Name A → Z", value: "type1" },
@@ -25,6 +28,7 @@ function NoteBook(props) {
 
     const [select, setSelect] = useState(selectArray[0])
 
+    // function sort: check type --> sort showList
     const handleSortAll = () => {
         let result = []
         switch (select.value) {
@@ -77,6 +81,7 @@ function NoteBook(props) {
         noteBookFilter: [],
     })
 
+    // Initial add all types of products to array want to filter
     const handleReadyTypeData = () => {
         if (noteBook) {
             noteBook.forEach(item => {
@@ -141,7 +146,10 @@ function NoteBook(props) {
     const handleFilterAll = (product) => {
         return (
             // Filter type
-            (typeFilter.noteBookFilter.some(item => item === product.type))
+        
+                (typeFilter.noteBookFilter.some(item => item === product.type) ||
+                (!typeFilter.noteBookFilter.length && typeList.notebookTypeList.some(item => item === product.type)))
+    
             &&
 
             // Filter price
@@ -172,7 +180,7 @@ function NoteBook(props) {
             <img className='imageBanner d-block w-100'
                 src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
             {/* Sidebar area */}
-            <div className='allProducts-container row'>
+            <div className='allProducts-container row '>
                 <div className='allProduct-sidebar col-xl-3 col-md-5 col-sm-6'>
                     <TypeFilterAll
                         typeFilter={typeFilter}
