@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AnimationRoute from './components/AnimationComponents/AnimationRoute';
 import {PayPalScriptProvider} from '@paypal/react-paypal-js';
+import ScrollButton from './components/footerComponents/ScrollButton';
 
 function App(props) {
 	const initialOptions = {
@@ -18,6 +19,7 @@ function App(props) {
 			<PayPalScriptProvider options={initialOptions}>
 				<Header />
 				<AnimationRoute />
+				<ScrollButton/>
 				<Footer />
 			</PayPalScriptProvider>
 		</div>
