@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AnimationRoute from './components/AnimationComponents/AnimationRoute';
 import {PayPalScriptProvider} from '@paypal/react-paypal-js';
+import ScrollButton from './components/footerComponents/ScrollButton';
 
 function App(props) {
 
@@ -12,6 +13,7 @@ function App(props) {
 		<div className="calendarWebStore">
 				<Header />
 				<AnimationRoute />
+				<ScrollButton/>
 				<Footer />
 		</div>
 	);
