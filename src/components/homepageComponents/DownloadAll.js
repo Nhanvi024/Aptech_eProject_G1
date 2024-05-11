@@ -26,7 +26,7 @@ function DownloadAll(props) {
 	}, []);
 	if (products.length !== 0) {
 		return (
-			<div className="container-fluid h-100" id="downloadAll" style={{zIndex: 2}}>
+			<div className="container-fluid h-100 downloadall-container" id="downloadAll" style={{zIndex: 2}}>
 				<div id="content-notebook">
 					<table className="text-center" style={{border: 'none'}}>
 						<thead className="">

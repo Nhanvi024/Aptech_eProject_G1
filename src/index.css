@@ -3,10 +3,10 @@
 /* ------------------- */
 
 :root {
-  /* colors */
+  /* colors */ 
   --main-color-code: 62 50% 40%;
   --main-color:  hsl(var(--main-color-code));
-  /* --main-color:  #2f8872; */
+  /* --main-color:  hsl(62 50% 40%); */
 
   --primary-background-clr: white;
   --secondary-background-clr: var(--main-color);
