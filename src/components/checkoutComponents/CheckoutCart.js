@@ -54,7 +54,7 @@ function CheckoutCart(props) {
                     </div>
                     <div className='checkout-cart-button'>
                         <button onClick={() => navigate('/cart')} className='checkout-cart-back'>Back To Cart</button>
-                        <button onSubmit={(e) => handleConfirmOrder(e)} className='checkout-cart-order'>Confirm Ordder</button>
+                        <button onClick={(e) => handleConfirmOrder(e)} className='checkout-cart-order'>Confirm Order</button>
                     </div>
                 </div>
             </div>

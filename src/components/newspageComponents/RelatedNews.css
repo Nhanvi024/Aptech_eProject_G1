@@ -13,7 +13,7 @@
 }
 
 .relatedNews-newscard {
-    height: 110px;
+    height: fit-content;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -49,11 +49,9 @@
     font-size: var(--fs-400);
 
     text-align: left;
-
 }
 
 .relatedNews-desc {
     margin: 0;
     font-size: var(--fs-300);
-
 }

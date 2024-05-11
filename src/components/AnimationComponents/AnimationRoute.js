@@ -10,7 +10,6 @@ import NewsPage from '../../pages/main_pages/NewsPage';
 
 import SearchPage from '../../pages/extra_pages/SearchPage';
 import AllProductPage from '../../pages/extra_pages/AllProductsPage';
-import DownloadPage from '../../pages/extra_pages/DownloadPage';
 import AboutPage from '../../pages/main_pages/AboutPage';
 import NewsContent from '../../pages/extra_pages/NewsContent';
 import CartPage from '../../pages/extra_pages/CartPage';
@@ -20,13 +19,13 @@ import {AnimatePresence} from "framer-motion";
 import DownloadProduct from '../homepageComponents/DownloadProduct';
 import DownloadAll from '../homepageComponents/DownloadAll';
 
-
-
 function AnimationRoute() {
   const location =useLocation();
+
   return (
   
       <AnimatePresence>
+
       <Routes location={location} key={location.pathname}>
 				<Route path="/" element={<HomePage/>} />
 				<Route path="/calendar" element={<Calendar />} />
@@ -39,12 +38,14 @@ function AnimationRoute() {
 				<Route path="/search" element={<SearchPage/>} />
 				<Route path="/allproducts" element={<AllProductPage />} />
 				<Route path="/detail/:productId" element={<SingleProductDetail/>} />
-				<Route path="/download" element={<DownloadPage />} />
 				<Route path="/downloadproduct" element={<DownloadProduct/>} />
 				<Route path="/downloadallproduct" element={<DownloadAll />} />
 				<Route path='/cart' element={<CartPage />} />
+
 				<Route path='/checkout' element={<CheckOut/>}/>
+
 			</Routes>
+
       </AnimatePresence>
   
   )
