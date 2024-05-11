@@ -151,7 +151,8 @@ function Calendar(props) {
 		return (
             // Filter type
             
-                typeFilter.calendarFilter.some(item => item === product.type)
+            (typeFilter.calendarFilter.some(item => item === product.type) ||
+            (!typeFilter.calendarFilter.length && typeList.calendarTypeList.some(item => item === product.type)))
             &&
 
             // Filter price
