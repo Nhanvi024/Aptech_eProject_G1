@@ -1,4 +1,7 @@
 .downloadAll {
+	font-weight: 500;
+	font-family: var(--ff-primary-font);
+
 	table,
 	th,
 	td {
@@ -26,4 +29,8 @@
 	.page-break {
 		page-break-inside: avoid;
 	}
+}
+.blankpage {
+	background: white;
+	height: 3000px;
 }
