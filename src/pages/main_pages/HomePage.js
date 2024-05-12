@@ -139,7 +139,7 @@ function HomePage(props) {
 				setNotebookList(products.noteBook.filter((item) => item.type === notebookTypeFilter));
 			}
 		} else {
-			console.log('chua load data');
+			// console.log('chua load data');
 		}
 	}, [notebookTypeFilter, products]);
 
@@ -154,7 +154,7 @@ function HomePage(props) {
 				setCalendarList(products.calendar.filter((item) => item.type === calendarTypeFilter));
 			}
 		} else {
-			console.log('chua load data');
+			// console.log('chua load data');
 		}
 	}, [calendarTypeFilter, products]);
 	// ==================================================

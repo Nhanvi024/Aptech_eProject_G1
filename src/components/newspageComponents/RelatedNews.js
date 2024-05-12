@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './RelatedNews.css'
+import EllipsisText from "react-ellipsis-text";
+
 
 import React from 'react';
 
@@ -22,8 +24,8 @@ function RelatedNews(props) {
                                 <img className='relatedNews-img' onClick={(e) => handleSelectNews(e)} src={item.mainImage} name={item.id} alt='news'/>
                             </figure>
                             <div className='relatedNews-content'>
-                                <button onClick={(e) => handleSelectNews(e)} className='relatedNews-title' name={item.id}>{item.title} </button>
-                                <p className='relatedNews-desc'>Posted on {item.datePost} by {item.author}</p>
+                                <button onClick={(e) => handleSelectNews(e)} className='relatedNews-title' name={item.id}><EllipsisText text={item.title} length={50}/></button>
+                                <p className='relatedNews-desc' >Posted on {item.datePost} by {item.author}</p>
                             </div>
                         </div>
                     )

@@ -6,7 +6,7 @@ import Parser from "html-react-parser";
 import RelatedNews from '../../components/newspageComponents/RelatedNews';
 import InterestedNews from '../../components/newspageComponents/InterestedNews';
 import InterestedNews2 from '../../components/newspageComponents/InterestedNews2';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 function NewsContent(props) {
     const { newscontent } = useParams()
     const [content, setContent] = useState('')
@@ -38,18 +38,18 @@ function NewsContent(props) {
 
     return (
         <>
-            <motion.div initial={{ opacity: 0 }}
+            <motion.div className='newsContent-page-container' initial={{ opacity: 0 }}
 
                 animate={{ opacity: 1, transition: { duration: 1 } }}
                 exit={{ opacity: 0, transition: { duration: 0 } }}
             >
                 <img className='imageBanner'
                     src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
-                <div className='NewsContent-container'>
-                    <div className='NewsContent-content col-sm-8'>
+                <div className='NewsContent-container row'>
+                    <div className='NewsContent-content col-lg-8 col-sm-12'>
                         {Parser(content)}
                     </div>
-                    <div className='NewsContent-sidebar col-sm-4'>
+                    <div className='NewsContent-sidebar col-lg-4 col-sm-12'>
                         {newsSide.relatedNews.length && <RelatedNews relatedNews={newsSide.relatedNews} />}
                         {newsSide.iterestedNews.length && <InterestedNews iterestedNews={newsSide.iterestedNews} />}
                     </div>
