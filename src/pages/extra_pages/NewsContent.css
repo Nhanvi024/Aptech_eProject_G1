@@ -1,3 +1,6 @@
+.newsContent-page-container{
+    width: 100%;
+}
 .NewsContent-container {
     width: 1200px;
     margin: auto;
@@ -13,6 +16,7 @@
         color: inherit;
         cursor:pointer;
    }
+
 }
 
 .NewsContent-content{
@@ -63,3 +67,20 @@
     flex-direction: column;
     gap: 50px;
 }
+
+/** Responsive ************************************************************************************ */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .NewsContent-container {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}

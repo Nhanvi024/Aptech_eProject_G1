@@ -18,7 +18,7 @@
 
 .iterestedNews-newscard {
     width: 95%;
-    height: 400px;
+    height: fit-content;
 
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@
 
 .iterestedNews-nav {
     border: none;
+    background: none;
     width: 95%;
     height: 250px;
 
@@ -75,4 +76,38 @@
     padding: 0 10px;
     font-size: var(--fs-400);
 
+}
+
+/** Responsive ************************************************************************************ */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+ 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .iterestedNews-newscard {
+        width: 80%;
+    }
+    .iterestedNews-nav {
+        height: 400px;
+    }
+    .iterestedNews-img {
+        height: 400px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .iterestedNews-newscard {
+        width: 90%;
+    }
+    .iterestedNews-nav {
+        height: 300px;
+    }
+    .iterestedNews-img {
+        height: 300px;
+    }
 }

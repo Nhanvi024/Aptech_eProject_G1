@@ -40,12 +40,11 @@ function NewsPage(props) {
 
     return (
 
-        <motion.div initial={{ opacity: 0 }}
+        <motion.div className='newspage-container' initial={{ opacity: 0 }}
            
             animate={{ opacity: 1, transition:{duration:1}}}
             exit={{opacity: 0, transition:{duration:0} }}
         >
-            <div className='newspage-container'>
                 <img className='imageBanner'
                     src='https://www.olgcdbb.catholic.edu.au/wp-content/uploads/2018/04/latest-news-banner.jpg' alt='banner'></img>
                 <div className='newsPageContainer'>
@@ -56,9 +55,8 @@ function NewsPage(props) {
                     {statusNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={statusNews.newsSeeMore} handleSelectNews={handleSelectNews} />}
 
                 </div>
-            </div>
 
-        </motion.div>
+         </motion.div>
 
     );
 }

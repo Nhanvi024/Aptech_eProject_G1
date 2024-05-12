@@ -1,6 +1,6 @@
 import React from 'react';
 import './DownloadAllHeader.css';
-import RYANA9 from '../../assets/image/logo/RYANA9.png';
+// import RYANA9 from '../../assets/image/logo/RYANA9.png';
 
 function DownloadAllHeader(props) {
 	return (
@@ -8,7 +8,7 @@ function DownloadAllHeader(props) {
 			<div className="col-6">
 				<img
 					className=""
-					src={RYANA9}
+					src='/assets/image/logo/RYANA9.png'
 					// src={logoCalendar}
 					alt="logoFooter"
 				/>
