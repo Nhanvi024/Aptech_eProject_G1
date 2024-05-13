@@ -62,11 +62,11 @@
     color: black;
 }
 
-.sortSelect-select:hover+.sortSelect-list,
+/* .sortSelect-select:hover+.sortSelect-list,
 .sortSelect-list:hover {
    display: block;
     border-radius: 5px;
-}
+} */
 
 .sortSelect-option:hover {
     cursor: pointer;
