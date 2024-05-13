@@ -9,6 +9,7 @@ import './AllProductsPage.css';
 import React, { useContext, useEffect, useState } from 'react';
 
 
+
 function AllProductsPage(props) {
     const { products } = useContext(DataContext)
     const { calendar, noteBook } = products
