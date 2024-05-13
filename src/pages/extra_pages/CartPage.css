@@ -89,7 +89,7 @@
     width: 90px;
     height: 90px;
     margin: 0;
-    background-color: rgba(214, 253, 250, 0.5);
+    background-color: hsl(var(--main-color-code) / 0.25);
 
     display: flex;
 }
