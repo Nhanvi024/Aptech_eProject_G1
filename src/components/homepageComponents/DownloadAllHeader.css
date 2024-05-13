@@ -1,0 +1,11 @@
+.DownloadAllHeader-Container {
+	background: white;
+}
+.DownloadAll-HeaderInfo {
+	font-family: var(--ff-primary-font);
+	font-size: var(--fs-600);
+	font-weight: 500;
+	font-style: italic;
+	color: var(--active-text-color);
+	padding-left: 20px;
+}
