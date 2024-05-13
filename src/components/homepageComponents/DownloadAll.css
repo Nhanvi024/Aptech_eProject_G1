@@ -1,4 +1,6 @@
-.downloadall-container {
+.downloadAll {
+	font-weight: 500;
+	font-family: var(--ff-primary-font);
 
 	table,
 	th,
@@ -9,27 +11,26 @@
 		/* background: lightblue; */
 		font-size: 22px;
 	}
-
 	table {
 		table-layout: auto;
 		width: 100%;
 	}
-
 	tr {
 		height: 40px;
 	}
-
 	td {
 		width: fit-content;
 	}
-
 	#download-content,
 	#download-content1 {
 		width: 1414px;
 		/* height: 1000px; */
 	}
-
 	.page-break {
 		page-break-inside: avoid;
 	}
+}
+.blankpage {
+	background: white;
+	height: 3000px;
 }
