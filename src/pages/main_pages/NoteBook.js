@@ -8,6 +8,7 @@ import ProductCard from '../../components/homepageComponents/ProductCard';
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 import { motion } from 'framer-motion';
 
+
 function NoteBook(props) {
     const { products } = useContext(DataContext);
     const { noteBook } = products;
@@ -94,10 +95,10 @@ function NoteBook(props) {
             setTypeList({ ...typeList })
 
             // Add all types to array want to filter
-            setTypeFilter({
-                ...typeFilter,
-                noteBookFilter: [...notebookTypeList],
-            })
+            // setTypeFilter({
+            //     ...typeFilter,
+            //     noteBookFilter: [...notebookTypeList],
+            // })
         }
     }
 
@@ -190,12 +191,12 @@ function NoteBook(props) {
                     <PriceFilter priceFilter={priceFilter}
                         setPriceFilter={setPriceFilter} />
                 </div>
-                <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6 '>
+                <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6 w-100 '>
                     <div className='allProduct-header'>
                         <p className='allProduct-header-title'>Notebook</p>
                         <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
                     </div>
-                    <div className='allProduct-product'>
+                    <div className='allProduct-product container-fluid'>
                         {showList.map((item, index) => {
                             return (
                                 handleFilterAll(item) // All conditional to filter (price + type)

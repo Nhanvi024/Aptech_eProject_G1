@@ -103,7 +103,7 @@ function MenuSearch(props) {
                                                     setBtnActive("NOTEBOOK");
                                                     $('#menuDetail').slideUp()
                                                 }}
-                                                to={item.href}>NOTEBOOK</Link>
+                                                to='/notebook'>NOTEBOOK</Link>
                                         </div>
                                     </div>
                                 }
