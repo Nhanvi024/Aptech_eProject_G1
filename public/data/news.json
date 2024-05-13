@@ -10,7 +10,7 @@
         "description": "You've probably heard of the 12 zodiac signs and know whoever belongs to which zodiac sign will have its own characteristic personality traits. Do you know exactly which 12 zodiac signs, birth dates, and birth months of the 12 zodiac signs are? Let's find out about the 12 zodiac signs of birth.",
         "status": {
             "newsUpdate": true,
-            "newsReadLot": false,
+            "newsReadLot": true,
             "hotNews": false,
             "readMore": true
         }
@@ -154,7 +154,7 @@
         "description": "In the old days, it was normal to keep a journal, but now you can keep a journal is considered a phenomenon. Everything is posted on Facebook, Zalo, Blog... already. There's no longer the concept of the first diary in my life.",
         "status": {
             "newsUpdate": false,
-            "newsReadLot": false,
+            "newsReadLot": true,
             "hotNews": true,
             "readMore": false
         }
@@ -186,7 +186,7 @@
         "description": "Many people still have thoughts like, 'I don't need to write for tired, reading is enough for me,' a huge mistake! There are many studies that have shown that our brains have a completely different way of looking when we write than when we read or when we talk.",
         "status": {
             "newsUpdate": false,
-            "newsReadLot": false,
+            "newsReadLot": true,
             "hotNews": true,
             "readMore": false
         }

@@ -59,6 +59,18 @@ function DataProvider({ children }) {
     }
 
 
+    // ** Login/ Sign in
+    const [user,setUser] = useState([
+        {
+            fullname: 'Nhan',
+            phone: '0123456789',
+            email: 'abc@gmail.com',
+            password: '123456',
+            address: '',
+        }
+    ])
+
+
 
     let valueProvider = {
         // products data read from json file --> many components are in use

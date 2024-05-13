@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    position: relative;
 }
 
 .newsPage-newsReadLot-name {
