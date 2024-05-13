@@ -25,6 +25,7 @@ function RelatedNews(props) {
                             </figure>
                             <div className='relatedNews-content'>
                                 <button onClick={(e) => handleSelectNews(e)} className='relatedNews-title' name={item.id}><EllipsisText text={item.title} length={50}/></button>
+                                <p className='relatedNews-decription'><EllipsisText text={item.description} length={90} /></p>
                                 <p className='relatedNews-desc' >Posted on {item.datePost} by {item.author}</p>
                             </div>
                         </div>

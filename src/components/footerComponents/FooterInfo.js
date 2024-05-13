@@ -19,9 +19,9 @@ function FooterInfo(props) {
                 alt='logoFooter'/> */}
                 <Logo/>
                 <div className='logoFooter_fanPage'>
-                    <img className='logoFooter_fanPage-icon' src={faceIcon} alt='facebookIcon'/>
-                    <img className='logoFooter_fanPage-icon' src={tweetterIcon} alt='tweetterIcon'/>
-                    <img className='logoFooter_fanPage-icon' src={instaIcon} alt='instagramIcon'/>
+                    <a href='https://www.facebook.com/' target='_blank'><img className='logoFooter_fanPage-icon' src={faceIcon} alt='facebookIcon'/></a>
+                    <a href='https://twitter.com/'  target='_blank'><img className='logoFooter_fanPage-icon' src={tweetterIcon} alt='tweetterIcon'/></a>
+                    <a href='https://www.instagram.com/'  target='_blank'><img className='logoFooter_fanPage-icon' src={instaIcon} alt='instagramIcon'/></a>
                 </div>
                 <div className='logoFooter_info'>
                 <p className='logoFooter_groupName'>Team Calendar</p>
