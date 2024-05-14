@@ -20,7 +20,7 @@ function NoteBook(props) {
 
     // Array sort type (name, price,...)
     const selectArray = [
-        { name: "Select Sort", value: "default" },
+        { name: "Default", value: "default" },
         { name: "Name A → Z", value: "type1" },
         { name: "Name Z → A", value: "type2" },
         { name: "Price Ascending", value: "type3" },
@@ -182,7 +182,7 @@ function NoteBook(props) {
                 src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
             {/* Sidebar area */}
             <div className='allProducts-container row '>
-                <div className='allProduct-sidebar col-xl-3 col-md-5 col-sm-6'>
+                <div className='allProduct-sidebar col-xl-3 col-md-4 col-sm-12'>
                     <TypeFilterAll
                         typeFilter={typeFilter}
                         setTypeFilter={setTypeFilter}
@@ -191,7 +191,7 @@ function NoteBook(props) {
                     <PriceFilter priceFilter={priceFilter}
                         setPriceFilter={setPriceFilter} />
                 </div>
-                <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6 w-100 '>
+                <div className='allProduct-productlist col-xl-9 col-md-8 col-sm-12'>
                     <div className='allProduct-header'>
                         <p className='allProduct-header-title'>Notebook</p>
                         <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />

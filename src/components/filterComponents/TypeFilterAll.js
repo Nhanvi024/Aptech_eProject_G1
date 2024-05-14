@@ -34,7 +34,6 @@ function TypeFilterAll(props) {
             setTypeFilter({ ...typeFilter, calendarFilter: [...calendarTypeList] }) :
             setTypeFilter({ ...typeFilter, calendarFilter: [] })
     }
-
     return (
         <>
 
@@ -88,20 +87,21 @@ function TypeFilterAll(props) {
                     }
                 </div>
             </div>
-            <div className='typeFilterAll-container1 d-block d-md-none col-6 g-0'>
-                <div className='typeFilterAll-head1 navbar navbar-expand-lg'>
+            <div className='typeFilterAll-container1 d-block d-md-none col-6 g-0 w-100'>
+                <div className='typeFilterAll-head1 navbar-expand-lg'>
 
                     <button className="navbar-toggler typeFilterbtn dropdown-toggle w-100 h-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span>Categories </span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+                        <ul className="navbar-nav m-auto my-2 text-center w-100">
                             <li className="nav-item dropdown">
-                                {notebookTypeList && <a className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notebook</a>
+                                {notebookTypeList && 
+                                <a className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notebook</a>
                                 }
                                 <ul className="dropdown-menu w-100">
                                     {notebookTypeList &&
-                                        <div className='typeFilterAll-item-container1 dropdown-item'>
+                                        <div className='typeFilterAll-item-containerDropDown dropdown-item'>
                                             <div className='typeFilterAll-notebookAll  dropdown-item'>
                                                 <input onChange={(e) => handleAllNoteBookFilter(e)} className="typeFilterAll-typebox" name='notebookAll' type="checkbox" id='notebookAll' checked={noteBookFilter.length === notebookTypeList.length} />
                                                 <label className='typeFilterAll-typename' htmlFor='notebookAll'>All Notebook</label>
@@ -123,13 +123,15 @@ function TypeFilterAll(props) {
                                 </ul>
                             </li>
                         </ul>
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav m-auto my-2 text-center w-100">
                             <li className="nav-item dropdown">
-                                {calendarTypeList && <a className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calendars</a>}
+                                {calendarTypeList &&
+                                 <a className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calendars</a>
+                                }
                                 <ul className="dropdown-menu w-100">
                                     {calendarTypeList &&
-                                        <div className='typeFilterAll-item-container'>
-                                            <div className='typeFilterAll-calendarAll'>
+                                        <div className='typeFilterAll-item-containerDropDown dropdown-item'>
+                                            <div className='typeFilterAll-calendarAll dropdown-item'>
                                                 <input onChange={(e) => handleAllCalendarFilter(e)} className="typeFilterAll-typebox" name='calendarAll' type="checkbox" id='calendarAll' checked={calendarFilter.length === calendarTypeList.length} />
                                                 <label className='typeFilterAll-typename' htmlFor='calendarAll'>All Calendar</label>
                                             </div>

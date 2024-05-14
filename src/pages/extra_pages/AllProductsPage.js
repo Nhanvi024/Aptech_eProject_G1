@@ -21,7 +21,7 @@ function AllProductsPage(props) {
 
     // Array sort type (name, price,...)
     const selectArray = [
-        { name: "Select Sort", value: "default" },
+        { name: "Default", value: "default" },
         { name: "Name A → Z", value: "type1" },
         { name: "Name Z → A", value: "type2" },
         { name: "Price Ascending", value: "type3" },
@@ -197,7 +197,7 @@ function AllProductsPage(props) {
                 <img className='imageBanner'
                     src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
                 <div className='allProducts-container row'>
-                    <div className='allProduct-sidebar  col-xl-3 col-md-5 col-sm-6'>
+                    <div className='allProduct-sidebar  col-xl-3 col-md-4 col-sm-12'>
                         <TypeFilterAll
                             typeFilter={typeFilter}
                             setTypeFilter={setTypeFilter}
@@ -207,7 +207,7 @@ function AllProductsPage(props) {
                         <PriceFilter priceFilter={priceFilter}
                             setPriceFilter={setPriceFilter} />
                     </div>
-                    <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6 w-100'>
+                    <div className='allProduct-productlist col-xl-9 col-md-8 col-sm-12'>
                         <div className='allProduct-header'>
                             <p className='allProduct-header-title'>All Products</p>
                             <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
