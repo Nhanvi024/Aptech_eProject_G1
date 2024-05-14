@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 function CheckoutCart(props) {
     const navigate = useNavigate()
     const { productCart, totalPayment } = useContext(DataContext)
-    const { shipping, handleConfirmOrder } = props
+    const { shipping, handleConfirmOrder, paymentMethod } = props
     return (
 
         <div className='checkout-cart col-sm-4'>
@@ -54,7 +54,9 @@ function CheckoutCart(props) {
                     </div>
                     <div className='checkout-cart-button'>
                         <button onClick={() => navigate('/cart')} className='checkout-cart-back'>Back To Cart</button>
+                        {paymentMethod !== 'paypal-payment' &&
                         <button onClick={(e) => handleConfirmOrder(e)} className='checkout-cart-order'>Confirm Order</button>
+                        }
                     </div>
                 </div>
             </div>

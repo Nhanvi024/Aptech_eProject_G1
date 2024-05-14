@@ -1,8 +1,6 @@
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import { createContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Slide, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const DataContext = createContext();
 function DataProvider({ children }) {
@@ -62,36 +60,6 @@ function DataProvider({ children }) {
         setProductCart(productCart.filter(item => item.id !== idDelete))
     }
 
-
-    //** Confirm Order successfully
-    const ms = 2000;
-    const ConfirmOrder = ms => new Promise(resolve => setTimeout(resolve(ms), 2000))
-
-    const OrderSuccess = () => {
-        toast.promise(ConfirmOrder(ms)
-            .then((ms) => {
-                setTimeout(() => {
-                    setProductCart([]);
-                    navigate('/')
-                }, ms)
-            })
-            .catch((error) => {
-
-            })
-            ,
-            {
-                pending: "Waiting processing order",
-                success: "Order successfully! Thank you",
-            });
-    }
-
-    const OrderFailure = () => {
-        toast.error("Order information is required")
-    }
-
-
-
-
 let valueProvider = {
     // products data read from json file --> many components are in use
     products,
@@ -120,9 +88,6 @@ let valueProvider = {
     totalPayment,
     handleDeleteItem,
 
-    OrderSuccess,
-    OrderFailure
-
 }
 const initialOptions = {
     clientId: 'AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr',
@@ -135,22 +100,7 @@ return (
         <PayPalScriptProvider options={initialOptions}>
 
             {children}
-            <ToastContainer
-                position="top-right"
-                autoClose={4000}
-                hideProgressBar={true}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                theme="colored"
-                transition={Slide}
-                style={
-                    {fontSize: "16px",
-                        width: "400px"
-                    }
-                    
-                }
-            />
+
         </PayPalScriptProvider>
     </DataContext.Provider>
 )
