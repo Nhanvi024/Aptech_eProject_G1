@@ -143,17 +143,9 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-    .newsPage-hotNews-newscard1:last-child {
-        display: none;
-    }
 
     .newsPage-hotNews-newscard2:last-child {
         display: none;
-    }
-
-    .newsPage-hotNews-newscard1 {
-        width: 30%;
-        height: 200px;
     }
 
     .newsPage-hotNews-newscard2 {
@@ -164,16 +156,6 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-    .newsPage-hotNews-row1 {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .newsPage-hotNews-newscard1 {
-        width: 70%;
-        height: 300px;
-    }
 
     .newsPage-hotNews-row2 {
         flex-direction: column;

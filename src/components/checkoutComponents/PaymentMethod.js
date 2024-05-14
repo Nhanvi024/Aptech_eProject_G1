@@ -1,32 +1,27 @@
 import './PaymentMethod.css'
-import React, { useContext, useEffect, useState } from 'react';
-import { DataContext } from '../../context/DataContext';
+import React, { useEffect, useState } from 'react';
 import $ from 'jquery'
 import PaypalPayment from './PaypalPayment';
-import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 
 function PaymentMethod(props) {
     const { shipping, setShipping, shippingMethods, errors, handleConfirmOrder } = props
     const [paymentMethod, setPaymentMethod] = useState('cash')
 
     const handleChangePayment = (e) => {
-        
         if (Object.keys(errors).length !== 0) {
-            alert('Please complete order information!')
-            setPaymentMethod('cash')
+            handleConfirmOrder(e)
         } else {
             setPaymentMethod(e.target.id)
-            // e.target.id === 'bank' ? $('#bank-info').slideDown() : $('#bank-info').slideUp()
-            // e.target.id === 'paypal' ? $('#paypal-info').slideDown() : $('#paypal-info').slideUp()
         }
     }
 
 
-    useEffect(()=>{
+    useEffect(() => {
         if (Object.keys(errors).length === 0) {
-        paymentMethod === 'bank' ? $('#bank-info').slideDown() : $('#bank-info').slideUp()
-        paymentMethod === 'paypal' ? $('#paypal-info').slideDown() : $('#paypal-info').slideUp()
-        }else{
+            paymentMethod === 'bank' ? $('#bank-info').slideDown() : $('#bank-info').slideUp()
+            paymentMethod === 'paypal-payment' ? $('#paypal-info').slideDown() : $('#paypal-info').slideUp()
+        } else {
+            paymentMethod !== 'cash' && setPaymentMethod('cash')
             $('#bank-info').slideUp()
             $('#paypal-info').slideUp()
         }
@@ -53,13 +48,13 @@ function PaymentMethod(props) {
                     <label className="form-check-label" htmlFor="cash">Cash on delivery (CCOD)</label>
                 </div>
                 <div className="form-check checkout-payment-option">
-                    <input onChange={(e) => handleChangePayment(e)} type="radio" className="particles-checkbox" id="bank" name="payment" checked={paymentMethod === 'bank'}/>
+                    <input onChange={(e) => handleChangePayment(e)} type="radio" className="particles-checkbox" id="bank" name="payment" checked={paymentMethod === 'bank'} />
                     <label className="form-check-label" htmlFor="bank">Bank transfer</label>
 
                 </div>
                 <div className="form-check checkout-payment-option">
-                    <input onChange={(e) => handleChangePayment(e)} type="radio" className="particles-checkbox" id="paypal" name="payment" checked={paymentMethod === 'paypal'}/>
-                    <label className="form-check-label" htmlFor="paypal">Paypal payment</label>
+                    <input onChange={(e) => handleChangePayment(e)} type="radio" className="particles-checkbox" id="paypal-payment" name="payment" checked={paymentMethod === 'paypal-payment'} />
+                    <label className="form-check-label" htmlFor="paypal-payment">Paypal payment</label>
                 </div>
                 <div className='payment-info'>
                     <div id='bank-info'>
@@ -70,7 +65,7 @@ function PaymentMethod(props) {
                     </div>
                     <div id='paypal-info'>
 
-                        <PaypalPayment shipping={shipping} errors={errors} handleConfirmOrder={handleConfirmOrder}/>
+                        <PaypalPayment shipping={shipping} errors={errors} handleConfirmOrder={handleConfirmOrder} />
 
                     </div>
                     <div style={{ color: 'red' }}>Please ensure your order information is correct</div>
