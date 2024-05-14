@@ -4,7 +4,7 @@ import { PayPalButtons} from "@paypal/react-paypal-js";
 import { DataContext } from '../../context/DataContext';
 
 function PaypalPayment(props) {
-    const { shipping, handleConfirmOrder } = props
+    const { shipping, OrderSuccess } = props
     const { totalPayment } = useContext(DataContext)
 
     const onCreateOrder = (data, actions) => {
@@ -26,7 +26,7 @@ function PaypalPayment(props) {
 
         return actions.order.capture().then((details) => {
             // const name = details.payer.name.given_name;
-            handleConfirmOrder()
+            OrderSuccess()
         });
 
     }

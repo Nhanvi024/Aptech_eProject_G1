@@ -4,18 +4,20 @@ import CheckoutCart from '../../components/checkoutComponents/CheckoutCart';
 import CheckoutInfo from '../../components/checkoutComponents/CheckoutInfo';
 import PaymentMethod from '../../components/checkoutComponents/PaymentMethod';
 import { DataContext } from '../../context/DataContext';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 function CheckOut(props) {
-    const { OrderSuccess, OrderFailure } = useContext(DataContext)
-   
+    const navigate = useNavigate()
+    const { productCart, setProductCart } = useContext(DataContext)
+
     const [shipping, setShipping] = useState({
         name: 'Fast delivery',
         fee: 10
     })
-
     const shippingMethods = [
         {
             name: 'Fast delivery',
@@ -26,7 +28,7 @@ function CheckOut(props) {
             fee: 5
         }
     ]
-
+    const [paymentMethod, setPaymentMethod] = useState('cash')
     const [errors, setErrors] = useState({ nameError: '', emailError: '', addressError: '', phoneError: '' });
     const [form, setForm] = useState({
         name: '',
@@ -35,25 +37,55 @@ function CheckOut(props) {
         address: '',
         comment: ''
     })
+
+    //** Input Form Order */
     const handleInput = (e) => {
-        let { name, value } = e.target
-        handleValidate(name, value)
-        setForm({ ...form, [name]: value })
-    }
-    
-    const handleConfirmOrder = (e) => {
-        if (Object.keys(errors).length !== 0) {
-            e.preventDefault();
-            handleValidate('name', form.name)
-            handleValidate('phone', form.phone)
-            handleValidate('email', form.email)
-            handleValidate('address', form.address)
-            setErrors({ ...errors })
-            OrderFailure()
+        if (!productCart.length) {
+            toast.warning("Product Cart is empty!", {
+                onClose: () => navigate('/')
+            })
         } else {
-            OrderSuccess()
+            let { name, value } = e.target
+            handleValidate(name, value)
+            setForm({ ...form, [name]: value })
         }
-            
+    }
+
+    const OrderSuccess = () => {
+        toast.success("Order successfully! Thank you", {
+            onClose: () => {
+                setProductCart([]);
+                navigate('/')
+            }
+        })
+    }
+   
+    const OrderFailure = () =>{
+        toast.error("Order information is required",{
+            onOpen: () => {
+                handleValidate('name', form.name)
+                handleValidate('phone', form.phone)
+                handleValidate('email', form.email)
+                handleValidate('address', form.address)
+                setErrors({ ...errors })
+            }
+        })
+    }
+
+    const handleConfirmOrder = (e) => {
+        if (!productCart.length) {
+            toast.warning("Product Cart is empty!", {
+                onClose: () => navigate('/')
+            })
+        } else {
+            if (Object.keys(errors).length !== 0) {
+                e.preventDefault();
+                OrderFailure()
+            } else {
+                OrderSuccess()
+            }
+        }
+
     }
 
     const handleValidate = (name, value) => {
@@ -107,19 +139,41 @@ function CheckOut(props) {
             exit={{ opacity: 0, transition: { duration: 0 } }}
         >
 
-            <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp' alt='...'/>
+            <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp' alt='...' />
             <div className='checkout-container'>
                 <CheckoutInfo handleInput={handleInput} errors={errors} />
-                <PaymentMethod 
-                shipping={shipping} 
-                setShipping={setShipping} 
-                shippingMethods={shippingMethods} 
-                errors={errors} 
-                handleConfirmOrder = {handleConfirmOrder}/>
+                <PaymentMethod
+                    shipping={shipping}
+                    setShipping={setShipping}
+                    shippingMethods={shippingMethods}
+                    errors={errors}
+                    handleConfirmOrder={handleConfirmOrder}
+                    paymentMethod={paymentMethod}
+                    setPaymentMethod={setPaymentMethod} 
+                    OrderSuccess={OrderSuccess}/>
 
-                <CheckoutCart shipping={shipping} handleConfirmOrder={handleConfirmOrder} />
+                <CheckoutCart
+                    shipping={shipping}
+                    handleConfirmOrder={handleConfirmOrder}
+                    paymentMethod={paymentMethod} />
             </div>
-       
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={true}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                theme="colored"
+                transition={Slide}
+                style={
+                    {
+                        fontSize: "16px",
+                        width: "400px"
+                    }
+
+                }
+            />
         </motion.div>
 
     );
