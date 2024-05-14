@@ -1,8 +1,12 @@
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
-import {createContext, useEffect, useState} from 'react';
+import { createContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DataContext = createContext();
 function DataProvider({ children }) {
+    const navigate = useNavigate()
     const [products, setProducts] = useState([])
     const [searchProduct, setSearchProduct] = useState('')
     const [isDataLoaded, setIsDataLoaded] = useState(false)
@@ -19,14 +23,14 @@ function DataProvider({ children }) {
     ]
     const [btnActive, setBtnActive] = useState(webPage[0].name)
 
-	useEffect(() => {
-		fetch('/data/data.json')
-			.then((res) => res.json())
-			.then((data) => {
+    useEffect(() => {
+        fetch('/data/data.json')
+            .then((res) => res.json())
+            .then((data) => {
                 setProducts(data)
             })
-			.then(setIsDataLoaded(true));
-	}, []);
+            .then(setIsDataLoaded(true));
+    }, []);
 
     // ** Products Cart
 
@@ -59,63 +63,97 @@ function DataProvider({ children }) {
     }
 
 
-    // ** Login/ Sign in
-    const [user,setUser] = useState([
-        {
-            fullname: 'Nhan',
-            phone: '0123456789',
-            email: 'abc@gmail.com',
-            password: '123456',
-            address: '',
-        }
-    ])
+    //** Confirm Order successfully
+    const ms = 2000;
+    const ConfirmOrder = ms => new Promise(resolve => setTimeout(resolve(ms), 2000))
 
+    const OrderSuccess = () => {
+        toast.promise(ConfirmOrder(ms)
+            .then((ms) => {
+                setTimeout(() => {
+                    setProductCart([]);
+                    navigate('/')
+                }, ms)
+            })
+            .catch((error) => {
 
-
-    let valueProvider = {
-        // products data read from json file --> many components are in use
-        products,
-        setProducts,
-
-        // Search Name of product
-        searchProduct,  // --> SearchPage.js
-        setSearchProduct, //--> SearchBox.js
-
-        // Button Link is activated, --> NavBar.js, Menu.js
-        btnActive,
-        setBtnActive,
-
-        // --> HomePage.js
-        isDataLoaded,
-        setIsDataLoaded,
-
-        // product list in Cart --> CartList.js
-        productCart,
-        setProductCart,
-
-        // function add product to cart --> ProductCard.js
-        handleAddProductCart,
-
-        // function delete product from cart --> CartList.js, CartPage.js
-        totalPayment,
-        handleDeleteItem,
-
+            })
+            ,
+            {
+                pending: "Waiting processing order",
+                success: "Order successfully! Thank you",
+            });
     }
-    const initialOptions = {
-        clientId: 'AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr',
-        currency: 'USD',
-        intent: 'capture',
-        components: 'buttons',
-    };
-    return (
-        <DataContext.Provider value={valueProvider}>
-			<PayPalScriptProvider options={initialOptions}>
+
+    const OrderFailure = () => {
+        toast.error("Order information is required")
+    }
+
+
+
+
+let valueProvider = {
+    // products data read from json file --> many components are in use
+    products,
+    setProducts,
+
+    // Search Name of product
+    searchProduct,  // --> SearchPage.js
+    setSearchProduct, //--> SearchBox.js
+
+    // Button Link is activated, --> NavBar.js, Menu.js
+    btnActive,
+    setBtnActive,
+
+    // --> HomePage.js
+    isDataLoaded,
+    setIsDataLoaded,
+
+    // product list in Cart --> CartList.js
+    productCart,
+    setProductCart,
+
+    // function add product to cart --> ProductCard.js
+    handleAddProductCart,
+
+    // function delete product from cart --> CartList.js, CartPage.js
+    totalPayment,
+    handleDeleteItem,
+
+    OrderSuccess,
+    OrderFailure
+
+}
+const initialOptions = {
+    clientId: 'AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr',
+    currency: 'USD',
+    intent: 'capture',
+    components: 'buttons',
+};
+return (
+    <DataContext.Provider value={valueProvider}>
+        <PayPalScriptProvider options={initialOptions}>
 
             {children}
-			</PayPalScriptProvider>
-
-        </DataContext.Provider>
-    )
+            <ToastContainer
+                position="top-right"
+                autoClose={4000}
+                hideProgressBar={true}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                theme="colored"
+                transition={Slide}
+                style={
+                    {fontSize: "16px",
+                        width: "400px"
+                    }
+                    
+                }
+            />
+        </PayPalScriptProvider>
+    </DataContext.Provider>
+)
 }
 
-export {DataContext, DataProvider};
+export { DataContext, DataProvider };
