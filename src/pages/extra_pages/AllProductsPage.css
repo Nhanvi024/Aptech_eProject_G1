@@ -1,6 +1,6 @@
 
 .allProducts-container{
-    z-index: 100;
+    z-index: 0;
     width: 1200px;
     height: fit-content;
     position: relative;
@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
 }
 
 .allProduct-productlist{
@@ -52,7 +52,6 @@
     display: flex;
     flex-wrap: wrap;
     /* gap: 20px; */
-    background-color: rebeccapurple;
     justify-content: space-evenly;
 
 }

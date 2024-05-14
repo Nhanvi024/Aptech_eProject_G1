@@ -107,7 +107,7 @@ function HomePage(props) {
 	// ==================================================
 
 	// Category list
-	let category1List = ['all']; //notebook category list
+	let category1List = ['All']; //notebook category list
 	{
 		products.length !== 0 &&
 			products.noteBook.map((item, index) => {
@@ -116,7 +116,7 @@ function HomePage(props) {
 				}
 			});
 	}
-	let category2List = ['all']; //calendar category list
+	let category2List = ['All']; //calendar category list
 	{
 		products.length !== 0 &&
 			products.calendar.map((item, index) => {
@@ -129,11 +129,11 @@ function HomePage(props) {
 
 	// filter homepage by type
 	// filter notebook
-	const [notebookTypeFilter, setNotebookTypeFilter] = useState('all');
+	const [notebookTypeFilter, setNotebookTypeFilter] = useState('All');
 
 	useEffect(() => {
 		if (isDataLoaded === true) {
-			if (notebookTypeFilter === 'all') {
+			if (notebookTypeFilter === 'All') {
 				setNotebookList(products.noteBook);
 			} else {
 				setNotebookList(products.noteBook.filter((item) => item.type === notebookTypeFilter));
@@ -144,11 +144,11 @@ function HomePage(props) {
 	}, [notebookTypeFilter, products]);
 
 	// filter calendar
-	const [calendarTypeFilter, setCalendarTypeFilter] = useState('all');
+	const [calendarTypeFilter, setCalendarTypeFilter] = useState('All');
 
 	useEffect(() => {
 		if (isDataLoaded === true) {
-			if (calendarTypeFilter === 'all') {
+			if (calendarTypeFilter === 'All') {
 				setCalendarList(products.calendar);
 			} else {
 				setCalendarList(products.calendar.filter((item) => item.type === calendarTypeFilter));

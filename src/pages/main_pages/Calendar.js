@@ -19,7 +19,7 @@ function Calendar(props) {
 
     // Array sort type (name, price,...)
     const selectArray = [
-        { name: "Select Sort", value: "default" },
+        { name: "Default", value: "default" },
         { name: "Name A → Z", value: "type1" },
         { name: "Name Z → A", value: "type2" },
         { name: "Price Ascending", value: "type3" },
@@ -185,7 +185,7 @@ function Calendar(props) {
             <img className='imageBanner'
                 src='https://www.muji.us/cdn/shop/collections/collection_page_stationery_calendar_planner_2043x630.jpg?v=1668704287'  alt='calendarBanner'></img>
             <div className='allProducts-container row'>
-                <div className='allProduct-sidebar  col-xl-3 col-md-5 col-sm-6'>
+                <div className='allProduct-sidebar  col-xl-3 col-md-4 col-sm-12'>
                     <TypeFilterAll
                         typeFilter={typeFilter}
                         setTypeFilter={setTypeFilter}                 
@@ -196,7 +196,7 @@ function Calendar(props) {
                     <PriceFilter priceFilter={priceFilter}
                         setPriceFilter={setPriceFilter} />
                 </div>
-                <div className='allProduct-productlist col-xl-9 col-md-7 col-sm-6  w-100'>
+                <div className='allProduct-productlist col-xl-9 col-md-8 col-sm-12'>
                     <div className='allProduct-header'>
                         <p className='allProduct-header-title'>Calendar</p>
                         <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
