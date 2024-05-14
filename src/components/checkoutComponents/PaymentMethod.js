@@ -4,8 +4,7 @@ import $ from 'jquery'
 import PaypalPayment from './PaypalPayment';
 
 function PaymentMethod(props) {
-    const { shipping, setShipping, shippingMethods, errors, handleConfirmOrder } = props
-    const [paymentMethod, setPaymentMethod] = useState('cash')
+    const { shipping, setShipping, shippingMethods, errors, handleConfirmOrder, paymentMethod, setPaymentMethod, OrderSuccess } = props
 
     const handleChangePayment = (e) => {
         if (Object.keys(errors).length !== 0) {
@@ -65,7 +64,7 @@ function PaymentMethod(props) {
                     </div>
                     <div id='paypal-info'>
 
-                        <PaypalPayment shipping={shipping} errors={errors} handleConfirmOrder={handleConfirmOrder} />
+                        <PaypalPayment shipping={shipping} errors={errors} handleConfirmOrder={handleConfirmOrder} OrderSuccess={OrderSuccess} />
 
                     </div>
                     <div style={{ color: 'red' }}>Please ensure your order information is correct</div>
