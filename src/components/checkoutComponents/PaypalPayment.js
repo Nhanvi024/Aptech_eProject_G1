@@ -1,13 +1,11 @@
 import './PaypalPayment.css'
 import React, { useContext } from 'react';
-import { PayPalButtons, PayPalScriptProvider, usePayPalScriptReducer } from "@paypal/react-paypal-js";
+import { PayPalButtons} from "@paypal/react-paypal-js";
 import { DataContext } from '../../context/DataContext';
-import { useNavigate } from 'react-router-dom';
 
 function PaypalPayment(props) {
-    const navigate = useNavigate()
-    const { shipping } = props
-    const { totalPayment, setProductCart } = useContext(DataContext)
+    const { shipping, handleConfirmOrder } = props
+    const { totalPayment } = useContext(DataContext)
 
     const onCreateOrder = (data, actions) => {
 
@@ -27,16 +25,14 @@ function PaypalPayment(props) {
     const onApproveOrder = (data, actions) => {
 
         return actions.order.capture().then((details) => {
-            const name = details.payer.name.given_name;
-            alert(`Transaction completed by ${name}`);
-            setProductCart([])
-            navigate('/')
+            // const name = details.payer.name.given_name;
+            handleConfirmOrder()
         });
 
     }
 
     return (
-        <div className='paypalPeyment-container'>
+        <div className='paypalPayment-container'>
                 <PayPalButtons
                     style={{ layout: "vertical" }}
                     disabled={false}
