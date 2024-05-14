@@ -46,7 +46,7 @@ function MenuSearch(props) {
                 onKeyDown={(e) => handleSearch(e)}
                 id='menuSearch-searchInput' type='text' placeholder='Enter product name and press enter ...' />
 
-            <input type='checkbox' id='menu-modal' checked={showModal} />
+            <input onChange={() => setShowModal(pre => !pre)} type='checkbox' id='menu-modal' checked={showModal} />
             <div className='menuSearch-modal' onClick={() => setShowModal(pre => !pre)}>
                 <div id='menuSearch-menuDetail'>
                     <Logo />

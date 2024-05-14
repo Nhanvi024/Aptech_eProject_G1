@@ -3,11 +3,11 @@ import React, { useContext } from 'react';
 import { DataContext } from '../../context/DataContext';
 import { useNavigate } from 'react-router-dom';
 
+
 function CheckoutCart(props) {
     const navigate = useNavigate()
     const { productCart, totalPayment } = useContext(DataContext)
     const { shipping, handleConfirmOrder } = props
-
     return (
 
         <div className='checkout-cart col-sm-4'>
@@ -58,6 +58,7 @@ function CheckoutCart(props) {
                     </div>
                 </div>
             </div>
+     
         </div>
     );
 }

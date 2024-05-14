@@ -1,6 +1,5 @@
 import './CheckOut.css'
 
-import { useNavigate } from 'react-router-dom';
 import CheckoutCart from '../../components/checkoutComponents/CheckoutCart';
 import CheckoutInfo from '../../components/checkoutComponents/CheckoutInfo';
 import PaymentMethod from '../../components/checkoutComponents/PaymentMethod';
@@ -8,9 +7,10 @@ import { DataContext } from '../../context/DataContext';
 import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
 
+
 function CheckOut(props) {
-    const navigate = useNavigate()
-    const { setProductCart } = useContext(DataContext)
+    const { OrderSuccess, OrderFailure } = useContext(DataContext)
+   
     const [shipping, setShipping] = useState({
         name: 'Fast delivery',
         fee: 10
@@ -40,16 +40,20 @@ function CheckOut(props) {
         handleValidate(name, value)
         setForm({ ...form, [name]: value })
     }
-
+    
     const handleConfirmOrder = (e) => {
         if (Object.keys(errors).length !== 0) {
             e.preventDefault();
-            alert('All field is required')
+            handleValidate('name', form.name)
+            handleValidate('phone', form.phone)
+            handleValidate('email', form.email)
+            handleValidate('address', form.address)
+            setErrors({ ...errors })
+            OrderFailure()
         } else {
-            alert('Order successfully. Thank you!!!')
-            setProductCart([])
-            navigate('/')
+            OrderSuccess()
         }
+            
     }
 
     const handleValidate = (name, value) => {
@@ -96,24 +100,27 @@ function CheckOut(props) {
     }
 
 
-
     return (
-     
-        <motion.div className='checkout-page-container' initial={{ opacity: 0 }}
 
+        <motion.div className='checkout-page-container' initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 1 } }}
             exit={{ opacity: 0, transition: { duration: 0 } }}
         >
-           
-            <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp'></img>
+
+            <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp' alt='...'/>
             <div className='checkout-container'>
                 <CheckoutInfo handleInput={handleInput} errors={errors} />
-                <PaymentMethod shipping={shipping} setShipping={setShipping} shippingMethods={shippingMethods} errors={errors} />
-                
+                <PaymentMethod 
+                shipping={shipping} 
+                setShipping={setShipping} 
+                shippingMethods={shippingMethods} 
+                errors={errors} 
+                handleConfirmOrder = {handleConfirmOrder}/>
+
                 <CheckoutCart shipping={shipping} handleConfirmOrder={handleConfirmOrder} />
             </div>
-           
-         </motion.div>
+       
+        </motion.div>
 
     );
 }
