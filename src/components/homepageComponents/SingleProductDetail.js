@@ -13,14 +13,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 
 // import required modules
-import {Grid, Navigation} from 'swiper/modules';
+import {Navigation} from 'swiper/modules';
 
 function SingleProductDetail(props) {
 	const {products, handleAddProductCart, isDataLoaded} = useContext(DataContext);
-	console.log('products list: ', products);
 	const navigate = useNavigate();
 	const {productId} = useParams();
-	console.log(productId);
 	const [relateList, setRelateList] = useState([]);
 	const [itemSingle, setItemSingle] = useState({
 		id: '',
@@ -43,28 +41,23 @@ function SingleProductDetail(props) {
 			image3: '',
 		},
 	});
-	console.log('test item single:', itemSingle);
-	console.log(typeof itemSingle);
 	const swiperRefNotebook = useRef();
 	useEffect(() => {
 		if (products.length !== 0) {
 			products.noteBook.map((itema) => {
 				if (itema.id === productId) {
 					setItemSingle(itema);
-					setRelateList(products.noteBook.filter((item) => item.type == itema.type));
+					setRelateList(products.noteBook.filter((item) => item.type === itema.type));
 				}
 			});
 			products.calendar.map((itema) => {
 				if (itema.id === productId) {
 					setItemSingle(itema);
-					setRelateList(products.calendar.filter((item) => item.type == itema.type));
+					setRelateList(products.calendar.filter((item) => item.type === itema.type));
 				}
 			});
 		}
 	}, [isDataLoaded, products, productId]);
-	// console.log("test notebook:",products.noteBook);
-	// console.log('itemtest:', item);
-	// console.log('test relate list:', relateList);
 	if (products.length !== 0) {
 		return (
 			<div className="container">
