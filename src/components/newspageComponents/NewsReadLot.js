@@ -55,8 +55,8 @@ function NewsReadLot(props) {
                 >
                     {newsReadLot && newsReadLot.map((item, index) => {
                         return (
-                            <SwiperSlide>
-                                <div key={index} className='newsPage-newsReadLot-newscard'>
+                            <SwiperSlide key={index}>
+                                <div className='newsPage-newsReadLot-newscard'>
                                     <button onClick={(e) => handleSelectNews(e)} className='newsPage-newsReadLot-nav' name={item.id}>
                                         <img className='newsPage-newsReadLot-img' src={item.mainImage} alt='news' />
                                         <p className='newsPage-newsReadLot-title' >{item.title}</p>
