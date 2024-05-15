@@ -54,8 +54,8 @@ function HotNews(props) {
                     >
                     {hotNews && hotNews.map((item, index) => {
                             return (
-                                <SwiperSlide>
-                                    <button key={index} onClick={(e) => handleSelectNews(e)} className='newsPage-hotNews-newscard1' name={item.id}>
+                                <SwiperSlide key={index}>
+                                    <button onClick={(e) => handleSelectNews(e)} className='newsPage-hotNews-newscard1' name={item.id}>
                                         <img className='newsPage-hotNews-img1' src={item.mainImage} alt='news' />
                                         <p className='newsPage-hotNews-title1' >{item.title}</p>
                                     </button>
