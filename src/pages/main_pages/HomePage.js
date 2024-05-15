@@ -21,10 +21,10 @@ import {Grid, Navigation} from 'swiper/modules';
 import {motion} from 'framer-motion';
 function HomePage(props) {
 	const Navigate = useNavigate();
-	const {products, searchProduct, setSearchProduct, isDataLoaded, setIsDataLoaded} = useContext(DataContext);
-
+	const {products} = useContext(DataContext);
 	const [notebookList, setNotebookList] = useState([]);
 	const [calendarList, setCalendarList] = useState([]);
+
 	// check window side and set number of items to display
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 	function resizeWindow() {
@@ -66,73 +66,33 @@ function HomePage(props) {
 
 	// ==================================================
 
-	// maxpage and switch page
-	// next/prev notebook
-	// let section1MaxPage = Math.ceil((+Object.keys(notebookList || {}).length - itemPerPage) / 2);
-	// const [section1Page, setSection1Page] = useState(0);
-
-	// function handleSection1PageNext(params) {
-	// 	if (section1Page < section1MaxPage) {
-	// 		setSection1Page((pre) => pre + 1);
-	// 	} else {
-	// 		setSection1Page(0);
-	// 	}
-	// }
-	// function handleSection1PagePrev(params) {
-	// 	if (section1Page > 0) {
-	// 		setSection1Page((pre) => pre - 1);
-	// 	} else {
-	// 		setSection1Page(section1MaxPage);
-	// 	}
-	// }
-
-	// next/prev calendar
-	// let section2MaxPage = Math.ceil((+Object.keys(calendarList || {}).length - itemPerPage) / 2);
-	// const [section2Page, setSection2Page] = useState(0);
-
-	// function handleSection2PageNext(params) {
-	// 	if (section2Page < section2MaxPage) {
-	// 		setSection2Page((pre) => pre + 1);
-	// 	} else {
-	// 		setSection2Page(0);
-	// 	}
-	// }
-	// function handleSection2PagePrev(params) {
-	// 	if (section2Page > 0) {
-	// 		setSection2Page((pre) => pre - 1);
-	// 	} else {
-	// 		setSection2Page(section2MaxPage);
-	// 	}
-	// }
-	// ==================================================
-
 	// Category list
 	let category1List = ['All']; //notebook category list
-	{
-		products.length !== 0 &&
-			products.noteBook.map((item, index) => {
-				if (!category1List.includes(item.type)) {
-					category1List = [...category1List, item.type];
-				}
-			});
-	}
+
+	products.length !== 0 &&
+		products.noteBook.map((item, index) => {
+			if (!category1List.includes(item.type)) {
+				category1List = [...category1List, item.type];
+			}
+		});
+
 	let category2List = ['All']; //calendar category list
-	{
-		products.length !== 0 &&
-			products.calendar.map((item, index) => {
-				if (!category2List.includes(item.type)) {
-					category2List = [...category2List, item.type];
-				}
-			});
-	}
+
+	products.length !== 0 &&
+		products.calendar.map((item, index) => {
+			if (!category2List.includes(item.type)) {
+				category2List = [...category2List, item.type];
+			}
+		});
+
 	// ==================================================
 
-	// filter homepage by type
-	// filter notebook
+	// filter homepage by type (categories)
+	// notebook category list
 	const [notebookTypeFilter, setNotebookTypeFilter] = useState('All');
 
 	useEffect(() => {
-		if (isDataLoaded === true) {
+		if (products.length !== 0) {
 			if (notebookTypeFilter === 'All') {
 				setNotebookList(products.noteBook);
 			} else {
@@ -143,11 +103,11 @@ function HomePage(props) {
 		}
 	}, [notebookTypeFilter, products]);
 
-	// filter calendar
+	// calendar category list
 	const [calendarTypeFilter, setCalendarTypeFilter] = useState('All');
 
 	useEffect(() => {
-		if (isDataLoaded === true) {
+		if (products.length !== 0) {
 			if (calendarTypeFilter === 'All') {
 				setCalendarList(products.calendar);
 			} else {
@@ -164,11 +124,13 @@ function HomePage(props) {
 			<motion.div
 				initial={{opacity: 0}}
 				animate={{opacity: 1, transition: {duration: 1}}}
-				exit={{opacity: 0, transition: {duration: 0}}}>
+				exit={{opacity: 0, transition: {duration: 0}}}
+			>
 				<div className="homePageContainer container-fluid p-0">
+					{/* homepage carousel */}
 					<section className="homepage-section-carousel container-fluid p-0 my-3 align-items-center">
 						<div id="myCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
-							{/* <!-- Indicators --> */}
+							{/* <!-- Indicators bootstrap carousel --> */}
 							<div className="carousel-indicators">
 								<li data-bs-target="#myCarousel" data-bs-slide-to="0" className="active"></li>
 								<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
@@ -176,7 +138,7 @@ function HomePage(props) {
 								<li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
 								<li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
 							</div>
-							{/* <!-- Wrapper for slides --> */}
+							{/* <!-- Wrapper for slides bootstrap carousel --> */}
 							<div className="carousel-inner">
 								<div className="carousel-item active" data-bs-interval="3000">
 									<img
@@ -216,7 +178,7 @@ function HomePage(props) {
 									/>
 								</div>
 							</div>
-							{/* <!-- Left and right controls --> */}
+							{/* <!-- Left and right controls bootstrap carousel --> */}
 							<button className="carousel-control-prev" data-bs-target="#myCarousel" data-bs-slide="prev">
 								<span className="carousel-control-prev-icon h-100 w-50" aria-hidden="true"></span>
 							</button>
@@ -225,28 +187,34 @@ function HomePage(props) {
 							</button>
 						</div>
 					</section>
+					{/* ----------------------------- */}
 
+					{/* homepage notebook section */}
 					<section className="homepage-section-notebook-container container-md p-0 my-3 align-items-center">
 						<div className="homepage-section-notebook row w-100 h-100 g-0 flex-row-reverse align-items-center">
+							{/* cards list */}
 							<div className="homepage-section-notebook-right col-md-8">
 								<div className="row g-0">
 									<div className="homepage-section-notebook-right-row1 row m-auto mb-2">
 										<div className="col-7 col-sm-6 text-center align-content-center">
 											<button
 												className="homepage-redirect-button row m-0 mb-2 justify-items-center"
-												onClick={() => Navigate('/notebook')}>
+												onClick={() => Navigate('/notebook')}
+											>
 												<p className="m-0 py-3 homepage-redirect-button-text w-100">Notebook</p>
 											</button>
 										</div>
 										<div className="d-block d-sm-none col-6 g-0 align-content-center py-3">
 											<div className="dropdown">
 												<button
-													className="btn btn-lg dropdown-toggle"
+													className="btn btn-lg"
 													type="button"
 													data-bs-toggle="dropdown"
 													style={{background: 'var(--secondary-background-clr)', fontSize: 'var(--fs-500)'}}
-													aria-expanded="false">
-													<span>Category</span>
+													aria-expanded="false"
+												>
+													<span style={{color: 'white'}}>Category </span>
+													<i className="fa fa-angle-down" style={{color: 'white'}}></i>
 												</button>
 												<ul className="dropdown-menu fs-2">
 													{products.length !== 0 &&
@@ -254,13 +222,14 @@ function HomePage(props) {
 															let navClass = item === notebookTypeFilter ? 'nav-item active' : 'nav-item';
 															return (
 																<li className={navClass} key={index}>
-																	<a
+																	<div
 																		className="nav-link"
 																		onClick={() => {
 																			setNotebookTypeFilter(item);
-																		}}>
+																		}}
+																	>
 																		{item}
-																	</a>
+																	</div>
 																</li>
 															);
 														})}
@@ -271,12 +240,14 @@ function HomePage(props) {
 											<span>
 												<button
 													className="btn btn-success pt-4 pb-0 me-1 homepage-list-nextprevBtn"
-													onClick={() => swiperRefNotebook.current?.slidePrev()}>
+													onClick={() => swiperRefNotebook.current?.slidePrev()}
+												>
 													<p className="homepage-nextPrevButton">&#8249;</p>
 												</button>
 												<button
 													className="btn btn-success pt-4 pb-0 ms-1 homepage-list-nextprevBtn"
-													onClick={() => swiperRefNotebook.current?.slideNext()}>
+													onClick={() => swiperRefNotebook.current?.slideNext()}
+												>
 													<p className="homepage-nextPrevButton">&#8250;</p>
 												</button>
 											</span>
@@ -293,7 +264,8 @@ function HomePage(props) {
 																	style={{fontSize: 'var(--fs-500)'}}
 																	onClick={() => {
 																		setNotebookTypeFilter(item);
-																	}}>
+																	}}
+																>
 																	{item}
 																</a>
 															</li>
@@ -348,7 +320,8 @@ function HomePage(props) {
 														swiperRefNotebook.current = swiper;
 													}}
 													className="mySwiper"
-													style={{width: `${itemPerPage * 150}px`}}>
+													style={{width: `${itemPerPage * 150}px`}}
+												>
 													{products.length !== 0 &&
 														notebookList.map((item, index) => {
 															return (
@@ -363,6 +336,9 @@ function HomePage(props) {
 									</div>
 								</div>
 							</div>
+							{/* ----------------------------- */}
+
+							{/* 1 card carousel */}
 							<div className="homepage-section-notebook-left col-md-4 p-3 d-flex my-3">
 								<div id="homepage-notebookCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
 									{/* <!-- Wrapper for slides --> */}
@@ -375,7 +351,8 @@ function HomePage(props) {
 														width: '5rem',
 														height: '5rem',
 													}}
-													role="status">
+													role="status"
+												>
 													<span className="visually-hidden">Loading...</span>
 												</div>
 											</div>
@@ -388,7 +365,8 @@ function HomePage(props) {
 														key={index}
 														className={classCarousel}
 														data-bs-interval="3000"
-														onClick={() => Navigate(`/detail/${item.id}`)}>
+														onClick={() => Navigate(`/detail/${item.id}`)}
+													>
 														<div className="homepage-productCard-carouselImgContainer">
 															<img src={item.image.mainImage} className="d-flex w-100 homepage-productCard-carouselImg" alt="..." />
 														</div>
@@ -400,7 +378,6 @@ function HomePage(props) {
 												);
 											})}
 									</div>
-
 									{/* <!-- Left and right controls --> */}
 									<button className="carousel-control-prev" data-bs-target="#homepage-notebookCarousel" data-bs-slide="prev">
 										<span className="carousel-control-prev-icon h-100 w-100" aria-hidden="false"></span>
@@ -410,29 +387,37 @@ function HomePage(props) {
 									</button>
 								</div>
 							</div>
+							{/* ----------------------------- */}
 						</div>
 					</section>
+					{/* ----------------------------- */}
+
+					{/* homepage calendar section */}
 					<section className="homepage-section-notebook-container container-md p-0 my-3 align-items-center">
 						<div className="homepage-section-notebook row w-100 h-100 g-0 flex-wrap align-items-center">
+							{/* cards list */}
 							<div className="homepage-section-notebook-right col-md-8">
 								<div className="row g-0">
 									<div className="homepage-section-notebook-right-row1 row m-auto mb-2">
 										<div className="col-7 col-sm-6 text-center align-content-center">
 											<button
 												className="homepage-redirect-button row m-0 mb-2 justify-items-center"
-												onClick={() => Navigate('/calendar')}>
+												onClick={() => Navigate('/calendar')}
+											>
 												<p className="m-0 py-3 homepage-redirect-button-text w-100">calendar</p>
 											</button>
 										</div>
 										<div className="d-block d-sm-none col-6 g-0 align-content-center py-3">
 											<div className="dropdown">
 												<button
-													className="btn btn-lg dropdown-toggle"
+													className="btn btn-lg"
 													type="button"
 													data-bs-toggle="dropdown"
 													style={{background: 'var(--secondary-background-clr)', fontSize: 'var(--fs-500)'}}
-													aria-expanded="false">
-													<span>Category</span>
+													aria-expanded="false"
+												>
+													<span style={{color: 'white'}}>Category </span>
+													<i className="fa fa-angle-down" style={{color: 'white'}}></i>
 												</button>
 												<ul className="dropdown-menu fs-2">
 													{products.length !== 0 &&
@@ -444,7 +429,8 @@ function HomePage(props) {
 																		className="nav-link"
 																		onClick={() => {
 																			setCalendarTypeFilter(item);
-																		}}>
+																		}}
+																	>
 																		{item}
 																	</a>
 																</li>
@@ -457,12 +443,14 @@ function HomePage(props) {
 											<span>
 												<button
 													className="btn pt-4 pb-0 me-1 homepage-list-nextprevBtn"
-													onClick={() => swiperRefCalendar.current?.slidePrev()}>
+													onClick={() => swiperRefCalendar.current?.slidePrev()}
+												>
 													<p className="homepage-nextPrevButton">&#8249;</p>
 												</button>
 												<button
 													className="btn pt-4 pb-0 ms-1 homepage-list-nextprevBtn"
-													onClick={() => swiperRefCalendar.current?.slideNext()}>
+													onClick={() => swiperRefCalendar.current?.slideNext()}
+												>
 													<p className="homepage-nextPrevButton">&#8250;</p>
 												</button>
 											</span>
@@ -479,7 +467,8 @@ function HomePage(props) {
 																	style={{fontSize: 'var(--fs-500)'}}
 																	onClick={() => {
 																		setCalendarTypeFilter(item);
-																	}}>
+																	}}
+																>
 																	{item}
 																</a>
 															</li>
@@ -527,17 +516,15 @@ function HomePage(props) {
 															grid: {rows: 2, fill: 'row'},
 														},
 													}}
-													// spaceBetween={30}
 													slidesPerView={3}
 													rewind={true}
 													modules={[Grid, Navigation]}
 													onBeforeInit={(swiper) => {
 														swiperRefCalendar.current = swiper;
 													}}
-													// onSlideChange={() => console.log('slide change')}
-													// onSwiper={(swiper) => console.log(swiper)}
 													className="mySwiper2"
-													style={{width: `${itemPerPage * 150}px`}}>
+													style={{width: `${itemPerPage * 150}px`}}
+												>
 													{products.length !== 0 &&
 														calendarList.map((item, index) => {
 															return (
@@ -552,6 +539,9 @@ function HomePage(props) {
 									</div>
 								</div>
 							</div>
+							{/* ----------------------------- */}
+
+							{/* 1 card carousel */}
 							<div className="homepage-section-notebook-left col-md-4 p-3 d-flex my-3">
 								<div id="homepage-calendarCarousel" className="carousel slide text-center m-auto w-100" data-bs-ride="carousel">
 									{/* <!-- Wrapper for slides --> */}
@@ -564,7 +554,8 @@ function HomePage(props) {
 														width: '5rem',
 														height: '5rem',
 													}}
-													role="status">
+													role="status"
+												>
 													<span className="visually-hidden">Loading...</span>
 												</div>
 											</div>
@@ -577,7 +568,8 @@ function HomePage(props) {
 														key={index}
 														className={classCarousel}
 														data-bs-interval="3000"
-														onClick={() => Navigate(`/detail/${item.id}`)}>
+														onClick={() => Navigate(`/detail/${item.id}`)}
+													>
 														<div className="homepage-productCard-carouselImgContainer">
 															<img src={item.image.mainImage} alt="..." className="d-flex w-100 homepage-productCard-carouselImg" />
 														</div>
@@ -599,8 +591,10 @@ function HomePage(props) {
 									</button>
 								</div>
 							</div>
+							{/* ----------------------------- */}
 						</div>
 					</section>
+					{/* ----------------------------- */}
 				</div>
 			</motion.div>
 		</>
