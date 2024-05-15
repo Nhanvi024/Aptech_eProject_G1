@@ -1,11 +1,11 @@
 import './CartList.css'
 
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { DataContext } from '../../context/DataContext';
 
 import CartIcon from '../../assets/image/header/icon/cartIcon.svg'
 import DeleteIcon from '../../assets/image/header/icon/delIcon.svg'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 function CartList(props) {
@@ -54,7 +54,7 @@ function CartList(props) {
                                 <p className='cartList_bottom-sumText'>Sum: </p>
                                 <p className='cartList_bottom-sumPrice'>{totalPayment.toFixed(2)}<sup> $</sup></p>
                             </div>
-                            <button className='cartList_bottom-checkout' onClick={()=>navigate('/checkout')}> Check Out</button>
+                            <button className='cartList_bottom-checkout' onClick={()=>navigate('/cart')}>Go to cart</button>
                         </div>
                     </> :
                     <>

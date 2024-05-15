@@ -1,14 +1,15 @@
 import './CheckOut.css'
 
+import { motion } from 'framer-motion';
+import React, { useContext, useState } from 'react';
+import { DataContext } from '../../context/DataContext';
+import { useNavigate } from 'react-router-dom';
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import CheckoutCart from '../../components/checkoutComponents/CheckoutCart';
 import CheckoutInfo from '../../components/checkoutComponents/CheckoutInfo';
 import PaymentMethod from '../../components/checkoutComponents/PaymentMethod';
-import { DataContext } from '../../context/DataContext';
-import React, { useContext, useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { Slide, ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom';
 
 function CheckOut(props) {
     const navigate = useNavigate()
