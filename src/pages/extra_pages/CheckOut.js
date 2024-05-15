@@ -171,7 +171,6 @@ function CheckOut(props) {
                         fontSize: "16px",
                         width: "400px"
                     }
-
                 }
             />
         </motion.div>
