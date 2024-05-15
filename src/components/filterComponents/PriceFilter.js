@@ -70,11 +70,11 @@ function PriceFilter(props) {
                 </div>
             </div>
             <div className='priceFilter-container d-block d-md-none col-6 g-0 w-100'>
-                <div class="dropdown navbar-expand-lg">
-                    <button class="navbar-toggler btn-secondary  dropdown-toggle priceFilterDropDown w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="dropdown navbar-expand-lg">
+                    <button className="navbar-toggler btn-secondary  dropdown-toggle priceFilterDropDown w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Price
                     </button>
-                    <ul class="dropdown-menu w-100 priceFilterDropDownitem">
+                    <ul className="dropdown-menu w-100 priceFilterDropDownitem">
                     <div className='priceFilter-pricerangeDropDown'>
                         <input className='priceFilter-checkbox' onChange={(e) => handleChangePriceFilter(e)} type='checkbox' id='prcice1' name='range0' checked={priceFilter.price_range0.check} />
                         <label className='priceFilter-label' htmlFor='prcice1'>Under {priceFilter.price_range0.max}$</label>

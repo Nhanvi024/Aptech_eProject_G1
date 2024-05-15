@@ -1,6 +1,6 @@
 import './NewsReadLot.css'
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import EllipsisText from "react-ellipsis-text";
 
 // Import Swiper React components
@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 function NewsReadLot(props) {
     const { newsReadLot, handleSelectNews } = props
@@ -55,8 +55,8 @@ function NewsReadLot(props) {
                 >
                     {newsReadLot && newsReadLot.map((item, index) => {
                         return (
-                            <SwiperSlide>
-                                <div key={index} className='newsPage-newsReadLot-newscard'>
+                            <SwiperSlide key={index}>
+                                <div className='newsPage-newsReadLot-newscard'>
                                     <button onClick={(e) => handleSelectNews(e)} className='newsPage-newsReadLot-nav' name={item.id}>
                                         <img className='newsPage-newsReadLot-img' src={item.mainImage} alt='news' />
                                         <p className='newsPage-newsReadLot-title' >{item.title}</p>
