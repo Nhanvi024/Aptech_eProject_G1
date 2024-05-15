@@ -3,18 +3,43 @@
 
     background-color: hsl(var(--main-color-code) / 0.05);
     border: 1px solid hsl(var(--main-color-code) / 0.5);
+    margin: auto;
+    padding: auto;
 }
 .searchPage-result{
     font-weight: 700;
-    padding: 30px 0px;
+    padding: 10px 0px;
    
 }
 .searchPage-searchlist{
-    width: 100%;
+    /* width: 100%; */
     padding: 10px 30px;
 
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
-    
+    justify-content: space-evenly;
+}
+/** Responsive ************************************************************************************ */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .searchPage-container {
+        width: 992px;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .searchPage-container {
+        width: 750px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .searchPage-container {
+        width: 100%;
+    }
 }

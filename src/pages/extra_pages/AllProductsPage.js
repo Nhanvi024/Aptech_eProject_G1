@@ -3,7 +3,7 @@ import SortSelect from '../../components/filterComponents/SortSelect';
 import TypeFilterAll from '../../components/filterComponents/TypeFilterAll';
 import ProductCard from '../../components/homepageComponents/ProductCard';
 import { DataContext } from '../../context/DataContext';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import './AllProductsPage.css';
 
 import React, { useContext, useEffect, useState } from 'react';
@@ -21,7 +21,7 @@ function AllProductsPage(props) {
 
     // Array sort type (name, price,...)
     const selectArray = [
-        { name: "Select Sort", value: "default" },
+        { name: "Default", value: "default" },
         { name: "Name A → Z", value: "type1" },
         { name: "Name Z → A", value: "type2" },
         { name: "Price Ascending", value: "type3" },
@@ -70,7 +70,7 @@ function AllProductsPage(props) {
     // Reload page to update sort
     useEffect(() => {
         handleSortAll()
-    }, [select])
+    }, [select, products])
 
 
     // ** Filter type **********************************************
@@ -117,7 +117,7 @@ function AllProductsPage(props) {
     // Page loading first time --> all products are shown
     useEffect(() => {
         handleReadyTypeData()
-    }, [])
+    }, [products])
 
     //** Filter price ***********************************************
 
@@ -192,28 +192,27 @@ function AllProductsPage(props) {
             <motion.div initial={{ opacity: 0 }}
 
                 animate={{ opacity: 1, transition: { duration: 1 } }}
-                exit={{ opacity: 0, transition: { duration: 0} }}
+                exit={{ opacity: 0, transition: { duration: 0 } }}
             >
                 <img className='imageBanner'
                     src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg' alt='calendarBanner'></img>
                 <div className='allProducts-container row'>
-                    <div className='allProduct-sidebar col-sm-3'>
+                    <div className='allProduct-sidebar  col-xl-3 col-md-4 col-sm-12'>
                         <TypeFilterAll
                             typeFilter={typeFilter}
                             setTypeFilter={setTypeFilter}
                             notebookTypeList={notebookTypeList}
                             calendarTypeList={calendarTypeList}
                         />
-
                         <PriceFilter priceFilter={priceFilter}
                             setPriceFilter={setPriceFilter} />
                     </div>
-                    <div className='allProduct-productlist col-sm-9'>
+                    <div className='allProduct-productlist col-xl-9 col-md-8 col-sm-12'>
                         <div className='allProduct-header'>
                             <p className='allProduct-header-title'>All Products</p>
                             <SortSelect select={select} setSelect={setSelect} selectArray={selectArray} />
                         </div>
-                        <div className='allProduct-product'>
+                        <div className='allProduct-product container-fluid'>
                             {showList.map((item, index) => {
                                 return (
                                     handleFilterAll(item) // All conditional to filter (price + type)
