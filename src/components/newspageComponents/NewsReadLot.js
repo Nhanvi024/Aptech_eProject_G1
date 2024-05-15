@@ -1,6 +1,6 @@
 import './NewsReadLot.css'
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import EllipsisText from "react-ellipsis-text";
 
 // Import Swiper React components
@@ -11,7 +11,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 function NewsReadLot(props) {
     const { newsReadLot, handleSelectNews } = props
