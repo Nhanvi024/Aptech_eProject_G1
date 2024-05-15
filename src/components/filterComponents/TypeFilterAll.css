@@ -123,3 +123,34 @@ input[type="checkbox"] {
     margin: 0;
     font-size: var(--fs-400);
 }
+/* * Responsive ************************************************************************************
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (max-width: 1200px) {
+    
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (max-width: 992px) {
+   
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (max-width: 768px) {
+    .typeFilterAll-item-container  {
+        display: none;
+    }
+} */
+.typeFilterbtn{ 
+    background: var(--secondary-background-clr);
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+.typeFilterSubmenu{
+    border: 0.5px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+}

@@ -46,9 +46,22 @@
     gap: 10px;
 }
 .priceFilter-checkbox{
-
+    padding-left: 10px;
 }
 .priceFilter-label{
     margin: 0;
     font-size: var(--fs-400);
+}
+.priceFilterDropDown{
+    background: var(--secondary-background-clr);
+    color: white;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 10px;
+    padding-top: 0;
+    padding-bottom:0 ;
+}
+.priceFilter-pricerangeDropDown{
+    padding-left: 10px;
+
 }
