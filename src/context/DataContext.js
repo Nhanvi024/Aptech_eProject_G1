@@ -1,8 +1,10 @@
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
-import {createContext, useEffect, useState} from 'react';
+import { createContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const DataContext = createContext();
 function DataProvider({ children }) {
+    const navigate = useNavigate()
     const [products, setProducts] = useState([])
     const [searchProduct, setSearchProduct] = useState('')
     const [isDataLoaded, setIsDataLoaded] = useState(false)
@@ -19,14 +21,14 @@ function DataProvider({ children }) {
     ]
     const [btnActive, setBtnActive] = useState(webPage[0].name)
 
-	useEffect(() => {
-		fetch('/data/data.json')
-			.then((res) => res.json())
-			.then((data) => {
+    useEffect(() => {
+        fetch('/data/data.json')
+            .then((res) => res.json())
+            .then((data) => {
                 setProducts(data)
             })
-			.then(setIsDataLoaded(true));
-	}, []);
+            .then(setIsDataLoaded(true));
+    }, []);
 
     // ** Products Cart
 
@@ -58,64 +60,50 @@ function DataProvider({ children }) {
         setProductCart(productCart.filter(item => item.id !== idDelete))
     }
 
+let valueProvider = {
+    // products data read from json file --> many components are in use
+    products,
+    setProducts,
 
-    // ** Login/ Sign in
-    const [user,setUser] = useState([
-        {
-            fullname: 'Nhan',
-            phone: '0123456789',
-            email: 'abc@gmail.com',
-            password: '123456',
-            address: '',
-        }
-    ])
+    // Search Name of product
+    searchProduct,  // --> SearchPage.js
+    setSearchProduct, //--> SearchBox.js
 
+    // Button Link is activated, --> NavBar.js, Menu.js
+    btnActive,
+    setBtnActive,
 
+    // --> HomePage.js
+    isDataLoaded,
+    setIsDataLoaded,
 
-    let valueProvider = {
-        // products data read from json file --> many components are in use
-        products,
-        setProducts,
+    // product list in Cart --> CartList.js
+    productCart,
+    setProductCart,
 
-        // Search Name of product
-        searchProduct,  // --> SearchPage.js
-        setSearchProduct, //--> SearchBox.js
+    // function add product to cart --> ProductCard.js
+    handleAddProductCart,
 
-        // Button Link is activated, --> NavBar.js, Menu.js
-        btnActive,
-        setBtnActive,
+    // function delete product from cart --> CartList.js, CartPage.js
+    totalPayment,
+    handleDeleteItem,
 
-        // --> HomePage.js
-        isDataLoaded,
-        setIsDataLoaded,
-
-        // product list in Cart --> CartList.js
-        productCart,
-        setProductCart,
-
-        // function add product to cart --> ProductCard.js
-        handleAddProductCart,
-
-        // function delete product from cart --> CartList.js, CartPage.js
-        totalPayment,
-        handleDeleteItem,
-
-    }
-    const initialOptions = {
-        clientId: 'AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr',
-        currency: 'USD',
-        intent: 'capture',
-        components: 'buttons',
-    };
-    return (
-        <DataContext.Provider value={valueProvider}>
-			<PayPalScriptProvider options={initialOptions}>
+}
+const initialOptions = {
+    clientId: 'AX1I0Rd45ExcqiNA2Zfa_RGZXsNLLG__6jiB1Dq1pKTCtLxjB1AIUM9fdnwcNyrqn09kSveTyWpGptCr',
+    currency: 'USD',
+    intent: 'capture',
+    components: 'buttons',
+};
+return (
+    <DataContext.Provider value={valueProvider}>
+        <PayPalScriptProvider options={initialOptions}>
 
             {children}
-			</PayPalScriptProvider>
 
-        </DataContext.Provider>
-    )
+        </PayPalScriptProvider>
+    </DataContext.Provider>
+)
 }
 
-export {DataContext, DataProvider};
+export { DataContext, DataProvider };
