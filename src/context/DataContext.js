@@ -8,6 +8,7 @@ function DataProvider({ children }) {
     const [products, setProducts] = useState([])
     const [searchProduct, setSearchProduct] = useState('')
     const [isDataLoaded, setIsDataLoaded] = useState(false)
+    const [members, setMembers]= useState([])
     const webPage = [
         { name: 'HOME', href: '/' },
         { name: 'NEWS', href: '/news' },
@@ -29,6 +30,13 @@ function DataProvider({ children }) {
             })
             .then(setIsDataLoaded(true));
     }, []);
+
+    useEffect(() =>{
+        fetch ('/data/team.json')
+        .then((res) => res.json())
+        .then((data) => {setMembers(data)})
+        
+    },[])
 
     // ** Products Cart
 
@@ -87,6 +95,10 @@ let valueProvider = {
     // function delete product from cart --> CartList.js, CartPage.js
     totalPayment,
     handleDeleteItem,
+
+    // --> AboutPage.js
+    members,
+    setMembers,
 
 }
 const initialOptions = {

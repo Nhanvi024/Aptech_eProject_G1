@@ -23,7 +23,7 @@ function DownloadAll(props) {
 	useEffect(() => {
 		downloadAll();
 		navigate(-1);
-	}, []);
+	}, [navigate]);
 	if (products.length !== 0) {
 		return (
 			<>

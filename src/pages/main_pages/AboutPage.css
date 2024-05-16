@@ -1,15 +1,200 @@
 .aboutPage-container {
+	width: 1200px;
+	padding-bottom: 50px;
+	display: flex;
+	padding: auto;
+	padding-top: 50px;
+	margin: auto;
+	justify-content: center;
+	background-color: hsl(var(--main-color-code) / 0.05);
+	border: 1px solid hsl(var(--main-color-code) / 0.5);
+	flex-direction: column;
+	position: relative;
+}
+
+.aboutPage-company {
+	display: flex;
+	margin: 10px 10px 80px 10px;
+	padding: auto;
+	/* margin-bottom: 80px; */
+	justify-content: space-evenly;
+	box-shadow: rgba(58, 123, 44, 0.2) 0px 7px 29px 0px;
+	
+}
+
+.aboutPage-company:hover {
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.25em);
+}
+
+.aboutPage-company-title {
 	width: 100%;
+	text-align: center;
+	font-size: 6rem;
+	color: var(--active-text-color);
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.aboutPage-company-introTitle {
+	margin: auto;
+	padding: 10px;
+	margin-bottom: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: var(--fs-800);
+	font-family: cursive;
+}
+.aboutPage-company-imgBox {
+	padding: 0;
 }
 .aboutPage-company-image {
 	width: 100%;
 	object-fit: contain;
+	border-radius: 5px;
 }
+
+.aboutPage-company-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+}
+
+.aboutPage-company-contentTitle {
+	color: var(--main-color);
+	font-weight: 600;
+	font-family: var(--ff-primary-font);
+	margin: 20px;
+}
+
 .aboutPage-company-introduce {
-	font-size: var(--fs-500);
+	font-size: var(--fs-600);
+	font-weight: 500;
+	line-height: 30px;
 }
+
 .aboutPage-team {
+	
 	.aboutPage-team-title {
-		font-size: var(--fs-900);
+		font-size: 4rem;
+		text-align: center;
+		font-weight: 800;
+		color: var(--active-text-color);
+		text-shadow: 5px 5px 10px;
+		border-bottom: 3px solid var(--active-text-color);
 	}
+}
+
+.aboutPage-company-containerCard {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 40px;
+	margin: 20px;
+	margin-top: 60px;
+	
+}
+.aboutPage-company-colCard{
+	border: 1px solid #eee;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: #fff;
+	display: flex;
+	column-gap: 20px;
+	box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+	background-color: var(--main-color-code);
+	/* width: 80vh; */
+}
+.aboutPage-company-imgPlaceholder{
+	width: 55%;
+	display: flex;
+	max-height: 200px;
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+}
+.aboutPage-company-cardImg{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.aboutPage-company-cardContent{
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+}
+.aboutPage-company-cardIcon{
+	width: 20px;
+}
+.aboutPage-company-cardTitle{
+	font-size: var(--fs-800);
+	font-weight: 600;
+	font-family: 'Roboto Slab', serif;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.aboutPage-company-cardPara{
+	margin: 10px 0px 10px 15px;
+	font-family: 'Roboto Slab', serif;
+	font-size: var(--fs-600);
+}
+.aboutPage-company-row{
+	display: flex;
+	justify-content: center;
+	gap:5px;
+	margin-top: 40px;
+}
+.aboutUs-logo{
+	width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/** Responsive ************************************************************************************ */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .aboutPage-container {
+        width: 100%;
+    }
+	.aboutPage-company{
+		flex-direction: column;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .aboutPage-container {
+        width: 100%;
+    }
+	.aboutPage-company{
+		flex-direction: column;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .aboutPage-container {
+        width: 100%;
+    }
+	.aboutPage-company{
+		flex-direction: column;
+	}
+   .aboutPage-company-containerCard{
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    .aboutPage-container {
+        width: 100%;
+    }
+	.aboutPage-company{
+		flex-direction: column;
+	}
+   .aboutPage-company-containerCard{
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   }
+    
 }
