@@ -82,7 +82,7 @@ function ContactPage(props) {
 
     return (
         <>
-         <motion.div initial={{ opacity: 0 }}
+         <motion.div className='motionDivContainer' initial={{ opacity: 0 }}
             
             animate={{ opacity: 1, transition:{duration:1}}}
             exit={{opacity: 0, transition:{duration:0} }}
@@ -91,7 +91,6 @@ function ContactPage(props) {
                 src='https://abbl.com/wp-content/uploads/2023/02/abbl-contact-banner.jpg' alt='banner'></img>
 
             <div className='contactPageContainer'>
-
                 <div className='contactPageContainer_row1'>
                     <div className='contact_info'>
                         <h1 className='contact_info-title'>Contact Us</h1>

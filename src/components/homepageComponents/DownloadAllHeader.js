@@ -8,7 +8,7 @@ function DownloadAllHeader(props) {
 			<div className="col-6">
 				<img
 					className=""
-					src='/assets/image/logo/RYANA9.png'
+					src="/assets/image/logo/RYANA9.png"
 					// src={logoCalendar}
 					alt="logoFooter"
 				/>

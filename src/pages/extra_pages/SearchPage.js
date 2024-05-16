@@ -34,7 +34,7 @@ function SearchPage(props) {
                 animate={{ opacity: 1, transition: { duration: 1 } }}
                 exit={{ opacity: 0, transition: { duration: 0} }}
             >
-                <img className='imageBanner'
+                <img className='imageBanner imgBannerCss'
                     src='https://carleton.ca/dighum/wp-content/uploads/Calendar-Banner.jpg'></img>
                 <div className='searchPage-container'>
                     <h1 style={{textAlign: "center", marginTop: 20}}>Search Page</h1>

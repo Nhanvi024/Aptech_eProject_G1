@@ -28,7 +28,7 @@ function Menu(props) {
 			<div id="menuDetail">
 				{menuDetail.map((item, index) => {
 					return (
-						<div key={index} className="menuTab" id={`menuTab_${index}`} onClick={(e) => console.log(e.target.id)}>
+						<div key={index} className="menuTab" id={`menuTab_${index}`}>
 							<div className="menu-products-container">
 								{/* <img className='iconArrow' src='/assets/image/extra/angleRight.svg' alt='...' /> */}
 								<Link

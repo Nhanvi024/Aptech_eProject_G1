@@ -13,14 +13,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/bundle';
 
 // import required modules
-import {Grid, Navigation} from 'swiper/modules';
+import {Navigation} from 'swiper/modules';
 
 function SingleProductDetail(props) {
 	const {products, handleAddProductCart, isDataLoaded} = useContext(DataContext);
-	console.log('products list: ', products);
 	const navigate = useNavigate();
 	const {productId} = useParams();
-	console.log(productId);
 	const [relateList, setRelateList] = useState([]);
 	const [itemSingle, setItemSingle] = useState({
 		id: '',
@@ -43,35 +41,31 @@ function SingleProductDetail(props) {
 			image3: '',
 		},
 	});
-	console.log('test item single:', itemSingle);
-	console.log(typeof itemSingle);
 	const swiperRefNotebook = useRef();
 	useEffect(() => {
 		if (products.length !== 0) {
 			products.noteBook.map((itema) => {
 				if (itema.id === productId) {
 					setItemSingle(itema);
-					setRelateList(products.noteBook.filter((item) => item.type == itema.type));
+					setRelateList(products.noteBook.filter((item) => item.type === itema.type));
 				}
 			});
 			products.calendar.map((itema) => {
 				if (itema.id === productId) {
 					setItemSingle(itema);
-					setRelateList(products.calendar.filter((item) => item.type == itema.type));
+					setRelateList(products.calendar.filter((item) => item.type === itema.type));
 				}
 			});
 		}
 	}, [isDataLoaded, products, productId]);
-	// console.log("test notebook:",products.noteBook);
-	// console.log('itemtest:', item);
-	// console.log('test relate list:', relateList);
 	if (products.length !== 0) {
 		return (
-			<div className="container">
+			<>
 				<img
-					className="imageBanner"
+					className="imageBanner "
 					src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823"
 					alt="banner"></img>
+			<div className="container">
 				<div className="container row mx-auto p-3 mt-5">
 					<div className="col-12 p-0 col-lg-6">
 						<div id="modalCarouselDetail" className="carousel slide" data-bs-ride="carousel">
@@ -261,6 +255,7 @@ function SingleProductDetail(props) {
 					</Swiper>
 				</div>
 			</div>
+			</>
 		);
 	}
 }

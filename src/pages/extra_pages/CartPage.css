@@ -89,7 +89,7 @@
     width: 90px;
     height: 90px;
     margin: 0;
-    background-color: hsl(var(--main-color-code) / 0.25);
+    background-color: rgb(218, 232, 230);
 
     display: flex;
 }
