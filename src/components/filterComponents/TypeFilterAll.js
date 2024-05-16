@@ -97,11 +97,11 @@ function TypeFilterAll(props) {
                         <ul className="navbar-nav m-auto my-2 text-center w-100">
                             <li className="nav-item dropdown">
                                 {notebookTypeList && 
-                                <a className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notebook</a>
+                                <div className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notebook</div>
                                 }
                                 <ul className="dropdown-menu w-100">
                                     {notebookTypeList &&
-                                        <div className='typeFilterAll-item-containerDropDown dropdown-item'>
+                                        <div className='typeFilterAll-item-containerDropDown'>
                                             <div className='typeFilterAll-notebookAll  dropdown-item'>
                                                 <input onChange={(e) => handleAllNoteBookFilter(e)} className="typeFilterAll-typebox" name='notebookAll' type="checkbox" id='notebookAll' checked={noteBookFilter.length === notebookTypeList.length} />
                                                 <label className='typeFilterAll-typename' htmlFor='notebookAll'>All Notebook</label>
@@ -126,11 +126,11 @@ function TypeFilterAll(props) {
                         <ul className="navbar-nav m-auto my-2 text-center w-100">
                             <li className="nav-item dropdown">
                                 {calendarTypeList &&
-                                 <a className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calendars</a>
+                                 <div className="nav-link dropdown-toggle typeFilterSubmenu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Calendars</div>
                                 }
                                 <ul className="dropdown-menu w-100">
                                     {calendarTypeList &&
-                                        <div className='typeFilterAll-item-containerDropDown dropdown-item'>
+                                        <div className='typeFilterAll-item-containerDropDown'>
                                             <div className='typeFilterAll-calendarAll dropdown-item'>
                                                 <input onChange={(e) => handleAllCalendarFilter(e)} className="typeFilterAll-typebox" name='calendarAll' type="checkbox" id='calendarAll' checked={calendarFilter.length === calendarTypeList.length} />
                                                 <label className='typeFilterAll-typename' htmlFor='calendarAll'>All Calendar</label>
