@@ -7,7 +7,7 @@
 	margin: auto;
 	justify-content: center;
 	background-color: hsl(var(--main-color-code) / 0.05);
-	/* border: 1px solid hsl(var(--main-color-code) / 0.5); */
+	border: 1px solid hsl(var(--main-color-code) / 0.5);
 	flex-direction: column;
 	position: relative;
 }
