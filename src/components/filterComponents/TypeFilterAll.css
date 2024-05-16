@@ -40,14 +40,17 @@
     padding-left: 30px;
 }
 
-.typeFilterAll-item-container {
+.typeFilterAll-item-container,
+.typeFilterAll-item-containerDropDown {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
 }
-
+.typeFilterAll-item-containerDropDown {
+    padding: 10px 10px;
+}
 .typeFilterAll-text {
     margin: 0;
     border: none;
@@ -122,6 +125,8 @@ input[type="checkbox"] {
 .typeFilterAll-typename {
     margin: 0;
     font-size: var(--fs-400);
+
+    cursor: pointer;
 }
 /* * Responsive ************************************************************************************
 
