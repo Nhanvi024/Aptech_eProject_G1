@@ -91,7 +91,6 @@ function ContactPage(props) {
                 src='https://abbl.com/wp-content/uploads/2023/02/abbl-contact-banner.jpg' alt='banner'></img>
 
             <div className='contactPageContainer'>
-
                 <div className='contactPageContainer_row1'>
                     <div className='contact_info'>
                         <h1 className='contact_info-title'>Contact Us</h1>
