@@ -1,13 +1,14 @@
 import './NewsPage.css'
 
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 import NewsReadLot from '../../components/newspageComponents/NewsReadLot';
 import HotNews from '../../components/newspageComponents/HotNews';
 import NewsSeeMore from '../../components/newspageComponents/NewsSeeMore';
 import NewsUpdate from '../../components/newspageComponents/NewsUpdate';
-import { motion } from 'framer-motion';
+
 
 function NewsPage(props) {
     const navigation = useNavigate()
@@ -53,9 +54,8 @@ function NewsPage(props) {
                     {statusNews.newsReadLot.length && <NewsReadLot newsReadLot={statusNews.newsReadLot} handleSelectNews={handleSelectNews} titleName="NEWS READ A LOT" />}
                     {statusNews.hotNews.length && <HotNews hotNews={statusNews.hotNews} handleSelectNews={handleSelectNews} />}
                     {statusNews.newsSeeMore.length && <NewsSeeMore newsSeeMore={statusNews.newsSeeMore} handleSelectNews={handleSelectNews} />}
-
                 </div>
-
+                
          </motion.div>
 
     );
