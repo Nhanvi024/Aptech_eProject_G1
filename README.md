@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Document location: `Document\Document_T12401E0_Team1.docx`
 
+Video about Website location: `Video\RyanaCalendar-T12401E0-Group1.mp4`
+
 First, run cmd then run `git clone https://github.com/Nhanvi024/Aptech_eProject_G1.git` 
 
 to pull our project to your local computer.

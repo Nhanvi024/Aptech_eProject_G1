@@ -60,11 +60,12 @@ function SingleProductDetail(props) {
 	}, [isDataLoaded, products, productId]);
 	if (products.length !== 0) {
 		return (
-			<div className="container" style={{cursor:'default'}}>
+			<>
 				<img
-					className="imageBanner imgBannerCss"
+					className="imageBanner"
 					src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823"
 					alt="banner"></img>
+			<div className="container" style={{cursor:'default'}}>
 			<div className="container">
 				<div className="container row mx-auto p-3 mt-5">
 					<div className="col-12 p-0 col-lg-6">
@@ -256,6 +257,7 @@ function SingleProductDetail(props) {
 				</div>
 			</div>
 			</div>
+			</>
 		);
 	}
 }
