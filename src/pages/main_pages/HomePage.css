@@ -1,4 +1,7 @@
-
+.homePageContainer {
+	background-color: hsl(var(--main-color-code) / 0.05);
+	border: 1px solid hsl(var(--main-color-code) / 0.5);
+}
 .homepage-section-carousel {
 	position: relative;
 	z-index: 0;
@@ -12,8 +15,6 @@
 .homepage-section-notebook-container {
 	min-height: 540px;
 	/* max-height: 540px; */
-	background-color: hsl(var(--main-color-code) / 0.05);
-    border: 1px solid hsl(var(--main-color-code) / 0.5);
 }
 
 .homepage-section-notebook {
