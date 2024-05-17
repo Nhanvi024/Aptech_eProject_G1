@@ -43,6 +43,7 @@
 	min-width: 50px;
 	margin: 0px;
 	padding: 0;
+	cursor: default;
 }
 
 .homepage-productCard-imgContainer {

@@ -11,7 +11,7 @@ function Footer(props) {
         <div className='footerContainer_row1'>
           <ServicesBanner/>
         </div>
-        <div className='footerContainer_row2'>
+        <div className='footerContainer_row2' style={{cursor:'default'}}>
            <FooterInfo/>
         </div>
         <div className='footerContainer_row3'>
