@@ -37,7 +37,7 @@ function CartPage(props) {
             >
                 <img className='imageBanner'
                     src='https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823' alt='banner'></img>
-                <div className='cartPage-container'>
+                <div className='cartPage-container' style={{cursor:'default'}}>
 
                     <h1 className='cartPage-name'>SHOPPING CART</h1>
                     {productCart.length ?

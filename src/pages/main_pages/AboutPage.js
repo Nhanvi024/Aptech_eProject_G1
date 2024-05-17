@@ -24,7 +24,7 @@ function AboutPage(props) {
 					src="https://i0.wp.com/currentpr.com/wp-content/uploads/2018/02/banner-meet-team.jpg?resize=1200%2C338&ssl=1"
 					alt="banner"></img>
 
-				<div className="aboutPage-container ">
+				<div className="aboutPage-container">
 					<h1 className="aboutPage-company-title">About Us</h1>
 					<h3 className='aboutPage-company-introTitle'>Welcome to our world at Ryana Calendars, where every day is a canvas for creativity and organization.
 						As a premier calendar and notebook company, we are dedicated to bringing innovation and inspiration into the daily lives of our customers. </h3>

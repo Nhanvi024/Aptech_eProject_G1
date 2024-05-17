@@ -60,9 +60,9 @@ function SingleProductDetail(props) {
 	}, [isDataLoaded, products, productId]);
 	if (products.length !== 0) {
 		return (
-			<>
+			<div className="container" style={{cursor:'default'}}>
 				<img
-					className="imageBanner "
+					className="imageBanner imgBannerCss"
 					src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823"
 					alt="banner"></img>
 			<div className="container">
@@ -255,7 +255,7 @@ function SingleProductDetail(props) {
 					</Swiper>
 				</div>
 			</div>
-			</>
+			</div>
 		);
 	}
 }
