@@ -6,6 +6,7 @@
     margin: auto;
     background-color: hsl(var(--main-color-code) / 0.05);
     border: 1px solid hsl(var(--main-color-code) / 0.5);
+    cursor: default;
 }
 
 .contactPageContainer_row1 {
@@ -95,6 +96,9 @@
     width: 100%;
     height: 50px;
     border-radius: 8px;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
     padding-left: 10px;
 }
 

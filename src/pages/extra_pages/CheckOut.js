@@ -141,7 +141,7 @@ function CheckOut(props) {
         >
 
             <img className='imageBanner' src='https://sloboda-studio.com/wp-content/uploads/2020/08/Group-126.jpg.webp' alt='...' />
-            <div className='checkout-container'>
+            <div className='checkout-container' style={{cursor:'default'}}>
                 <CheckoutInfo handleInput={handleInput} errors={errors} />
                 <PaymentMethod
                     shipping={shipping}
