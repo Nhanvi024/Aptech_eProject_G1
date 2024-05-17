@@ -62,9 +62,10 @@ function SingleProductDetail(props) {
 		return (
 			<div className="container" style={{cursor:'default'}}>
 				<img
-					className="imageBanner"
+					className="imageBanner imgBannerCss"
 					src="https://bizweb.dktcdn.net/100/220/344/themes/739421/assets/bg_breadcrumb.jpg?1709874054823"
 					alt="banner"></img>
+			<div className="container">
 				<div className="container row mx-auto p-3 mt-5">
 					<div className="col-12 p-0 col-lg-6">
 						<div id="modalCarouselDetail" className="carousel slide" data-bs-ride="carousel">
@@ -253,6 +254,7 @@ function SingleProductDetail(props) {
 							})}
 					</Swiper>
 				</div>
+			</div>
 			</div>
 		);
 	}

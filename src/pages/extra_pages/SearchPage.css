@@ -20,6 +20,11 @@
     gap: 25px;
     justify-content: space-evenly;
 }
+.imgBannerCss{
+    width: 100vw;
+    height: 475px;
+    object-fit: cover;
+}
 /** Responsive ************************************************************************************ */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

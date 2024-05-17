@@ -61,7 +61,7 @@ function AboutPage(props) {
 								return (
 									<div className="aboutPage-company-colCard" key={index}>
 										<div className="aboutPage-company-imgPlaceholder">
-											<img className='aboutPage-company-cardImg' src={item.image} alt='ahihi' />
+											<img className='aboutPage-company-cardImg' src={item.image} alt='loading...' />
 										</div>
 										<div className='aboutPage-company-cardContent'>
 											<h1 className='aboutPage-company-cardTitle'>{item.name}</h1>

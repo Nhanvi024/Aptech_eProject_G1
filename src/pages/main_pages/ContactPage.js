@@ -3,7 +3,8 @@ import addressIcon from '../../assets/image/contact/address.svg'
 import phoneIcon from '../../assets/image/contact/phone.svg'
 import emailIcon from '../../assets/image/contact/email.svg'
 import { motion } from 'framer-motion'
-
+import { Slide, ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import React, { useState } from 'react';
 
 function ContactPage(props) {
@@ -20,13 +21,19 @@ function ContactPage(props) {
         handleValidate(name, value)
         setForm({ ...form, [name]: value })
     }
-    const handleSubmit = (e) => {
 
+    const handleSubmit = (e) => {
         if (Object.keys(errors).length !== 0) {
             e.preventDefault();
-            alert('All field is required')
+            toast.error('All field is required')
         } else {
-            alert('Thank you for contacting us!!!')
+            toast.success('Thank you for contacting us!!!', {
+                onClose: () => {
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 6000)
+                }
+            })
         }
     }
 
@@ -82,76 +89,90 @@ function ContactPage(props) {
 
     return (
         <>
-         <motion.div className='motionDivContainer' initial={{ opacity: 0 }}
-            
-            animate={{ opacity: 1, transition:{duration:1}}}
-            exit={{opacity: 0, transition:{duration:0} }}
+            <motion.div className='motionDivContainer' initial={{ opacity: 0 }}
+
+                animate={{ opacity: 1, transition: { duration: 1 } }}
+                exit={{ opacity: 0, transition: { duration: 0 } }}
             >
-            <img className='imageBanner'
-                src='https://abbl.com/wp-content/uploads/2023/02/abbl-contact-banner.jpg' alt='banner'></img>
+                <img className='imageBanner'
+                    src='https://abbl.com/wp-content/uploads/2023/02/abbl-contact-banner.jpg' alt='banner'></img>
 
-            <div className='contactPageContainer'>
-                <div className='contactPageContainer_row1'>
-                    <div className='contact_info'>
-                        <h1 className='contact_info-title'>Contact Us</h1>
-                        <p className='contact_info-produce'>We believe that progress can always be made by continuously driving growth for our
-                            customers and employees, shaping decisions and experiences through media, content and technology.</p>
-                        <div className='contact_info-address'>
-                            <img className='contact_info-icon' src={addressIcon} alt='addressIcon' />
-                            <div className='contact_info-content'>
-                                <p className='contact_info-content-title'>Address:</p>
-                                <p className='contact_info-content-content'>FPT Aptech, 590 Cach Mang Thang Tam, ward 11, district 3, Ho Chi Minh, Viet Nam</p>
+                <div className='contactPageContainer'>
+                    <div className='contactPageContainer_row1'>
+                        <div className='contact_info'>
+                            <h1 className='contact_info-title'>Contact Us</h1>
+                            <p className='contact_info-produce'>We believe that progress can always be made by continuously driving growth for our
+                                customers and employees, shaping decisions and experiences through media, content and technology.</p>
+                            <div className='contact_info-address'>
+                                <img className='contact_info-icon' src={addressIcon} alt='addressIcon' />
+                                <div className='contact_info-content'>
+                                    <p className='contact_info-content-title'>Address:</p>
+                                    <p className='contact_info-content-content'>FPT Aptech, 590 Cach Mang Thang Tam, ward 11, district 3, Ho Chi Minh, Viet Nam</p>
+                                </div>
+                            </div>
+                            <div className='contact_info-phone'>
+                                <img className='contact_info-icon' src={phoneIcon} alt='addressIcon' />
+                                <div className='contact_info-content'>
+                                    <p className='contact_info-content-title'>Phone:</p>
+                                    <p className='contact_info-content-content'>+84 123.456.789</p>
+                                </div>
+                            </div>
+                            <div className='contact_info-email'>
+                                <a href='mailto:group_1@gmail.com'><img className='contact_info-icon' src={emailIcon} alt='addressIcon' /></a>
+                                <div className='contact_info-content'>
+                                    <p className='contact_info-content-title'>Email:</p>
+                                    <a href='mailto:group_1@gmail.com' style={{ textDecoration: 'none' }}><p className='contact_info-content-content'>group_1@gmail.com</p></a>
+                                </div>
                             </div>
                         </div>
-                        <div className='contact_info-phone'>
-                            <img className='contact_info-icon' src={phoneIcon} alt='addressIcon' />
-                            <div className='contact_info-content'>
-                                <p className='contact_info-content-title'>Phone:</p>
-                                <p className='contact_info-content-content'>+84 123.456.789</p>
-                            </div>
-                        </div>
-                        <div className='contact_info-email'>
-                            <a href='mailto:group_1@gmail.com'><img className='contact_info-icon' src={emailIcon} alt='addressIcon' /></a>
-                            <div className='contact_info-content'>
-                                <p className='contact_info-content-title'>Email:</p>
-                                <a href='mailto:group_1@gmail.com' style={{ textDecoration: 'none' }}><p className='contact_info-content-content'>group_1@gmail.com</p></a>
-                            </div>
+                        <div className='contact_comment'>
+                            <h1 className='contact_comment-title'>Leave A Comment</h1>
+                            <p className='contact_comment-produce'>Our staff will call back later and answer your questions.</p>
+                            <form className='contact_comment-form' onSubmit={(e) => handleSubmit(e)}>
+                                <div className='mb-3'>
+                                    <input type=" text" className="contact_comment-input" placeholder="Your name *" name='name' onChange={(e) => handleInput(e)} />
+                                    <p className='text-danger'>{errors?.nameError}</p>
+                                </div>
+                                <div className='mb-3'>
+                                    <input type="text" className="contact_comment-input " placeholder="Your mail *" name='email' onChange={(e) => handleInput(e)} />
+                                    <p className='text-danger'>{errors?.emailError}</p>
+                                </div>
+                                <div className='mb-3'>
+                                    <input type="text" className="contact_comment-input " placeholder="Your phone *" name='phone' onChange={(e) => handleInput(e)} />
+                                    <p className='text-danger'>{errors?.phoneError}</p>
+                                </div>
+                                <div className='mb-3'>
+                                    <input type="text" className="contact_comment-input" placeholder="Title *" name='title' onChange={(e) => handleInput(e)} />
+                                    <p className='text-danger'>{errors?.titleError}</p>
+                                </div>
+                                <div className='mb-3'>
+                                    <textarea type="text" className="contact_comment-textarea" placeholder="Comment *" name='comment' onChange={(e) => handleInput(e)} />
+                                    <p className='text-danger'>{errors?.commentError}</p>
+                                </div>
+                                <button type="submit" className="contact_comment-send">SEND FEEDBACK</button>
+                            </form>
                         </div>
                     </div>
-                    <div className='contact_comment'>
-                        <h1 className='contact_comment-title'>Leave A Comment</h1>
-                        <p className='contact_comment-produce'>Our staff will call back later and answer your questions.</p>
-                        <form className='contact_comment-form' onSubmit={(e) => handleSubmit(e)}>
-                            <div className='mb-3'>
-                                <input type=" text" className="contact_comment-input" placeholder="Your name *" name='name' onChange={(e) => handleInput(e)} />
-                                <p className='text-danger'>{errors?.nameError}</p>
-                            </div>
-                            <div className='mb-3'>
-                                <input type="text" className="contact_comment-input " placeholder="Your mail *" name='email' onChange={(e) => handleInput(e)} />
-                                <p className='text-danger'>{errors?.emailError}</p>
-                            </div>
-                            <div className='mb-3'>
-                                <input type="text" className="contact_comment-input " placeholder="Your phone *" name='phone' onChange={(e) => handleInput(e)} />
-                                <p className='text-danger'>{errors?.phoneError}</p>
-                            </div>
-                            <div className='mb-3'>
-                                <input type="text" className="contact_comment-input" placeholder="Title *" name='title' onChange={(e) => handleInput(e)} />
-                                <p className='text-danger'>{errors?.titleError}</p>
-                            </div>
-                            <div className='mb-3'>
-                                <textarea type="text" className="contact_comment-textarea" placeholder="Comment *" name='comment' onChange={(e) => handleInput(e)} />
-                                <p className='text-danger'>{errors?.commentError}</p>
-                            </div>
-                            <button type="submit" className="contact_comment-send">SEND FEEDBACK</button>
-                        </form>
+                    <div className='contactPageContainer_row2'>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3221072104034!2d106.66147947596484!3d10.786623231604377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f631cb7c4b7%3A0xd152d83450f68d15!2sFPT%20Aptech!5e0!3m2!1svi!2s!4v1714936012358!5m2!1svi!2s" width="100%" height="100%" style={{ border: '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div className='contactPageContainer_row2'>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3221072104034!2d106.66147947596484!3d10.786623231604377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f631cb7c4b7%3A0xd152d83450f68d15!2sFPT%20Aptech!5e0!3m2!1svi!2s!4v1714936012358!5m2!1svi!2s" width="100%" height="100%" style={{ border: '0' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-
-            </div>
+                <ToastContainer
+                    position="top-center"
+                    autoClose={3000}
+                    hideProgressBar={true}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    theme="colored"
+                    transition={Slide}
+                    style={
+                        {
+                            fontSize: "16px",
+                            width: "400px"
+                        }
+                    }
+                />
             </motion.div>
         </>
 
