@@ -24,7 +24,7 @@ function CartList(props) {
                 }
             </div>
 
-            < div className='cartList'>
+            < div className='cartList' style={{cursor:'default'}}>
                 {productCart.length ?
                     <>
                         <div className='cartList_list'>
