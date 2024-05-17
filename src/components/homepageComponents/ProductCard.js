@@ -58,7 +58,7 @@ function ProductCard(props) {
 					{isDataLoaded && (
 						<div
 							className="container row p-0 mx-auto p-3"
-							style={{fontSize: 'var(--fs-600)', fontFamily: 'var(--ff-primary-font)'}}
+							style={{fontSize: 'var(--fs-600)', fontFamily: 'var(--ff-primary-font)', cursor: 'default'}}
 						>
 							<div className="col-12 p-0 col-lg-6">
 								<div id="modalCarousel" className="carousel slide" data-bs-ride="carousel">
